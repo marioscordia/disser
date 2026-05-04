@@ -12,7 +12,7 @@ A Python script that merges new research exports (e.g., `second-export.csv` from
 ### 2. PDF to Markdown Parsing (`prepare.py`)
 A Python script that converts academic PDFs into Markdown format, making them easier to query or feed into LLMs.
 - **Input:** Place PDFs in the `all/` directory.
-- **Output:** Generates a folder for each PDF in the `prepared/` directory containing the extracted `.md` text and associated images.
+- **Output:** Generates a folder for each PDF in the `prepared/` directory containing the extracted `.md` text and an `images/` subfolder for associated images. It reads directly from the `all/` directory without copying the PDF.
 - **Requires:** `pymupdf4llm`
 
 ### 3. Bulk Citation Fetcher (`index.js`)

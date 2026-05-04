@@ -29,16 +29,16 @@ def process_pdfs():
         # Create the new folder
         target_folder.mkdir()
         
-        # Copy the PDF
-        target_pdf = target_folder / f"{pdf_name}.pdf"
-        shutil.copy2(pdf_path, target_pdf)
+        # Create images directory
+        images_dir = target_folder / "images"
+        images_dir.mkdir(exist_ok=True)
         
         # Create MD and extract images
         target_md = target_folder / f"{pdf_name}.md"
         try:
             # pymupdf4llm extracts text to markdown, and writes images to the image_path
             # It also automatically updates the image links in the markdown text
-            md_text = pymupdf4llm.to_markdown(str(target_pdf), write_images=True, image_path=str(target_folder))
+            md_text = pymupdf4llm.to_markdown(str(pdf_path), write_images=True, image_path=str(images_dir))
             
             # Save the markdown text
             with open(target_md, "w", encoding="utf-8") as f:

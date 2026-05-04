@@ -18,7 +18,7 @@ This repository contains utility scripts and data files for automating the proce
 2. **Bulk Citation Fetching (`index.js`)**
    - **Purpose**: Reads a hardcoded list of DOIs and fetches their APA citations via the `citeas.org` API, writing the output to `references.txt`.
 3. **PDF to Markdown Extraction (`prepare.py`)**
-   - **Purpose**: Scans the `all/` directory for PDF files. For each PDF, it creates a folder in `prepared/`, copies the PDF, and uses `pymupdf4llm` to extract the text into a `.md` file along with any images.
+   - **Purpose**: Scans the `all/` directory for PDF files. For each PDF, it creates a folder in `prepared/` and uses `pymupdf4llm` to extract the text from the original PDF into a `.md` file, while saving any extracted images into a dedicated `images/` subfolder. The original PDF is not copied.
 
 ## AI Agent Guidelines
 - **API Rate Limiting**: Whenever modifying or adding scripts that interact with `citeas.org` or similar APIs, ALWAYS include rate-limiting (e.g., `time.sleep(0.5)`) to prevent IP bans.
