@@ -1,172 +1,99 @@
 # Reference List
 
-**Total papers:** 83
+**Total papers:** 46
+**Citation range:** 1–127 (median: 14)
 
 ---
 
-1. Abdallah, A., Abdalla, M., Piryani, B., Mozafari, J., Ali, M., & Jatowt, A. (2025, November 10). RerankArena: A Unified Platform for Evaluating Retrieval, Reranking and RAG with Human and LLM Feedback. Proceedings of the 34th ACM International Conference on Information and Knowledge Management. ACM. http://doi.org/10.1145/3746252.3761484
+1. Hansen, C.., Hansen, C.., Maystre, L.., Mehrotra, R.., Brost, B.., Tomasi, F.., Lalmas, M.. (2020). Contextual and Sequential User Embeddings for Large-Scale Music Recommendation. *Recsys 2020 14th ACM Conference on Recommender Systems*. https://doi.org/10.1145/3383313.3412248
 
-2. Afzal, I., Yilmazel, B., & Kaleli, C. (2024). An Approach for Multi-Context-Aware Multi-Criteria Recommender Systems Based on Deep Learning. IEEE Access. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/access.2024.3428630
+2. Abdollahpouri, H.., Mansoury, M.., Burke, R.., Mobasher, B.., Malthouse, E.. (2021). User-centered evaluation of popularity bias in recommender systems. *Umap 2021 Proceedings of the 29th ACM Conference on User Modeling Adaptation and Personalization*. https://doi.org/10.1145/3450613.3456821
 
-3. Ahemad, F. (2025, November 10). Quantization Aware Matryoshka Adaptation: Leveraging Matryoshka Learning, Quantization, and Bitwise Operations for Reduced Storage and Improved Retrieval Speed. Proceedings of the 34th ACM International Conference on Information and Knowledge Management. ACM. http://doi.org/10.1145/3746252.3761077
+3. Dai, S.., Xu, C.., Xu, S.., Pang, L.., Dong, Z.., Xu, J.. (2024). Bias and Unfairness in Information Retrieval Systems: New Challenges in the LLM Era. *Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*. https://doi.org/10.1145/3637528.3671458
 
-4. Alaofi, M., Arabzadeh, N., Clarke, C. L. A., & Sanderson, M. (2024, September 12). Generative Information Retrieval Evaluation. The Information Retrieval Series. Springer Nature Switzerland. http://doi.org/10.1007/978-3-031-73147-1_6
+4. Klimashevskaia, A.., Jannach, D.., Elahi, M.., Trattner, C.. (2024). A survey on popularity bias in recommender systems. *User Modeling and User Adapted Interaction*. https://doi.org/10.1007/s11257-024-09406-0
 
-5. Amala, K. J., & Rajeswari, D. (2025). Neural Learning to Rank Model With Bias Correction and Attention Enhanced Relevance Prediction. IEEE Access. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/access.2025.3625652
+5. Wang, X.., MacDonald, C.., Tonellotto, N.., Ounis, I.. (2021). Pseudo-Relevance Feedback for Multiple Representation Dense Retrieval. *Ictir 2021 Proceedings of the 2021 ACM SIGIR International Conference on Theory of Information Retrieval*. https://doi.org/10.1145/3471158.3472250
 
-6. Anand, A., Leonhardt, J., Singh, J., Rudra, K., & Anand, A. (2024, April 29). Data Augmentation for Sample Efficient and Robust Document Ranking. ACM Transactions on Information Systems. Association for Computing Machinery (ACM). http://doi.org/10.1145/3634911
+6. Mateos, P.., Bellogín, A.. (2025). A systematic literature review of recent advances on context-aware recommender systems. *Artificial Intelligence Review*. https://doi.org/10.1007/s10462-024-10939-4
 
-7. Arora, N., Mathur, H., & Patil, V. R. (2025, October 1). Toward Contextual Search Optimization: A Unified Ranking Approach for Relevance Prioritization. Lecture Notes in Networks and Systems. Springer Nature Singapore. http://doi.org/10.1007/978-981-96-7508-1_12
+7. Chen, J.., Mao, J.., Liu, Y.., Zhang, M.., Ma, S.. (2020). A context-aware click model for web search. *Wsdm 2020 Proceedings of the 13th International Conference on Web Search and Data Mining*. https://doi.org/10.1145/3336191.3371819
 
-8. Batri, K., Lakshmi, S., & Sowrirajan, R. (2025). Parabolic Weighting Mechanism in Information Retrieval: A Mathematical Analogy to Lenz’s Law. IEEE Access. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/access.2025.3550964
+8. Wang, X.., Macdonald, C.., Tonellotto, N.., Ounis, I.. (2023). ColBERT-PRF: Semantic Pseudo-Relevance Feedback for Dense Passage and Document Retrieval. *ACM Transactions on the Web*. https://doi.org/10.1145/3572405
 
-9. Batri, K., Thinakaran, R., Lakshmi, S., Sowrirajan, R., & Murugan, S. (2025). Beyond Precision and Recall: Measuring Search Engine Consistency Using Rank Stability. IEEE Access. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/access.2025.3571184
+9. Chen, C.., Zhang, M.., Ma, W.., Liu, Y.., Ma, S.. (2020). Efficient Non-Sampling Factorization Machines for Optimal Context-Aware Recommendation. *Web Conference 2020 Proceedings of the World Wide Web Conference Www 2020*. https://doi.org/10.1145/3366423.3380303
 
-10. Buyl, M., Missault, P., & Sondag, P.-A. (2023, August 4). RankFormer: Listwise Learning-to-Rank Using Listwide Labels. Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. ACM. http://doi.org/10.1145/3580305.3599892
+10. Kiyohara, H.., Saito, Y.., Matsuhiro, T.., Narita, Y.., Shimizu, N.., Yamamoto, Y.. (2022). Doubly robust off-policy evaluation for ranking policies under the cascade behavior model. *Wsdm 2022 Proceedings of the 15th ACM International Conference on Web Search and Data Mining*. https://doi.org/10.1145/3488560.3498380
 
-11. Carnovalini, F., Rodà, A., & Wiggins, G. A. (2025, February 19). Popularity Bias in Recommender Systems: The Search for Fairness in the Long Tail. Information. MDPI AG. http://doi.org/10.3390/info16020151
+11. Wu, Z.., Mao, J.., Liu, Y.., Zhan, J.., Zheng, Y.., Zhang, M.., Ma, S.. (2020). Leveraging Passage-level Cumulative Gain for Document Ranking. *Web Conference 2020 Proceedings of the World Wide Web Conference Www 2020*. https://doi.org/10.1145/3366423.3380305
 
-12. Chaipornkaew, P., & Banditwattanawong, T. (2025). A Novel Method for News Recommendation on Websites Using the Clustered-Vectors Optimization Algorithm. IEEE Access. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/access.2025.3526885
+12. Su, Z.., Dou, Z.., Zhu, Y.., Qin, X.., Wen, J.-R.. (2021). Modeling Intent Graph for Search Result Diversification. *SIGIR 2021 Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3404835.3462872
 
-13. Cheng, X., Zhou, X., Fang, L., He, C., Zhou, Y., Luo, W., … Guan, Q. (2025, July 13). NR4DER: Neural Re-ranking for Diversified Exercise Recommendation. Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval. ACM. http://doi.org/10.1145/3726302.3730046
+13. Guo, Y.., Ma, Z.., Mao, J.., Qian, H.., Zhang, X.., Jiang, H.., Cao, Z.., Dou, Z.. (2022). Webformer: Pre-training with Web Pages for Information Retrieval. *SIGIR 2022 Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3477495.3532086
 
-14. Dai, S., Xu, C., Xu, S., Pang, L., Dong, Z., & Xu, J. (2024, August 24). Bias and Unfairness in Information Retrieval Systems: New Challenges in the LLM Era. Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. ACM. http://doi.org/10.1145/3637528.3671458
+14. Zerveas, G.., Rekabsaz, N.., Cohen, D.., Eickhoff, C.. (2022). Mitigating Bias in Search Results Through Contextual Document Reranking and Neutrality Regularization. *SIGIR 2022 Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3477495.3531891
 
-15. De Leon, J. J., & Medda, F. (2025, November 13). Linguistic Alphas: Decoding the Market Impact of Words in Software Earnings Calls. Cureus Journal of Business and Economics. Springer Science and Business Media LLC. http://doi.org/10.7759/s44404-025-08244-6
+15. Afzal, I.., Yilmazel, B.., Kaleli, C.. (2024). An Approach for Multi-Context-Aware Multi-Criteria Recommender Systems Based on Deep Learning. *IEEE Access*. https://doi.org/10.1109/access.2024.3428630
 
-16. Deng, Z., Qiao, J., Dou, Z., Wen, J.-R., & de Rijke, M. (2025, November 10). DIVAgent: A Diversified Search Agent that Mimics the Human Search Process. Proceedings of the 34th ACM International Conference on Information and Knowledge Management. ACM. http://doi.org/10.1145/3746252.3761059
+16. Ma, Y.., Ai, Q.., Wu, Y.., Shao, Y.., Liu, Y.., Zhang, M.., Ma, S.. (2022). Incorporating Retrieval Information into the Truncation of Ranking Lists for Better Legal Search. *SIGIR 2022 Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3477495.3531998
 
-17. Ghosh, S., & Mittal, G. (2025, November 19). Advancing engineering research through context-aware and knowledge graph–based retrieval-augmented generation. Frontiers in Artificial Intelligence. Frontiers Media SA. http://doi.org/10.3389/frai.2025.1697169
+17. Chen, M.., Liu, C.., Sun, J.., Hoi, S.C.H.. (2021). Adapting Interactional Observation Embedding for Counterfactual Learning to Rank. *SIGIR 2021 Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3404835.3462901
 
-18. Gupta, S., Hager, P., Huang, J., Vardasbi, A., & Oosterhuis, H. (2023, July 18). Recent Advances in the Foundations and Applications of Unbiased Learning to Rank. Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval. ACM. http://doi.org/10.1145/3539618.3594247
+18. Wang, Y.., Lyu, L.., Anand, A.. (2022). BERT Rankers are Brittle: A Study using Adversarial Document Perturbations. *Ictir 2022 Proceedings of the 2022 ACM SIGIR International Conference on the Theory of Information Retrieval*. https://doi.org/10.1145/3539813.3545122
 
-19. Haddad, R., Hlaoua, L., & Omri, M. N. (2025). ReGAT-BERT: Transformer-Graph Fusion for Dynamic Reranking. Procedia Computer Science. Elsevier BV. http://doi.org/10.1016/j.procs.2025.09.302
+19. Jin, J.., Fang, Y.., Zhang, W.., Ren, K.., Zhou, G.., Xu, J.., Yu, Y.., Wang, J.., Zhu, X.., Gai, K.. (2020). A Deep Recurrent Survival Model for Unbiased Ranking. *SIGIR 2020 Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3397271.3401073
 
-20. Heuss, M., de Rijke, M., & Anand, A. (2025, July 13). RankingSHAP - Faithful Listwise Feature Attribution Explanations for Ranking Models . Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval. ACM. http://doi.org/10.1145/3726302.3729971
+20. Yang, Y.., Qiao, Y.., Shao, J.., Yan, X.., Yang, T.. (2022). Lightweight composite re-ranking for efficient keyword search with BERT. *Wsdm 2022 Proceedings of the 15th ACM International Conference on Web Search and Data Mining*. https://doi.org/10.1145/3488560.3498495
 
-21. Hofstätter, S., Lipani, A., Althammer, S., Zlabinger, M., & Hanbury, A. (2021). Mitigating the Position Bias of Transformer Models in Passage Re-ranking. Lecture Notes in Computer Science. Springer International Publishing. http://doi.org/10.1007/978-3-030-72113-8_16
+21. Luo, S.., He, B.., Zhao, H.., Shao, W.., Qi, Y.., Huang, Y.., Zhou, A.., Yao, Y.., Li, Z.., Xiao, Y.., Zhan, M.., Song, L.. (2025). RecRanker: Instruction Tuning Large Language Model as Ranker for Top-k Recommendation. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3705728
 
-22. Huang, Y., Chen, X., Zhang, W., Li, Q., & Li, H. (2025). Spatio-Temporal Aware Collaborative Service Ranking Prediction in IoT-Enabled Edge Computing. IEEE Access. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/access.2025.3576253
+22. Yang, Y.., Qiao, Y.., Shao, J.., Yan, X.., Yang, T.. (2022). Lightweight composite re-ranking for efficient keyword search with BERT. *Wsdm 2022 Proceedings of the 15th ACM International Conference on Web Search and Data Mining*. https://doi.org/10.1145/3488560.3498495
 
-23. Jeon, J., Lee, J., Ryu, C., & Kang, U. (2025, November 10). Entity-Aware Generative Retrieval for Personalized Contexts. Proceedings of the 34th ACM International Conference on Information and Knowledge Management. ACM. http://doi.org/10.1145/3746252.3761211
+23. Li, F.., Si, X.., Tang, S.., Wang, D.., Han, K.., Han, B.., Zhou, G.., Song, Y.., Chen, H.. (2024). Contextual Distillation Model for Diversified Recommendation. *Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*. https://doi.org/10.1145/3637528.3671514
 
-24. Karlović, R., Rovis, M., Smajić, A., Sever, L., & Lorencin, I. (2025, November 14). Context-Aware Tourism Recommendations Using Retrieval-Augmented Large Language Models and Semantic Re-Ranking. Electronics. MDPI AG. http://doi.org/10.3390/electronics14224448
+24. Buyl, M.., Missault, P.., Sondag, P.-A.. (2023). RankFormer: Listwise Learning-to-Rank Using Listwide Labels. *Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*. https://doi.org/10.1145/3580305.3599892
 
-25. Krasakis, A. M., Yates, A., & Kanoulas, E. (2025, November 10). Constructing Set-Compositional and Negated Representations for First-Stage Ranking. Proceedings of the 34th ACM International Conference on Information and Knowledge Management. ACM. http://doi.org/10.1145/3746252.3761238
+25. Ermis, B.., Ernst, P.., Stein, Y.., Zappella, G.. (2020). Learning to Rank in the Position Based Model with Bandit Feedback. *International Conference on Information and Knowledge Management Proceedings*. https://doi.org/10.1145/3340531.3412723
 
-26. Kulkarni, H., Kallumadi, S., MacAvaney, S., Goharian, N., & Frieder, O. (2025, May 8). GRIT: Graph-based Recall Improvement for Task-oriented E-commerce Queries. Companion Proceedings of the ACM on Web Conference 2025. ACM. http://doi.org/10.1145/3701716.3717859
+26. Leonhardt, J.., Rudra, K.., Khosla, M.., Anand, A.., Anand, A.. (2022). Efficient Neural Ranking using Forward Indexes. *Www 2022 Proceedings of the ACM Web Conference 2022*. https://doi.org/10.1145/3485447.3511955
 
-27. Kumar, S., Rohatgi, D., Prakash, N., Sahai, S., Chandra, S., Kumar Mishra, S., … Kumar, M. (2026, January). 2P-BEnc: A two-phase information retrieval and ranking system based on the BERT encoder. Ain Shams Engineering Journal. Elsevier BV. http://doi.org/10.1016/j.asej.2025.103853
+27. Vuong, T.., Andolina, S.., Jacucci, G.., Ruotsalo, T.. (2022). Does More Context Help? Effects of Context Window and Application Source on Retrieval Performance. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3474055
 
-28. Leonhardt, J., Müller, H., Rudra, K., Khosla, M., Anand, A., & Anand, A. (2024, April 29). Efficient Neural Ranking Using Forward Indexes and Lightweight Encoders. ACM Transactions on Information Systems. Association for Computing Machinery (ACM). http://doi.org/10.1145/3631939
+28. Chang, B.., Meng, C.., Ma, H.., Chang, S.., Gu, Y.., Peng, Y.., Feng, J.., Zhang, Y.., Bi, S.., Chi, E.H.., Chen, M.. (2024). Cluster Anchor Regularization to Alleviate Popularity Bias in Recommender Systems. *Www 2024 Companion Companion Proceedings of the ACM Web Conference*. https://doi.org/10.1145/3589335.3648312
 
-29. Leonhardt, J., Rudra, K., & Anand, A. (2023, March 23). Extractive Explanations for Interpretable Text Ranking. ACM Transactions on Information Systems. Association for Computing Machinery (ACM). http://doi.org/10.1145/3576924
+29. Ren, Y.., Tang, H.., Zhu, S.. (2022). Unbiased Learning to Rank with Biased Continuous Feedback. *International Conference on Information and Knowledge Management Proceedings*. https://doi.org/10.1145/3511808.3557483
 
-30. Leonhardt, J., Rudra, K., Khosla, M., Anand, A., & Anand, A. (2022, April 25). Efficient Neural Ranking using Forward Indexes. Proceedings of the ACM Web Conference 2022. ACM. http://doi.org/10.1145/3485447.3511955
+30. Zhang, J.., Liu, Y.., Mao, J.., Ma, W.., Xu, J.., Ma, S.., Tian, Q.. (2023). User Behavior Simulation for Search Result Re-ranking. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3511469
 
-31. Li, X., Jin, J., Zhou, Y., Zhang, Y., Zhang, P., Zhu, Y., & Dou, Z. (2025, May 9). From Matching to Generation: A Survey on Generative Information Retrieval. ACM Transactions on Information Systems. Association for Computing Machinery (ACM). http://doi.org/10.1145/3722552
+31. Vuong, T.., Ruotsalo, T.. (2024). Predicting Representations of Information Needs from Digital Activity Context. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3639819
 
-32. Lyu, L., Roy, N., Oosterhuis, H., & Anand, A. (2024). Is Interpretable Machine Learning Effective at Feature Selection for Neural Learning-to-Rank?. Lecture Notes in Computer Science. Springer Nature Switzerland. http://doi.org/10.1007/978-3-031-56066-8_29
+32. Zhang, C.., Yao, H.., Yu, L.., Huang, C.., Song, D.., Chen, H.., Jiang, M.., Chawla, N.V.. (2021). Inductive Contextual Relation Learning for Personalization. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3450353
 
-33. Mahmoud, A. F. A., Mohammed, Z. M. S., Ben Ammar, M., Satty, A., Abdalla, F. A., Khamis, G. S. M., … Mohamed, A. S. (2025, February 2). Enhancing Semantic Search Precision through the CBOW Algorithm in the Semantic Web. Engineering, Technology & Applied Science Research. Engineering, Technology & Applied Science Research. http://doi.org/10.48084/etasr.9450
+33. Leonhardt, J.., Müller, H.., Rudra, K.., Khosla, M.., Anand, A.., Anand, A.. (2024). Efficient Neural Ranking Using Forward Indexes and Lightweight Encoders. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3631939
 
-34. Manta-Caro, C., Caputo, A., & Fernández-Luna, J. M. (2025, March 15). Information Retrieval for IoT and WoT: State-of-the-Art, Taxonomy Framework, and Evolutionary Directions. IEEE Internet of Things Journal. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/jiot.2024.3522219
+34. He, Y.., Tian, Y.., Wang, M.., Chen, F.., Yu, L.., Tang, M.., Chen, C.., Zhang, N.., Kuang, B.., Prakash, A.. (2023). Que2Engage: Embedding-based Retrieval for Relevant and Engaging Products at Facebook Marketplace. *ACM Web Conference 2023 Companion of the World Wide Web Conference Www 2023*. https://doi.org/10.1145/3543873.3584633
 
-35. Mateos, P., & Bellogín, A. (2024, November 16). A systematic literature review of recent advances on context-aware recommender systems. Artificial Intelligence Review. Springer Science and Business Media LLC. http://doi.org/10.1007/s10462-024-10939-4
+35. Zerveas, G.., Rekabsaz, N.., Cohen, D.., Eickhoff, C.. (2022). CODER: An efficient framework for improving retrieval through COntextual Document Embedding Reranking. *Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing Emnlp 2022*. https://doi.org/10.18653/v1/2022.emnlp-main.727
 
-36. Naseri, S., Dalton, J., Yates, A., & Allan, J. (2022, March 22). CEQE to SQET: A study of contextualized embeddings for query expansion. Information Retrieval Journal. Springer Science and Business Media LLC. http://doi.org/10.1007/s10791-022-09405-y
+36. Bi, K.., Metrikov, P.., Li, C.., Byun, B.. (2021). Leveraging user behavior history for personalized email search. *Web Conference 2021 Proceedings of the World Wide Web Conference Www 2021*. https://doi.org/10.1145/3442381.3450110
 
-37. Nguyen, T.-P., Nguyen, T.-H., Dinh, G.-H., Nguyen, L.-H., Tran, M.-T., & Le, T.-N. (2025, October 27). ReCap: Event-Aware Image Captioning with Article Retrieval and Semantic Gaussian Normalization. Proceedings of the 33rd ACM International Conference on Multimedia. ACM. http://doi.org/10.1145/3746027.3762039
+37. Yang, T.., Fang, S.., Li, S.., Wang, Y.., Ai, Q.. (2020). Analysis of Multivariate Scoring Functions for Automatic Unbiased Learning to Rank. *International Conference on Information and Knowledge Management Proceedings*. https://doi.org/10.1145/3340531.3412128
 
-38. Niu, Z., Mei, L., Yang, L., Zhao, Z., Yan, Q., Mao, J., & Wen, J.-R. (2025, November 10). Addressing Personalized Bias for Unbiased Learning to Rank. Proceedings of the 34th ACM International Conference on Information and Knowledge Management. ACM. http://doi.org/10.1145/3746252.3761377
+38. Gupta, S.., Hager, P.., Huang, J.., Vardasbi, A.., Oosterhuis, H.. (2023). Recent Advances in the Foundations and Applications of Unbiased Learning to Rank. *SIGIR 2023 Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3539618.3594247
 
-39. Novak, E., Bizjak, L., Mladenić, D., & Grobelnik, M. (2022, May). Why is a document relevant? Understanding the relevance scores in cross-lingual document retrieval. Knowledge-Based Systems. Elsevier BV. http://doi.org/10.1016/j.knosys.2022.108545
+39. Bock, J.D.., Verstockt, S.. (2021). SmarterROUTES-A Data-driven Context-aware Solution for Personalized Dynamic Routing and Navigation. *ACM Transactions on Spatial Algorithms and Systems*. https://doi.org/10.1145/3402125
 
-40. Podder, D., Paik, J. H., & Mitra, P. (2026, January 2). A retrieval model with contextual correlation analysis for verbose queries. Journal of Intelligent Information Systems. Springer Science and Business Media LLC. http://doi.org/10.1007/s10844-025-01009-4
+40. Yang, Y.., Qiao, Y.., Yang, T.. (2022). Compact Token Representations with Contextual Quantization for Efficient Document Re-ranking. *Proceedings of the Annual Meeting of the Association for Computational Linguistics*. https://doi.org/10.18653/v1/2022.acl-long.51
 
-41. Ren, Y., Tang, H., & Zhu, S. (2022, October 17). Unbiased Learning to Rank with Biased Continuous Feedback. Proceedings of the 31st ACM International Conference on Information & Knowledge Management. ACM. http://doi.org/10.1145/3511808.3557483
+41. Chen, J.. (2020). Beyond sessions: Exploiting hybrid contextual information for web search. *Wsdm 2020 Proceedings of the 13th International Conference on Web Search and Data Mining*. https://doi.org/10.1145/3336191.3372179
 
-42. Santosh Nakirikanti. (2025, April 30). AI-powered search: Revolutionizing the online shopping experience. World Journal of Advanced Engineering Technology and Sciences. GSC Online Press. http://doi.org/10.30574/wjaets.2025.15.1.0216
+42. Naseri, S.., Dalton, J.., Yates, A.., Allan, J.. (2022). CEQE to SQET: A study of contextualized embeddings for query expansion. *Information Retrieval Journal*. https://doi.org/10.1007/s10791-022-09405-y
 
-43. Thakare, Atul & Soora, Narasimha Reddy & Jena, Lambodar & Singh, Arvind. (2025). Boosting Webpage Retrieval with Ensemble Learning and Advanced Semantic Models: A Novel Re-Ranking Framework. IAENG International Journal of Computer Science. 52. 3574-3582.
+43. Chen, H.., Chen, Y.., Meng, J.., Jiao, Y.., Ni, Y.., Gao, Y.., Momma, M.., Sun, Y.. (2023). Improving Product Search with Season-Aware Query-Product Semantic Similarity. *ACM Web Conference 2023 Companion of the World Wide Web Conference Www 2023*. https://doi.org/10.1145/3543873.3587625
 
-44. Wijnhoven, F., & van Haren, J. (2021, May 26). Search Engine Gender Bias. Frontiers in Big Data. Frontiers Media SA. http://doi.org/10.3389/fdata.2021.622106
+44. Pham, T.M.., Yoon, S.., Bui, T.., Nguyen, A.. (2023). PiC: A Phrase-in-Context Dataset for Phrase Understanding and Semantic Search. *Eacl 2023 17th Conference of the European Chapter of the Association for Computational Linguistics Proceedings of the Conference*. https://doi.org/10.18653/v1/2023.eacl-main.1
 
-45. Xu, B., Lin, H., Lin, Y., & Xu, K. (2022, August 25). Context-aware ranking refinement with attentive semi-supervised autoencoders. Soft Computing. Springer Science and Business Media LLC. http://doi.org/10.1007/s00500-022-07433-w
+45. Palomino, A.., Fischer, A.., Buschhüter, D.., Roller, R.., Pinkwart, N.., Paaßen, B.. (2025). Mitigating Bias in Item Retrieval for Enhancing Exam Assembly in Vocational Education Services. *Proceedings of the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics Human Language Technologies Long Papers Naacl Hlt 2025*. https://doi.org/10.18653/v1/2025.naacl-industry.16
 
-46. Yang, Y., Qiao, Y., Shao, J., Yan, X., & Yang, T. (2022, February 11). Lightweight Composite Re-Ranking for Efficient Keyword Search with BERT. Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining. ACM. http://doi.org/10.1145/3488560.3498495
-
-47. Yasin, S. A., & Prasada Rao, P. V. R. D. (2022, October). Enhanced CRNN-Based Optimal Web Page Classification and Improved Tunicate Swarm Algorithm-Based Re-Ranking. International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems. World Scientific Pub Co Pte Ltd. http://doi.org/10.1142/s0218488522500246
-
-48. Ye, Z., Xie, X., Liu, Y., Wang, Z., Li, X., Li, J., … Ma, S. (2022, July 6). Why Don't You Click. Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval. ACM. http://doi.org/10.1145/3477495.3532082
-
-49. Zhou, Y., Yao, J., Dou, Z., Tu, Y., Wu, L., Chua, T.-S., & Wen, J.-R. (2024, October 22). ROGER: Ranking-Oriented Generative Retrieval. ACM Transactions on Information Systems. Association for Computing Machinery (ACM). http://doi.org/10.1145/3603167Scopus (new export)
-
-50. Fabris, A., Rus, C., Saldivar, J., Gatzioura, A., Biega, A. J., & Castillo, C. (2026, April). Does fair ranking lead to fair recruitment outcomes? A study of interventions, interfaces, and interactions. <i>Information Processing & Management</i>. Elsevier BV. http://doi.org/10.1016/j.ipm.2025.104506
-
-51. Melchiorre, A. B., Penz, D., Ganhör, C., Lesota, O., Fragoso, V., Fritzl, F., … Schedl, M. (2023, June). Emotion-aware music tower blocks (EmoMTB ): an intelligent audiovisual interface for music discovery and recommendation. <i>International Journal of Multimedia Information Retrieval</i>. Springer Science and Business Media LLC. http://doi.org/10.1007/s13735-023-00275-8
-
-52. (n.d.). Scopus - Document Details. Retrieved from https://www.scopus.com/pages/publications/85111024895?origin=resultslist
-
-53. He, L., Zhao, J., Gu, Y., Elbaz, M., & Ding, Z. (2024, March 26). A bias study and an unbiased deep neural network for recommender systems. <i>Web Intelligence</i>. SAGE Publications. http://doi.org/10.3233/web-230036
-
-54. (n.d.). Scopus - Document Details. Retrieved from https://www.scopus.com/pages/publications/85169032399?origin=resultslist
-
-55. Jin, J., He, Z., Yang, M., Zhang, W., Yu, Y., Wang, J., & McAuley, J. (2024, May 13). InfoRank: Unbiased Learning-to-Rank via Conditional Mutual Information Minimization. <i>Proceedings of the ACM Web Conference 2024</i>. ACM. http://doi.org/10.1145/3589334.3645356
-
-56. Luo, D., Zou, L., Ai, Q., Chen, Z., Yin, D., & Davison, B. D. (2023, February 27). Model-based Unbiased Learning to Rank. <i>Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining</i>. ACM. http://doi.org/10.1145/3539597.3570395
-
-57. Chen, M., Liu, C., Sun, J., & Hoi, S. C. H. (2021, July 11). Adapting Interactional Observation Embedding for Counterfactual Learning to Rank. <i>Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval</i>. ACM. http://doi.org/10.1145/3404835.3462901
-
-58. Ferrari Dacrema, M., Felicioni, N., & Cremonesi, P. (2022, June 9). Offline Evaluation of Recommender Systems in a User Interface With Multiple Carousels. <i>Frontiers in Big Data</i>. Frontiers Media SA. http://doi.org/10.3389/fdata.2022.910030
-
-59. Bisht, K., & Susan, S. (2022, April 25). v-TCM. <i>Proceedings of the 37th ACM/SIGAPP Symposium on Applied Computing</i>. ACM. http://doi.org/10.1145/3477314.3507214
-
-60. Chen, J., Wang, X., Feng, F., & He, X. (2021, September 13). Bias Issues and Solutions in Recommender System. <i>Fifteenth ACM Conference on Recommender Systems</i>. ACM. http://doi.org/10.1145/3460231.3473321
-
-61. Hofstätter, S., Zlabinger, M., Sertkan, M., Schröder, M., & Hanbury, A. (2020, October 19). Fine-Grained Relevance Annotations for Multi-Task Document Ranking and Question Answering. <i>Proceedings of the 29th ACM International Conference on Information & Knowledge Management</i>. ACM. http://doi.org/10.1145/3340531.3412878
-
-62. Wu, X., Chen, H., Zhao, J., He, L., Yin, D., & Chang, Y. (2021, March 8). Unbiased Learning to Rank in Feeds Recommendation. <i>Proceedings of the 14th ACM International Conference on Web Search and Data Mining</i>. ACM. http://doi.org/10.1145/3437963.3441751
-
-63. Huang, J., Hu, K., Tang, Q., Chen, M., Qi, Y., Cheng, J., & Lei, J. (2021, July 11). Deep Position-wise Interaction Network for CTR Prediction. <i>Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval</i>. ACM. http://doi.org/10.1145/3404835.3463117
-
-64. Dai, X., Hou, J., Liu, Q., Xi, Y., Tang, R., Zhang, W., … Yu, Y. (2020, October 19). U-rank. <i>Proceedings of the 29th ACM International Conference on Information & Knowledge Management</i>. ACM. http://doi.org/10.1145/3340531.3412756
-
-65. Yu, Y., Jin, B., Song, J., Li, B., Zheng, Y., & Zhuo, W. (2023). Improving Micro-video Recommendation by Controlling Position Bias. <i>Lecture Notes in Computer Science</i>. Springer International Publishing. http://doi.org/10.1007/978-3-031-26387-3_31
-
-66. Luo, S., He, B., Zhao, H., Shao, W., Qi, Y., Huang, Y., … Song, L. (2025, July 10). RecRanker: Instruction Tuning Large Language Model as Ranker for Top-k Recommendation. <i>ACM Transactions on Information Systems</i>. Association for Computing Machinery (ACM). http://doi.org/10.1145/3705728
-
-67. Felicioni, N., Ferrari Dacrema, M., & Cremonesi, P. (2021, June 21). A Methodology for the Offline Evaluation of Recommender Systems in a User Interface with Multiple Carousels. <i>Adjunct Proceedings of the 29th ACM Conference on User Modeling, Adaptation and Personalization</i>. ACM. http://doi.org/10.1145/3450614.3461680
-
-68. Yang, T., Fang, S., Li, S., Wang, Y., & Ai, Q. (2020, October 19). Analysis of Multivariate Scoring Functions for Automatic Unbiased Learning to Rank. <i>Proceedings of the 29th ACM International Conference on Information & Knowledge Management</i>. ACM. http://doi.org/10.1145/3340531.3412128
-
-69. Ovaisi, Z., Ahsan, R., Zhang, Y., Vasilaky, K., & Zheleva, E. (2020, April 20). Correcting for Selection Bias in Learning-to-rank Systems. <i>Proceedings of The Web Conference 2020</i>. ACM. http://doi.org/10.1145/3366423.3380255
-
-70. (n.d.). Scopus - Document Details. Retrieved from https://www.scopus.com/pages/publications/105029924249?origin=resultslist
-
-71. Zhuang, H., Qin, Z., Wang, X., Bendersky, M., Qian, X., Hu, P., & Chen, D. C. (2021, April 19). Cross-Positional Attention for Debiasing Clicks. <i>Proceedings of the Web Conference 2021</i>. ACM. http://doi.org/10.1145/3442381.3450098
-
-72. Mahendru, S., & Pandit, T. (2024, June 7). Venn Diagram Prompting: Accelerating Comprehension with Scaffolding Effect. <i>2024 6th World Symposium on Artificial Intelligence (WSAI)</i>. IEEE. http://doi.org/10.1109/wsai62426.2024.10828919
-
-73. Azimi, M. (2026). Context-Aware Ranking in Expert Finding. <i>Lecture Notes in Computer Science</i>. Springer Nature Switzerland. http://doi.org/10.1007/978-3-032-21324-2_41
-
-74. Cachel, K., & Rundensteiner, E. (2023, June 12). Fairer Together: Mitigating Disparate Exposure in Kemeny Rank Aggregation. <i>2023 ACM Conference on Fairness Accountability and Transparency</i>. ACM. http://doi.org/10.1145/3593013.3594085
-
-75. Zheng, J., Li, J., & Huang, M. (2025, August). Personalized anchor debiased-contrastive learning for multi-behavior recommendation. <i>Expert Systems with Applications</i>. Elsevier BV. http://doi.org/10.1016/j.eswa.2025.127685
-
-76. Karra Taniskidou, E., Zhao, W., Murray, I., & Pellegrini, R. (2023, October 21). Nudging Neural Click Prediction Models to Pay Attention to Position. <i>Proceedings of the 32nd ACM International Conference on Information and Knowledge Management</i>. ACM. http://doi.org/10.1145/3583780.3614994
-
-77. Wu, Y., & Zhao, W. (2024, June 30). Debiased Causal Inference for Sequential Recommendation. <i>2024 International Joint Conference on Neural Networks (IJCNN)</i>. IEEE. http://doi.org/10.1109/ijcnn60899.2024.10650048
-
-78. Jin, J., Fang, Y., Zhang, W., Ren, K., Zhou, G., Xu, J., … Gai, K. (2020, July 25). A Deep Recurrent Survival Model for Unbiased Ranking. <i>Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval</i>. ACM. http://doi.org/10.1145/3397271.3401073
-
-79. Qin, Z., Chen, S. J., Metzler, D., Noh, Y., Qin, J., & Wang, X. (2020, August 20). Attribute-based Propensity for Unbiased Learning in Recommender Systems. <i>Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</i>. ACM. http://doi.org/10.1145/3394486.3403285
-
-80. (n.d.). Scopus - Document Details. Retrieved from https://www.scopus.com/pages/publications/85210029070?origin=resultslist
-
-81. Amala, K. J., & Rajeswari, D. (2025). Nonparametric Click Modeling Using Dirichlet Process Mixture Model for Information Retrieval. <i>IEEE Access</i>. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/access.2025.3639062
-
-82. HE, X., An, B., Li, Y., Chen, H., Guo, Q., Li, X., & Wang, Z. (2020, September 22). Contextual User Browsing Bandits for Large-Scale Online Mobile Recommendation. <i>Fourteenth ACM Conference on Recommender Systems</i>. ACM. http://doi.org/10.1145/3383313.3412234
-
-83. (n.d.). Scopus - Document Details. Retrieved from https://www.scopus.com/pages/publications/85107388450?origin=resultslist
+46. Rudra, K.., Fernando, Z.T.., Anand, A.. (2023). An in-depth analysis of passage-level label transfer for contextual document ranking. *Information Retrieval Journal*. https://doi.org/10.1007/s10791-023-09430-5
 

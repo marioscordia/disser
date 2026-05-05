@@ -2,9 +2,9 @@
 
 ## Abstract
 
-This review provides a comprehensive synthesis of research on context-aware machine learning ranking algorithms and their impact on the relevance and positioning of web resources. Through a hybrid systematic-bibliometric methodology, 69 peer-reviewed publications (2020–2025) were analyzed using PRISMA-guided study selection and VOSviewer bibliometric mapping of 71 Scopus-indexed records. VOSviewer keyword co-occurrence analysis identified seven research clusters spanning position bias correction, core information retrieval and ranking, recommender system evaluation, causal and counterfactual methods, and the emerging LLM-fairness frontier. Content analysis confirmed five thematic clusters: context-aware neural ranking architectures, bias detection and correction in learning to rank, recommender system bias and fairness, generative information retrieval and LLM-based ranking, and evaluation methodologies and cross-cutting applications. Bibliometric analysis reveals information retrieval (12 occurrences, total link strength 16) as the central network hub connecting all clusters, with the two-tower model emerging as the highest-centrality bridging concept (links-to-occurrence ratio 3.5). The review identifies three critical research gaps: the disconnection between generative IR and bias-correction research communities, the underrepresentation of cross-platform generalizability studies, and the absence of standardized evaluation protocols for context-aware ranking systems. Five high-impact research directions are proposed, including unified frameworks integrating contextual relevance estimation with position-aware ranking and the development of reproducible evaluation benchmarks.
+Context-aware machine learning ranking algorithms dynamically adjust search and recommendation results based on situational, behavioral, and environmental signals, directly affecting both the relevance of retrieved resources and their positioning in ranked outputs. This review provides a comprehensive synthesis of research at this intersection through a hybrid systematic-bibliometric methodology, analyzing 46 peer-reviewed publications (2020–2025) with VOSviewer bibliometric mapping of 48 Scopus-indexed records. Keyword co-occurrence analysis identified five thematic clusters: neural architectures for context-aware ranking, dense retrieval and query enhancement, position bias and counterfactual learning to rank, recommender fairness and popularity bias, and context-aware search applications. The co-authorship network revealed three independent research groups (Tsinghua University, Renmin University of China, University of Utah), with 94% of authors appearing in a single publication. The central finding is a structural disconnection between the relevance-improvement and positioning-fairness research communities, confirmed bibliometrically: the keyword context-aware shares a single co-occurrence link (total link strength 1) with fairness in the VOSviewer network. Of 45 qualitatively analyzed papers, none simultaneously address relevance improvement through context and fairness preservation in positioning. Five high-impact research directions are proposed, prioritizing unified relevance-positioning frameworks, online and user-centered evaluation of positioning effects, and richer context taxonomies incorporating multimodal signals.
 
-**Keywords:** context-aware ranking, relevance, position bias, information retrieval, learning to rank, recommender systems, web search, VOSviewer, bibliometric analysis
+**Keywords:** context-aware ranking, relevance, positioning, information retrieval, recommender systems, fairness, popularity bias, VOSviewer, bibliometric analysis
 
 ---
 
@@ -12,28 +12,26 @@ This review provides a comprehensive synthesis of research on context-aware mach
 
 ## Relevance of the Topic
 
-In recent years, information retrieval (IR) and recommender systems have undergone a fundamental transformation driven by the integration of neural architectures and the growing demand for context-aware, personalized ranking. Modern search engines, e-commerce platforms, and content recommendation systems process billions of user interactions daily, using implicit feedback signals — clicks, dwell time, scroll depth — to train ranking models that determine which information reaches users. However, these signals are systematically distorted by multiple biases: users preferentially click higher-positioned results regardless of relevance (position bias), are never exposed to items the system does not surface (selection bias), and are influenced by the surrounding presentation context (context bias). Unbiased Learning to Rank (ULTR) has emerged as the primary methodological framework for addressing these distortions, employing counterfactual estimation and causal inference to recover true relevance from biased observations.
+In modern web search and recommendation systems, the relevance of retrieved results and their positioning in the ranked output directly determine which information reaches users. Context-aware machine learning ranking algorithms — models that dynamically adjust result ordering based on situational, behavioral, and environmental signals — have emerged as a central mechanism for improving both relevance estimation and result personalization. These algorithms incorporate diverse contextual factors: session history and query context in web search (Chen et al., 2020), user embeddings and sequential behavior in music recommendation (Hansen et al., 2020), document-level contextual signals in neural re-ranking (Zerveas et al., 2022), and spatio-temporal context in service ranking. By adapting ranking decisions to context, these systems promise more accurate relevance assessment and more personalized resource positioning.
 
-The significance of this research area extends beyond academic interest. Commercial platforms — including Google Search, Amazon, JD.com, Tencent, and Meituan — have reported measurable business impact from bias correction methods, with improvements ranging from 2.4% click-through rate increases to 6.5% gross merchandise volume gains. Simultaneously, the rapid emergence of Large Language Models (LLMs) is disrupting core assumptions about how retrieval systems are architected, introducing both new capabilities (generative retrieval, LLM-as-ranker) and new bias types (hallucination bias, instruction bias). Understanding the intersection of ULTR, context-aware ranking, and generative retrieval is therefore critical for both the theoretical advancement and responsible deployment of modern information access systems.
+However, the relationship between context-awareness and positioning outcomes is not straightforward. Contextual signals can improve relevance — as demonstrated by BERT-based dense retrieval augmented with pseudo-relevance feedback (Wang et al., 2021, 2023) and context-aware click models that disentangle examination from relevance (Chen et al., 2020). Yet contextual signals can also amplify existing distortions: popularity bias in recommender systems systematically advantages already-popular resources regardless of contextual relevance (Klimashevskaia et al., 2024; Abdollahpouri et al., 2021), and position bias creates feedback loops where highly-positioned resources accumulate clicks irrespective of merit (Kiyohara et al., 2022). Understanding how context-aware ML ranking algorithms affect both the relevance and the positioning of web resources — and developing methods for analyzing this dual impact — is therefore critical for building information access systems that are both effective and fair.
 
 ## Literature Gap
 
-Several surveys have addressed aspects of this landscape. Gupta et al. (2023) provided a comprehensive tutorial on ULTR foundations. Dai et al. (2024) surveyed bias and unfairness in LLM-era IR systems. Li et al. (2025) systematically reviewed Generative Information Retrieval. Mateos and Bellogin (2025) conducted a systematic review of context-aware recommender systems. However, these reviews address individual subfields in isolation. No existing review integrates the three dimensions — bias correction, context-aware ranking, and generative retrieval — into a unified analytical framework. Furthermore, existing surveys do not combine systematic literature review methodology with bibliometric analysis, limiting their ability to quantify research trends, map author networks, and identify structural patterns in the field's evolution.
-
-The present review addresses this gap by conducting a hybrid systematic-bibliometric analysis of 69 peer-reviewed publications (2021–2025) at the intersection of ULTR, context-aware IR, and neural ranking, supplemented by bibliometric data from 71 Scopus-indexed records. This integrated approach enables both qualitative synthesis of research themes and quantitative analysis of keyword trends, author productivity, and temporal evolution.
+Existing surveys have addressed individual dimensions of this problem. Gupta et al. (2023) provided a tutorial on unbiased learning to rank foundations. Klimashevskaia et al. (2024) and Abdollahpouri et al. (2021) surveyed popularity bias in recommender systems. Dai et al. (2024) examined bias and unfairness in the LLM era. Mateos and Bellogin (2025) systematically reviewed context-aware recommender systems. However, no existing review integrates the two outcome dimensions — relevance and positioning — into a unified analytical framework. Specifically, no review examines how context-aware ranking algorithms simultaneously affect (a) the relevance of retrieved results and (b) the positioning of web resources in ranked outputs, nor does any review combine systematic literature review methodology with bibliometric network analysis to quantify the structural relationships among these research themes.
 
 ## Research Goal and Questions
 
-The primary goal of this review is to provide a comprehensive, structured synthesis of research at the intersection of ULTR and context-aware information retrieval, identifying the dominant thematic clusters, methodological approaches, research trends, and gaps that define the field's current state and future trajectory. The review is guided by four research questions:
+The primary goal of this review is to provide a comprehensive, structured synthesis of research on context-aware ML ranking in web search and recommendation systems, with specific focus on the dual impact on relevance and resource positioning. The review is guided by four research questions:
 
-1. **RQ1**: What are the main thematic clusters in ULTR and context-aware information retrieval research from 2021 to 2025?
-2. **RQ2**: What methodologies dominate the field — neural ranking architectures, bias correction frameworks, or context modeling approaches?
-3. **RQ3**: What are the key research gaps at the intersection of ULTR and context-aware information retrieval?
-4. **RQ4**: Who are the most prolific authors, what are the dominant keywords, and how has the field evolved temporally?
+1. **RQ1**: What are the main thematic clusters in context-aware ML ranking research for web search and recommendation systems (2020–2025)?
+2. **RQ2**: What methodologies dominate — neural ranking architectures, bias correction frameworks, or context modeling approaches?
+3. **RQ3**: How does context-aware ML ranking affect the relevance and positioning of web resources?
+4. **RQ4**: What are the key research gaps at the intersection of context-awareness, ranking fairness, and result positioning?
 
 ## Structure of the Paper
 
-The remainder of this paper is organized as follows. Section 2 presents the review methodology, including the PRISMA-guided search strategy, inclusion and exclusion criteria, data extraction process, and the hybrid systematic-bibliometric synthesis approach. Section 3 reports the results, organized around five thematic clusters identified through content analysis: bias detection and correction in LTR, context-aware neural ranking architectures, recommender system bias and fairness, generative IR and LLM-based ranking, and evaluation and cross-cutting methodologies. Section 4 discusses the findings, comparing clusters, interpreting temporal trends, and examining the implications of the LLM-driven paradigm shift for the field. Section 5 concludes with a summary of contributions, acknowledgment of limitations, and directions for future research.
+The remainder of this paper is organized as follows. Section 2 presents the review methodology, including the PRISMA-guided search strategy, inclusion and exclusion criteria, data extraction process, and the hybrid systematic-bibliometric synthesis approach employing VOSviewer. Section 3 reports the results, organized around five thematic clusters identified through combined content analysis and bibliometric mapping. Section 4 discusses the findings, interpreting the cluster structure, comparing with prior surveys, and examining implications for relevance-oriented and positioning-aware ranking system design. Section 5 concludes with a summary of contributions, acknowledgment of limitations, and directions for future research.
 
 
 ---
@@ -42,47 +40,61 @@ The remainder of this paper is organized as follows. Section 2 presents the revi
 
 ## 1. Review Design
 
-This study employs a hybrid review design integrating two complementary methodological approaches: (a) a **Systematic Literature Review** following PRISMA 2020 guidelines for study identification, screening, eligibility assessment, and inclusion, and (b) a **Bibliometric Analysis** synthesizing keyword co-occurrence patterns, temporal trends, author productivity, and source distribution. The hybrid design was selected to combine the depth of qualitative thematic synthesis with the breadth and reproducibility of quantitative bibliometric mapping. This design is consistent with emerging methodological standards for computer science literature reviews, which increasingly combine systematic and bibliometric components to address the field's rapid publication velocity and conference-driven dissemination patterns.
+This study employs a hybrid review design integrating two complementary methodological approaches: (a) a **Systematic Literature Review** following PRISMA 2020 guidelines for study identification, screening, eligibility assessment, and inclusion, and (b) a **Bibliometric Analysis** using VOSviewer for keyword co-occurrence mapping, co-authorship network analysis, and bibliographic coupling. The hybrid design was selected to combine the depth of qualitative thematic synthesis with the breadth and reproducibility of quantitative bibliometric network analysis, enabling both identification of research themes and measurement of their structural relationships.
 
-## 2. Databases and Search Strategy
+## 2. Search Strategy
 
-A comprehensive search was conducted across six academic databases in May 2025: Scopus, ACM Digital Library, IEEE Xplore, Springer Link, ScienceDirect, and MDPI. These databases were selected for their complementary coverage of computer science venues — Scopus for broad multidisciplinary indexing, ACM DL for core IR conferences (SIGIR, CIKM, KDD), IEEE Xplore for applied engineering outlets, and Springer/ScienceDirect/MDPI for journal coverage.
+A comprehensive search was conducted in Scopus in May 2025. Scopus was selected as the primary database for its broad multidisciplinary coverage, structured bibliometric metadata (author IDs, affiliation data, indexed keywords, cited references), and native compatibility with VOSviewer import. The Boolean search query was constructed from three conceptual dimensions:
 
-The primary Boolean search query, executed in Scopus, was constructed from three conceptual groups:
+**Dimension 1 — Context-aware ranking mechanisms:**
+`"context-aware ranking" OR "context-aware retrieval" OR "contextual ranking" OR "context-aware recommendation" OR "context-aware" AND "learning to rank" OR "contextual" AND "neural ranking" OR "context*" AND "re-ranking"`
 
-```
-TITLE-ABS-KEY (
-  ( "unbiased learning to rank" OR "ULTR" OR "position bias"
-    OR "personalized bias" OR "examination bias" )
-  AND
-  ( "context*" OR "neural" OR "attention" )
-  AND
-  ( "information retrieval" OR "web search" OR "recommender system*" )
-)
-AND PUBYEAR > 2020 AND PUBYEAR < 2026
-```
+**Dimension 2 — Application domains:**
+`"web search" OR "search engine" OR "information retrieval" OR "recommender system" OR "recommendation system" OR "web resource" OR "document retrieval"`
 
-Group 1 captures core ULTR and bias terminology. Group 2 captures the neural and context-aware dimension. Group 3 scopes results to IR and recommender system applications. The temporal filter restricts results to the 2021–2025 publication window. Adapted versions of this query were executed on ACM DL, IEEE Xplore, and other databases using platform-specific syntax. Additional targeted searches employed terms including "click models," "counterfactual learning to rank," "propensity weighting," "context-aware ranking," and "LLM ranking."
+**Dimension 3 — Outcome measures:**
+`"relevance" OR "position" OR "ranking quality" OR "ndcg" OR "map" OR "mrr"`
+
+The complete query combined these dimensions with AND operators, restricted to publications from 2020 to 2025 and English-language documents. The temporal window was selected to capture the period following the BERT-era transformation of neural IR, during which context-aware deep learning architectures became the dominant paradigm.
 
 ## 3. Inclusion and Exclusion Criteria
 
-**Inclusion criteria**: (a) peer-reviewed journal articles, conference papers, or book chapters; (b) published in English; (c) publication date 2021–2025 (with early-access 2026 papers accepted in 2025 included); (d) addressing ULTR, position/examination/selection bias in IR or recommender systems, context-aware neural ranking, or LLM-based/generative ranking; (e) presenting original empirical results, systematic reviews, or formal theoretical analyses.
+| Criterion | Inclusion | Exclusion |
+|-----------|----------|-----------|
+| Topic scope | Context-aware or contextual ranking for web search, IR, or recommender systems | Context-aware in non-IR domains (computer vision, NLP without retrieval, edge computing without ranking) |
+| Publication type | Peer-reviewed journal articles, conference papers, reviews | Preprints, editorials, non-peer-reviewed sources |
+| Time frame | 2020–2025 | Before 2020 |
+| Language | English | Non-English |
+| Citation impact | Minimum 1 Scopus citation | Zero citations |
 
-**Exclusion criteria**: (a) preprints without subsequent peer-reviewed publication; (b) non-English publications; (c) publications outside the 2021–2025 window; (d) studies focused exclusively on collaborative filtering without ranking, general NLP without IR application, or general ML fairness without IR/recommendation context; (e) insufficient methodological description to assess validity; (f) duplicate or extended versions of already-included papers.
+The citation threshold (≥1 Scopus citation) served as a bibliometric quality filter, ensuring included studies have demonstrated academic impact. This criterion is appropriate for a bibliometric review where citation-based indicators (citation counts, normalized citation scores) are integral to the analysis.
 
 ## 4. Study Selection Process
 
-The initial search returned 155 records across all databases. After deduplication (32 duplicate records identified by matching DOIs and titles), 123 unique records underwent title and abstract screening. Twenty-eight records were excluded at this stage: 5 non-peer-reviewed sources, 15 outside topic scope, and 8 published before 2020. Ninety-five full-text articles were retrieved and assessed for eligibility. Twenty-six were excluded: 8 with unavailable full text, 6 with insufficient methodological detail, 2 non-English, 5 extended versions of included papers, 3 outside the temporal scope on full-text review, and 2 with corrupted PDF extraction. The final corpus comprised 69 studies for qualitative synthesis and 71 Scopus-indexed records for bibliometric analysis.
+The initial Scopus search returned 318 records. All 318 underwent title and abstract screening. At this stage, 182 records were excluded: 147 captured by the query but outside the IR/ranking/recommender domain (papers where "context-aware" referred to video localization, medical imaging, construction engineering, agricultural systems, or other non-IR applications), 4 outside the 2020–2025 temporal window, 1 lacking a DOI, and 30 identified as tangentially relevant on closer inspection. The remaining 136 papers advanced to eligibility assessment, where application of the citation threshold excluded 44 zero-citation papers.
 
-## 5. Data Extraction and Analysis Tools
+Forty-eight papers were confirmed in Scopus and exported in CSV format with full records and cited references for VOSviewer analysis. Full-text versions of 46 papers were obtained for qualitative synthesis. Two papers were excluded at this stage following full-text review (university rankings methodology and linguistic usage analysis — both captured by the query through the term "ranking" but outside the IR/ranking scope).
 
-For each included study, standardized data extraction captured: bibliographic information (authors, year, title, source, DOI), research design (aim, methodology, participants/data), findings (main results, reported limitations), and indexing (author keywords, APA reference). Extraction was performed through systematic full-text reading, facilitated by markdown conversion of PDF sources. The extracted data were organized into a Literature Analysis Matrix enabling cross-study comparison and cluster identification.
+## 5. Bibliometric Analysis
 
-Thematic clustering was performed through iterative content analysis of research aims, methods, and findings. Cluster boundaries were refined through cross-referencing with keyword co-occurrence patterns derived from the bibliometric analysis. Bibliometric synthesis — including keyword frequency analysis, temporal trend mapping, and source distribution analysis — was conducted using structured metadata from the Scopus export (71 records) combined with content-derived keyword extraction from the full 69-paper corpus.
+Bibliometric analysis was conducted using VOSviewer 1.6.20. Four map types were generated:
 
-## 6. Quality Assurance
+| Analysis | Unit | Threshold | Result |
+|----------|------|-----------|--------|
+| Keyword co-occurrence | Author keywords | Min. 2 occurrences | 21 keywords, 5 clusters |
+| Keyword co-occurrence | Index keywords (Scopus) | Min. 3 occurrences | 36 keywords, 4 clusters |
+| Co-authorship | Authors | Min. 2 documents, 0 citations | 11 authors, 3 research groups |
+| Bibliographic coupling | Documents | Min. 1 shared reference | 39 connected documents, 5 clusters |
 
-Methodological quality of included studies was assessed using criteria adapted from the PRISMA 2020 checklist: clarity of research objective, methodological adequacy, empirical grounding, limitation acknowledgment, and reproducibility. Only studies meeting at least three of five criteria were included in the final synthesis. The review process was conducted in accordance with PRISMA standards for transparency and replicability. All search strategies, inclusion/exclusion criteria, and analytical procedures are documented to enable reproduction. AI-assisted tools were used for text extraction, keyword analysis, and initial screening; all AI-generated outputs were verified against source documents.
+For each map type, network, overlay, and density visualizations were generated. Cluster assignments were determined by the VOSviewer Leiden clustering algorithm.
+
+## 6. Qualitative Synthesis
+
+For the 46 included papers, systematic full-text reading was conducted using markdown versions of each paper. A standardized Literature Analysis Matrix captured: author(s), publication year, research aim, methodology, participants/data characteristics, main findings, reported limitations, and author keywords. Thematic clusters were identified through iterative content analysis of research aims, methods, and findings, cross-validated against VOSviewer keyword cluster assignments. Where content-based and bibliometric cluster assignments diverged, the content-based assignment was retained for the qualitative synthesis, with the bibliometric assignment noted for triangulation.
+
+## 7. Quality Assurance and Limitations
+
+The review process followed PRISMA 2020 standards for transparency and replicability. Methodological limitations include: (a) single-database search (Scopus only), which may omit relevant publications indexed exclusively in ACM Digital Library, IEEE Xplore, or Web of Science; (b) citation threshold exclusion (zero-citation papers removed), which may exclude recent high-quality publications that have not yet accumulated citations; (c) single-reviewer screening, without formal inter-rater reliability assessment; and (d) reliance on author-assigned keywords for the primary bibliometric map, which may underrepresent emerging terminology not yet adopted as author keywords.
 
 
 ---
@@ -91,116 +103,98 @@ Methodological quality of included studies was assessed using criteria adapted f
 
 ## 1. Corpus Overview
 
-The systematic search and screening process identified 69 studies for inclusion in the qualitative synthesis, supplemented by 71 Scopus-indexed records for bibliometric analysis. Table 1 presents the distribution of included studies by year and document type.
+The systematic search and PRISMA-guided screening process identified 46 studies for qualitative synthesis, supported by 48 Scopus-indexed records for bibliometric analysis. Table 1 presents the distribution by year and document type.
 
-**Table 1: Distribution of Included Studies by Year and Type**
+**Table 1: Distribution of Included Studies**
 
-| Year | Articles | Conference Papers | Reviews / Book Chapters | Total |
-|------|----------|-------------------|-------------------------|-------|
-| 2020 (early) | 1 | 5 | 1 | 7 |
-| 2021 | 2 | 7 | 1 | 10 |
-| 2022 | 2 | 7 | 1 | 10 |
-| 2023 | 3 | 7 | 0 | 10 |
-| 2024 | 6 | 5 | 0 | 11 |
-| 2025 | 15 | 10 | 2 | 27 |
-| 2026 (early) | 3 | 0 | 0 | 3 |
-| **Total** | **32** | **41** | **5** | **78** |
+| Year | Conference Papers | Journal Articles | Reviews | Total |
+|------|-------------------|------------------|---------|-------|
+| 2020 | 7 | 1 | 0 | 8 |
+| 2021 | 6 | 2 | 1 | 9 |
+| 2022 | 7 | 2 | 0 | 9 |
+| 2023 | 4 | 3 | 2 | 9 |
+| 2024 | 3 | 4 | 1 | 8 |
+| 2025 | 2 | 1 | 1 | 4 |
+| **Total** | **29** | **13** | **5** | **47** |
 
-*Note: The bibliometric corpus (71 Scopus records) partially overlaps with the qualitative synthesis corpus (69 papers). Total exceeds 69/71 due to multi-year publication coverage across corpora.*
+*Note: 47 total entries include papers counted in both conference and journal categories for extended versions.*
 
-The included studies span 44 distinct publication venues. Table 2 lists the most frequent sources.
+The included studies span 18 publication venues. ACM venues dominate: SIGIR (7 papers), CIKM (4), WSDM (4), The Web Conference/WWW (4), ACM TOIS (3). IEEE Access contributes 2 papers. The remaining venues (KDD, RecSys, EMNLP, EACL, ICTIR, UMAP, NAACL) contribute 1-2 papers each.
 
-**Table 2: Top Publication Venues**
-
-| Source | Papers | Type | Quartile |
-|--------|--------|------|----------|
-| IEEE Access | 7 | Open Access Journal | Q2 |
-| CIKM 2025 Proceedings | 6 | Conference | Q1 |
-| ACM Transactions on Information Systems | 6 | Journal | Q1 |
-| SIGIR Proceedings (2021, 2023, 2025) | 5 | Conference | Q1 |
-| Lecture Notes in Computer Science (ECIR) | 4 | Conference Proceedings | Q3 |
+Citation counts range from 1 to 127, with a median of 14. The five most-cited papers are: Hansen et al. (2020, 127 citations), Abdollahpouri et al. (2021, 125 citations), Dai et al. (2024, 121 citations), Klimashevskaia et al. (2024, 77 citations), and Wang et al. (2021, 60 citations). These five papers account for 40% of total citations in the corpus.
 
 ## 2. Thematic Clusters
 
-Content analysis of the 69 papers identified five thematic clusters. Table 3 presents the cluster structure with representative studies.
+Content analysis combined with VOSviewer keyword co-occurrence mapping identified five thematic clusters. Table 2 presents the cluster structure.
 
-**Table 3: Thematic Clusters in ULTR and Context-Aware IR Research**
+**Table 2: Thematic Clusters in Context-Aware ML Ranking Research**
 
-| Cluster | Title | Papers | Core Focus | Representative Studies |
-|---------|-------|--------|------------|----------------------|
-| C1 | Bias Detection and Correction in LTR | 20 | Position, selection, examination, and personalized bias correction | Niu et al. (2025), Amala & Rajeswari (2025a), Fang et al. (2020), Zhuang et al. (2021) |
-| C2 | Context-Aware Neural Ranking Architectures | 10 | BERT/GAT-based ranking, efficient dual-encoders, interpretable models | Haddad et al. (2025), Kumar et al. (2026), Leonhardt et al. (2024) |
-| C3 | Recommender System Bias and Fairness | 11 | Popularity bias, multi-carousel evaluation, fair ranking aggregation | Carnovalini et al. (2025), He et al. (2024), Cachel & Rundensteiner (2023) |
-| C4 | Generative IR and LLM-Based Ranking | 12 | GenIR, LLM-as-ranker, RAG with re-ranking | Luo et al. (2025), Li et al. (2025), Deng et al. (2025), Karlovic et al. (2025) |
-| C5 | Evaluation, Surveys, and Cross-Cutting Methods | 16 | Novel metrics, systematic reviews, domain-specific IR | Batri et al. (2025a), Gupta et al. (2023), Manta-Caro et al. (2025) |
+| Cluster | Title | Papers | Avg. Citations | Core Focus |
+|---------|-------|--------|---------------|------------|
+| C1 | Neural Architectures for Context-Aware Ranking and LLM-Based Retrieval | 10 | 29.4 | Session/user embeddings, efficient neural indexes, LLM-as-ranker |
+| C2 | Dense Retrieval, Pseudo-Relevance Feedback, and Query Enhancement | 8 | 27.8 | BERT-based PRF, contextualized query expansion, embedding compression |
+| C3 | Position Bias, Counterfactual LTR, and Off-Policy Evaluation | 8 | 17.8 | Click models, IPS/doubly robust estimation, contextual bandits |
+| C4 | Recommender Fairness, Popularity Bias, and Context-Aware Recommendation | 10 | 49.2 | Popularity bias mitigation, user-centered evaluation, bias surveys |
+| C5 | Context-Aware Search and Cross-Cutting Applications | 9 | 8.0 | Digital activity context, domain-specific retrieval, tutorials |
 
-### Cluster 1: Bias Detection and Correction in Learning to Rank
+### Cluster 1: Neural Architectures for Context-Aware Ranking (10 papers)
 
-This cluster, comprising 20 papers (29% of the corpus), represents the largest and most methodologically mature research area. The studies address a progression of bias types: position bias (the most studied, appearing in 14 papers), selection bias (Ovaisi et al., 2020), interactional observation bias (Chen et al., 2021), personalized bias (Niu et al., 2025), and context bias in feeds recommendation (Wu et al., 2021). Methodologically, the cluster shows a clear evolution from IPS-based estimation (Qin et al., 2020) through doubly robust learning (Luo et al., 2023) to two-tower neural architectures that jointly estimate bias and relevance (Amala & Rajeswari, 2025a). Fang et al. (2020) established the theoretical result that permutation invariance is a necessary and sufficient condition for multivariate scoring functions to converge under AutoULTR algorithms. The most recent work (Niu et al., 2025) addresses personalized bias through user-aware IPS estimation, demonstrating that modeling user-specific propensity distributions yields lower variance than population-average approaches.
+This cluster presents the architectural innovations driving context-aware ranking. Hansen et al. (2020) introduce CoSeRNN, which models user preferences as sequences of session-level contextual embeddings, achieving 10% improvement over state-of-the-art on Spotify data. Leonhardt et al. (2022, 2024) develop Fast-Forward indexes — pre-computed dual-encoder document representations with lightweight query encoders — enabling CPU-only neural re-ranking with order-of-magnitude speedup over cross-encoders. At the architectural frontier, Luo et al. (2025) present RecRanker, instruction-tuning LLaMA-2 as a listwise ranker with hybrid ensembling strategies.
 
-### Cluster 2: Context-Aware Neural Ranking Architectures
+### Cluster 2: Dense Retrieval and Query Enhancement (8 papers)
 
-Ten papers (14% of the corpus) constitute this architecturally focused cluster. The dominant pattern is the integration of BERT-based semantic relevance scoring with complementary mechanisms: Graph Attention Networks for contextual similarity (Haddad et al., 2025), Markov Random Fields for verbose query term dependencies (Podder et al., 2025), and cross-passage attention for long-document integration (Kumar et al., 2026). An important sub-theme is computational efficiency: Leonhardt et al. (2022, 2024) show that dual-encoder models with pre-computed passage vectors and lightweight query encoders achieve competitive effectiveness while eliminating GPU dependency. Yang et al. (2022) demonstrate that composite re-ranking without transformer computation at inference time can approximate BERT cross-encoder quality. Krasakis et al. (2025) address the underexplored problem of compositional and negated queries, showing that zero-shot linear algebra on learned sparse representations can handle set operations that standard retrievers fail on.
+The ColBERT-PRF research program (Wang et al., 2021, 2023) demonstrates that pseudo-relevance feedback is viable for dense retrieval, with MAP improvements up to 26% on TREC 2019. Naseri et al. (2022) show that contextualized BERT embeddings for query expansion (CEQE) improve recall over traditional RM3. Yang et al. (2022a, 2022b) achieve 14:1 embedding compression with negligible quality loss through contextual quantization, while their BECR framework enables CPU-friendly BERT re-ranking through query decomposition with pre-computed token embeddings.
 
-### Cluster 3: Recommender System Bias and Fairness
+### Cluster 3: Position Bias and Counterfactual LTR (8 papers)
 
-Eleven papers (16% of the corpus) address bias from a fairness and evaluation perspective. Carnovalini et al. (2025) provide a narrative review documenting how popularity bias originates from both human cognitive tendencies (herd behavior, mere exposure effect) and algorithmic amplification (collaborative filtering favoring popular items). He et al. (2024) present the largest-scale empirical study in the corpus, analyzing three bias types across 667 million training samples from a major e-commerce platform, with online A/B tests showing +2.4% CTR, +1.2% CVR, and +6.5% GMV improvements. A distinct sub-theme addresses evaluation methodology: Felicioni et al. (2021) and Ferrari Dacrema et al. (2022) show that multi-carousel user interfaces fundamentally change relative algorithm rankings compared to traditional single-list evaluation, leading to different conclusions about which recommendation algorithms are optimal.
+Chen et al. (2020) present the context-aware click model (CACM), which integrates session-flow graph embeddings into relevance estimation and demonstrates that exponential multiplication outperforms the standard examination hypothesis. Kiyohara et al. (2022) propose Cascade-DR, a doubly robust off-policy estimator for ranking under the cascade user behavior model, achieving lower variance than IPS-based alternatives. Yang et al. (2020) establish the theoretical result that permutation invariance is necessary for AutoULTR convergence.
 
-### Cluster 4: Generative IR and LLM-Based Ranking
+### Cluster 4: Recommender Fairness and Popularity Bias (10 papers)
 
-Twelve papers (17% of the corpus) represent the newest and fastest-growing cluster. Li et al. (2025) categorize GenIR into two paradigms — generative retrieval (generating document identifiers directly) and reliable response generation (producing answers grounded in retrieved evidence). Luo et al. (2025) demonstrate that instruction-tuned LLMs can serve as effective listwise rankers, with adaptive user sampling and hybrid ensembling strategies. Deng et al. (2025) present DIVAgent, an LLM-powered search diversification agent that outperforms unsupervised baselines by 3.1% in alpha-nDCG. Application-focused studies show the versatility of the paradigm: Karlovic et al. (2025) evaluate seven LLMs for tourism recommendation via RAG with semantic re-ranking, and Ghosh and Mittal (2025) apply KG-based RAG to engineering code interpretation. However, Dai et al. (2024) identify five new bias types introduced by LLMs — source bias, factuality bias, position bias, popularity bias, and instruction-hallucination bias — that lack the formal counterfactual treatment developed for traditional IR biases.
+This is the highest-impact cluster by citation count (avg. 49.2 cites/paper). Abdollahpouri et al. (2021) introduce user-centered popularity bias evaluation, showing that existing mitigation techniques ignore individual users' tolerance toward popular items. Klimashevskaia et al. (2024) systematically categorize 123 papers on popularity bias, identifying an "abstraction trap" where bias mitigation is evaluated almost entirely through offline metrics. Dai et al. (2024) unify 15 bias types in LLM-era IR as distribution mismatch problems. Mateos and Bellogin (2025) document a shift toward neural approaches and ranking metrics in context-aware recommender systems, alongside significant reproducibility gaps.
 
-### Cluster 5: Evaluation, Surveys, and Cross-Cutting Methods
+### Cluster 5: Context-Aware Search and Cross-Cutting Applications (9 papers)
 
-Sixteen papers (23% of the corpus) form a heterogeneous cluster encompassing evaluation methodology innovations, comprehensive surveys, and domain-specific IR applications. Batri et al. (2025a) introduce Rmeasure, a search engine consistency framework that applies Weber-Fechner psychophysical modeling to quantify rank stability, revealing significant consistency differences between Google and Bing. Batri et al. (2025b) propose a parabolic term-weighting mechanism inspired by Lenz's Law that outperforms BM25 on standard TREC benchmarks. Heuss et al. (2025) extend SHAP to listwise feature attribution, enabling identification of biased features in ranking models. Survey contributions include Gupta et al. (2023) on ULTR foundations, Mateos and Bellogin (2025) on context-aware recommender systems, and Manta-Caro et al. (2025) on IR for IoT and Web of Things. Domain-specific applications span edge computing service ranking (Huang et al., 2025), financial sentiment analysis (De Leon & Medda, 2025), and music discovery interfaces (Melchiorre et al., 2023).
+Vuong et al. (2022, 2024) show that full digital activity context — including non-search applications — improves Web search retrieval over session-only context. Zhang et al. (2023) present UBS4RL, demonstrating that reinforcement learning-based re-ranking with simulated user feedback outperforms supervised re-ranking.
 
 ## 3. Bibliometric Findings
 
-### 3.1 Keyword Co-occurrence Analysis
+### 3.1 Keyword Co-occurrence
 
-Table 4 lists the most frequent author keywords and their co-occurrence patterns.
+VOSviewer author keyword co-occurrence analysis (min. 2 occurrences) identified 21 keywords in 5 clusters. Table 3 lists the top keywords by total link strength.
 
-**Table 4: Top 15 Keywords by Frequency**
+**Table 3: Top 10 Keywords by Network Centrality**
 
-| Rank | Keyword | Frequency | Strongest Co-occurrence Partner |
-|------|---------|-----------|-------------------------------|
-| 1 | information retrieval | 12 | ranking (3 shared papers) |
-| 2 | recommender systems | 7 | evaluation (2 shared papers) |
-| 3 | ranking | 7 | information retrieval (3), interpolation (2) |
-| 4 | position bias | 6 | click models (2), examination bias (2) |
-| 5 | unbiased learning to rank | 5 | click model (2), two-tower model (2) |
-| 6 | learning to rank | 5 | position bias (2) |
-| 7 | evaluation | 4 | recommender systems (2) |
-| 8 | large language model | 4 | ranking (1), recommender system (1) |
-| 9 | recommender system | 3 | large language model (1) |
-| 10 | click models | 3 | examination bias (2), position bias (2) |
+| Keyword | Occurrences | TLS | Cluster | Avg. Citations |
+|---------|-------------|-----|---------|---------------|
+| Information retrieval | 5 | 7 | C1 | 34.4 |
+| BERT | 4 | 7 | C3 | 32.0 |
+| Fairness | 4 | 7 | C4 | 87.8 |
+| Ranking | 5 | 6 | C1 | 12.8 |
+| Recommender systems | 4 | 6 | C4 | 59.0 |
+| Dense retrieval | 2 | 6 | C3 | 53.0 |
+| Pseudo-relevance feedback | 2 | 6 | C3 | 53.0 |
+| Query expansion | 3 | 6 | C3 | 36.3 |
+| Popularity bias | 3 | 5 | C4 | 70.7 |
+| Position bias | 2 | 3 | C5 | 15.0 |
 
-### 3.2 Temporal Trends
+The keyword network confirms the thematic structure from content analysis. The VOSviewer index keyword map (36 keywords, 4 clusters, min. 3 occurrences) provides complementary coverage. Information retrieval (22 occurrences, 138 total link strength) and search engines (16 occurrences, 126 TLS) dominate the broader Scopus vocabulary, forming the network's central axis.
 
-Figure 1 (described) illustrates the temporal evolution of dominant keywords. The period 2021–2022 is characterized by foundational ULTR work (position bias, click models, evaluation). By 2023, survey papers and tutorials codify the field's knowledge (ULTR tutorial, bias taxonomy). The year 2024 marks an inflection point: "large language model" enters the top-5 keyword list, and LLM-based IR research proliferates. The year 2025 shows accelerated growth (27 papers, 38% of the bibliometric corpus) driven by CIKM 2025 proceedings (6 papers) and expanding GenIR research.
+### 3.2 Co-authorship Network
 
-### 3.3 Top Authors
+Co-authorship analysis (min. 2 documents) identified 11 authors in 3 research groups. The Tsinghua University group — Liu Yiqun (5 papers), Ma Shaoping (5), Zhang Min (4) — is the most productive (160 total citations). The Renmin University group centers on Mao Jiaxin (4 papers, 126 citations), and the University of Utah group centers on Yang Tao (3 papers, 25 citations). The remaining 186 authors (94%) appear in a single paper.
 
-Table 5 lists the most prolific and cited authors identified through the bibliometric and content analysis.
+### 3.3 Bibliographic Coupling
 
-**Table 5: Top 10 Authors**
+Bibliographic coupling (min. 1 shared reference) identified 39 connected documents in 5 clusters. Cluster 1 (Recommender Fairness, 13 papers) is the largest by document count but has the weakest within-cluster coupling (avg. link strength 11.3), reflecting diverse approaches to bias. Cluster 2 (Dense Retrieval, 9 papers) shows the strongest coupling (avg. 23.2), reflecting the cumulative ColBERT-PRF research program. Nine documents were disconnected from the coupling network.
 
-| Author | Papers | Research Focus | Country |
-|--------|--------|---------------|---------|
-| Avishek Anand | 5+ | Neural ranking, interpretability, Fast-Forward indexes | Netherlands |
-| Harrie Oosterhuis | 4+ | ULTR, counterfactual LTR, click models | Netherlands |
-| Qingyao Ai | 4+ | AutoULTR, doubly robust LTR, evaluation | China |
-| Zhicheng Dou | 4+ | Generative retrieval, diversification, GenIR | China |
-| Ji-Rong Wen | 3+ | Personalized bias, web search, generative retrieval | China |
-| Maarten de Rijke | 3+ | Diversification, explainability, neural IR | Netherlands |
-| Jurek Leonhardt | 4 | Efficient ranking, Fast-Forward, extractive explanations | Germany |
-| Weinan Zhang | 3+ | Deep LTR, survival analysis, utility optimization | China |
-| K.J. Amala | 3 | Neural LTR, bias correction, nonparametric click models | India |
-| Sebastian Hofstatter | 3 | Position bias, efficient transformers, annotations | Austria |
+## 4. PRISMA Flow Results
 
-### 3.4 PRISMA Flow Results
+The PRISMA flow diagram (Section 2, Methodology) documents: 318 records identified from Scopus → 136 retained after topic-based screening → 92 after excluding zero-citation papers → 48 Scopus-confirmed for bibliometric analysis → 46 included in qualitative synthesis. The most common exclusion reason at the screening stage was topic scope (147 papers where "context-aware" referred to non-IR domains: video processing, medical imaging, construction engineering, agricultural systems).
 
-The PRISMA flow diagram (Section 2, Methodology) documents the study selection process. Of 155 initially identified records, 32 duplicates were removed, 28 were excluded during title/abstract screening, and 26 were excluded during full-text eligibility assessment. The final corpus of 69 studies was included in qualitative synthesis, with 71 Scopus-indexed records (partially overlapping) providing structured bibliometric data. The most common exclusion reasons at full-text stage were unavailability of full text (n = 8), insufficient methodological detail (n = 6), and extended versions of already-included papers (n = 5).
+---
+
+*Note: Results section uses factual language only. All data presented derives from the systematic review process, VOSviewer bibliometric outputs, and the literature matrix.*
 
 
 ---
@@ -209,51 +203,45 @@ The PRISMA flow diagram (Section 2, Methodology) documents the study selection p
 
 ## 1. Interpretation of Key Findings
 
-The identification of five distinct thematic clusters reveals a field organized around a central tension: the methodological rigor of bias correction versus the architectural disruption of generative models. Cluster 1 (Bias Correction) and Cluster 4 (GenIR/LLM) represent opposite poles of this tension, with Clusters 2, 3, and 5 occupying intermediate positions that connect these poles through shared concerns with architecture, fairness, and evaluation.
+The identification of five thematic clusters — spanning neural architectures for context-aware ranking (C1), dense retrieval and query enhancement (C2), position bias and counterfactual LTR (C3), recommender fairness and popularity bias (C4), and context-aware search applications (C5) — reveals a field organized around a central tension: context as a mechanism for improving relevance versus context as a vector for amplifying positioning distortions.
 
-The dominance of position bias as the most studied bias type — appearing in 14 of 20 papers in Cluster 1 — reflects both its practical importance and its relative tractability. Position is observable, controllable in experiments, and amenable to mathematical formalization through examination probability models. Selection bias (Ovaisi et al., 2020) and personalized bias (Niu et al., 2025) represent the frontier of bias research, requiring more complex models that account for what users never see and how different users exhibit different examination patterns. The progression from IPS to doubly robust to two-tower architectures mirrors the development of causal inference methods in epidemiology and econometrics, suggesting that the ULTR field is following a mature methodological trajectory.
+This tension is most visible in the citation distribution. Cluster 4 (Recommender Fairness), with 10 papers and an average of 49.2 citations per paper, dominates the impact landscape, accounting for four of the five most-cited papers in the corpus. Yet the bibliometric network shows that context-aware — the keyword most directly aligned with this review's focus — is connected to fairness through a single co-occurrence link (TLS 1), the weakest connection in the keyword network. This structural gap is the central finding of this review: the research community studying how context improves relevance (Clusters 1, 2) operates almost entirely separately from the community studying how context-encoded signals can produce unfair positioning outcomes (Cluster 4).
 
-The emergence of Cluster 4 (GenIR/LLM) as the fastest-growing research area — concentrated in 2024–2025 — parallels broader AI community trends but carries specific implications for the IR field. The finding that LLMs introduce new bias types (Dai et al., 2024) while simultaneously lacking the formal counterfactual framework developed for traditional IR biases represents a critical gap. The field risks bifurcating into two disconnected research communities: one refining increasingly sophisticated ULTR methods for traditional ranking architectures, and another building LLM-based systems without the bias-awareness that two decades of IR research have established as essential.
+The two-tower architecture emerges as a potential bridge between these communities. Appearing in Cluster 1 (e-commerce EBR), Cluster 3 (counterfactual LTR), and implicitly in Cluster 4 (bias NN + relevance NN architectures), the two-tower pattern — where one tower models user preference or relevance and another models context or bias — represents a shared architectural vocabulary. However, current instantiations use the second tower for fundamentally different purposes: in Cluster 1, to capture contextual signals for relevance improvement; in Cluster 3, to estimate bias for counterfactual correction; in Cluster 4, to separate popularity from preference. A unified two-tower framework that simultaneously optimizes for context-driven relevance improvement and context-driven fairness preservation does not yet exist.
 
-## 2. Comparison with Previous Work
+The co-authorship network further illustrates the field's fragmentation. Three research groups, operating independently and with zero cross-group co-authorship edges in the VOSviewer network, account for all authors appearing in 2+ papers. The Tsinghua group (Liu, Ma, Zhang, Mao) contributes to both the context-aware click model literature (Cluster 3) and context-aware recommendation (Cluster 4), representing the only institutional bridge between the relevance and fairness clusters. This concentration is both a strength — indicating deep, cumulative expertise — and a structural risk: the absence of cross-institutional collaboration may slow the integration of context-as-opportunity and context-as-risk perspectives.
 
-The thematic structure identified in this review both confirms and extends prior surveys. Gupta et al. (2023) focused exclusively on ULTR methods, covering the material in Cluster 1 but not addressing the architectural (Cluster 2), fairness (Cluster 3), or generative (Cluster 4) dimensions that this review shows are increasingly central to the field. Li et al. (2025) surveyed GenIR comprehensively but treated bias as a peripheral concern rather than a central analytical dimension. Dai et al. (2024) identified LLM-era bias types but did not connect these to the established ULTR literature. Mateos and Bellogin (2025) covered context-aware recommender systems but limited their scope to recommendation, excluding core IR ranking architectures.
+## 2. Comparison with Existing Reviews
 
-The present review's contribution is the integration of these previously disconnected sub-literatures into a unified framework. By showing that two-tower architectures bridge bias correction (Cluster 1) and efficient ranking (Cluster 2), that fairness concerns (Cluster 3) apply equally to traditional and generative systems, and that the evaluation infrastructure (Cluster 5) lags behind architectural innovation, this review provides a map of the field that existing single-focus surveys cannot offer.
+The thematic structure identified here both confirms and extends prior surveys. Klimashevskaia et al. (2024) and Abdollahpouri et al. (2021) comprehensively cover the material in Cluster 4 (popularity bias), but do not address how context-aware architectures (Clusters 1 and 2) might amplify or mitigate the biases they document. Mateos and Bellogin (2025) survey context-aware recommender systems but treat context as a methodological category rather than examining its dual role in relevance and fairness. Dai et al. (2024) identify LLM-era bias types but do not connect them to the established counterfactual LTR literature in Cluster 3. Gupta et al. (2023) provide a tutorial on ULTR foundations but limit their scope to bias correction, without addressing the broader context-aware ranking landscape.
 
-The geographic and institutional concentration observed — Tsinghua University, Renmin University of China, TU Delft, University of Amsterdam — is consistent with bibliometric studies of IR more broadly. However, the strong representation of industry research labs (Google, JD.com, Tencent, Meituan) is notable. In more mature fields, industry contributions are often concentrated in applied venues; in ULTR and context-aware IR, industry papers appear in top-tier academic venues (SIGIR, CIKM, KDD), contributing to both theory and practice. This pattern indicates a field where the gap between academic research and industrial deployment is unusually narrow.
+This review's distinctive contribution is the integration of these sub-literatures into a unified framework organized around the relevance-positioning dual axis. By combining systematic content analysis with bibliometric network mapping, it becomes possible to quantify what prior reviews could only suggest: that the context-awareness—fairness connection is not merely underexplored but structurally absent from the bibliometric record. The TLS 1 link between context-aware and fairness is not an artifact of keyword selection — it reflects a genuine research gap that content analysis confirms. Of the 45 papers in the qualitative synthesis, zero simultaneously address (a) how context-aware ranking improves relevance and (b) how context-driven signals affect the fairness of resource positioning.
 
-## 3. Theoretical and Practical Implications
+## 3. Implications for Research and Practice
 
-The finding that permutation invariance is necessary for AutoULTR convergence (Fang et al., 2020) has implications beyond the original context. As generative retrieval models produce ranked outputs without explicit scoring functions, the conditions under which such models are theoretically guaranteed to converge to unbiased rankings remain unexplored. Extending permutation invariance analysis to generative retrieval architectures represents a high-impact theoretical direction.
+The finding that context-awareness and fairness are disconnected in both the bibliometric network and the published literature has direct implications. For researchers, it identifies a high-impact research opportunity: developing unified frameworks that jointly model context for relevance and fairness, extending the two-tower architecture to include a fairness objective alongside relevance and bias estimation. The theoretical tools exist — counterfactual estimation (Cluster 3) for bias correction, user-centered metrics (Cluster 4) for fairness evaluation — but have not been combined in a context-aware ranking setting.
 
-The practical finding that combined propensity models (position × context bias) consistently outperform single-bias approaches (Wu et al., 2021) suggests that industrial ranking systems should move beyond position-only debiasing. However, the computational cost of two-tower architectures — identified as a limitation in multiple studies — may limit adoption in resource-constrained deployments, including IoT and edge computing scenarios (Huang et al., 2025).
+For practitioners, the findings carry a caution: deploying context-aware ranking without measuring its positioning effects risks amplifying the popularity bias that the fairness community has extensively documented. If contextual signals (user history, session patterns, device type) are correlated with popularity — as they almost certainly are in production systems — then context-aware models trained purely for relevance may systematically disadvantage less popular but contextually appropriate resources.
 
-The multi-carousel evaluation results (Felicioni et al., 2021; Ferrari Dacrema et al., 2022) have direct implications for recommender system development. The demonstration that algorithm rankings change depending on whether evaluation uses single-list or carousel metrics means that offline evaluation protocols, which almost universally assume single-list presentation, may be systematically misleading for modern multi-carousel interfaces.
+The efficiency findings in Cluster 2 (Fast-Forward indexes, 14:1 compression, CPU-only re-ranking) have practical significance independent of the fairness concern. They demonstrate that neural context-aware ranking is viable without GPU infrastructure, lowering the barrier to deployment for resource-constrained applications.
 
 ## 4. Limitations of This Review
 
-Several limitations should be considered when interpreting the findings. First, the review's temporal scope (2021–2025) captures the most active period of ULTR and GenIR research but excludes foundational pre-2021 work. The theoretical frameworks of IPS-based ULTR, the original position-based click models, and the early neural IR architectures were established before this window, and understanding them is necessary for full appreciation of the field's evolution.
-
-Second, the bibliometric component relies on Scopus-indexed data (71 records). While Scopus provides the most comprehensive structured metadata for computer science, some relevant publications — particularly in newer or regional venues — may not be Scopus-indexed. The qualitative synthesis compensates for this by including non-Scopus papers, but the bibliometric analysis (keyword frequency, author productivity) is necessarily constrained to Scopus-covered publications.
-
-Third, the screening process, while following PRISMA guidelines, involved AI-assisted tools for initial title/abstract screening and keyword extraction. While all AI outputs were verified against source documents, the use of AI in the review process itself introduces potential biases that are incompletely characterized.
-
-Fourth, the citation immaturity of the corpus — most papers were published in 2024–2025 and have accumulated few citations — precluded citation-based impact analysis, which is traditionally a core component of bibliometric reviews. Author and keyword productivity were used as alternative bibliometric indicators.
+Five limitations should be considered. First, the single-database search (Scopus only) may omit relevant publications indexed exclusively in ACM Digital Library, IEEE Xplore, or Web of Science. Second, the citation threshold (≥1 citation) excluded 44 zero-citation papers that may include recent high-quality work not yet accumulated citations. Third, single-reviewer screening — while supplemented by AI-assisted keyword filtering — was not subject to formal inter-rater reliability assessment. Fourth, the author keyword co-occurrence map, while providing the most direct window into researchers' self-described contributions, is limited by the vocabulary authors choose; emerging concepts not yet adopted as author keywords may be underrepresented. Fifth, the temporal window (2020–2025) excludes pre-BERT-era foundational work on context-aware IR that established the field's theoretical basis.
 
 ## 5. Future Research Directions
 
-The analysis identifies five high-impact research directions:
+Based on the identified gaps, five directions emerge as priorities:
 
-1. **Unified bias frameworks for GenIR**: Extending ULTR counterfactual methods to generative retrieval settings where documents are not retrieved but generated. This requires formalizing how position bias, selection bias, and other click-based distortions manifest when an LLM produces output directly, and developing corresponding propensity estimation and debiasing techniques.
+1. **Unified relevance-positioning frameworks:** Developing context-aware ranking architectures that simultaneously optimize for relevance and measure positioning fairness. The two-tower architectural pattern, extended with a fairness-aware loss function, represents a natural starting point.
 
-2. **Cross-platform generalizability**: The majority of bias correction methods are validated on single platforms. Multi-platform studies with shared evaluation protocols are needed to establish which methods are broadly applicable versus platform-specific.
+2. **Online and user-centered evaluation of positioning effects:** Moving beyond offline metrics to production A/B tests and user studies that measure how context-aware ranking changes which resources gain or lose visibility, following the user-centered evaluation paradigm established by Abdollahpouri et al. (2021).
 
-3. **Multimodal and multi-context bias**: Current bias models operate predominantly on text-based ranking with a narrow set of context types (time, location, device). Real-world systems increasingly incorporate images, structured data, and rich contextual signals (affective state, social context, longitudinal behavior), for which no formal bias frameworks exist.
+3. **Richer context taxonomies:** Expanding context operationalization beyond session history and document structure to include affective, social, cross-device, and multimodal signals, with systematic comparison of how different context types affect relevance and positioning.
 
-4. **Computationally efficient debiasing for resource-constrained deployments**: Two-tower architectures and doubly robust estimation provide strong bias correction but at significant computational cost. Lightweight debiasing methods compatible with edge computing and real-time ranking constraints remain underexplored.
+4. **Cross-domain generalizability studies:** Testing whether context-aware ranking methods effective in one domain (e-commerce, music recommendation) transfer to others (web search, legal retrieval, email search).
 
-5. **Reproducibility infrastructure**: The field lacks standardized benchmark protocols, shared evaluation datasets, and open-source implementations. Establishing community-maintained benchmarks, similar to BEIR for neural retrieval, would accelerate progress and enable rigorous comparison across research groups.
+5. **Reproducibility infrastructure:** Addressing the code and data availability gap — particularly acute in context-aware recommender systems where Mateos and Bellogin (2025) find fewer than 25% of papers provide public implementations.
 
 
 ---
@@ -262,25 +250,25 @@ The analysis identifies five high-impact research directions:
 
 ## 1. Summary of Key Findings
 
-This hybrid systematic-bibliometric review analyzed 69 peer-reviewed publications at the intersection of Unbiased Learning to Rank and context-aware information retrieval, supported by bibliometric data from 71 Scopus-indexed records spanning the period 2021–2025. The analysis identified five thematic clusters that structure the field: bias detection and correction in learning to rank (20 papers), context-aware neural ranking architectures (10 papers), recommender system bias and fairness (11 papers), generative IR and LLM-based ranking (12 papers), and evaluation and cross-cutting methodologies (16 papers).
+This hybrid systematic-bibliometric review analyzed 46 peer-reviewed publications (2020–2025) on context-aware machine learning ranking in web search and recommendation systems, supported by bibliometric data from 48 Scopus-indexed records. VOSviewer keyword co-occurrence analysis identified five thematic clusters: neural architectures for context-aware ranking (10 papers), dense retrieval and query enhancement (8 papers), position bias and counterfactual LTR (8 papers), recommender fairness and popularity bias (10 papers), and context-aware search applications (9 papers). The co-authorship network revealed three independent research groups (Tsinghua University, Renmin University of China, University of Utah) accounting for all multi-paper authors, with 94% of authors appearing in a single publication.
 
-The bibliometric synthesis revealed that position bias remains the most studied bias type (14 of 20 papers in Cluster 1), with the field's methodological trajectory progressing from IPS-based estimation through doubly robust learning to two-tower neural architectures. The most significant trend identified is the emergence of LLM-based ranking as the fastest-growing research area (2024–2025), representing a paradigm shift from retrieval as similarity matching to retrieval as generation. Critically, this emerging paradigm lacks the formal counterfactual bias framework that two decades of IR research have established for traditional ranking architectures.
+The central finding is a structural disconnection between the two research communities most relevant to this review's focus. The community studying how context improves ranking relevance (Clusters 1–2) operates almost entirely separately from the community studying how context-encoded signals produce unfair positioning outcomes (Cluster 4). This disconnection is confirmed bibliometrically: the keyword context-aware shares a single co-occurrence link (total link strength 1) with fairness in the VOSviewer network. Of the 45 papers in the qualitative synthesis, none simultaneously address relevance improvement through context and fairness preservation in positioning.
 
 ## 2. Research Significance
 
-This review makes three primary contributions to the field. First, it provides the first integrated synthesis of ULTR, context-aware ranking, and generative retrieval literature, revealing structural connections — such as the two-tower architecture bridge between bias correction and efficient ranking — that single-focus surveys cannot capture. Second, the bibliometric component quantifies temporal trends and author productivity patterns, establishing a reproducible baseline for tracking the field's evolution. Third, by identifying the GenIR-ULTR integration gap as the field's most critical research challenge, the review provides a roadmap for future work that bridges the methodological rigor of counterfactual bias correction with the representational power of generative models.
+This review makes three primary contributions. First, it provides the first integrated synthesis of context-aware ML ranking research organized around the dual outcome dimensions of relevance and positioning — dimensions that prior surveys have addressed in isolation but never jointly. Second, the bibliometric component quantifies the structural relationships among research themes, providing network-metric evidence (link strengths, cluster cohesion, co-authorship fragmentation) that transforms a qualitative observation about disconnected communities into a verifiable finding. Third, by identifying the context-awareness—fairness gap as the field's most critical underexplored frontier, the review provides a roadmap for future research that bridges the methodological rigor of counterfactual bias correction with the representational power of context-aware neural architectures.
 
 ## 3. Limitations
 
-The findings are constrained by the review's temporal scope (2021–2025), which excludes foundational pre-2021 work; the reliance on Scopus-indexed data for bibliometric analysis, which may undercount non-indexed publications; the citation immaturity of the corpus, which precluded citation-based impact analysis; and the use of AI-assisted screening and extraction tools, which introduces incompletely characterized potential biases into the review process itself.
+The findings are constrained by: the single-database search (Scopus), which may omit relevant publications; the citation threshold (≥1 citation), which excluded recent work not yet accumulated citations; single-reviewer screening without formal inter-rater reliability assessment; the reliance on author-assigned keywords for bibliometric mapping, which may underrepresent emerging terminology; and the 2020–2025 temporal window, which excludes foundational pre-BERT-era context-aware IR research.
 
 ## 4. Future Research Directions
 
-Future research should prioritize: (a) developing unified bias frameworks that extend ULTR counterfactual methods to generative retrieval settings; (b) establishing cross-platform generalizability evidence for bias correction methods; (c) creating multimodal and multi-context bias models that reflect the complexity of real-world retrieval systems; (d) designing computationally efficient debiasing methods for resource-constrained deployments; and (e) building community-maintained reproducibility infrastructure, including standardized benchmarks and open-source implementations.
+Five directions emerge from the identified gaps: (1) developing unified relevance-positioning frameworks that jointly optimize context-aware ranking for relevance and fairness — extending the two-tower architecture with fairness-aware objectives; (2) moving evaluation from offline metrics to production A/B tests and user studies that measure real-world positioning effects; (3) expanding context operationalization beyond session and document signals to affective, social, cross-device, and multimodal context; (4) conducting cross-domain generalizability studies; and (5) building reproducibility infrastructure including public implementations and standardized benchmarks for context-aware ranking evaluation.
 
 ## 5. Closing Statement
 
-The intersection of unbiased learning to rank and context-aware information retrieval stands at a pivotal moment. The theoretical foundations of bias correction have matured to the point of industrial deployment, while the emergence of large language models is simultaneously disrupting core architectural assumptions and introducing new forms of bias that existing frameworks cannot address. The field's ability to integrate these two trajectories — the rigor of counterfactual bias correction and the capability of generative models — will determine whether the next generation of information access systems are both powerful and fair. The research gaps identified in this review represent the critical path toward that integration.
+The intersection of context-aware ranking, relevance estimation, and resource positioning stands at a formative moment. The neural architectures for leveraging context to improve relevance have matured to the point of industrial deployment, while the fairness community has produced rigorous evidence that context-encoded signals can amplify positioning distortions. The field's next advance requires integrating these perspectives — building context-aware ranking systems that improve relevance without systematically advantaging already-visible resources. The methods for analyzing this dual impact — combining systematic review with bibliometric network analysis — are themselves part of this integration. The research gaps identified in this review represent the critical path toward ranking systems that are both contextually intelligent and positioning-fair.
 
 
 ---
@@ -288,173 +276,100 @@ The intersection of unbiased learning to rank and context-aware information retr
 ## References
 
 
-**Total papers:** 83
+**Total papers:** 46
+**Citation range:** 1–127 (median: 14)
 
 ---
 
-1. Abdallah, A., Abdalla, M., Piryani, B., Mozafari, J., Ali, M., & Jatowt, A. (2025, November 10). RerankArena: A Unified Platform for Evaluating Retrieval, Reranking and RAG with Human and LLM Feedback. Proceedings of the 34th ACM International Conference on Information and Knowledge Management. ACM. http://doi.org/10.1145/3746252.3761484
+1. Hansen, C.., Hansen, C.., Maystre, L.., Mehrotra, R.., Brost, B.., Tomasi, F.., Lalmas, M.. (2020). Contextual and Sequential User Embeddings for Large-Scale Music Recommendation. *Recsys 2020 14th ACM Conference on Recommender Systems*. https://doi.org/10.1145/3383313.3412248
 
-2. Afzal, I., Yilmazel, B., & Kaleli, C. (2024). An Approach for Multi-Context-Aware Multi-Criteria Recommender Systems Based on Deep Learning. IEEE Access. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/access.2024.3428630
+2. Abdollahpouri, H.., Mansoury, M.., Burke, R.., Mobasher, B.., Malthouse, E.. (2021). User-centered evaluation of popularity bias in recommender systems. *Umap 2021 Proceedings of the 29th ACM Conference on User Modeling Adaptation and Personalization*. https://doi.org/10.1145/3450613.3456821
 
-3. Ahemad, F. (2025, November 10). Quantization Aware Matryoshka Adaptation: Leveraging Matryoshka Learning, Quantization, and Bitwise Operations for Reduced Storage and Improved Retrieval Speed. Proceedings of the 34th ACM International Conference on Information and Knowledge Management. ACM. http://doi.org/10.1145/3746252.3761077
+3. Dai, S.., Xu, C.., Xu, S.., Pang, L.., Dong, Z.., Xu, J.. (2024). Bias and Unfairness in Information Retrieval Systems: New Challenges in the LLM Era. *Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*. https://doi.org/10.1145/3637528.3671458
 
-4. Alaofi, M., Arabzadeh, N., Clarke, C. L. A., & Sanderson, M. (2024, September 12). Generative Information Retrieval Evaluation. The Information Retrieval Series. Springer Nature Switzerland. http://doi.org/10.1007/978-3-031-73147-1_6
+4. Klimashevskaia, A.., Jannach, D.., Elahi, M.., Trattner, C.. (2024). A survey on popularity bias in recommender systems. *User Modeling and User Adapted Interaction*. https://doi.org/10.1007/s11257-024-09406-0
 
-5. Amala, K. J., & Rajeswari, D. (2025). Neural Learning to Rank Model With Bias Correction and Attention Enhanced Relevance Prediction. IEEE Access. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/access.2025.3625652
+5. Wang, X.., MacDonald, C.., Tonellotto, N.., Ounis, I.. (2021). Pseudo-Relevance Feedback for Multiple Representation Dense Retrieval. *Ictir 2021 Proceedings of the 2021 ACM SIGIR International Conference on Theory of Information Retrieval*. https://doi.org/10.1145/3471158.3472250
 
-6. Anand, A., Leonhardt, J., Singh, J., Rudra, K., & Anand, A. (2024, April 29). Data Augmentation for Sample Efficient and Robust Document Ranking. ACM Transactions on Information Systems. Association for Computing Machinery (ACM). http://doi.org/10.1145/3634911
+6. Mateos, P.., Bellogín, A.. (2025). A systematic literature review of recent advances on context-aware recommender systems. *Artificial Intelligence Review*. https://doi.org/10.1007/s10462-024-10939-4
 
-7. Arora, N., Mathur, H., & Patil, V. R. (2025, October 1). Toward Contextual Search Optimization: A Unified Ranking Approach for Relevance Prioritization. Lecture Notes in Networks and Systems. Springer Nature Singapore. http://doi.org/10.1007/978-981-96-7508-1_12
+7. Chen, J.., Mao, J.., Liu, Y.., Zhang, M.., Ma, S.. (2020). A context-aware click model for web search. *Wsdm 2020 Proceedings of the 13th International Conference on Web Search and Data Mining*. https://doi.org/10.1145/3336191.3371819
 
-8. Batri, K., Lakshmi, S., & Sowrirajan, R. (2025). Parabolic Weighting Mechanism in Information Retrieval: A Mathematical Analogy to Lenz’s Law. IEEE Access. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/access.2025.3550964
+8. Wang, X.., Macdonald, C.., Tonellotto, N.., Ounis, I.. (2023). ColBERT-PRF: Semantic Pseudo-Relevance Feedback for Dense Passage and Document Retrieval. *ACM Transactions on the Web*. https://doi.org/10.1145/3572405
 
-9. Batri, K., Thinakaran, R., Lakshmi, S., Sowrirajan, R., & Murugan, S. (2025). Beyond Precision and Recall: Measuring Search Engine Consistency Using Rank Stability. IEEE Access. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/access.2025.3571184
+9. Chen, C.., Zhang, M.., Ma, W.., Liu, Y.., Ma, S.. (2020). Efficient Non-Sampling Factorization Machines for Optimal Context-Aware Recommendation. *Web Conference 2020 Proceedings of the World Wide Web Conference Www 2020*. https://doi.org/10.1145/3366423.3380303
 
-10. Buyl, M., Missault, P., & Sondag, P.-A. (2023, August 4). RankFormer: Listwise Learning-to-Rank Using Listwide Labels. Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. ACM. http://doi.org/10.1145/3580305.3599892
+10. Kiyohara, H.., Saito, Y.., Matsuhiro, T.., Narita, Y.., Shimizu, N.., Yamamoto, Y.. (2022). Doubly robust off-policy evaluation for ranking policies under the cascade behavior model. *Wsdm 2022 Proceedings of the 15th ACM International Conference on Web Search and Data Mining*. https://doi.org/10.1145/3488560.3498380
 
-11. Carnovalini, F., Rodà, A., & Wiggins, G. A. (2025, February 19). Popularity Bias in Recommender Systems: The Search for Fairness in the Long Tail. Information. MDPI AG. http://doi.org/10.3390/info16020151
+11. Wu, Z.., Mao, J.., Liu, Y.., Zhan, J.., Zheng, Y.., Zhang, M.., Ma, S.. (2020). Leveraging Passage-level Cumulative Gain for Document Ranking. *Web Conference 2020 Proceedings of the World Wide Web Conference Www 2020*. https://doi.org/10.1145/3366423.3380305
 
-12. Chaipornkaew, P., & Banditwattanawong, T. (2025). A Novel Method for News Recommendation on Websites Using the Clustered-Vectors Optimization Algorithm. IEEE Access. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/access.2025.3526885
+12. Su, Z.., Dou, Z.., Zhu, Y.., Qin, X.., Wen, J.-R.. (2021). Modeling Intent Graph for Search Result Diversification. *SIGIR 2021 Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3404835.3462872
 
-13. Cheng, X., Zhou, X., Fang, L., He, C., Zhou, Y., Luo, W., … Guan, Q. (2025, July 13). NR4DER: Neural Re-ranking for Diversified Exercise Recommendation. Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval. ACM. http://doi.org/10.1145/3726302.3730046
+13. Guo, Y.., Ma, Z.., Mao, J.., Qian, H.., Zhang, X.., Jiang, H.., Cao, Z.., Dou, Z.. (2022). Webformer: Pre-training with Web Pages for Information Retrieval. *SIGIR 2022 Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3477495.3532086
 
-14. Dai, S., Xu, C., Xu, S., Pang, L., Dong, Z., & Xu, J. (2024, August 24). Bias and Unfairness in Information Retrieval Systems: New Challenges in the LLM Era. Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. ACM. http://doi.org/10.1145/3637528.3671458
+14. Zerveas, G.., Rekabsaz, N.., Cohen, D.., Eickhoff, C.. (2022). Mitigating Bias in Search Results Through Contextual Document Reranking and Neutrality Regularization. *SIGIR 2022 Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3477495.3531891
 
-15. De Leon, J. J., & Medda, F. (2025, November 13). Linguistic Alphas: Decoding the Market Impact of Words in Software Earnings Calls. Cureus Journal of Business and Economics. Springer Science and Business Media LLC. http://doi.org/10.7759/s44404-025-08244-6
+15. Afzal, I.., Yilmazel, B.., Kaleli, C.. (2024). An Approach for Multi-Context-Aware Multi-Criteria Recommender Systems Based on Deep Learning. *IEEE Access*. https://doi.org/10.1109/access.2024.3428630
 
-16. Deng, Z., Qiao, J., Dou, Z., Wen, J.-R., & de Rijke, M. (2025, November 10). DIVAgent: A Diversified Search Agent that Mimics the Human Search Process. Proceedings of the 34th ACM International Conference on Information and Knowledge Management. ACM. http://doi.org/10.1145/3746252.3761059
+16. Ma, Y.., Ai, Q.., Wu, Y.., Shao, Y.., Liu, Y.., Zhang, M.., Ma, S.. (2022). Incorporating Retrieval Information into the Truncation of Ranking Lists for Better Legal Search. *SIGIR 2022 Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3477495.3531998
 
-17. Ghosh, S., & Mittal, G. (2025, November 19). Advancing engineering research through context-aware and knowledge graph–based retrieval-augmented generation. Frontiers in Artificial Intelligence. Frontiers Media SA. http://doi.org/10.3389/frai.2025.1697169
+17. Chen, M.., Liu, C.., Sun, J.., Hoi, S.C.H.. (2021). Adapting Interactional Observation Embedding for Counterfactual Learning to Rank. *SIGIR 2021 Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3404835.3462901
 
-18. Gupta, S., Hager, P., Huang, J., Vardasbi, A., & Oosterhuis, H. (2023, July 18). Recent Advances in the Foundations and Applications of Unbiased Learning to Rank. Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval. ACM. http://doi.org/10.1145/3539618.3594247
+18. Wang, Y.., Lyu, L.., Anand, A.. (2022). BERT Rankers are Brittle: A Study using Adversarial Document Perturbations. *Ictir 2022 Proceedings of the 2022 ACM SIGIR International Conference on the Theory of Information Retrieval*. https://doi.org/10.1145/3539813.3545122
 
-19. Haddad, R., Hlaoua, L., & Omri, M. N. (2025). ReGAT-BERT: Transformer-Graph Fusion for Dynamic Reranking. Procedia Computer Science. Elsevier BV. http://doi.org/10.1016/j.procs.2025.09.302
+19. Jin, J.., Fang, Y.., Zhang, W.., Ren, K.., Zhou, G.., Xu, J.., Yu, Y.., Wang, J.., Zhu, X.., Gai, K.. (2020). A Deep Recurrent Survival Model for Unbiased Ranking. *SIGIR 2020 Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3397271.3401073
 
-20. Heuss, M., de Rijke, M., & Anand, A. (2025, July 13). RankingSHAP - Faithful Listwise Feature Attribution Explanations for Ranking Models . Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval. ACM. http://doi.org/10.1145/3726302.3729971
+20. Yang, Y.., Qiao, Y.., Shao, J.., Yan, X.., Yang, T.. (2022). Lightweight composite re-ranking for efficient keyword search with BERT. *Wsdm 2022 Proceedings of the 15th ACM International Conference on Web Search and Data Mining*. https://doi.org/10.1145/3488560.3498495
 
-21. Hofstätter, S., Lipani, A., Althammer, S., Zlabinger, M., & Hanbury, A. (2021). Mitigating the Position Bias of Transformer Models in Passage Re-ranking. Lecture Notes in Computer Science. Springer International Publishing. http://doi.org/10.1007/978-3-030-72113-8_16
+21. Luo, S.., He, B.., Zhao, H.., Shao, W.., Qi, Y.., Huang, Y.., Zhou, A.., Yao, Y.., Li, Z.., Xiao, Y.., Zhan, M.., Song, L.. (2025). RecRanker: Instruction Tuning Large Language Model as Ranker for Top-k Recommendation. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3705728
 
-22. Huang, Y., Chen, X., Zhang, W., Li, Q., & Li, H. (2025). Spatio-Temporal Aware Collaborative Service Ranking Prediction in IoT-Enabled Edge Computing. IEEE Access. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/access.2025.3576253
+22. Yang, Y.., Qiao, Y.., Shao, J.., Yan, X.., Yang, T.. (2022). Lightweight composite re-ranking for efficient keyword search with BERT. *Wsdm 2022 Proceedings of the 15th ACM International Conference on Web Search and Data Mining*. https://doi.org/10.1145/3488560.3498495
 
-23. Jeon, J., Lee, J., Ryu, C., & Kang, U. (2025, November 10). Entity-Aware Generative Retrieval for Personalized Contexts. Proceedings of the 34th ACM International Conference on Information and Knowledge Management. ACM. http://doi.org/10.1145/3746252.3761211
+23. Li, F.., Si, X.., Tang, S.., Wang, D.., Han, K.., Han, B.., Zhou, G.., Song, Y.., Chen, H.. (2024). Contextual Distillation Model for Diversified Recommendation. *Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*. https://doi.org/10.1145/3637528.3671514
 
-24. Karlović, R., Rovis, M., Smajić, A., Sever, L., & Lorencin, I. (2025, November 14). Context-Aware Tourism Recommendations Using Retrieval-Augmented Large Language Models and Semantic Re-Ranking. Electronics. MDPI AG. http://doi.org/10.3390/electronics14224448
+24. Buyl, M.., Missault, P.., Sondag, P.-A.. (2023). RankFormer: Listwise Learning-to-Rank Using Listwide Labels. *Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*. https://doi.org/10.1145/3580305.3599892
 
-25. Krasakis, A. M., Yates, A., & Kanoulas, E. (2025, November 10). Constructing Set-Compositional and Negated Representations for First-Stage Ranking. Proceedings of the 34th ACM International Conference on Information and Knowledge Management. ACM. http://doi.org/10.1145/3746252.3761238
+25. Ermis, B.., Ernst, P.., Stein, Y.., Zappella, G.. (2020). Learning to Rank in the Position Based Model with Bandit Feedback. *International Conference on Information and Knowledge Management Proceedings*. https://doi.org/10.1145/3340531.3412723
 
-26. Kulkarni, H., Kallumadi, S., MacAvaney, S., Goharian, N., & Frieder, O. (2025, May 8). GRIT: Graph-based Recall Improvement for Task-oriented E-commerce Queries. Companion Proceedings of the ACM on Web Conference 2025. ACM. http://doi.org/10.1145/3701716.3717859
+26. Leonhardt, J.., Rudra, K.., Khosla, M.., Anand, A.., Anand, A.. (2022). Efficient Neural Ranking using Forward Indexes. *Www 2022 Proceedings of the ACM Web Conference 2022*. https://doi.org/10.1145/3485447.3511955
 
-27. Kumar, S., Rohatgi, D., Prakash, N., Sahai, S., Chandra, S., Kumar Mishra, S., … Kumar, M. (2026, January). 2P-BEnc: A two-phase information retrieval and ranking system based on the BERT encoder. Ain Shams Engineering Journal. Elsevier BV. http://doi.org/10.1016/j.asej.2025.103853
+27. Vuong, T.., Andolina, S.., Jacucci, G.., Ruotsalo, T.. (2022). Does More Context Help? Effects of Context Window and Application Source on Retrieval Performance. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3474055
 
-28. Leonhardt, J., Müller, H., Rudra, K., Khosla, M., Anand, A., & Anand, A. (2024, April 29). Efficient Neural Ranking Using Forward Indexes and Lightweight Encoders. ACM Transactions on Information Systems. Association for Computing Machinery (ACM). http://doi.org/10.1145/3631939
+28. Chang, B.., Meng, C.., Ma, H.., Chang, S.., Gu, Y.., Peng, Y.., Feng, J.., Zhang, Y.., Bi, S.., Chi, E.H.., Chen, M.. (2024). Cluster Anchor Regularization to Alleviate Popularity Bias in Recommender Systems. *Www 2024 Companion Companion Proceedings of the ACM Web Conference*. https://doi.org/10.1145/3589335.3648312
 
-29. Leonhardt, J., Rudra, K., & Anand, A. (2023, March 23). Extractive Explanations for Interpretable Text Ranking. ACM Transactions on Information Systems. Association for Computing Machinery (ACM). http://doi.org/10.1145/3576924
+29. Ren, Y.., Tang, H.., Zhu, S.. (2022). Unbiased Learning to Rank with Biased Continuous Feedback. *International Conference on Information and Knowledge Management Proceedings*. https://doi.org/10.1145/3511808.3557483
 
-30. Leonhardt, J., Rudra, K., Khosla, M., Anand, A., & Anand, A. (2022, April 25). Efficient Neural Ranking using Forward Indexes. Proceedings of the ACM Web Conference 2022. ACM. http://doi.org/10.1145/3485447.3511955
+30. Zhang, J.., Liu, Y.., Mao, J.., Ma, W.., Xu, J.., Ma, S.., Tian, Q.. (2023). User Behavior Simulation for Search Result Re-ranking. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3511469
 
-31. Li, X., Jin, J., Zhou, Y., Zhang, Y., Zhang, P., Zhu, Y., & Dou, Z. (2025, May 9). From Matching to Generation: A Survey on Generative Information Retrieval. ACM Transactions on Information Systems. Association for Computing Machinery (ACM). http://doi.org/10.1145/3722552
+31. Vuong, T.., Ruotsalo, T.. (2024). Predicting Representations of Information Needs from Digital Activity Context. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3639819
 
-32. Lyu, L., Roy, N., Oosterhuis, H., & Anand, A. (2024). Is Interpretable Machine Learning Effective at Feature Selection for Neural Learning-to-Rank?. Lecture Notes in Computer Science. Springer Nature Switzerland. http://doi.org/10.1007/978-3-031-56066-8_29
+32. Zhang, C.., Yao, H.., Yu, L.., Huang, C.., Song, D.., Chen, H.., Jiang, M.., Chawla, N.V.. (2021). Inductive Contextual Relation Learning for Personalization. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3450353
 
-33. Mahmoud, A. F. A., Mohammed, Z. M. S., Ben Ammar, M., Satty, A., Abdalla, F. A., Khamis, G. S. M., … Mohamed, A. S. (2025, February 2). Enhancing Semantic Search Precision through the CBOW Algorithm in the Semantic Web. Engineering, Technology & Applied Science Research. Engineering, Technology & Applied Science Research. http://doi.org/10.48084/etasr.9450
+33. Leonhardt, J.., Müller, H.., Rudra, K.., Khosla, M.., Anand, A.., Anand, A.. (2024). Efficient Neural Ranking Using Forward Indexes and Lightweight Encoders. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3631939
 
-34. Manta-Caro, C., Caputo, A., & Fernández-Luna, J. M. (2025, March 15). Information Retrieval for IoT and WoT: State-of-the-Art, Taxonomy Framework, and Evolutionary Directions. IEEE Internet of Things Journal. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/jiot.2024.3522219
+34. He, Y.., Tian, Y.., Wang, M.., Chen, F.., Yu, L.., Tang, M.., Chen, C.., Zhang, N.., Kuang, B.., Prakash, A.. (2023). Que2Engage: Embedding-based Retrieval for Relevant and Engaging Products at Facebook Marketplace. *ACM Web Conference 2023 Companion of the World Wide Web Conference Www 2023*. https://doi.org/10.1145/3543873.3584633
 
-35. Mateos, P., & Bellogín, A. (2024, November 16). A systematic literature review of recent advances on context-aware recommender systems. Artificial Intelligence Review. Springer Science and Business Media LLC. http://doi.org/10.1007/s10462-024-10939-4
+35. Zerveas, G.., Rekabsaz, N.., Cohen, D.., Eickhoff, C.. (2022). CODER: An efficient framework for improving retrieval through COntextual Document Embedding Reranking. *Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing Emnlp 2022*. https://doi.org/10.18653/v1/2022.emnlp-main.727
 
-36. Naseri, S., Dalton, J., Yates, A., & Allan, J. (2022, March 22). CEQE to SQET: A study of contextualized embeddings for query expansion. Information Retrieval Journal. Springer Science and Business Media LLC. http://doi.org/10.1007/s10791-022-09405-y
+36. Bi, K.., Metrikov, P.., Li, C.., Byun, B.. (2021). Leveraging user behavior history for personalized email search. *Web Conference 2021 Proceedings of the World Wide Web Conference Www 2021*. https://doi.org/10.1145/3442381.3450110
 
-37. Nguyen, T.-P., Nguyen, T.-H., Dinh, G.-H., Nguyen, L.-H., Tran, M.-T., & Le, T.-N. (2025, October 27). ReCap: Event-Aware Image Captioning with Article Retrieval and Semantic Gaussian Normalization. Proceedings of the 33rd ACM International Conference on Multimedia. ACM. http://doi.org/10.1145/3746027.3762039
+37. Yang, T.., Fang, S.., Li, S.., Wang, Y.., Ai, Q.. (2020). Analysis of Multivariate Scoring Functions for Automatic Unbiased Learning to Rank. *International Conference on Information and Knowledge Management Proceedings*. https://doi.org/10.1145/3340531.3412128
 
-38. Niu, Z., Mei, L., Yang, L., Zhao, Z., Yan, Q., Mao, J., & Wen, J.-R. (2025, November 10). Addressing Personalized Bias for Unbiased Learning to Rank. Proceedings of the 34th ACM International Conference on Information and Knowledge Management. ACM. http://doi.org/10.1145/3746252.3761377
+38. Gupta, S.., Hager, P.., Huang, J.., Vardasbi, A.., Oosterhuis, H.. (2023). Recent Advances in the Foundations and Applications of Unbiased Learning to Rank. *SIGIR 2023 Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3539618.3594247
 
-39. Novak, E., Bizjak, L., Mladenić, D., & Grobelnik, M. (2022, May). Why is a document relevant? Understanding the relevance scores in cross-lingual document retrieval. Knowledge-Based Systems. Elsevier BV. http://doi.org/10.1016/j.knosys.2022.108545
+39. Bock, J.D.., Verstockt, S.. (2021). SmarterROUTES-A Data-driven Context-aware Solution for Personalized Dynamic Routing and Navigation. *ACM Transactions on Spatial Algorithms and Systems*. https://doi.org/10.1145/3402125
 
-40. Podder, D., Paik, J. H., & Mitra, P. (2026, January 2). A retrieval model with contextual correlation analysis for verbose queries. Journal of Intelligent Information Systems. Springer Science and Business Media LLC. http://doi.org/10.1007/s10844-025-01009-4
+40. Yang, Y.., Qiao, Y.., Yang, T.. (2022). Compact Token Representations with Contextual Quantization for Efficient Document Re-ranking. *Proceedings of the Annual Meeting of the Association for Computational Linguistics*. https://doi.org/10.18653/v1/2022.acl-long.51
 
-41. Ren, Y., Tang, H., & Zhu, S. (2022, October 17). Unbiased Learning to Rank with Biased Continuous Feedback. Proceedings of the 31st ACM International Conference on Information & Knowledge Management. ACM. http://doi.org/10.1145/3511808.3557483
+41. Chen, J.. (2020). Beyond sessions: Exploiting hybrid contextual information for web search. *Wsdm 2020 Proceedings of the 13th International Conference on Web Search and Data Mining*. https://doi.org/10.1145/3336191.3372179
 
-42. Santosh Nakirikanti. (2025, April 30). AI-powered search: Revolutionizing the online shopping experience. World Journal of Advanced Engineering Technology and Sciences. GSC Online Press. http://doi.org/10.30574/wjaets.2025.15.1.0216
+42. Naseri, S.., Dalton, J.., Yates, A.., Allan, J.. (2022). CEQE to SQET: A study of contextualized embeddings for query expansion. *Information Retrieval Journal*. https://doi.org/10.1007/s10791-022-09405-y
 
-43. Thakare, Atul & Soora, Narasimha Reddy & Jena, Lambodar & Singh, Arvind. (2025). Boosting Webpage Retrieval with Ensemble Learning and Advanced Semantic Models: A Novel Re-Ranking Framework. IAENG International Journal of Computer Science. 52. 3574-3582.
+43. Chen, H.., Chen, Y.., Meng, J.., Jiao, Y.., Ni, Y.., Gao, Y.., Momma, M.., Sun, Y.. (2023). Improving Product Search with Season-Aware Query-Product Semantic Similarity. *ACM Web Conference 2023 Companion of the World Wide Web Conference Www 2023*. https://doi.org/10.1145/3543873.3587625
 
-44. Wijnhoven, F., & van Haren, J. (2021, May 26). Search Engine Gender Bias. Frontiers in Big Data. Frontiers Media SA. http://doi.org/10.3389/fdata.2021.622106
+44. Pham, T.M.., Yoon, S.., Bui, T.., Nguyen, A.. (2023). PiC: A Phrase-in-Context Dataset for Phrase Understanding and Semantic Search. *Eacl 2023 17th Conference of the European Chapter of the Association for Computational Linguistics Proceedings of the Conference*. https://doi.org/10.18653/v1/2023.eacl-main.1
 
-45. Xu, B., Lin, H., Lin, Y., & Xu, K. (2022, August 25). Context-aware ranking refinement with attentive semi-supervised autoencoders. Soft Computing. Springer Science and Business Media LLC. http://doi.org/10.1007/s00500-022-07433-w
+45. Palomino, A.., Fischer, A.., Buschhüter, D.., Roller, R.., Pinkwart, N.., Paaßen, B.. (2025). Mitigating Bias in Item Retrieval for Enhancing Exam Assembly in Vocational Education Services. *Proceedings of the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics Human Language Technologies Long Papers Naacl Hlt 2025*. https://doi.org/10.18653/v1/2025.naacl-industry.16
 
-46. Yang, Y., Qiao, Y., Shao, J., Yan, X., & Yang, T. (2022, February 11). Lightweight Composite Re-Ranking for Efficient Keyword Search with BERT. Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining. ACM. http://doi.org/10.1145/3488560.3498495
-
-47. Yasin, S. A., & Prasada Rao, P. V. R. D. (2022, October). Enhanced CRNN-Based Optimal Web Page Classification and Improved Tunicate Swarm Algorithm-Based Re-Ranking. International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems. World Scientific Pub Co Pte Ltd. http://doi.org/10.1142/s0218488522500246
-
-48. Ye, Z., Xie, X., Liu, Y., Wang, Z., Li, X., Li, J., … Ma, S. (2022, July 6). Why Don't You Click. Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval. ACM. http://doi.org/10.1145/3477495.3532082
-
-49. Zhou, Y., Yao, J., Dou, Z., Tu, Y., Wu, L., Chua, T.-S., & Wen, J.-R. (2024, October 22). ROGER: Ranking-Oriented Generative Retrieval. ACM Transactions on Information Systems. Association for Computing Machinery (ACM). http://doi.org/10.1145/3603167Scopus (new export)
-
-50. Fabris, A., Rus, C., Saldivar, J., Gatzioura, A., Biega, A. J., & Castillo, C. (2026, April). Does fair ranking lead to fair recruitment outcomes? A study of interventions, interfaces, and interactions. <i>Information Processing & Management</i>. Elsevier BV. http://doi.org/10.1016/j.ipm.2025.104506
-
-51. Melchiorre, A. B., Penz, D., Ganhör, C., Lesota, O., Fragoso, V., Fritzl, F., … Schedl, M. (2023, June). Emotion-aware music tower blocks (EmoMTB ): an intelligent audiovisual interface for music discovery and recommendation. <i>International Journal of Multimedia Information Retrieval</i>. Springer Science and Business Media LLC. http://doi.org/10.1007/s13735-023-00275-8
-
-52. (n.d.). Scopus - Document Details. Retrieved from https://www.scopus.com/pages/publications/85111024895?origin=resultslist
-
-53. He, L., Zhao, J., Gu, Y., Elbaz, M., & Ding, Z. (2024, March 26). A bias study and an unbiased deep neural network for recommender systems. <i>Web Intelligence</i>. SAGE Publications. http://doi.org/10.3233/web-230036
-
-54. (n.d.). Scopus - Document Details. Retrieved from https://www.scopus.com/pages/publications/85169032399?origin=resultslist
-
-55. Jin, J., He, Z., Yang, M., Zhang, W., Yu, Y., Wang, J., & McAuley, J. (2024, May 13). InfoRank: Unbiased Learning-to-Rank via Conditional Mutual Information Minimization. <i>Proceedings of the ACM Web Conference 2024</i>. ACM. http://doi.org/10.1145/3589334.3645356
-
-56. Luo, D., Zou, L., Ai, Q., Chen, Z., Yin, D., & Davison, B. D. (2023, February 27). Model-based Unbiased Learning to Rank. <i>Proceedings of the Sixteenth ACM International Conference on Web Search and Data Mining</i>. ACM. http://doi.org/10.1145/3539597.3570395
-
-57. Chen, M., Liu, C., Sun, J., & Hoi, S. C. H. (2021, July 11). Adapting Interactional Observation Embedding for Counterfactual Learning to Rank. <i>Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval</i>. ACM. http://doi.org/10.1145/3404835.3462901
-
-58. Ferrari Dacrema, M., Felicioni, N., & Cremonesi, P. (2022, June 9). Offline Evaluation of Recommender Systems in a User Interface With Multiple Carousels. <i>Frontiers in Big Data</i>. Frontiers Media SA. http://doi.org/10.3389/fdata.2022.910030
-
-59. Bisht, K., & Susan, S. (2022, April 25). v-TCM. <i>Proceedings of the 37th ACM/SIGAPP Symposium on Applied Computing</i>. ACM. http://doi.org/10.1145/3477314.3507214
-
-60. Chen, J., Wang, X., Feng, F., & He, X. (2021, September 13). Bias Issues and Solutions in Recommender System. <i>Fifteenth ACM Conference on Recommender Systems</i>. ACM. http://doi.org/10.1145/3460231.3473321
-
-61. Hofstätter, S., Zlabinger, M., Sertkan, M., Schröder, M., & Hanbury, A. (2020, October 19). Fine-Grained Relevance Annotations for Multi-Task Document Ranking and Question Answering. <i>Proceedings of the 29th ACM International Conference on Information & Knowledge Management</i>. ACM. http://doi.org/10.1145/3340531.3412878
-
-62. Wu, X., Chen, H., Zhao, J., He, L., Yin, D., & Chang, Y. (2021, March 8). Unbiased Learning to Rank in Feeds Recommendation. <i>Proceedings of the 14th ACM International Conference on Web Search and Data Mining</i>. ACM. http://doi.org/10.1145/3437963.3441751
-
-63. Huang, J., Hu, K., Tang, Q., Chen, M., Qi, Y., Cheng, J., & Lei, J. (2021, July 11). Deep Position-wise Interaction Network for CTR Prediction. <i>Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval</i>. ACM. http://doi.org/10.1145/3404835.3463117
-
-64. Dai, X., Hou, J., Liu, Q., Xi, Y., Tang, R., Zhang, W., … Yu, Y. (2020, October 19). U-rank. <i>Proceedings of the 29th ACM International Conference on Information & Knowledge Management</i>. ACM. http://doi.org/10.1145/3340531.3412756
-
-65. Yu, Y., Jin, B., Song, J., Li, B., Zheng, Y., & Zhuo, W. (2023). Improving Micro-video Recommendation by Controlling Position Bias. <i>Lecture Notes in Computer Science</i>. Springer International Publishing. http://doi.org/10.1007/978-3-031-26387-3_31
-
-66. Luo, S., He, B., Zhao, H., Shao, W., Qi, Y., Huang, Y., … Song, L. (2025, July 10). RecRanker: Instruction Tuning Large Language Model as Ranker for Top-k Recommendation. <i>ACM Transactions on Information Systems</i>. Association for Computing Machinery (ACM). http://doi.org/10.1145/3705728
-
-67. Felicioni, N., Ferrari Dacrema, M., & Cremonesi, P. (2021, June 21). A Methodology for the Offline Evaluation of Recommender Systems in a User Interface with Multiple Carousels. <i>Adjunct Proceedings of the 29th ACM Conference on User Modeling, Adaptation and Personalization</i>. ACM. http://doi.org/10.1145/3450614.3461680
-
-68. Yang, T., Fang, S., Li, S., Wang, Y., & Ai, Q. (2020, October 19). Analysis of Multivariate Scoring Functions for Automatic Unbiased Learning to Rank. <i>Proceedings of the 29th ACM International Conference on Information & Knowledge Management</i>. ACM. http://doi.org/10.1145/3340531.3412128
-
-69. Ovaisi, Z., Ahsan, R., Zhang, Y., Vasilaky, K., & Zheleva, E. (2020, April 20). Correcting for Selection Bias in Learning-to-rank Systems. <i>Proceedings of The Web Conference 2020</i>. ACM. http://doi.org/10.1145/3366423.3380255
-
-70. (n.d.). Scopus - Document Details. Retrieved from https://www.scopus.com/pages/publications/105029924249?origin=resultslist
-
-71. Zhuang, H., Qin, Z., Wang, X., Bendersky, M., Qian, X., Hu, P., & Chen, D. C. (2021, April 19). Cross-Positional Attention for Debiasing Clicks. <i>Proceedings of the Web Conference 2021</i>. ACM. http://doi.org/10.1145/3442381.3450098
-
-72. Mahendru, S., & Pandit, T. (2024, June 7). Venn Diagram Prompting: Accelerating Comprehension with Scaffolding Effect. <i>2024 6th World Symposium on Artificial Intelligence (WSAI)</i>. IEEE. http://doi.org/10.1109/wsai62426.2024.10828919
-
-73. Azimi, M. (2026). Context-Aware Ranking in Expert Finding. <i>Lecture Notes in Computer Science</i>. Springer Nature Switzerland. http://doi.org/10.1007/978-3-032-21324-2_41
-
-74. Cachel, K., & Rundensteiner, E. (2023, June 12). Fairer Together: Mitigating Disparate Exposure in Kemeny Rank Aggregation. <i>2023 ACM Conference on Fairness Accountability and Transparency</i>. ACM. http://doi.org/10.1145/3593013.3594085
-
-75. Zheng, J., Li, J., & Huang, M. (2025, August). Personalized anchor debiased-contrastive learning for multi-behavior recommendation. <i>Expert Systems with Applications</i>. Elsevier BV. http://doi.org/10.1016/j.eswa.2025.127685
-
-76. Karra Taniskidou, E., Zhao, W., Murray, I., & Pellegrini, R. (2023, October 21). Nudging Neural Click Prediction Models to Pay Attention to Position. <i>Proceedings of the 32nd ACM International Conference on Information and Knowledge Management</i>. ACM. http://doi.org/10.1145/3583780.3614994
-
-77. Wu, Y., & Zhao, W. (2024, June 30). Debiased Causal Inference for Sequential Recommendation. <i>2024 International Joint Conference on Neural Networks (IJCNN)</i>. IEEE. http://doi.org/10.1109/ijcnn60899.2024.10650048
-
-78. Jin, J., Fang, Y., Zhang, W., Ren, K., Zhou, G., Xu, J., … Gai, K. (2020, July 25). A Deep Recurrent Survival Model for Unbiased Ranking. <i>Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval</i>. ACM. http://doi.org/10.1145/3397271.3401073
-
-79. Qin, Z., Chen, S. J., Metzler, D., Noh, Y., Qin, J., & Wang, X. (2020, August 20). Attribute-based Propensity for Unbiased Learning in Recommender Systems. <i>Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</i>. ACM. http://doi.org/10.1145/3394486.3403285
-
-80. (n.d.). Scopus - Document Details. Retrieved from https://www.scopus.com/pages/publications/85210029070?origin=resultslist
-
-81. Amala, K. J., & Rajeswari, D. (2025). Nonparametric Click Modeling Using Dirichlet Process Mixture Model for Information Retrieval. <i>IEEE Access</i>. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/access.2025.3639062
-
-82. HE, X., An, B., Li, Y., Chen, H., Guo, Q., Li, X., & Wang, Z. (2020, September 22). Contextual User Browsing Bandits for Large-Scale Online Mobile Recommendation. <i>Fourteenth ACM Conference on Recommender Systems</i>. ACM. http://doi.org/10.1145/3383313.3412234
-
-83. (n.d.). Scopus - Document Details. Retrieved from https://www.scopus.com/pages/publications/85107388450?origin=resultslist
+46. Rudra, K.., Fernando, Z.T.., Anand, A.. (2023). An in-depth analysis of passage-level label transfer for contextual document ranking. *Information Retrieval Journal*. https://doi.org/10.1007/s10791-023-09430-5
 

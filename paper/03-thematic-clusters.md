@@ -1,79 +1,84 @@
 # Thematic Clusters and Comparative Analysis
 
-**Research Topic:** Unbiased Learning to Rank (ULTR) and Context-Aware Information Retrieval (2021–2025)
-**Total Papers Analyzed:** 69
+**Paper:** Relevance and Positioning: A Systematic Bibliometric Review of Context-Aware ML Ranking in Web Search and Recommendation Systems
+**Papers analyzed:** 45
 
 ---
 
 ## 1. Thematic Clusters
 
-### Cluster 1: Position Bias, Selection Bias, and Unbiased Learning to Rank
+### Cluster 1: Core IR, Ranking Architectures, and LLM Integration
 
 | Dimension | Description |
 |-----------|-------------|
-| **Cluster Title** | Bias Detection and Correction in Learning to Rank |
-| **Common Characteristics** | Studies in this cluster address various bias types (position, selection, examination, personalized) that distort click-based relevance signals. They employ counterfactual estimation (IPS, doubly robust), EM-based propensity modeling, and two-tower architectures to jointly estimate bias and relevance. |
-| **Representative Studies** | Ovaisi et al. (2020) — selection bias correction via Heckman two-stage; Zhuang et al. (2021) — Cross-Positional Attention for flexible examination bias; Niu et al. (2025) — personalized bias via user-aware IPS; Amala & Rajeswari (2025a, 2025b) — APCP two-tower network and DPMM nonparametric click model; Fang et al. (2020) — permutation invariance for AutoULTR |
-| **Summary of Key Findings** | Position bias remains the most studied bias type, but newer work addresses selection bias, context bias (in feeds), interactional observation bias, and personalized bias. Permutation invariance is necessary for AutoULTR convergence. IPS-based methods are increasingly replaced by doubly robust and two-tower architectures. Combined propensity models (position × context) consistently outperform single-bias methods. |
+| **Title** | Neural Architectures for Context-Aware Ranking and LLM-Based Retrieval |
+| **Papers** | 10 |
+| **Common Characteristics** | Studies developing or deploying neural architectures where context signals improve ranking relevance. Includes pre-training frameworks leveraging document structure (Webformer), session-level user embeddings (CoSeRNN), two-tower multimodal architectures for e-commerce, instruction-tuned LLMs as rankers (RecRanker), and efficient neural ranking indexes (Fast-Forward). |
+| **Representative Studies** | Hansen et al. (2020) — CoSeRNN contextual music recommendation (127 citations); Wu et al. (2020) — passage-level cumulative gain for document ranking (40 citations); Leonhardt et al. (2022, 2024) — Fast-Forward indexes for CPU-only neural re-ranking; Luo et al. (2025) — RecRanker LLM-as-ranker (15 citations) |
+| **Key Findings** | Contextual signals (session history, document structure, user behavior) consistently improve ranking relevance across domains. Efficient architectures (dual-encoder, pre-computed indexes, lightweight query encoders) approach cross-encoder quality at orders-of-magnitude lower cost. LLM-based ranking represents the newest architectural paradigm, with instruction-tuned models competing with conventional recommenders. |
 
-### Cluster 2: Context-Aware Neural Ranking and Transformer Architectures
-
-| Dimension | Description |
-|-----------|-------------|
-| **Cluster Title** | Neural Architectures for Contextualized Document Ranking |
-| **Common Characteristics** | Papers in this cluster develop and optimize neural ranking architectures that incorporate contextual signals — BERT-based cross-encoders, Graph Attention Networks, Fast-Forward indexes, and attention mechanisms. Focus on efficiency-interpretability tradeoffs and handling diverse query types (verbose, compositional, negated). |
-| **Representative Studies** | Haddad et al. (2025) — ReGAT-BERT fusing BERT with GAT; Kumar et al. (2026) — 2P-BEnc two-phase BERT encoder (300x speedup); Leonhardt et al. (2022, 2024) — Fast-Forward indexes for efficient dual-encoder ranking; Hofstatter et al. (2021) — position bias mitigation in Transformer re-rankers; Krasakis et al. (2025) — zero-shot negation handling via disentangled LSR |
-| **Summary of Key Findings** | Cross-encoder BERT architectures achieve highest ranking quality but are computationally prohibitive for first-stage retrieval. Dual-encoder + interpolation strategies provide competitive effectiveness with orders-of-magnitude lower cost. Lightweight query encoders and pre-computed passage vectors enable CPU-only neural ranking. Contextual embeddings and graph-based methods substantially improve handling of verbose and compositional queries. |
-
-### Cluster 3: Recommender System Bias, Fairness, and Diversity
+### Cluster 2: Dense Retrieval and Contextualized Query Enhancement
 
 | Dimension | Description |
 |-----------|-------------|
-| **Cluster Title** | Fairness-Aware and Diversity-Promoting Recommendation |
-| **Common Characteristics** | Studies addressing how ranking and recommendation algorithms create or amplify unfairness — popularity bias amplifying "rich-get-richer" dynamics, disparate exposure across demographic groups, diversity-relevance tradeoffs, and UI-driven evaluation biases (carousel layouts). |
-| **Representative Studies** | Carnovalini et al. (2025) — narrative review of popularity bias origins and mitigation; He et al. (2024) — 3-type bias study with 667M-sample e-commerce data (online A/B: +2.4% CTR, +6.5% GMV); Cachel & Rundensteiner (2023) — fair Kemeny rank aggregation; Felicioni et al. (2021) & Ferrari Dacrema et al. (2022) — multi-carousel offline evaluation protocols; Chen et al. (2021) — tutorial on 6 bias categories in RS |
-| **Summary of Key Findings** | Popularity bias is the most pervasive bias type in recommender systems, originating from both human cognitive tendencies (herd behavior) and algorithmic feedback loops. Fair ranking interventions (re-ranking, propensity weighting) can improve demographic balance but do not always translate to fair downstream outcomes (e.g., shortlisting). Multi-carousel UI layouts fundamentally change relative algorithm rankings compared to single-list evaluation. Industrial-scale studies confirm that bias correction yields measurable business impact. |
+| **Title** | Dense Retrieval, Pseudo-Relevance Feedback, and Query Expansion |
+| **Papers** | 8 |
+| **Common Characteristics** | Studies advancing BERT-based dense retrieval through pseudo-relevance feedback, query expansion with contextualized embeddings, embedding compression, and list-wise training objectives. Strong methodological cohesion — the ColBERT-PRF line of work (Wang et al., 2021, 2023) forms an intellectual core extended by multiple groups. |
+| **Representative Studies** | Wang et al. (2021, 2023) — ColBERT-PRF for dense retrieval PRF (60 and 46 citations); Naseri et al. (2022) — CEQE/SQET contextualized query expansion (3 citations); Yang et al. (2022a, 2022b) — BECR and Contextual Quantization for efficient BERT re-ranking (15 and 4 citations) |
+| **Key Findings** | Pseudo-relevance feedback is viable and highly effective for dense retrieval, with MAP improvements up to 26%. Contextualized embeddings (BERT) substantially outperform traditional query expansion (RM3). Embedding compression achieves 14:1 ratios with negligible quality loss, enabling CPU-only deployment. |
 
-### Cluster 4: Generative Information Retrieval and LLM-Based Ranking
-
-| Dimension | Description |
-|-----------|-------------|
-| **Cluster Title** | Large Language Models as Retrievers, Rankers, and Evaluators |
-| **Common Characteristics** | Emerging paradigm where LLMs replace or augment traditional IR components: generative document retrieval (generating docIDs instead of indexing), LLM-as-ranker (instruction-tuned listwise ranking), LLM-as-evaluator (automated relevance judgments), and Retrieval-Augmented Generation (RAG) with semantic re-ranking. |
-| **Representative Studies** | Li et al. (2025) — comprehensive GenIR survey; Luo et al. (2025) — RecRanker instruction-tuned LLM ranker; Deng et al. (2025) — DIVAgent LLM-powered diversification; Karlovic et al. (2025) — RAG with 7 LLMs + Cohere re-ranker for tourism; Ghosh & Mittal (2025) — KG-based RAG for engineering codes; Dai et al. (2024) — bias survey in LLM-era IR |
-| **Summary of Key Findings** | GenIR represents a paradigm shift from similarity-matching to generative retrieval, potentially eliminating large-scale indexes. LLMs as rankers (RecRanker) outperform traditional models through instruction tuning and hybrid ensembling. RAG + semantic re-ranking pipelines achieve high relevance in domain-specific applications. However, LLMs introduce new bias types (source bias, hallucination bias, instruction bias) and face challenges in consistency, cost, and incremental learning. |
-
-### Cluster 5: Evaluation, Survey, and Cross-Cutting Methodologies
+### Cluster 3: Position Bias, Counterfactual LTR, and Off-Policy Evaluation
 
 | Dimension | Description |
 |-----------|-------------|
-| **Cluster Title** | Evaluation Frameworks, Systematic Reviews, and Domain-Specific IR |
-| **Common Characteristics** | This cluster encompasses: (a) novel evaluation metrics beyond precision/recall (rank stability, EEG-based usefulness, 2D carousel NDCG); (b) comprehensive surveys and systematic reviews synthesizing the field; (c) domain-specific IR applications (IoT, edge computing, e-commerce, engineering, finance); (d) interpretability and feature attribution methods for ranking models. |
-| **Representative Studies** | Batri et al. (2025a) — Rmeasure for rank stability; Batri et al. (2025b) — parabolic weighting via Lenz's Law; Gupta et al. (2023) — ULTR tutorial; Mateos & Bellogin (2025) — CARS systematic review; Manta-Caro et al. (2025) — IoT/WoT IR survey; Heuss et al. (2025) — RankingSHAP listwise feature attribution; Lyu et al. (2024) — feature selection interpretability for neural LTR |
-| **Summary of Key Findings** | Traditional IR evaluation metrics (precision, recall, NDCG) are insufficient for capturing modern concerns: rank consistency across repeated queries, result diversity, fairness, and interpretability. Systematic reviews reveal that evaluation standardization remains a critical gap, particularly for context-aware systems. Domain-specific IR applications (IoT, edge computing, engineering RAG) face unique challenges around data sparsity, real-time constraints, and multimodal data integration. |
+| **Title** | Bias-Aware and Counterfactual Learning to Rank |
+| **Papers** | 8 |
+| **Common Characteristics** | Studies addressing how click-based implicit feedback is distorted by position bias, examination bias, and selection bias. Methodologies span counterfactual estimation (IPS, doubly robust), survival analysis, contextual bandits, and off-policy evaluation for ranking. |
+| **Representative Studies** | Chen et al. (2020) — context-aware click model (47 citations); Kiyohara et al. (2022) — Cascade-DR off-policy evaluation (40 citations); Chen et al. (2021) — interactional observation bias modeling (23 citations); Yang et al. (2020) — permutation invariance for AutoULTR (6 citations) |
+| **Key Findings** | Position bias remains the central methodological concern, but work increasingly addresses interactional and contextual biases. The cascade model provides a tractable user behavior model for doubly robust off-policy evaluation. Permutation invariance is theoretically necessary for AutoULTR convergence. Contextual bandits with position bias modeling improve online metrics (+5% clicks). |
+
+### Cluster 4: Recommender Fairness, Popularity Bias, and Context-Aware Recommendation
+
+| Dimension | Description |
+|-----------|-------------|
+| **Title** | Fairness, Popularity Bias, and User-Centered Evaluation in Recommendation |
+| **Papers** | 10 |
+| **Common Characteristics** | Studies examining how ranking and recommendation algorithms create or amplify unfairness — particularly popularity bias that systematically advantages already-popular resources regardless of contextual relevance. Work spans systematic surveys (Klimashevskaia, Mateos), user-centered evaluation frameworks (Abdollahpouri), LLM-era bias taxonomies (Dai), and algorithmic mitigation (Chang, Zerveas neutrality regularization, Palomino MILP re-ranking). |
+| **Representative Studies** | Abdollahpouri et al. (2021) — user-centered popularity bias evaluation (125 citations); Dai et al. (2024) — LLM-era bias survey (121 citations); Klimashevskaia et al. (2024) — popularity bias systematic review (77 citations); Mateos & Bellogin (2025) — context-aware RS review (53 citations) |
+| **Key Findings** | The most-cited papers in the entire corpus are in this cluster, indicating the field's intense concern with fairness outcomes. Most bias mitigation work is evaluated offline with abstract metrics; user studies are virtually absent ("abstraction trap"). Context-aware recommendation is increasingly neural but lacks consensus on context definition. Popularity bias mitigation that ignores user-level tolerance for popular items can harm user satisfaction. |
+
+### Cluster 5: Context-Aware Search and Cross-Cutting Applications
+
+| Dimension | Description |
+|-----------|-------------|
+| **Title** | Context Modeling in Diverse Retrieval Settings |
+| **Papers** | 9 |
+| **Common Characteristics** | Studies investigating how different types of context — digital activity context (Vuong et al.), seasonal and temporal context (Chen et al. Amazon), session and cross-session context (Chen), legal retrieval context (Ma et al.) — affect search and recommendation outcomes. This cluster is methodologically heterogeneous, covering supervised learning, simulation-based training, and survey/tutorial contributions. |
+| **Representative Studies** | Vuong et al. (2022) — digital activity context for Web search (11 citations); Zhang et al. (2023) — user behavior simulation for RL re-ranking (9 citations); Gupta et al. (2023) — ULTR tutorial (5 citations) |
+| **Key Findings** | Digital activity context beyond search sessions (including non-search applications) improves retrieval. Rich context (full activity, 1-hour windows) consistently outperforms narrow context (session-only). Domain-specific contexts (legal, e-commerce seasonal) require specialized modeling. User behavior simulation shows promise for training ranking agents without costly online interaction. |
 
 ---
 
 ## 2. Cross-Cluster Comparative Analysis
 
-### Similarities Across Clusters
+### Similarities
 
-All five clusters share a common theoretical foundation in addressing how user interaction signals (clicks, dwell time, ratings) are distorted by various biases and contextual factors. The dominant methodological approach across clusters is neural: BERT-based architectures, transformer attention mechanisms, and deep learning feature extraction appear in every cluster. A clear convergence trend exists toward two-tower architectures (separately modeling relevance and bias) — this pattern appears in Cluster 1 (bias correction), Cluster 2 (efficient ranking), and Cluster 4 (LLM-based ranking). Furthermore, all clusters demonstrate increasing concern with fairness and evaluation rigor, moving beyond traditional precision/recall metrics toward multidimensional assessment frameworks that account for diversity, consistency, and demographic balance.
+All five clusters share a commitment to neural architectures as the dominant modeling paradigm: BERT-based encoders, Transformer attention mechanisms, and dual-encoder/two-tower architectural patterns appear in every cluster. A second shared characteristic is the concern with how context — whether session history, document structure, user behavior, or digital activity — can be operationalized to improve ranking outcomes. The two-tower architecture (separately modeling relevance or user preference from bias or context) emerges as a recurring pattern, appearing in Cluster 1 (e-commerce EBR), Cluster 3 (counterfactual LTR), and Cluster 4 (context-aware recommendation). A third commonality is evaluation methodology: NDCG and MAP dominate as evaluation metrics across all clusters, with online A/B testing concentrated in industry-authored papers (Meta, Amazon, Tencent, JD.com).
 
-### Differences Across Clusters
+### Differences
 
-The clusters diverge primarily in their treatment of context. Cluster 2 operationalizes context as a feature to improve ranking accuracy (contextual embeddings, query-document interactions), while Cluster 3 treats context as a source of unfairness to be mitigated (exposure bias from UI layout, popularity feedback loops). Cluster 4 represents the most radical departure — shifting from retrieval as similarity matching to retrieval as generation, fundamentally changing the architecture of IR systems. Methodologically, Cluster 1 is the most theoretically rigorous (counterfactual causal inference, propensity estimation with formal guarantees), while Cluster 5 is the most heterogeneous, encompassing evaluation, surveys, and niche domain applications. The temporal distribution also differs: Cluster 1 (bias correction) has the deepest historical roots dating to early ULTR work (2020-2021), while Cluster 4 (GenIR/LLM) is the newest and fastest-growing, with most papers from 2025.
+The clusters diverge in their treatment of context as either a relevance-enhancing signal or a fairness-distorting factor. Clusters 1 and 2 treat context as an opportunity — a richer representation that improves relevance estimation. Cluster 4 treats context as a risk — a signal that can encode and amplify existing popularity disparities. Cluster 3 occupies a middle ground, modeling how context (specifically position context) distorts user behavior signals, requiring counterfactual correction. Methodologically, Cluster 2 (dense retrieval) is the most cumulative, with successive papers building directly on prior work (ColBERT → ColBERT-PRF → ColBERT-PRF journal extension). Cluster 5 is the most exploratory, investigating diverse context types without a shared methodological framework.
 
 ### Research Gaps
 
-Several critical gaps emerge from this analysis. First, the intersection of ULTR and GenIR is severely underexplored — how do position bias, selection bias, and other click-based distortions manifest when LLMs generate results directly? Second, most bias correction methods have been validated on single platforms (Google, JD.com, Meituan) with limited cross-platform generalizability evidence. Third, fairness interventions are predominantly evaluated offline; online A/B tests measuring real-world fairness outcomes remain rare (only He et al., 2024 and a few industry papers). Fourth, context-aware ranking research remains dominated by a narrow set of context types (time, location, device), with little exploration of affective context, social context, or longitudinal user behavior patterns. Fifth, almost no work addresses bias in multimodal retrieval (text + images + structured data), despite growing industrial deployment of multimodal search. Finally, the reproducibility crisis is evident — many proposed architectures lack open-source implementations or standardized benchmark protocols, making fair comparison difficult.
+Three critical gaps emerge. **First**, the context-as-opportunity (Clusters 1-2) and context-as-risk (Clusters 3-4) perspectives operate in near-total isolation — confirmed bibliometrically by the TLS 1 link between context-aware and fairness in the keyword network. No paper in the corpus simultaneously optimizes for relevance improvement through context while mitigating context-encoded fairness distortions. **Second**, evaluation of context-aware ranking systems is overwhelmingly offline: of 45 papers, only 6 report online A/B results. Real-world evidence of how context-aware ranking affects resource positioning — which resources gain or lose visibility — is virtually absent. **Third**, context is narrowly operationalized: session history, document structure, and temporal signals dominate. Affective context, social context, cross-device context, and multimodal context (combining text, image, and behavioral signals) are explored in isolated papers but lack systematic treatment.
 
 ---
 
 ## 3. Future Research Directions
 
-Future research should prioritize: (1) **Unified bias frameworks for GenIR** — extending ULTR counterfactual methods to generative retrieval settings where documents are not retrieved but generated, requiring new formalizations of bias in LLM outputs. (2) **Cross-platform and longitudinal fairness evaluation** — moving beyond single-platform offline metrics to multi-platform, online A/B studies that measure real-world fairness outcomes over time. (3) **Multi-modal and multi-context bias modeling** — developing ranking frameworks that simultaneously account for diverse context types (affective, social, behavioral) and multiple media modalities. (4) **Computationally efficient debiasing** — creating lightweight bias correction methods compatible with real-time ranking pipelines, particularly for resource-constrained edge and IoT deployments. (5) **Standardized benchmarks and reproducibility infrastructure** — establishing shared evaluation protocols, open-source implementations, and benchmark datasets that enable rigorous comparison of bias correction and context-aware ranking methods across research groups.
+Future research should prioritize: (1) **Unified relevance-positioning frameworks** that simultaneously optimize context-aware ranking for relevance while measuring and mitigating context-driven positioning distortions — bridging the gap between Clusters 1-2 (relevance) and Cluster 4 (fairness). (2) **Online and user-centered evaluation** of how context-aware ranking affects resource positioning in production systems — addressing the "abstraction trap" identified by Klimashevskaia et al. (2024) where bias mitigation is validated only through offline metrics. (3) **Richer context taxonomies** that move beyond session and document context to incorporate affective, social, cross-device, and multimodal signals, with systematic evaluation of how each context type affects both relevance and positioning outcomes. (4) **Cross-platform generalizability studies** establishing whether context-aware ranking methods effective in one domain (e.g., e-commerce) transfer to others (e.g., web search, legal retrieval). (5) **Reproducibility infrastructure** addressing the code and data availability gap documented by Mateos and Bellogin (2025) — fewer than 25% of context-aware recommender system papers provide public implementations.
 
 ---
 
-✅ Thematic clustering and comparative synthesis successfully generated — ready for integration into the review results chapter.
+✅ Thematic clustering and comparative synthesis successfully generated.

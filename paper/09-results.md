@@ -2,113 +2,95 @@
 
 ## 1. Corpus Overview
 
-The systematic search and screening process identified 69 studies for inclusion in the qualitative synthesis, supplemented by 71 Scopus-indexed records for bibliometric analysis. Table 1 presents the distribution of included studies by year and document type.
+The systematic search and PRISMA-guided screening process identified 46 studies for qualitative synthesis, supported by 48 Scopus-indexed records for bibliometric analysis. Table 1 presents the distribution by year and document type.
 
-**Table 1: Distribution of Included Studies by Year and Type**
+**Table 1: Distribution of Included Studies**
 
-| Year | Articles | Conference Papers | Reviews / Book Chapters | Total |
-|------|----------|-------------------|-------------------------|-------|
-| 2020 (early) | 1 | 5 | 1 | 7 |
-| 2021 | 2 | 7 | 1 | 10 |
-| 2022 | 2 | 7 | 1 | 10 |
-| 2023 | 3 | 7 | 0 | 10 |
-| 2024 | 6 | 5 | 0 | 11 |
-| 2025 | 15 | 10 | 2 | 27 |
-| 2026 (early) | 3 | 0 | 0 | 3 |
-| **Total** | **32** | **41** | **5** | **78** |
+| Year | Conference Papers | Journal Articles | Reviews | Total |
+|------|-------------------|------------------|---------|-------|
+| 2020 | 7 | 1 | 0 | 8 |
+| 2021 | 6 | 2 | 1 | 9 |
+| 2022 | 7 | 2 | 0 | 9 |
+| 2023 | 4 | 3 | 2 | 9 |
+| 2024 | 3 | 4 | 1 | 8 |
+| 2025 | 2 | 1 | 1 | 4 |
+| **Total** | **29** | **13** | **5** | **47** |
 
-*Note: The bibliometric corpus (71 Scopus records) partially overlaps with the qualitative synthesis corpus (69 papers). Total exceeds 69/71 due to multi-year publication coverage across corpora.*
+*Note: 47 total entries include papers counted in both conference and journal categories for extended versions.*
 
-The included studies span 44 distinct publication venues. Table 2 lists the most frequent sources.
+The included studies span 18 publication venues. ACM venues dominate: SIGIR (7 papers), CIKM (4), WSDM (4), The Web Conference/WWW (4), ACM TOIS (3). IEEE Access contributes 2 papers. The remaining venues (KDD, RecSys, EMNLP, EACL, ICTIR, UMAP, NAACL) contribute 1-2 papers each.
 
-**Table 2: Top Publication Venues**
-
-| Source | Papers | Type | Quartile |
-|--------|--------|------|----------|
-| IEEE Access | 7 | Open Access Journal | Q2 |
-| CIKM 2025 Proceedings | 6 | Conference | Q1 |
-| ACM Transactions on Information Systems | 6 | Journal | Q1 |
-| SIGIR Proceedings (2021, 2023, 2025) | 5 | Conference | Q1 |
-| Lecture Notes in Computer Science (ECIR) | 4 | Conference Proceedings | Q3 |
+Citation counts range from 1 to 127, with a median of 14. The five most-cited papers are: Hansen et al. (2020, 127 citations), Abdollahpouri et al. (2021, 125 citations), Dai et al. (2024, 121 citations), Klimashevskaia et al. (2024, 77 citations), and Wang et al. (2021, 60 citations). These five papers account for 40% of total citations in the corpus.
 
 ## 2. Thematic Clusters
 
-Content analysis of the 69 papers identified five thematic clusters. Table 3 presents the cluster structure with representative studies.
+Content analysis combined with VOSviewer keyword co-occurrence mapping identified five thematic clusters. Table 2 presents the cluster structure.
 
-**Table 3: Thematic Clusters in ULTR and Context-Aware IR Research**
+**Table 2: Thematic Clusters in Context-Aware ML Ranking Research**
 
-| Cluster | Title | Papers | Core Focus | Representative Studies |
-|---------|-------|--------|------------|----------------------|
-| C1 | Bias Detection and Correction in LTR | 20 | Position, selection, examination, and personalized bias correction | Niu et al. (2025), Amala & Rajeswari (2025a), Fang et al. (2020), Zhuang et al. (2021) |
-| C2 | Context-Aware Neural Ranking Architectures | 10 | BERT/GAT-based ranking, efficient dual-encoders, interpretable models | Haddad et al. (2025), Kumar et al. (2026), Leonhardt et al. (2024) |
-| C3 | Recommender System Bias and Fairness | 11 | Popularity bias, multi-carousel evaluation, fair ranking aggregation | Carnovalini et al. (2025), He et al. (2024), Cachel & Rundensteiner (2023) |
-| C4 | Generative IR and LLM-Based Ranking | 12 | GenIR, LLM-as-ranker, RAG with re-ranking | Luo et al. (2025), Li et al. (2025), Deng et al. (2025), Karlovic et al. (2025) |
-| C5 | Evaluation, Surveys, and Cross-Cutting Methods | 16 | Novel metrics, systematic reviews, domain-specific IR | Batri et al. (2025a), Gupta et al. (2023), Manta-Caro et al. (2025) |
+| Cluster | Title | Papers | Avg. Citations | Core Focus |
+|---------|-------|--------|---------------|------------|
+| C1 | Neural Architectures for Context-Aware Ranking and LLM-Based Retrieval | 10 | 29.4 | Session/user embeddings, efficient neural indexes, LLM-as-ranker |
+| C2 | Dense Retrieval, Pseudo-Relevance Feedback, and Query Enhancement | 8 | 27.8 | BERT-based PRF, contextualized query expansion, embedding compression |
+| C3 | Position Bias, Counterfactual LTR, and Off-Policy Evaluation | 8 | 17.8 | Click models, IPS/doubly robust estimation, contextual bandits |
+| C4 | Recommender Fairness, Popularity Bias, and Context-Aware Recommendation | 10 | 49.2 | Popularity bias mitigation, user-centered evaluation, bias surveys |
+| C5 | Context-Aware Search and Cross-Cutting Applications | 9 | 8.0 | Digital activity context, domain-specific retrieval, tutorials |
 
-### Cluster 1: Bias Detection and Correction in Learning to Rank
+### Cluster 1: Neural Architectures for Context-Aware Ranking (10 papers)
 
-This cluster, comprising 20 papers (29% of the corpus), represents the largest and most methodologically mature research area. The studies address a progression of bias types: position bias (the most studied, appearing in 14 papers), selection bias (Ovaisi et al., 2020), interactional observation bias (Chen et al., 2021), personalized bias (Niu et al., 2025), and context bias in feeds recommendation (Wu et al., 2021). Methodologically, the cluster shows a clear evolution from IPS-based estimation (Qin et al., 2020) through doubly robust learning (Luo et al., 2023) to two-tower neural architectures that jointly estimate bias and relevance (Amala & Rajeswari, 2025a). Fang et al. (2020) established the theoretical result that permutation invariance is a necessary and sufficient condition for multivariate scoring functions to converge under AutoULTR algorithms. The most recent work (Niu et al., 2025) addresses personalized bias through user-aware IPS estimation, demonstrating that modeling user-specific propensity distributions yields lower variance than population-average approaches.
+This cluster presents the architectural innovations driving context-aware ranking. Hansen et al. (2020) introduce CoSeRNN, which models user preferences as sequences of session-level contextual embeddings, achieving 10% improvement over state-of-the-art on Spotify data. Leonhardt et al. (2022, 2024) develop Fast-Forward indexes — pre-computed dual-encoder document representations with lightweight query encoders — enabling CPU-only neural re-ranking with order-of-magnitude speedup over cross-encoders. At the architectural frontier, Luo et al. (2025) present RecRanker, instruction-tuning LLaMA-2 as a listwise ranker with hybrid ensembling strategies.
 
-### Cluster 2: Context-Aware Neural Ranking Architectures
+### Cluster 2: Dense Retrieval and Query Enhancement (8 papers)
 
-Ten papers (14% of the corpus) constitute this architecturally focused cluster. The dominant pattern is the integration of BERT-based semantic relevance scoring with complementary mechanisms: Graph Attention Networks for contextual similarity (Haddad et al., 2025), Markov Random Fields for verbose query term dependencies (Podder et al., 2025), and cross-passage attention for long-document integration (Kumar et al., 2026). An important sub-theme is computational efficiency: Leonhardt et al. (2022, 2024) show that dual-encoder models with pre-computed passage vectors and lightweight query encoders achieve competitive effectiveness while eliminating GPU dependency. Yang et al. (2022) demonstrate that composite re-ranking without transformer computation at inference time can approximate BERT cross-encoder quality. Krasakis et al. (2025) address the underexplored problem of compositional and negated queries, showing that zero-shot linear algebra on learned sparse representations can handle set operations that standard retrievers fail on.
+The ColBERT-PRF research program (Wang et al., 2021, 2023) demonstrates that pseudo-relevance feedback is viable for dense retrieval, with MAP improvements up to 26% on TREC 2019. Naseri et al. (2022) show that contextualized BERT embeddings for query expansion (CEQE) improve recall over traditional RM3. Yang et al. (2022a, 2022b) achieve 14:1 embedding compression with negligible quality loss through contextual quantization, while their BECR framework enables CPU-friendly BERT re-ranking through query decomposition with pre-computed token embeddings.
 
-### Cluster 3: Recommender System Bias and Fairness
+### Cluster 3: Position Bias and Counterfactual LTR (8 papers)
 
-Eleven papers (16% of the corpus) address bias from a fairness and evaluation perspective. Carnovalini et al. (2025) provide a narrative review documenting how popularity bias originates from both human cognitive tendencies (herd behavior, mere exposure effect) and algorithmic amplification (collaborative filtering favoring popular items). He et al. (2024) present the largest-scale empirical study in the corpus, analyzing three bias types across 667 million training samples from a major e-commerce platform, with online A/B tests showing +2.4% CTR, +1.2% CVR, and +6.5% GMV improvements. A distinct sub-theme addresses evaluation methodology: Felicioni et al. (2021) and Ferrari Dacrema et al. (2022) show that multi-carousel user interfaces fundamentally change relative algorithm rankings compared to traditional single-list evaluation, leading to different conclusions about which recommendation algorithms are optimal.
+Chen et al. (2020) present the context-aware click model (CACM), which integrates session-flow graph embeddings into relevance estimation and demonstrates that exponential multiplication outperforms the standard examination hypothesis. Kiyohara et al. (2022) propose Cascade-DR, a doubly robust off-policy estimator for ranking under the cascade user behavior model, achieving lower variance than IPS-based alternatives. Yang et al. (2020) establish the theoretical result that permutation invariance is necessary for AutoULTR convergence.
 
-### Cluster 4: Generative IR and LLM-Based Ranking
+### Cluster 4: Recommender Fairness and Popularity Bias (10 papers)
 
-Twelve papers (17% of the corpus) represent the newest and fastest-growing cluster. Li et al. (2025) categorize GenIR into two paradigms — generative retrieval (generating document identifiers directly) and reliable response generation (producing answers grounded in retrieved evidence). Luo et al. (2025) demonstrate that instruction-tuned LLMs can serve as effective listwise rankers, with adaptive user sampling and hybrid ensembling strategies. Deng et al. (2025) present DIVAgent, an LLM-powered search diversification agent that outperforms unsupervised baselines by 3.1% in alpha-nDCG. Application-focused studies show the versatility of the paradigm: Karlovic et al. (2025) evaluate seven LLMs for tourism recommendation via RAG with semantic re-ranking, and Ghosh and Mittal (2025) apply KG-based RAG to engineering code interpretation. However, Dai et al. (2024) identify five new bias types introduced by LLMs — source bias, factuality bias, position bias, popularity bias, and instruction-hallucination bias — that lack the formal counterfactual treatment developed for traditional IR biases.
+This is the highest-impact cluster by citation count (avg. 49.2 cites/paper). Abdollahpouri et al. (2021) introduce user-centered popularity bias evaluation, showing that existing mitigation techniques ignore individual users' tolerance toward popular items. Klimashevskaia et al. (2024) systematically categorize 123 papers on popularity bias, identifying an "abstraction trap" where bias mitigation is evaluated almost entirely through offline metrics. Dai et al. (2024) unify 15 bias types in LLM-era IR as distribution mismatch problems. Mateos and Bellogin (2025) document a shift toward neural approaches and ranking metrics in context-aware recommender systems, alongside significant reproducibility gaps.
 
-### Cluster 5: Evaluation, Surveys, and Cross-Cutting Methods
+### Cluster 5: Context-Aware Search and Cross-Cutting Applications (9 papers)
 
-Sixteen papers (23% of the corpus) form a heterogeneous cluster encompassing evaluation methodology innovations, comprehensive surveys, and domain-specific IR applications. Batri et al. (2025a) introduce Rmeasure, a search engine consistency framework that applies Weber-Fechner psychophysical modeling to quantify rank stability, revealing significant consistency differences between Google and Bing. Batri et al. (2025b) propose a parabolic term-weighting mechanism inspired by Lenz's Law that outperforms BM25 on standard TREC benchmarks. Heuss et al. (2025) extend SHAP to listwise feature attribution, enabling identification of biased features in ranking models. Survey contributions include Gupta et al. (2023) on ULTR foundations, Mateos and Bellogin (2025) on context-aware recommender systems, and Manta-Caro et al. (2025) on IR for IoT and Web of Things. Domain-specific applications span edge computing service ranking (Huang et al., 2025), financial sentiment analysis (De Leon & Medda, 2025), and music discovery interfaces (Melchiorre et al., 2023).
+Vuong et al. (2022, 2024) show that full digital activity context — including non-search applications — improves Web search retrieval over session-only context. Zhang et al. (2023) present UBS4RL, demonstrating that reinforcement learning-based re-ranking with simulated user feedback outperforms supervised re-ranking.
 
 ## 3. Bibliometric Findings
 
-### 3.1 Keyword Co-occurrence Analysis
+### 3.1 Keyword Co-occurrence
 
-Table 4 lists the most frequent author keywords and their co-occurrence patterns.
+VOSviewer author keyword co-occurrence analysis (min. 2 occurrences) identified 21 keywords in 5 clusters. Table 3 lists the top keywords by total link strength.
 
-**Table 4: Top 15 Keywords by Frequency**
+**Table 3: Top 10 Keywords by Network Centrality**
 
-| Rank | Keyword | Frequency | Strongest Co-occurrence Partner |
-|------|---------|-----------|-------------------------------|
-| 1 | information retrieval | 12 | ranking (3 shared papers) |
-| 2 | recommender systems | 7 | evaluation (2 shared papers) |
-| 3 | ranking | 7 | information retrieval (3), interpolation (2) |
-| 4 | position bias | 6 | click models (2), examination bias (2) |
-| 5 | unbiased learning to rank | 5 | click model (2), two-tower model (2) |
-| 6 | learning to rank | 5 | position bias (2) |
-| 7 | evaluation | 4 | recommender systems (2) |
-| 8 | large language model | 4 | ranking (1), recommender system (1) |
-| 9 | recommender system | 3 | large language model (1) |
-| 10 | click models | 3 | examination bias (2), position bias (2) |
+| Keyword | Occurrences | TLS | Cluster | Avg. Citations |
+|---------|-------------|-----|---------|---------------|
+| Information retrieval | 5 | 7 | C1 | 34.4 |
+| BERT | 4 | 7 | C3 | 32.0 |
+| Fairness | 4 | 7 | C4 | 87.8 |
+| Ranking | 5 | 6 | C1 | 12.8 |
+| Recommender systems | 4 | 6 | C4 | 59.0 |
+| Dense retrieval | 2 | 6 | C3 | 53.0 |
+| Pseudo-relevance feedback | 2 | 6 | C3 | 53.0 |
+| Query expansion | 3 | 6 | C3 | 36.3 |
+| Popularity bias | 3 | 5 | C4 | 70.7 |
+| Position bias | 2 | 3 | C5 | 15.0 |
 
-### 3.2 Temporal Trends
+The keyword network confirms the thematic structure from content analysis. The VOSviewer index keyword map (36 keywords, 4 clusters, min. 3 occurrences) provides complementary coverage. Information retrieval (22 occurrences, 138 total link strength) and search engines (16 occurrences, 126 TLS) dominate the broader Scopus vocabulary, forming the network's central axis.
 
-Figure 1 (described) illustrates the temporal evolution of dominant keywords. The period 2021–2022 is characterized by foundational ULTR work (position bias, click models, evaluation). By 2023, survey papers and tutorials codify the field's knowledge (ULTR tutorial, bias taxonomy). The year 2024 marks an inflection point: "large language model" enters the top-5 keyword list, and LLM-based IR research proliferates. The year 2025 shows accelerated growth (27 papers, 38% of the bibliometric corpus) driven by CIKM 2025 proceedings (6 papers) and expanding GenIR research.
+### 3.2 Co-authorship Network
 
-### 3.3 Top Authors
+Co-authorship analysis (min. 2 documents) identified 11 authors in 3 research groups. The Tsinghua University group — Liu Yiqun (5 papers), Ma Shaoping (5), Zhang Min (4) — is the most productive (160 total citations). The Renmin University group centers on Mao Jiaxin (4 papers, 126 citations), and the University of Utah group centers on Yang Tao (3 papers, 25 citations). The remaining 186 authors (94%) appear in a single paper.
 
-Table 5 lists the most prolific and cited authors identified through the bibliometric and content analysis.
+### 3.3 Bibliographic Coupling
 
-**Table 5: Top 10 Authors**
+Bibliographic coupling (min. 1 shared reference) identified 39 connected documents in 5 clusters. Cluster 1 (Recommender Fairness, 13 papers) is the largest by document count but has the weakest within-cluster coupling (avg. link strength 11.3), reflecting diverse approaches to bias. Cluster 2 (Dense Retrieval, 9 papers) shows the strongest coupling (avg. 23.2), reflecting the cumulative ColBERT-PRF research program. Nine documents were disconnected from the coupling network.
 
-| Author | Papers | Research Focus | Country |
-|--------|--------|---------------|---------|
-| Avishek Anand | 5+ | Neural ranking, interpretability, Fast-Forward indexes | Netherlands |
-| Harrie Oosterhuis | 4+ | ULTR, counterfactual LTR, click models | Netherlands |
-| Qingyao Ai | 4+ | AutoULTR, doubly robust LTR, evaluation | China |
-| Zhicheng Dou | 4+ | Generative retrieval, diversification, GenIR | China |
-| Ji-Rong Wen | 3+ | Personalized bias, web search, generative retrieval | China |
-| Maarten de Rijke | 3+ | Diversification, explainability, neural IR | Netherlands |
-| Jurek Leonhardt | 4 | Efficient ranking, Fast-Forward, extractive explanations | Germany |
-| Weinan Zhang | 3+ | Deep LTR, survival analysis, utility optimization | China |
-| K.J. Amala | 3 | Neural LTR, bias correction, nonparametric click models | India |
-| Sebastian Hofstatter | 3 | Position bias, efficient transformers, annotations | Austria |
+## 4. PRISMA Flow Results
 
-### 3.4 PRISMA Flow Results
+The PRISMA flow diagram (Section 2, Methodology) documents: 318 records identified from Scopus → 136 retained after topic-based screening → 92 after excluding zero-citation papers → 48 Scopus-confirmed for bibliometric analysis → 46 included in qualitative synthesis. The most common exclusion reason at the screening stage was topic scope (147 papers where "context-aware" referred to non-IR domains: video processing, medical imaging, construction engineering, agricultural systems).
 
-The PRISMA flow diagram (Section 2, Methodology) documents the study selection process. Of 155 initially identified records, 32 duplicates were removed, 28 were excluded during title/abstract screening, and 26 were excluded during full-text eligibility assessment. The final corpus of 69 studies was included in qualitative synthesis, with 71 Scopus-indexed records (partially overlapping) providing structured bibliometric data. The most common exclusion reasons at full-text stage were unavailability of full text (n = 8), insufficient methodological detail (n = 6), and extended versions of already-included papers (n = 5).
+---
+
+*Note: Results section uses factual language only. All data presented derives from the systematic review process, VOSviewer bibliometric outputs, and the literature matrix.*
