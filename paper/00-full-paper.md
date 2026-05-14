@@ -6,8 +6,6 @@ Context-aware machine learning ranking algorithms dynamically adjust search and 
 
 **Keywords:** context-aware ranking, relevance, positioning, information retrieval, recommender systems, fairness, popularity bias, VOSviewer, bibliometric analysis
 
----
-
 ## 1. Introduction
 
 ## Relevance of the Topic
@@ -33,9 +31,6 @@ The primary goal of this review is to provide a comprehensive, structured synthe
 
 The remainder of this paper is organized as follows. Section 2 presents the review methodology, including the PRISMA-guided search strategy, inclusion and exclusion criteria, data extraction process, and the hybrid systematic-bibliometric synthesis approach employing VOSviewer. Section 3 reports the results, organized around five thematic clusters identified through combined content analysis and bibliometric mapping. Section 4 discusses the findings, interpreting the cluster structure, comparing with prior surveys, and examining implications for relevance-oriented and positioning-aware ranking system design. Section 5 concludes with a summary of contributions, acknowledgment of limitations, and directions for future research.
 
-
----
-
 ## 2. Methodology
 
 ## 1. Review Design
@@ -59,13 +54,13 @@ The complete query combined these dimensions with AND operators, restricted to p
 
 ## 3. Inclusion and Exclusion Criteria
 
-| Criterion | Inclusion | Exclusion |
-|-----------|----------|-----------|
-| Topic scope | Context-aware or contextual ranking for web search, IR, or recommender systems | Context-aware in non-IR domains (computer vision, NLP without retrieval, edge computing without ranking) |
-| Publication type | Peer-reviewed journal articles, conference papers, reviews | Preprints, editorials, non-peer-reviewed sources |
-| Time frame | 2020–2025 | Before 2020 |
-| Language | English | Non-English |
-| Citation impact | Minimum 1 Scopus citation | Zero citations |
+| Criterion        | Inclusion                                                                      | Exclusion                                                                                                |
+| ---------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
+| Topic scope      | Context-aware or contextual ranking for web search, IR, or recommender systems | Context-aware in non-IR domains (computer vision, NLP without retrieval, edge computing without ranking) |
+| Publication type | Peer-reviewed journal articles, conference papers, reviews                     | Preprints, editorials, non-peer-reviewed sources                                                         |
+| Time frame       | 2020–2025                                                                      | Before 2020                                                                                              |
+| Language         | English                                                                        | Non-English                                                                                              |
+| Citation impact  | Minimum 1 Scopus citation                                                      | Zero citations                                                                                           |
 
 The citation threshold (≥1 Scopus citation) served as a bibliometric quality filter, ensuring included studies have demonstrated academic impact. This criterion is appropriate for a bibliometric review where citation-based indicators (citation counts, normalized citation scores) are integral to the analysis.
 
@@ -79,12 +74,12 @@ Forty-eight papers were confirmed in Scopus and exported in CSV format with full
 
 Bibliometric analysis was conducted using VOSviewer 1.6.20. Four map types were generated:
 
-| Analysis | Unit | Threshold | Result |
-|----------|------|-----------|--------|
-| Keyword co-occurrence | Author keywords | Min. 2 occurrences | 21 keywords, 5 clusters |
-| Keyword co-occurrence | Index keywords (Scopus) | Min. 3 occurrences | 36 keywords, 4 clusters |
-| Co-authorship | Authors | Min. 2 documents, 0 citations | 11 authors, 3 research groups |
-| Bibliographic coupling | Documents | Min. 1 shared reference | 39 connected documents, 5 clusters |
+| Analysis               | Unit                    | Threshold                     | Result                             |
+| ---------------------- | ----------------------- | ----------------------------- | ---------------------------------- |
+| Keyword co-occurrence  | Author keywords         | Min. 2 occurrences            | 21 keywords, 5 clusters            |
+| Keyword co-occurrence  | Index keywords (Scopus) | Min. 3 occurrences            | 36 keywords, 4 clusters            |
+| Co-authorship          | Authors                 | Min. 2 documents, 0 citations | 11 authors, 3 research groups      |
+| Bibliographic coupling | Documents               | Min. 1 shared reference       | 39 connected documents, 5 clusters |
 
 For each map type, network, overlay, and density visualizations were generated. Cluster assignments were determined by the VOSviewer Leiden clustering algorithm.
 
@@ -96,9 +91,6 @@ For the 46 included papers, systematic full-text reading was conducted using mar
 
 The review process followed PRISMA 2020 standards for transparency and replicability. Methodological limitations include: (a) single-database search (Scopus only), which may omit relevant publications indexed exclusively in ACM Digital Library, IEEE Xplore, or Web of Science; (b) citation threshold exclusion (zero-citation papers removed), which may exclude recent high-quality publications that have not yet accumulated citations; (c) single-reviewer screening, without formal inter-rater reliability assessment; and (d) reliance on author-assigned keywords for the primary bibliometric map, which may underrepresent emerging terminology not yet adopted as author keywords.
 
-
----
-
 ## 3. Results
 
 ## 1. Corpus Overview
@@ -107,17 +99,17 @@ The systematic search and PRISMA-guided screening process identified 46 studies 
 
 **Table 1: Distribution of Included Studies**
 
-| Year | Conference Papers | Journal Articles | Reviews | Total |
-|------|-------------------|------------------|---------|-------|
-| 2020 | 7 | 1 | 0 | 8 |
-| 2021 | 6 | 2 | 1 | 9 |
-| 2022 | 7 | 2 | 0 | 9 |
-| 2023 | 4 | 3 | 2 | 9 |
-| 2024 | 3 | 4 | 1 | 8 |
-| 2025 | 2 | 1 | 1 | 4 |
-| **Total** | **29** | **13** | **5** | **47** |
+| Year      | Conference Papers | Journal Articles | Reviews | Total  |
+| --------- | ----------------- | ---------------- | ------- | ------ |
+| 2020      | 7                 | 1                | 0       | 8      |
+| 2021      | 6                 | 2                | 1       | 9      |
+| 2022      | 7                 | 2                | 0       | 9      |
+| 2023      | 4                 | 3                | 2       | 9      |
+| 2024      | 3                 | 4                | 1       | 8      |
+| 2025      | 2                 | 1                | 1       | 4      |
+| **Total** | **29**            | **13**           | **5**   | **47** |
 
-*Note: 47 total entries include papers counted in both conference and journal categories for extended versions.*
+_Note: 47 total entries include papers counted in both conference and journal categories for extended versions._
 
 The included studies span 18 publication venues. ACM venues dominate: SIGIR (7 papers), CIKM (4), WSDM (4), The Web Conference/WWW (4), ACM TOIS (3). IEEE Access contributes 2 papers. The remaining venues (KDD, RecSys, EMNLP, EACL, ICTIR, UMAP, NAACL) contribute 1-2 papers each.
 
@@ -129,13 +121,13 @@ Content analysis combined with VOSviewer keyword co-occurrence mapping identifie
 
 **Table 2: Thematic Clusters in Context-Aware ML Ranking Research**
 
-| Cluster | Title | Papers | Avg. Citations | Core Focus |
-|---------|-------|--------|---------------|------------|
-| C1 | Neural Architectures for Context-Aware Ranking and LLM-Based Retrieval | 10 | 29.4 | Session/user embeddings, efficient neural indexes, LLM-as-ranker |
-| C2 | Dense Retrieval, Pseudo-Relevance Feedback, and Query Enhancement | 8 | 27.8 | BERT-based PRF, contextualized query expansion, embedding compression |
-| C3 | Position Bias, Counterfactual LTR, and Off-Policy Evaluation | 8 | 17.8 | Click models, IPS/doubly robust estimation, contextual bandits |
-| C4 | Recommender Fairness, Popularity Bias, and Context-Aware Recommendation | 10 | 49.2 | Popularity bias mitigation, user-centered evaluation, bias surveys |
-| C5 | Context-Aware Search and Cross-Cutting Applications | 9 | 8.0 | Digital activity context, domain-specific retrieval, tutorials |
+| Cluster | Title                                                                   | Papers | Avg. Citations | Core Focus                                                            |
+| ------- | ----------------------------------------------------------------------- | ------ | -------------- | --------------------------------------------------------------------- |
+| C1      | Neural Architectures for Context-Aware Ranking and LLM-Based Retrieval  | 10     | 29.4           | Session/user embeddings, efficient neural indexes, LLM-as-ranker      |
+| C2      | Dense Retrieval, Pseudo-Relevance Feedback, and Query Enhancement       | 8      | 27.8           | BERT-based PRF, contextualized query expansion, embedding compression |
+| C3      | Position Bias, Counterfactual LTR, and Off-Policy Evaluation            | 8      | 17.8           | Click models, IPS/doubly robust estimation, contextual bandits        |
+| C4      | Recommender Fairness, Popularity Bias, and Context-Aware Recommendation | 10     | 49.2           | Popularity bias mitigation, user-centered evaluation, bias surveys    |
+| C5      | Context-Aware Search and Cross-Cutting Applications                     | 9      | 8.0            | Digital activity context, domain-specific retrieval, tutorials        |
 
 ### Cluster 1: Neural Architectures for Context-Aware Ranking (10 papers)
 
@@ -161,43 +153,56 @@ Vuong et al. (2022, 2024) show that full digital activity context — including 
 
 ### 3.1 Keyword Co-occurrence
 
-VOSviewer author keyword co-occurrence analysis (min. 2 occurrences) identified 21 keywords in 5 clusters. Table 3 lists the top keywords by total link strength.
+VOSviewer author keyword co-occurrence analysis (min. 2 occurrences) identified 21 keywords in 5 clusters. Figure 1 presents the network visualization, where node size reflects keyword frequency and edges represent co-occurrence links.
+
+![Figure 1: Author keyword co-occurrence network — 5 clusters, 21 keywords, node size = frequency, edges = co-occurrence links](../vosviewer/cooccurence-author-keywords/network.png)
+
+Table 3 lists the top keywords by total link strength.
 
 **Table 3: Top 10 Keywords by Network Centrality**
 
-| Keyword | Occurrences | TLS | Cluster | Avg. Citations |
-|---------|-------------|-----|---------|---------------|
-| Information retrieval | 5 | 7 | C1 | 34.4 |
-| BERT | 4 | 7 | C3 | 32.0 |
-| Fairness | 4 | 7 | C4 | 87.8 |
-| Ranking | 5 | 6 | C1 | 12.8 |
-| Recommender systems | 4 | 6 | C4 | 59.0 |
-| Dense retrieval | 2 | 6 | C3 | 53.0 |
-| Pseudo-relevance feedback | 2 | 6 | C3 | 53.0 |
-| Query expansion | 3 | 6 | C3 | 36.3 |
-| Popularity bias | 3 | 5 | C4 | 70.7 |
-| Position bias | 2 | 3 | C5 | 15.0 |
+| Keyword                   | Occurrences | TLS | Cluster | Avg. Citations |
+| ------------------------- | ----------- | --- | ------- | -------------- |
+| Information retrieval     | 5           | 7   | C1      | 34.4           |
+| BERT                      | 4           | 7   | C3      | 32.0           |
+| Fairness                  | 4           | 7   | C4      | 87.8           |
+| Ranking                   | 5           | 6   | C1      | 12.8           |
+| Recommender systems       | 4           | 6   | C4      | 59.0           |
+| Dense retrieval           | 2           | 6   | C3      | 53.0           |
+| Pseudo-relevance feedback | 2           | 6   | C3      | 53.0           |
+| Query expansion           | 3           | 6   | C3      | 36.3           |
+| Popularity bias           | 3           | 5   | C4      | 70.7           |
+| Position bias             | 2           | 3   | C5      | 15.0           |
 
-The keyword network confirms the thematic structure from content analysis. The VOSviewer index keyword map (36 keywords, 4 clusters, min. 3 occurrences) provides complementary coverage. Information retrieval (22 occurrences, 138 total link strength) and search engines (16 occurrences, 126 TLS) dominate the broader Scopus vocabulary, forming the network's central axis.
+The keyword network confirms the thematic structure from content analysis.
+
+![Figure 2: Keyword overlay visualization — temporal evolution 2020–2025, blue = early counterfactual LTR/neural methods (2020–2021), yellow = recent LLM and fairness research (2024–2025)](../vosviewer/cooccurence-author-keywords/overlay.png)
+
+*Figure 2 presents the overlay visualization, where keywords are colored by average publication year, revealing the temporal evolution from early counterfactual LTR methods (2020–2021, blue) to recent LLM and fairness research (2024–2025, yellow).*
+
+The VOSviewer index keyword map (36 keywords, 4 clusters, min. 3 occurrences) provides complementary coverage. Information retrieval (22 occurrences, 138 total link strength) and search engines (16 occurrences, 126 TLS) dominate the broader Scopus vocabulary, forming the network's central axis.
 
 ### 3.2 Co-authorship Network
 
-Co-authorship analysis (min. 2 documents) identified 11 authors in 3 research groups. The Tsinghua University group — Liu Yiqun (5 papers), Ma Shaoping (5), Zhang Min (4) — is the most productive (160 total citations). The Renmin University group centers on Mao Jiaxin (4 papers, 126 citations), and the University of Utah group centers on Yang Tao (3 papers, 25 citations). The remaining 186 authors (94%) appear in a single paper.
+Co-authorship analysis (min. 2 documents) identified 11 authors
+
+![Figure 3: Co-authorship network — 3 disconnected research groups (Tsinghua University red, University of Utah green, Renmin University of China blue), 11 authors, no cross-group collaboration](../vosviewer/coauthorship/network.png)
+
+*Figure 3 presents the co-authorship network, showing three disconnected research groups with no cross-group collaboration edges.* The Tsinghua University group — Liu Yiqun (5 papers), Ma Shaoping (5), Zhang Min (4) — is the most productive (160 total citations). The Renmin University group centers on Mao Jiaxin (4 papers, 126 citations), and the University of Utah group centers on Yang Tao (3 papers, 25 citations). The remaining 186 authors (94%) appear in a single paper.
 
 ### 3.3 Bibliographic Coupling
 
-Bibliographic coupling (min. 1 shared reference) identified 39 connected documents in 5 clusters. Cluster 1 (Recommender Fairness, 13 papers) is the largest by document count but has the weakest within-cluster coupling (avg. link strength 11.3), reflecting diverse approaches to bias. Cluster 2 (Dense Retrieval, 9 papers) shows the strongest coupling (avg. 23.2), reflecting the cumulative ColBERT-PRF research program. Nine documents were disconnected from the coupling network.
+Bibliographic coupling (min. 1 shared reference) identified 39 connected documents
+
+![Figure 4: Bibliographic coupling network — 5 intellectual clusters, 39 connected documents, 9 isolated](../vosviewer/bibliographic-coupling/network.png)
+
+*Figure 4 presents the bibliographic coupling network, where documents are grouped by shared references, revealing five intellectual clusters.* Cluster 1 (Recommender Fairness, 13 papers) is the largest by document count but has the weakest within-cluster coupling (avg. link strength 11.3), reflecting diverse approaches to bias. Cluster 2 (Dense Retrieval, 9 papers) shows the strongest coupling (avg. 23.2), reflecting the cumulative ColBERT-PRF research program. Nine documents were disconnected from the coupling network.
 
 ## 4. PRISMA Flow Results
 
 The PRISMA flow diagram (Section 2, Methodology) documents: 318 records identified from Scopus → 136 retained after topic-based screening → 92 after excluding zero-citation papers → 48 Scopus-confirmed for bibliometric analysis → 46 included in qualitative synthesis. The most common exclusion reason at the screening stage was topic scope (147 papers where "context-aware" referred to non-IR domains: video processing, medical imaging, construction engineering, agricultural systems).
 
----
-
-*Note: Results section uses factual language only. All data presented derives from the systematic review process, VOSviewer bibliometric outputs, and the literature matrix.*
-
-
----
+_Note: Results section uses factual language only. All data presented derives from the systematic review process, VOSviewer bibliometric outputs, and the literature matrix._
 
 ## 4. Discussion
 
@@ -243,9 +248,6 @@ Based on the identified gaps, five directions emerge as priorities:
 
 5. **Reproducibility infrastructure:** Addressing the code and data availability gap — particularly acute in context-aware recommender systems where Mateos and Bellogin (2025) find fewer than 25% of papers provide public implementations.
 
-
----
-
 ## 5. Conclusion
 
 ## 1. Summary of Key Findings
@@ -270,106 +272,99 @@ Five directions emerge from the identified gaps: (1) developing unified relevanc
 
 The intersection of context-aware ranking, relevance estimation, and resource positioning stands at a formative moment. The neural architectures for leveraging context to improve relevance have matured to the point of industrial deployment, while the fairness community has produced rigorous evidence that context-encoded signals can amplify positioning distortions. The field's next advance requires integrating these perspectives — building context-aware ranking systems that improve relevance without systematically advantaging already-visible resources. The methods for analyzing this dual impact — combining systematic review with bibliometric network analysis — are themselves part of this integration. The research gaps identified in this review represent the critical path toward ranking systems that are both contextually intelligent and positioning-fair.
 
-
----
-
 ## References
-
 
 **Total papers:** 46
 **Citation range:** 1–127 (median: 14)
 
----
+1. Hansen, C.., Hansen, C.., Maystre, L.., Mehrotra, R.., Brost, B.., Tomasi, F.., Lalmas, M.. (2020). Contextual and Sequential User Embeddings for Large-Scale Music Recommendation. _Recsys 2020 14th ACM Conference on Recommender Systems_. https://doi.org/10.1145/3383313.3412248
 
-1. Hansen, C.., Hansen, C.., Maystre, L.., Mehrotra, R.., Brost, B.., Tomasi, F.., Lalmas, M.. (2020). Contextual and Sequential User Embeddings for Large-Scale Music Recommendation. *Recsys 2020 14th ACM Conference on Recommender Systems*. https://doi.org/10.1145/3383313.3412248
+2. Abdollahpouri, H.., Mansoury, M.., Burke, R.., Mobasher, B.., Malthouse, E.. (2021). User-centered evaluation of popularity bias in recommender systems. _Umap 2021 Proceedings of the 29th ACM Conference on User Modeling Adaptation and Personalization_. https://doi.org/10.1145/3450613.3456821
 
-2. Abdollahpouri, H.., Mansoury, M.., Burke, R.., Mobasher, B.., Malthouse, E.. (2021). User-centered evaluation of popularity bias in recommender systems. *Umap 2021 Proceedings of the 29th ACM Conference on User Modeling Adaptation and Personalization*. https://doi.org/10.1145/3450613.3456821
+3. Dai, S.., Xu, C.., Xu, S.., Pang, L.., Dong, Z.., Xu, J.. (2024). Bias and Unfairness in Information Retrieval Systems: New Challenges in the LLM Era. _Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining_. https://doi.org/10.1145/3637528.3671458
 
-3. Dai, S.., Xu, C.., Xu, S.., Pang, L.., Dong, Z.., Xu, J.. (2024). Bias and Unfairness in Information Retrieval Systems: New Challenges in the LLM Era. *Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*. https://doi.org/10.1145/3637528.3671458
+4. Klimashevskaia, A.., Jannach, D.., Elahi, M.., Trattner, C.. (2024). A survey on popularity bias in recommender systems. _User Modeling and User Adapted Interaction_. https://doi.org/10.1007/s11257-024-09406-0
 
-4. Klimashevskaia, A.., Jannach, D.., Elahi, M.., Trattner, C.. (2024). A survey on popularity bias in recommender systems. *User Modeling and User Adapted Interaction*. https://doi.org/10.1007/s11257-024-09406-0
+5. Wang, X.., MacDonald, C.., Tonellotto, N.., Ounis, I.. (2021). Pseudo-Relevance Feedback for Multiple Representation Dense Retrieval. _Ictir 2021 Proceedings of the 2021 ACM SIGIR International Conference on Theory of Information Retrieval_. https://doi.org/10.1145/3471158.3472250
 
-5. Wang, X.., MacDonald, C.., Tonellotto, N.., Ounis, I.. (2021). Pseudo-Relevance Feedback for Multiple Representation Dense Retrieval. *Ictir 2021 Proceedings of the 2021 ACM SIGIR International Conference on Theory of Information Retrieval*. https://doi.org/10.1145/3471158.3472250
+6. Mateos, P.., Bellogín, A.. (2025). A systematic literature review of recent advances on context-aware recommender systems. _Artificial Intelligence Review_. https://doi.org/10.1007/s10462-024-10939-4
 
-6. Mateos, P.., Bellogín, A.. (2025). A systematic literature review of recent advances on context-aware recommender systems. *Artificial Intelligence Review*. https://doi.org/10.1007/s10462-024-10939-4
+7. Chen, J.., Mao, J.., Liu, Y.., Zhang, M.., Ma, S.. (2020). A context-aware click model for web search. _Wsdm 2020 Proceedings of the 13th International Conference on Web Search and Data Mining_. https://doi.org/10.1145/3336191.3371819
 
-7. Chen, J.., Mao, J.., Liu, Y.., Zhang, M.., Ma, S.. (2020). A context-aware click model for web search. *Wsdm 2020 Proceedings of the 13th International Conference on Web Search and Data Mining*. https://doi.org/10.1145/3336191.3371819
+8. Wang, X.., Macdonald, C.., Tonellotto, N.., Ounis, I.. (2023). ColBERT-PRF: Semantic Pseudo-Relevance Feedback for Dense Passage and Document Retrieval. _ACM Transactions on the Web_. https://doi.org/10.1145/3572405
 
-8. Wang, X.., Macdonald, C.., Tonellotto, N.., Ounis, I.. (2023). ColBERT-PRF: Semantic Pseudo-Relevance Feedback for Dense Passage and Document Retrieval. *ACM Transactions on the Web*. https://doi.org/10.1145/3572405
+9. Chen, C.., Zhang, M.., Ma, W.., Liu, Y.., Ma, S.. (2020). Efficient Non-Sampling Factorization Machines for Optimal Context-Aware Recommendation. _Web Conference 2020 Proceedings of the World Wide Web Conference Www 2020_. https://doi.org/10.1145/3366423.3380303
 
-9. Chen, C.., Zhang, M.., Ma, W.., Liu, Y.., Ma, S.. (2020). Efficient Non-Sampling Factorization Machines for Optimal Context-Aware Recommendation. *Web Conference 2020 Proceedings of the World Wide Web Conference Www 2020*. https://doi.org/10.1145/3366423.3380303
+10. Kiyohara, H.., Saito, Y.., Matsuhiro, T.., Narita, Y.., Shimizu, N.., Yamamoto, Y.. (2022). Doubly robust off-policy evaluation for ranking policies under the cascade behavior model. _Wsdm 2022 Proceedings of the 15th ACM International Conference on Web Search and Data Mining_. https://doi.org/10.1145/3488560.3498380
 
-10. Kiyohara, H.., Saito, Y.., Matsuhiro, T.., Narita, Y.., Shimizu, N.., Yamamoto, Y.. (2022). Doubly robust off-policy evaluation for ranking policies under the cascade behavior model. *Wsdm 2022 Proceedings of the 15th ACM International Conference on Web Search and Data Mining*. https://doi.org/10.1145/3488560.3498380
+11. Wu, Z.., Mao, J.., Liu, Y.., Zhan, J.., Zheng, Y.., Zhang, M.., Ma, S.. (2020). Leveraging Passage-level Cumulative Gain for Document Ranking. _Web Conference 2020 Proceedings of the World Wide Web Conference Www 2020_. https://doi.org/10.1145/3366423.3380305
 
-11. Wu, Z.., Mao, J.., Liu, Y.., Zhan, J.., Zheng, Y.., Zhang, M.., Ma, S.. (2020). Leveraging Passage-level Cumulative Gain for Document Ranking. *Web Conference 2020 Proceedings of the World Wide Web Conference Www 2020*. https://doi.org/10.1145/3366423.3380305
+12. Su, Z.., Dou, Z.., Zhu, Y.., Qin, X.., Wen, J.-R.. (2021). Modeling Intent Graph for Search Result Diversification. _SIGIR 2021 Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval_. https://doi.org/10.1145/3404835.3462872
 
-12. Su, Z.., Dou, Z.., Zhu, Y.., Qin, X.., Wen, J.-R.. (2021). Modeling Intent Graph for Search Result Diversification. *SIGIR 2021 Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3404835.3462872
+13. Guo, Y.., Ma, Z.., Mao, J.., Qian, H.., Zhang, X.., Jiang, H.., Cao, Z.., Dou, Z.. (2022). Webformer: Pre-training with Web Pages for Information Retrieval. _SIGIR 2022 Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval_. https://doi.org/10.1145/3477495.3532086
 
-13. Guo, Y.., Ma, Z.., Mao, J.., Qian, H.., Zhang, X.., Jiang, H.., Cao, Z.., Dou, Z.. (2022). Webformer: Pre-training with Web Pages for Information Retrieval. *SIGIR 2022 Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3477495.3532086
+14. Zerveas, G.., Rekabsaz, N.., Cohen, D.., Eickhoff, C.. (2022). Mitigating Bias in Search Results Through Contextual Document Reranking and Neutrality Regularization. _SIGIR 2022 Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval_. https://doi.org/10.1145/3477495.3531891
 
-14. Zerveas, G.., Rekabsaz, N.., Cohen, D.., Eickhoff, C.. (2022). Mitigating Bias in Search Results Through Contextual Document Reranking and Neutrality Regularization. *SIGIR 2022 Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3477495.3531891
+15. Afzal, I.., Yilmazel, B.., Kaleli, C.. (2024). An Approach for Multi-Context-Aware Multi-Criteria Recommender Systems Based on Deep Learning. _IEEE Access_. https://doi.org/10.1109/access.2024.3428630
 
-15. Afzal, I.., Yilmazel, B.., Kaleli, C.. (2024). An Approach for Multi-Context-Aware Multi-Criteria Recommender Systems Based on Deep Learning. *IEEE Access*. https://doi.org/10.1109/access.2024.3428630
+16. Ma, Y.., Ai, Q.., Wu, Y.., Shao, Y.., Liu, Y.., Zhang, M.., Ma, S.. (2022). Incorporating Retrieval Information into the Truncation of Ranking Lists for Better Legal Search. _SIGIR 2022 Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval_. https://doi.org/10.1145/3477495.3531998
 
-16. Ma, Y.., Ai, Q.., Wu, Y.., Shao, Y.., Liu, Y.., Zhang, M.., Ma, S.. (2022). Incorporating Retrieval Information into the Truncation of Ranking Lists for Better Legal Search. *SIGIR 2022 Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3477495.3531998
+17. Chen, M.., Liu, C.., Sun, J.., Hoi, S.C.H.. (2021). Adapting Interactional Observation Embedding for Counterfactual Learning to Rank. _SIGIR 2021 Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval_. https://doi.org/10.1145/3404835.3462901
 
-17. Chen, M.., Liu, C.., Sun, J.., Hoi, S.C.H.. (2021). Adapting Interactional Observation Embedding for Counterfactual Learning to Rank. *SIGIR 2021 Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3404835.3462901
+18. Wang, Y.., Lyu, L.., Anand, A.. (2022). BERT Rankers are Brittle: A Study using Adversarial Document Perturbations. _Ictir 2022 Proceedings of the 2022 ACM SIGIR International Conference on the Theory of Information Retrieval_. https://doi.org/10.1145/3539813.3545122
 
-18. Wang, Y.., Lyu, L.., Anand, A.. (2022). BERT Rankers are Brittle: A Study using Adversarial Document Perturbations. *Ictir 2022 Proceedings of the 2022 ACM SIGIR International Conference on the Theory of Information Retrieval*. https://doi.org/10.1145/3539813.3545122
+19. Jin, J.., Fang, Y.., Zhang, W.., Ren, K.., Zhou, G.., Xu, J.., Yu, Y.., Wang, J.., Zhu, X.., Gai, K.. (2020). A Deep Recurrent Survival Model for Unbiased Ranking. _SIGIR 2020 Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval_. https://doi.org/10.1145/3397271.3401073
 
-19. Jin, J.., Fang, Y.., Zhang, W.., Ren, K.., Zhou, G.., Xu, J.., Yu, Y.., Wang, J.., Zhu, X.., Gai, K.. (2020). A Deep Recurrent Survival Model for Unbiased Ranking. *SIGIR 2020 Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3397271.3401073
+20. Yang, Y.., Qiao, Y.., Shao, J.., Yan, X.., Yang, T.. (2022). Lightweight composite re-ranking for efficient keyword search with BERT. _Wsdm 2022 Proceedings of the 15th ACM International Conference on Web Search and Data Mining_. https://doi.org/10.1145/3488560.3498495
 
-20. Yang, Y.., Qiao, Y.., Shao, J.., Yan, X.., Yang, T.. (2022). Lightweight composite re-ranking for efficient keyword search with BERT. *Wsdm 2022 Proceedings of the 15th ACM International Conference on Web Search and Data Mining*. https://doi.org/10.1145/3488560.3498495
+21. Luo, S.., He, B.., Zhao, H.., Shao, W.., Qi, Y.., Huang, Y.., Zhou, A.., Yao, Y.., Li, Z.., Xiao, Y.., Zhan, M.., Song, L.. (2025). RecRanker: Instruction Tuning Large Language Model as Ranker for Top-k Recommendation. _ACM Transactions on Information Systems_. https://doi.org/10.1145/3705728
 
-21. Luo, S.., He, B.., Zhao, H.., Shao, W.., Qi, Y.., Huang, Y.., Zhou, A.., Yao, Y.., Li, Z.., Xiao, Y.., Zhan, M.., Song, L.. (2025). RecRanker: Instruction Tuning Large Language Model as Ranker for Top-k Recommendation. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3705728
+22. Yang, Y.., Qiao, Y.., Shao, J.., Yan, X.., Yang, T.. (2022). Lightweight composite re-ranking for efficient keyword search with BERT. _Wsdm 2022 Proceedings of the 15th ACM International Conference on Web Search and Data Mining_. https://doi.org/10.1145/3488560.3498495
 
-22. Yang, Y.., Qiao, Y.., Shao, J.., Yan, X.., Yang, T.. (2022). Lightweight composite re-ranking for efficient keyword search with BERT. *Wsdm 2022 Proceedings of the 15th ACM International Conference on Web Search and Data Mining*. https://doi.org/10.1145/3488560.3498495
+23. Li, F.., Si, X.., Tang, S.., Wang, D.., Han, K.., Han, B.., Zhou, G.., Song, Y.., Chen, H.. (2024). Contextual Distillation Model for Diversified Recommendation. _Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining_. https://doi.org/10.1145/3637528.3671514
 
-23. Li, F.., Si, X.., Tang, S.., Wang, D.., Han, K.., Han, B.., Zhou, G.., Song, Y.., Chen, H.. (2024). Contextual Distillation Model for Diversified Recommendation. *Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*. https://doi.org/10.1145/3637528.3671514
+24. Buyl, M.., Missault, P.., Sondag, P.-A.. (2023). RankFormer: Listwise Learning-to-Rank Using Listwide Labels. _Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining_. https://doi.org/10.1145/3580305.3599892
 
-24. Buyl, M.., Missault, P.., Sondag, P.-A.. (2023). RankFormer: Listwise Learning-to-Rank Using Listwide Labels. *Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining*. https://doi.org/10.1145/3580305.3599892
+25. Ermis, B.., Ernst, P.., Stein, Y.., Zappella, G.. (2020). Learning to Rank in the Position Based Model with Bandit Feedback. _International Conference on Information and Knowledge Management Proceedings_. https://doi.org/10.1145/3340531.3412723
 
-25. Ermis, B.., Ernst, P.., Stein, Y.., Zappella, G.. (2020). Learning to Rank in the Position Based Model with Bandit Feedback. *International Conference on Information and Knowledge Management Proceedings*. https://doi.org/10.1145/3340531.3412723
+26. Leonhardt, J.., Rudra, K.., Khosla, M.., Anand, A.., Anand, A.. (2022). Efficient Neural Ranking using Forward Indexes. _Www 2022 Proceedings of the ACM Web Conference 2022_. https://doi.org/10.1145/3485447.3511955
 
-26. Leonhardt, J.., Rudra, K.., Khosla, M.., Anand, A.., Anand, A.. (2022). Efficient Neural Ranking using Forward Indexes. *Www 2022 Proceedings of the ACM Web Conference 2022*. https://doi.org/10.1145/3485447.3511955
+27. Vuong, T.., Andolina, S.., Jacucci, G.., Ruotsalo, T.. (2022). Does More Context Help? Effects of Context Window and Application Source on Retrieval Performance. _ACM Transactions on Information Systems_. https://doi.org/10.1145/3474055
 
-27. Vuong, T.., Andolina, S.., Jacucci, G.., Ruotsalo, T.. (2022). Does More Context Help? Effects of Context Window and Application Source on Retrieval Performance. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3474055
+28. Chang, B.., Meng, C.., Ma, H.., Chang, S.., Gu, Y.., Peng, Y.., Feng, J.., Zhang, Y.., Bi, S.., Chi, E.H.., Chen, M.. (2024). Cluster Anchor Regularization to Alleviate Popularity Bias in Recommender Systems. _Www 2024 Companion Companion Proceedings of the ACM Web Conference_. https://doi.org/10.1145/3589335.3648312
 
-28. Chang, B.., Meng, C.., Ma, H.., Chang, S.., Gu, Y.., Peng, Y.., Feng, J.., Zhang, Y.., Bi, S.., Chi, E.H.., Chen, M.. (2024). Cluster Anchor Regularization to Alleviate Popularity Bias in Recommender Systems. *Www 2024 Companion Companion Proceedings of the ACM Web Conference*. https://doi.org/10.1145/3589335.3648312
+29. Ren, Y.., Tang, H.., Zhu, S.. (2022). Unbiased Learning to Rank with Biased Continuous Feedback. _International Conference on Information and Knowledge Management Proceedings_. https://doi.org/10.1145/3511808.3557483
 
-29. Ren, Y.., Tang, H.., Zhu, S.. (2022). Unbiased Learning to Rank with Biased Continuous Feedback. *International Conference on Information and Knowledge Management Proceedings*. https://doi.org/10.1145/3511808.3557483
+30. Zhang, J.., Liu, Y.., Mao, J.., Ma, W.., Xu, J.., Ma, S.., Tian, Q.. (2023). User Behavior Simulation for Search Result Re-ranking. _ACM Transactions on Information Systems_. https://doi.org/10.1145/3511469
 
-30. Zhang, J.., Liu, Y.., Mao, J.., Ma, W.., Xu, J.., Ma, S.., Tian, Q.. (2023). User Behavior Simulation for Search Result Re-ranking. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3511469
+31. Vuong, T.., Ruotsalo, T.. (2024). Predicting Representations of Information Needs from Digital Activity Context. _ACM Transactions on Information Systems_. https://doi.org/10.1145/3639819
 
-31. Vuong, T.., Ruotsalo, T.. (2024). Predicting Representations of Information Needs from Digital Activity Context. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3639819
+32. Zhang, C.., Yao, H.., Yu, L.., Huang, C.., Song, D.., Chen, H.., Jiang, M.., Chawla, N.V.. (2021). Inductive Contextual Relation Learning for Personalization. _ACM Transactions on Information Systems_. https://doi.org/10.1145/3450353
 
-32. Zhang, C.., Yao, H.., Yu, L.., Huang, C.., Song, D.., Chen, H.., Jiang, M.., Chawla, N.V.. (2021). Inductive Contextual Relation Learning for Personalization. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3450353
+33. Leonhardt, J.., Müller, H.., Rudra, K.., Khosla, M.., Anand, A.., Anand, A.. (2024). Efficient Neural Ranking Using Forward Indexes and Lightweight Encoders. _ACM Transactions on Information Systems_. https://doi.org/10.1145/3631939
 
-33. Leonhardt, J.., Müller, H.., Rudra, K.., Khosla, M.., Anand, A.., Anand, A.. (2024). Efficient Neural Ranking Using Forward Indexes and Lightweight Encoders. *ACM Transactions on Information Systems*. https://doi.org/10.1145/3631939
+34. He, Y.., Tian, Y.., Wang, M.., Chen, F.., Yu, L.., Tang, M.., Chen, C.., Zhang, N.., Kuang, B.., Prakash, A.. (2023). Que2Engage: Embedding-based Retrieval for Relevant and Engaging Products at Facebook Marketplace. _ACM Web Conference 2023 Companion of the World Wide Web Conference Www 2023_. https://doi.org/10.1145/3543873.3584633
 
-34. He, Y.., Tian, Y.., Wang, M.., Chen, F.., Yu, L.., Tang, M.., Chen, C.., Zhang, N.., Kuang, B.., Prakash, A.. (2023). Que2Engage: Embedding-based Retrieval for Relevant and Engaging Products at Facebook Marketplace. *ACM Web Conference 2023 Companion of the World Wide Web Conference Www 2023*. https://doi.org/10.1145/3543873.3584633
+35. Zerveas, G.., Rekabsaz, N.., Cohen, D.., Eickhoff, C.. (2022). CODER: An efficient framework for improving retrieval through COntextual Document Embedding Reranking. _Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing Emnlp 2022_. https://doi.org/10.18653/v1/2022.emnlp-main.727
 
-35. Zerveas, G.., Rekabsaz, N.., Cohen, D.., Eickhoff, C.. (2022). CODER: An efficient framework for improving retrieval through COntextual Document Embedding Reranking. *Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing Emnlp 2022*. https://doi.org/10.18653/v1/2022.emnlp-main.727
+36. Bi, K.., Metrikov, P.., Li, C.., Byun, B.. (2021). Leveraging user behavior history for personalized email search. _Web Conference 2021 Proceedings of the World Wide Web Conference Www 2021_. https://doi.org/10.1145/3442381.3450110
 
-36. Bi, K.., Metrikov, P.., Li, C.., Byun, B.. (2021). Leveraging user behavior history for personalized email search. *Web Conference 2021 Proceedings of the World Wide Web Conference Www 2021*. https://doi.org/10.1145/3442381.3450110
+37. Yang, T.., Fang, S.., Li, S.., Wang, Y.., Ai, Q.. (2020). Analysis of Multivariate Scoring Functions for Automatic Unbiased Learning to Rank. _International Conference on Information and Knowledge Management Proceedings_. https://doi.org/10.1145/3340531.3412128
 
-37. Yang, T.., Fang, S.., Li, S.., Wang, Y.., Ai, Q.. (2020). Analysis of Multivariate Scoring Functions for Automatic Unbiased Learning to Rank. *International Conference on Information and Knowledge Management Proceedings*. https://doi.org/10.1145/3340531.3412128
+38. Gupta, S.., Hager, P.., Huang, J.., Vardasbi, A.., Oosterhuis, H.. (2023). Recent Advances in the Foundations and Applications of Unbiased Learning to Rank. _SIGIR 2023 Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval_. https://doi.org/10.1145/3539618.3594247
 
-38. Gupta, S.., Hager, P.., Huang, J.., Vardasbi, A.., Oosterhuis, H.. (2023). Recent Advances in the Foundations and Applications of Unbiased Learning to Rank. *SIGIR 2023 Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval*. https://doi.org/10.1145/3539618.3594247
+39. Bock, J.D.., Verstockt, S.. (2021). SmarterROUTES-A Data-driven Context-aware Solution for Personalized Dynamic Routing and Navigation. _ACM Transactions on Spatial Algorithms and Systems_. https://doi.org/10.1145/3402125
 
-39. Bock, J.D.., Verstockt, S.. (2021). SmarterROUTES-A Data-driven Context-aware Solution for Personalized Dynamic Routing and Navigation. *ACM Transactions on Spatial Algorithms and Systems*. https://doi.org/10.1145/3402125
+40. Yang, Y.., Qiao, Y.., Yang, T.. (2022). Compact Token Representations with Contextual Quantization for Efficient Document Re-ranking. _Proceedings of the Annual Meeting of the Association for Computational Linguistics_. https://doi.org/10.18653/v1/2022.acl-long.51
 
-40. Yang, Y.., Qiao, Y.., Yang, T.. (2022). Compact Token Representations with Contextual Quantization for Efficient Document Re-ranking. *Proceedings of the Annual Meeting of the Association for Computational Linguistics*. https://doi.org/10.18653/v1/2022.acl-long.51
+41. Chen, J.. (2020). Beyond sessions: Exploiting hybrid contextual information for web search. _Wsdm 2020 Proceedings of the 13th International Conference on Web Search and Data Mining_. https://doi.org/10.1145/3336191.3372179
 
-41. Chen, J.. (2020). Beyond sessions: Exploiting hybrid contextual information for web search. *Wsdm 2020 Proceedings of the 13th International Conference on Web Search and Data Mining*. https://doi.org/10.1145/3336191.3372179
+42. Naseri, S.., Dalton, J.., Yates, A.., Allan, J.. (2022). CEQE to SQET: A study of contextualized embeddings for query expansion. _Information Retrieval Journal_. https://doi.org/10.1007/s10791-022-09405-y
 
-42. Naseri, S.., Dalton, J.., Yates, A.., Allan, J.. (2022). CEQE to SQET: A study of contextualized embeddings for query expansion. *Information Retrieval Journal*. https://doi.org/10.1007/s10791-022-09405-y
+43. Chen, H.., Chen, Y.., Meng, J.., Jiao, Y.., Ni, Y.., Gao, Y.., Momma, M.., Sun, Y.. (2023). Improving Product Search with Season-Aware Query-Product Semantic Similarity. _ACM Web Conference 2023 Companion of the World Wide Web Conference Www 2023_. https://doi.org/10.1145/3543873.3587625
 
-43. Chen, H.., Chen, Y.., Meng, J.., Jiao, Y.., Ni, Y.., Gao, Y.., Momma, M.., Sun, Y.. (2023). Improving Product Search with Season-Aware Query-Product Semantic Similarity. *ACM Web Conference 2023 Companion of the World Wide Web Conference Www 2023*. https://doi.org/10.1145/3543873.3587625
+44. Pham, T.M.., Yoon, S.., Bui, T.., Nguyen, A.. (2023). PiC: A Phrase-in-Context Dataset for Phrase Understanding and Semantic Search. _Eacl 2023 17th Conference of the European Chapter of the Association for Computational Linguistics Proceedings of the Conference_. https://doi.org/10.18653/v1/2023.eacl-main.1
 
-44. Pham, T.M.., Yoon, S.., Bui, T.., Nguyen, A.. (2023). PiC: A Phrase-in-Context Dataset for Phrase Understanding and Semantic Search. *Eacl 2023 17th Conference of the European Chapter of the Association for Computational Linguistics Proceedings of the Conference*. https://doi.org/10.18653/v1/2023.eacl-main.1
+45. Palomino, A.., Fischer, A.., Buschhüter, D.., Roller, R.., Pinkwart, N.., Paaßen, B.. (2025). Mitigating Bias in Item Retrieval for Enhancing Exam Assembly in Vocational Education Services. _Proceedings of the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics Human Language Technologies Long Papers Naacl Hlt 2025_. https://doi.org/10.18653/v1/2025.naacl-industry.16
 
-45. Palomino, A.., Fischer, A.., Buschhüter, D.., Roller, R.., Pinkwart, N.., Paaßen, B.. (2025). Mitigating Bias in Item Retrieval for Enhancing Exam Assembly in Vocational Education Services. *Proceedings of the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics Human Language Technologies Long Papers Naacl Hlt 2025*. https://doi.org/10.18653/v1/2025.naacl-industry.16
-
-46. Rudra, K.., Fernando, Z.T.., Anand, A.. (2023). An in-depth analysis of passage-level label transfer for contextual document ranking. *Information Retrieval Journal*. https://doi.org/10.1007/s10791-023-09430-5
-
+46. Rudra, K.., Fernando, Z.T.., Anand, A.. (2023). An in-depth analysis of passage-level label transfer for contextual document ranking. _Information Retrieval Journal_. https://doi.org/10.1007/s10791-023-09430-5
