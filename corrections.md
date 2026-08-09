@@ -341,8 +341,8 @@ The paper is already at the cap with only 2 figures and 2 tables. We are adding:
 | 1 | Typographical polish | ☑ done |
 | 2 | Human-in-the-loop discussion | ☑ done |
 | 3 | IEEE Xplore / ACM DL exclusion rationale | ☑ done |
-| 4 | Abstract completeness | ☐ pending |
-| 5 | Conference requirements compliance | ☐ pending |
+| 4 | Abstract completeness | ☑ done |
+| 5 | Conference requirements compliance | ☑ done |
 | 6 | Subject area analysis depth | ☐ pending |
 | 7 | Figure size + missing figures | ☐ pending |
 | 8 | PRISMA flow diagram | ☐ pending |

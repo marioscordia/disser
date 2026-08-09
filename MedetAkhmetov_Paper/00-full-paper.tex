@@ -32,7 +32,7 @@ Astana, Kazakhstan\\
 \maketitle
 
 \begin{abstract}
-Deep learning and computer vision techniques are increasingly deployed for automated detection of safety violations---including violence, anomalous behavior, and weapons---in surveillance footage from educational institutions. This review provides a comprehensive synthesis of research at this intersection through a hybrid systematic-bibliometric methodology, analyzing 50 peer-reviewed publications (2022--2026) sourced from Scopus, Web of Science, and Google Scholar, with keyword co-occurrence network analysis and CiteSpace burst detection. Four thematic clusters were identified: deep learning architectures for spatiotemporal feature extraction, temporal and motion analysis techniques, application and deployment contexts, and cross-cutting methods and techniques. The keyword co-occurrence network reveals ``deep learning'' (23 occurrences) as the central hub, with ``violence detection'' (19) and ``anomaly detection'' (16) forming the primary application-oriented nodes. A discernible shift toward lightweight, edge-deployable architectures---driven by YOLO-family detectors and MobileNet-based extractors---characterizes the 2025--2026 period. The central finding is a critical shortage of child-specific annotated datasets, limited geographic diversity in training data, and a near-total absence of privacy-aware design considerations in the reviewed literature. Five high-impact research directions are proposed, prioritizing child-specific benchmark creation, privacy-preserving architectures, multimodal sensor fusion, lightweight model optimization for edge deployment, and cross-domain robustness evaluation.
+Deep learning and computer vision techniques are increasingly deployed for automated detection of safety violations---including violence, anomalous behavior, and weapons---in surveillance footage from educational institutions. This review provides a comprehensive synthesis of research at this intersection through a hybrid systematic-bibliometric methodology following PRISMA 2020, analyzing 50 peer-reviewed publications (2022--2026) sourced from Scopus, Web of Science, and Google Scholar, with keyword co-occurrence network analysis and CiteSpace burst detection. Four thematic clusters were identified: (C1) deep learning architectures for spatiotemporal feature extraction, (C2) temporal and motion analysis techniques, (C3) application and deployment contexts, and (C4) cross-cutting methods and techniques. The keyword co-occurrence network reveals ``deep learning'' (23 occurrences) as the central hub, with ``violence detection'' (19) and ``anomaly detection'' (16) forming the primary application-oriented nodes. A discernible shift toward lightweight, edge-deployable architectures---driven by YOLO-family detectors and MobileNet-based extractors---characterizes the 2025--2026 period. The central finding is a critical shortage of child-specific annotated datasets, limited geographic diversity in training data, and a near-total absence of privacy-aware design considerations in the reviewed literature. Six high-impact research directions are proposed, encompassing child-specific benchmark creation, privacy-preserving architectures, multimodal sensor fusion, lightweight model optimization for edge deployment, cross-domain robustness evaluation, and human-in-the-loop alert integration for school security workflows.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -104,7 +104,7 @@ The review process followed PRISMA 2020 standards for transparency and replicabi
 
 The systematic search and PRISMA-guided screening process identified 50 studies for both qualitative synthesis and bibliometric analysis. Table~\ref{tab:years} presents the distribution by publication year.
 
-\begin{table}[htbp]
+\begin{table}[t]
 \caption{Distribution of Included Studies by Year}
 \begin{center}
 \renewcommand{\arraystretch}{1.1}
@@ -135,7 +135,7 @@ Scopus contributed 44 of the 50 reviewed studies (88\%), with Web of Science acc
 
 Fig.~\ref{fig:keyword-network} illustrates the keyword co-occurrence network derived from the 50 reviewed studies. The term ``deep learning'' exhibits the highest frequency (23 occurrences) and serves as the central hub of the network, connecting to nearly all other keywords. ``Violence detection'' (19 occurrences) and ``anomaly detection'' (16 occurrences) form the primary application-oriented nodes. ``Convolutional neural network'' (15 occurrences), ``CNN'' (12 occurrences), and ``LSTM'' (11 occurrences) constitute the dominant architectural terms.
 
-\begin{figure}[htbp]
+\begin{figure}[t]
 \centerline{\includegraphics[width=\columnwidth]{VOSViewer/vosviewer_keyword_network.png}}
 \caption{Keyword co-occurrence network. Node size reflects keyword frequency; edges represent co-occurrence links.}
 \label{fig:keyword-network}
@@ -143,7 +143,7 @@ Fig.~\ref{fig:keyword-network} illustrates the keyword co-occurrence network der
 
 The temporal overlay visualization (Fig.~\ref{fig:overlay}) shows that attention mechanisms, YOLO-based architectures, and transformer-integrated approaches are concentrated in the 2025--2026 period. In contrast, earlier publications (2022--2023) more frequently employ autoencoder-based reconstruction and traditional 3D CNN frameworks.
 
-\begin{figure}[htbp]
+\begin{figure}[t]
 \centerline{\includegraphics[width=\columnwidth]{VOSViewer/vosviewer_overlay.png}}
 \caption{Keyword overlay visualization. Keywords colored by average publication year: blue (2022--2023) to yellow (2025--2026), revealing temporal evolution from autoencoder-based methods toward attention mechanisms and YOLO architectures.}
 \label{fig:overlay}
