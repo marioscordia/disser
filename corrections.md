@@ -338,8 +338,8 @@ The paper is already at the cap with only 2 figures and 2 tables. We are adding:
 
 | # | Correction | Status |
 |---|---|---|
-| 1 | Typographical polish | ☐ pending |
-| 2 | Human-in-the-loop discussion | ☐ pending |
+| 1 | Typographical polish | ☑ done |
+| 2 | Human-in-the-loop discussion | ☑ done |
 | 3 | IEEE Xplore / ACM DL exclusion rationale | ☐ pending |
 | 4 | Abstract completeness | ☐ pending |
 | 5 | Conference requirements compliance | ☐ pending |

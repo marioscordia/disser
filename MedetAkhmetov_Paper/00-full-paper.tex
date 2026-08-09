@@ -232,6 +232,8 @@ Based on the identified gaps, five directions emerge as priorities:
 \item \textbf{Lightweight model optimization for edge deployment:} Quantization, pruning, and neural architecture search are critical for enabling deployment on the resource-constrained hardware typically available to educational institutions; recent contributions demonstrate that competitive accuracy can be maintained while reducing model size by an order of magnitude~\cite{b7,b23}.
 
 \item \textbf{Cross-domain robustness evaluation:} Testing models across different schools, camera types, lighting conditions, and student demographics should become a standard component of evaluation protocols to ensure that laboratory-validated systems translate reliably to real-world educational deployments.
+
+\item \textbf{Human-in-the-loop alert integration:} As noted in Section~4.5, current systems are evaluated in isolation from school security workflows. Edge-detected alerts from on-camera inference should be routed to a centralized school administration dashboard rather than generating standalone push notifications, which risk desensitizing staff through notification fatigue. An effective deployment would implement tiered alert prioritization---weapon detection taking precedence over fight detection, which in turn outweighs suspicious behavior flags---combined with confidence thresholds and a human review queue that allows staff to confirm, dismiss, or escalate each alert before an institutional response is triggered. Research on alert management interfaces and optimal threshold calibration for educational surveillance contexts remains an open challenge.
 \end{enumerate}
 
 \section{Conclusion}
