@@ -340,7 +340,7 @@ The paper is already at the cap with only 2 figures and 2 tables. We are adding:
 |---|---|---|
 | 1 | Typographical polish | ☑ done |
 | 2 | Human-in-the-loop discussion | ☑ done |
-| 3 | IEEE Xplore / ACM DL exclusion rationale | ☐ pending |
+| 3 | IEEE Xplore / ACM DL exclusion rationale | ☑ done |
 | 4 | Abstract completeness | ☐ pending |
 | 5 | Conference requirements compliance | ☐ pending |
 | 6 | Subject area analysis depth | ☐ pending |
