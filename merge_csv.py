@@ -11,7 +11,7 @@ def fetch_apa_citation(item):
     
     # encode item for url
     encoded_item = urllib.parse.quote(item)
-    url = f"https://api.citeas.org/product/{encoded_item}?email=gybraty@gmail.com"
+    url = f"https://api.citeas.org/product/{encoded_item}?email=axmetovmed@gmail.com"
     
     try:
         ctx = ssl.create_default_context()

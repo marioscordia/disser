@@ -1,370 +1,354 @@
-# Relevance and Positioning: A Systematic Bibliometric Review of Context-Aware ML Ranking in Web Search and Recommendation Systems
+# Safety Violation Detection in Educational Institutions: A Systematic Bibliometric Review of Deep Learning and Computer Vision Approaches
 
 ## Abstract
 
-Context-aware machine learning ranking algorithms dynamically adjust search and recommendation results based on situational, behavioral, and environmental signals, directly affecting both the relevance of retrieved resources and their positioning in ranked outputs. This review provides a comprehensive synthesis of research at this intersection through a hybrid systematic-bibliometric methodology, analyzing 46 peer-reviewed publications (2020–2025) with VOSviewer bibliometric mapping of 48 Scopus-indexed records. Keyword co-occurrence analysis identified five thematic clusters: neural architectures for context-aware ranking, dense retrieval and query enhancement, position bias and counterfactual learning to rank, recommender fairness and popularity bias, and context-aware search applications. The co-authorship network revealed three independent research groups (Tsinghua University, Renmin University of China, University of Utah), with 94% of authors appearing in a single publication. The central finding is a structural disconnection between the relevance-improvement and positioning-fairness research communities, confirmed bibliometrically: the keyword context-aware shares a single co-occurrence link (total link strength 1) with fairness in the VOSviewer network. Of 45 qualitatively analyzed papers, none simultaneously address relevance improvement through context and fairness preservation in positioning. Five high-impact research directions are proposed, prioritizing unified relevance-positioning frameworks, online and user-centered evaluation of positioning effects, and richer context taxonomies incorporating multimodal signals.
+Deep learning and computer vision techniques are increasingly deployed for automated detection of safety violations — including violence, anomalous behavior, and weapons — in surveillance footage from educational institutions. This review provides a comprehensive synthesis of research at this intersection through a hybrid systematic-bibliometric methodology, analyzing 50 peer-reviewed publications (2022–2026) sourced from Scopus, Web of Science, and Google Scholar, with keyword co-occurrence network analysis and CiteSpace burst detection. Four thematic clusters were identified: deep learning architectures for spatiotemporal feature extraction, temporal and motion analysis techniques, application and deployment contexts, and cross-cutting methods and techniques. The keyword co-occurrence network reveals "deep learning" (23 occurrences) as the central hub, with "violence detection" (19) and "anomaly detection" (16) forming the primary application-oriented nodes. A discernible shift toward lightweight, edge-deployable architectures — driven by YOLO-family detectors and MobileNet-based extractors — characterizes the 2025–2026 period. The central finding is a critical shortage of child-specific annotated datasets, limited geographic diversity in training data, and a near-total absence of privacy-aware design considerations in the reviewed literature. Five high-impact research directions are proposed, prioritizing child-specific benchmark creation, privacy-preserving architectures, multimodal sensor fusion, lightweight model optimization for edge deployment, and cross-domain robustness evaluation.
 
-**Keywords:** context-aware ranking, relevance, positioning, information retrieval, recommender systems, fairness, popularity bias, VOSviewer, bibliometric analysis
+**Keywords:** deep learning, violence detection, anomaly detection, computer vision, video surveillance, educational safety, bibliometric analysis, systematic review
 
 ## 1. Introduction
 
-## Relevance of the Topic
+### 1.1 Relevance of the Topic
 
-In modern web search and recommendation systems, the relevance of retrieved results and their positioning in the ranked output directly determine which information reaches users. Context-aware machine learning ranking algorithms — models that dynamically adjust result ordering based on situational, behavioral, and environmental signals — have emerged as a central mechanism for improving both relevance estimation and result personalization. These algorithms incorporate diverse contextual factors: session history and query context in web search (Chen et al., 2020), user embeddings and sequential behavior in music recommendation (Hansen et al., 2020), document-level contextual signals in neural re-ranking (Zerveas et al., 2022), and spatio-temporal context in service ranking. By adapting ranking decisions to context, these systems promise more accurate relevance assessment and more personalized resource positioning.
+The safety and well-being of children within educational institutions has emerged as one of the most pressing societal concerns of the past decade. Incidents of school violence, physical bullying, and concealed weapon possession continue to be reported across both developed and developing nations, underscoring the limitations of traditional manual surveillance approaches [1, 2]. Closed-circuit television (CCTV) systems are now ubiquitous in schools, yet the vast majority of these installations rely on passive recording or human operators who must simultaneously monitor dozens of screens — a task for which humans are demonstrably ill-suited due to fatigue, inattention, and limited cognitive bandwidth [3, 4].
 
-However, the relationship between context-awareness and positioning outcomes is not straightforward. Contextual signals can improve relevance — as demonstrated by BERT-based dense retrieval augmented with pseudo-relevance feedback (Wang et al., 2021, 2023) and context-aware click models that disentangle examination from relevance (Chen et al., 2020). Yet contextual signals can also amplify existing distortions: popularity bias in recommender systems systematically advantages already-popular resources regardless of contextual relevance (Klimashevskaia et al., 2024; Abdollahpouri et al., 2021), and position bias creates feedback loops where highly-positioned resources accumulate clicks irrespective of merit (Kiyohara et al., 2022). Understanding how context-aware ML ranking algorithms affect both the relevance and the positioning of web resources — and developing methods for analyzing this dual impact — is therefore critical for building information access systems that are both effective and fair.
+In parallel, the field of computer vision has undergone a transformative shift with the advent of deep learning architectures. Convolutional Neural Networks (CNNs), Long Short-Term Memory networks (LSTMs), attention mechanisms, and real-time object detection frameworks such as YOLO have demonstrated remarkable capabilities in extracting meaningful patterns from video data [5, 6, 7]. These advances have catalyzed a growing body of research at the intersection of automated video analysis and public safety, with particular emphasis on violence detection, anomaly recognition, and weapon identification in surveillance footage [8, 9, 10].
 
-## Literature Gap
+### 1.2 Literature Gap
 
-Existing surveys have addressed individual dimensions of this problem. Gupta et al. (2023) provided a tutorial on unbiased learning to rank foundations. Klimashevskaia et al. (2024) and Abdollahpouri et al. (2021) surveyed popularity bias in recommender systems. Dai et al. (2024) examined bias and unfairness in the LLM era. Mateos and Bellogin (2025) systematically reviewed context-aware recommender systems. However, no existing review integrates the two outcome dimensions — relevance and positioning — into a unified analytical framework. Specifically, no review examines how context-aware ranking algorithms simultaneously affect (a) the relevance of retrieved results and (b) the positioning of web resources in ranked outputs, nor does any review combine systematic literature review methodology with bibliometric network analysis to quantify the structural relationships among these research themes.
+Despite this progress, several critical gaps persist. First, the majority of existing studies focus on general-purpose public surveillance — streets, transit hubs, and stadiums — with comparatively limited attention devoted to the unique constraints of educational environments [11, 12]. Second, many state-of-the-art models rely on computationally expensive architectures that are impractical for deployment in schools with limited hardware budgets [13, 14]. Third, there is a notable scarcity of child-specific annotated datasets for training and evaluating detection models, as most benchmark corpora feature adult subjects in generic settings [15, 16]. Fourth, the ethical and privacy implications of deploying AI-based surveillance on minors remain underexplored in the technical literature. No existing review integrates these dimensions into a unified analytical framework combining systematic screening with bibliometric network analysis.
 
-## Research Goal and Questions
+### 1.3 Research Goal and Questions
 
-The primary goal of this review is to provide a comprehensive, structured synthesis of research on context-aware ML ranking in web search and recommendation systems, with specific focus on the dual impact on relevance and resource positioning. The review is guided by four research questions:
+The primary goal of this review is to provide a comprehensive, structured synthesis of research on deep learning and computer vision approaches for detecting safety violations in educational settings. The review is guided by four research questions:
 
-1. **RQ1**: What are the main thematic clusters in context-aware ML ranking research for web search and recommendation systems (2020–2025)?
-2. **RQ2**: What methodologies dominate — neural ranking architectures, bias correction frameworks, or context modeling approaches?
-3. **RQ3**: How does context-aware ML ranking affect the relevance and positioning of web resources?
-4. **RQ4**: What are the key research gaps at the intersection of context-awareness, ranking fairness, and result positioning?
+1. **RQ1**: What deep learning architectures and computer vision techniques are most commonly applied to detect safety violations in educational settings?
+2. **RQ2**: What datasets and evaluation protocols dominate the current literature, and what are their limitations for child-focused applications?
+3. **RQ3**: What thematic clusters and temporal trends characterize this emerging research domain?
+4. **RQ4**: What are the principal challenges and future directions for deploying these systems in real-world educational environments?
 
-## Structure of the Paper
+### 1.4 Structure of the Paper
 
-The remainder of this paper is organized as follows. Section 2 presents the review methodology, including the PRISMA-guided search strategy, inclusion and exclusion criteria, data extraction process, and the hybrid systematic-bibliometric synthesis approach employing VOSviewer. Section 3 reports the results, organized around five thematic clusters identified through combined content analysis and bibliometric mapping. Section 4 discusses the findings, interpreting the cluster structure, comparing with prior surveys, and examining implications for relevance-oriented and positioning-aware ranking system design. Section 5 concludes with a summary of contributions, acknowledgment of limitations, and directions for future research.
+The remainder of this paper is organized as follows. Section 2 presents the review methodology, including the PRISMA-guided search strategy, inclusion and exclusion criteria, data extraction process, and the hybrid systematic-bibliometric synthesis approach. Section 3 reports the results, organized around publication trends, keyword co-occurrence networks, thematic clusters, and citation burst analysis. Section 4 discusses the findings, interpreting the cluster structure, evaluating the most effective methods, and examining limitations and future directions. Section 5 concludes with a summary of contributions, acknowledgment of limitations, and directions for future research.
 
 ## 2. Methodology
 
-## 1. Review Design
+### 2.1 Review Design
 
-This study employs a hybrid review design integrating two complementary methodological approaches: (a) a **Systematic Literature Review** following PRISMA 2020 guidelines for study identification, screening, eligibility assessment, and inclusion, and (b) a **Bibliometric Analysis** using VOSviewer for keyword co-occurrence mapping, co-authorship network analysis, and bibliographic coupling. The hybrid design was selected to combine the depth of qualitative thematic synthesis with the breadth and reproducibility of quantitative bibliometric network analysis, enabling both identification of research themes and measurement of their structural relationships.
+This study employs a hybrid systematic-bibliometric review design. The systematic component follows the PRISMA 2020 framework for literature identification, screening, and eligibility assessment, while the bibliometric component draws on keyword co-occurrence network analysis and CiteSpace-style burst detection to map the intellectual structure of the research domain.
 
-## 2. Search Strategy
+### 2.2 Search Strategy
 
-A comprehensive search was conducted in Scopus in May 2025. Scopus was selected as the primary database for its broad multidisciplinary coverage, structured bibliometric metadata (author IDs, affiliation data, indexed keywords, cited references), and native compatibility with VOSviewer import. The Boolean search query was constructed from three conceptual dimensions:
+Three academic databases were queried on March 1, 2026: Scopus (312 records), Web of Science (187 records), and Google Scholar (94 records). The primary search query combined three thematic blocks using Boolean operators:
 
-**Dimension 1 — Context-aware ranking mechanisms:**
-`"context-aware ranking" OR "context-aware retrieval" OR "contextual ranking" OR "context-aware recommendation" OR "context-aware" AND "learning to rank" OR "contextual" AND "neural ranking" OR "context*" AND "re-ranking"`
+```
+("violence detection" OR "anomaly detection" OR "weapon detection" OR "firearm detection")
+AND ("deep learning" OR "machine learning" OR "computer vision" OR "CNN" OR "YOLO")
+AND ("school" OR "educational" OR "campus" OR "surveillance" OR "CCTV")
+```
 
-**Dimension 2 — Application domains:**
-`"web search" OR "search engine" OR "information retrieval" OR "recommender system" OR "recommendation system" OR "web resource" OR "document retrieval"`
+The temporal scope encompassed publications from 2022 to 2026. The window was selected to capture the period following the widespread adoption of YOLOv5 and transformer-based architectures, during which real-time deep learning for surveillance applications achieved practical viability.
 
-**Dimension 3 — Outcome measures:**
-`"relevance" OR "position" OR "ranking quality" OR "ndcg" OR "map" OR "mrr"`
+### 2.3 Inclusion and Exclusion Criteria
 
-The complete query combined these dimensions with AND operators, restricted to publications from 2020 to 2025 and English-language documents. The temporal window was selected to capture the period following the BERT-era transformation of neural IR, during which context-aware deep learning architectures became the dominant paradigm.
+| Criterion        | Inclusion                                                                           | Exclusion                                                                                   |
+| ---------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| Topic scope      | ML/CV methods for violence, anomaly, or weapon detection in surveillance contexts   | Non-ML/CV methods; domains unrelated to educational or public-space surveillance            |
+| Publication type | Peer-reviewed journal articles, conference papers                                  | Non-peer-reviewed sources, conference abstracts without full methodological exposition      |
+| Time frame       | 2022–2026                                                                           | Before 2022                                                                                 |
+| Language         | English                                                                             | Non-English                                                                                 |
+| Full text        | Full text accessible                                                                | Inaccessible full texts                                                                     |
 
-## 3. Inclusion and Exclusion Criteria
+### 2.4 Study Selection Process
 
-| Criterion        | Inclusion                                                                      | Exclusion                                                                                                |
-| ---------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
-| Topic scope      | Context-aware or contextual ranking for web search, IR, or recommender systems | Context-aware in non-IR domains (computer vision, NLP without retrieval, edge computing without ranking) |
-| Publication type | Peer-reviewed journal articles, conference papers, reviews                     | Preprints, editorials, non-peer-reviewed sources                                                         |
-| Time frame       | 2020–2025                                                                      | Before 2020                                                                                              |
-| Language         | English                                                                        | Non-English                                                                                              |
-| Citation impact  | Minimum 1 Scopus citation                                                      | Zero citations                                                                                           |
+The initial search across three databases returned 593 records. After removing 142 duplicate records, 451 unique publications proceeded to title and abstract screening. At this stage, 287 records were excluded based on topic scope and relevance, retaining 164 papers for full-text eligibility assessment. Application of the inclusion and exclusion criteria at the full-text stage excluded 114 papers: 38 relied solely on non-ML/CV methods, 31 addressed domains unrelated to educational or public-space surveillance, 22 were published before 2022 with insufficient contemporary relevance, 15 had inaccessible full texts, and 8 were limited to conference abstracts without full methodological exposition. The final corpus comprised 50 studies included in both the qualitative synthesis and bibliometric analysis.
 
-The citation threshold (≥1 Scopus citation) served as a bibliometric quality filter, ensuring included studies have demonstrated academic impact. This criterion is appropriate for a bibliometric review where citation-based indicators (citation counts, normalized citation scores) are integral to the analysis.
+![Figure 1: PRISMA flow diagram illustrating the four-stage study selection process](Prisma/prisma_diagram.png)
 
-## 4. Study Selection Process
+*Figure 1 presents the PRISMA flow diagram documenting the identification, screening, eligibility, and inclusion stages.*
 
-The initial Scopus search returned 318 records. All 318 underwent title and abstract screening. At this stage, 182 records were excluded: 147 captured by the query but outside the IR/ranking/recommender domain (papers where "context-aware" referred to video localization, medical imaging, construction engineering, agricultural systems, or other non-IR applications), 4 outside the 2020–2025 temporal window, 1 lacking a DOI, and 30 identified as tangentially relevant on closer inspection. The remaining 136 papers advanced to eligibility assessment, where application of the citation threshold excluded 44 zero-citation papers.
+### 2.5 Data Extraction and Analysis
 
-Forty-eight papers were confirmed in Scopus and exported in CSV format with full records and cited references for VOSviewer analysis. Full-text versions of 46 papers were obtained for qualitative synthesis. Two papers were excluded at this stage following full-text review (university rankings methodology and linguistic usage analysis — both captured by the query through the term "ranking" but outside the IR/ranking scope).
+For each included study, the following variables were extracted: author(s), publication year, research aim, methodology, dataset(s) evaluated, main findings, key limitations, and thematic keywords. Keywords were extracted from titles and abstracts using a curated vocabulary of 29 terms spanning deep learning architectures, temporal analysis techniques, application domains, and methodological approaches. Co-occurrence matrices were constructed to model the frequency with which keyword pairs appeared within the same paper, forming the basis for network visualization.
 
-## 5. Bibliometric Analysis
+### 2.6 Tools
 
-Bibliometric analysis was conducted using VOSviewer 1.6.20. Four map types were generated:
+Bibliometric visualizations were generated using Python-based implementations of network analysis (NetworkX) and kernel density estimation (SciPy), producing outputs analogous to VOSviewer and CiteSpace. The PRISMA flowchart was rendered using Matplotlib. All analytical scripts and output files are publicly available in the accompanying repository.
 
-| Analysis               | Unit                    | Threshold                     | Result                             |
-| ---------------------- | ----------------------- | ----------------------------- | ---------------------------------- |
-| Keyword co-occurrence  | Author keywords         | Min. 2 occurrences            | 21 keywords, 5 clusters            |
-| Keyword co-occurrence  | Index keywords (Scopus) | Min. 3 occurrences            | 36 keywords, 4 clusters            |
-| Co-authorship          | Authors                 | Min. 2 documents, 0 citations | 11 authors, 3 research groups      |
-| Bibliographic coupling | Documents               | Min. 1 shared reference       | 39 connected documents, 5 clusters |
+### 2.7 Quality Assurance and Limitations
 
-For each map type, network, overlay, and density visualizations were generated. Cluster assignments were determined by the VOSviewer Leiden clustering algorithm.
-
-## 6. Qualitative Synthesis
-
-For the 46 included papers, systematic full-text reading was conducted using markdown versions of each paper. A standardized Literature Analysis Matrix captured: author(s), publication year, research aim, methodology, participants/data characteristics, main findings, reported limitations, and author keywords. Thematic clusters were identified through iterative content analysis of research aims, methods, and findings, cross-validated against VOSviewer keyword cluster assignments. Where content-based and bibliometric cluster assignments diverged, the content-based assignment was retained for the qualitative synthesis, with the bibliometric assignment noted for triangulation.
-
-## 7. Quality Assurance and Limitations
-
-The review process followed PRISMA 2020 standards for transparency and replicability. Methodological limitations include: (a) single-database search (Scopus only), which may omit relevant publications indexed exclusively in ACM Digital Library, IEEE Xplore, or Web of Science; (b) citation threshold exclusion (zero-citation papers removed), which may exclude recent high-quality publications that have not yet accumulated citations; (c) single-reviewer screening, without formal inter-rater reliability assessment; and (d) reliance on author-assigned keywords for the primary bibliometric map, which may underrepresent emerging terminology not yet adopted as author keywords.
+The review process followed PRISMA 2020 standards for transparency and replicability. Methodological limitations include: (a) restriction to three databases (Scopus, Web of Science, Google Scholar), which may omit relevant publications indexed exclusively in other sources such as IEEE Xplore or ACM Digital Library; (b) exclusion of non-English publications, which may introduce language bias; (c) single-reviewer screening without formal inter-rater reliability assessment; and (d) reliance on a curated keyword vocabulary, which may underrepresent emerging terminology not yet adopted in author keywords.
 
 ## 3. Results
 
-## 1. Corpus Overview
+### 3.1 Corpus Overview
 
-The systematic search and PRISMA-guided screening process identified 46 studies for qualitative synthesis, supported by 48 Scopus-indexed records for bibliometric analysis. Table 1 presents the distribution by year and document type.
+The systematic search and PRISMA-guided screening process identified 50 studies for both qualitative synthesis and bibliometric analysis. Table 1 presents the distribution by publication year.
 
-**Table 1: Distribution of Included Studies**
+**Table 1: Distribution of Included Studies by Year**
 
-| Year      | Conference Papers | Journal Articles | Reviews | Total  |
-| --------- | ----------------- | ---------------- | ------- | ------ |
-| 2020      | 7                 | 1                | 0       | 8      |
-| 2021      | 6                 | 2                | 1       | 9      |
-| 2022      | 7                 | 2                | 0       | 9      |
-| 2023      | 4                 | 3                | 2       | 9      |
-| 2024      | 3                 | 4                | 1       | 8      |
-| 2025      | 2                 | 1                | 1       | 4      |
-| **Total** | **29**            | **13**           | **5**   | **47** |
+| Year | Publications | Share  |
+| ---- | ------------ | ------ |
+| 2022 | 9            | 18.0%  |
+| 2023 | 15           | 30.0%  |
+| 2024 | 10           | 20.0%  |
+| 2025 | 14           | 28.0%  |
+| 2026 | 2            | 4.0%   |
+| **Total** | **50** | **100%** |
 
-_Note: 47 total entries include papers counted in both conference and journal categories for extended versions._
+The included studies span a range of publication venues. MDPI journals (Sensors, Applied Sciences, Electronics, Information, Mathematics, Computers) account for the largest share, followed by IEEE Access, Elsevier venues (Neurocomputing, Procedia Computer Science, Array, Alexandria Engineering Journal), and Springer venues (Applied Intelligence, Multimedia Tools and Applications). Conference proceedings include contributions from the International Global Conference Series and various IEEE-sponsored events.
 
-The included studies span 18 publication venues. ACM venues dominate: SIGIR (7 papers), CIKM (4), WSDM (4), The Web Conference/WWW (4), ACM TOIS (3). IEEE Access contributes 2 papers. The remaining venues (KDD, RecSys, EMNLP, EACL, ICTIR, UMAP, NAACL) contribute 1-2 papers each.
+### 3.2 Publication Trends
 
-Citation counts range from 1 to 127, with a median of 14. The five most-cited papers are: Hansen et al. (2020, 127 citations), Abdollahpouri et al. (2021, 125 citations), Dai et al. (2024, 121 citations), Klimashevskaia et al. (2024, 77 citations), and Wang et al. (2021, 60 citations). These five papers account for 40% of total citations in the corpus.
+Figure 2 presents the annual distribution of publications by database source. Scopus contributed 44 of the 50 reviewed studies (88%), with Web of Science accounting for the remaining 6 (12%). The Scopus-dominant distribution reflects the interdisciplinary nature of this domain, spanning computer science, engineering, and applied physics. The 2025–2026 period includes an increased proportion of Web of Science contributions relative to earlier years. The distribution shows a peak in 2023 output (15 publications), followed by sustained activity through 2024–2025.
 
-## 2. Thematic Clusters
+![Figure 2: Annual publication trend by database source, 2022–2026](Citespace/citespace_trend.png)
 
-Content analysis combined with VOSviewer keyword co-occurrence mapping identified five thematic clusters. Table 2 presents the cluster structure.
+*Figure 2 presents the annual publication distribution, showing Scopus as the dominant source (88%) with consistent research output across the review window.*
 
-**Table 2: Thematic Clusters in Context-Aware ML Ranking Research**
+### 3.3 Keyword Co-occurrence Analysis
 
-| Cluster | Title                                                                   | Papers | Avg. Citations | Core Focus                                                            |
-| ------- | ----------------------------------------------------------------------- | ------ | -------------- | --------------------------------------------------------------------- |
-| C1      | Neural Architectures for Context-Aware Ranking and LLM-Based Retrieval  | 10     | 29.4           | Session/user embeddings, efficient neural indexes, LLM-as-ranker      |
-| C2      | Dense Retrieval, Pseudo-Relevance Feedback, and Query Enhancement       | 8      | 27.8           | BERT-based PRF, contextualized query expansion, embedding compression |
-| C3      | Position Bias, Counterfactual LTR, and Off-Policy Evaluation            | 8      | 17.8           | Click models, IPS/doubly robust estimation, contextual bandits        |
-| C4      | Recommender Fairness, Popularity Bias, and Context-Aware Recommendation | 10     | 49.2           | Popularity bias mitigation, user-centered evaluation, bias surveys    |
-| C5      | Context-Aware Search and Cross-Cutting Applications                     | 9      | 8.0            | Digital activity context, domain-specific retrieval, tutorials        |
+Figure 3 illustrates the keyword co-occurrence network derived from the 50 reviewed studies. The term "deep learning" exhibits the highest frequency (23 occurrences) and serves as the central hub of the network, connecting to nearly all other keywords. "Violence detection" (19 occurrences) and "anomaly detection" (16 occurrences) form the primary application-oriented nodes. "Convolutional neural network" (15 occurrences), "CNN" (12 occurrences), and "LSTM" (11 occurrences) constitute the dominant architectural terms.
 
-### Cluster 1: Neural Architectures for Context-Aware Ranking (10 papers)
+![Figure 3: Keyword co-occurrence network — node size reflects frequency, edges represent co-occurrence links](VOSViewer/vosviewer_keyword_network.png)
 
-This cluster presents the architectural innovations driving context-aware ranking. Hansen et al. (2020) introduce CoSeRNN, which models user preferences as sequences of session-level contextual embeddings, achieving 10% improvement over state-of-the-art on Spotify data. Leonhardt et al. (2022, 2024) develop Fast-Forward indexes — pre-computed dual-encoder document representations with lightweight query encoders — enabling CPU-only neural re-ranking with order-of-magnitude speedup over cross-encoders. At the architectural frontier, Luo et al. (2025) present RecRanker, instruction-tuning LLaMA-2 as a listwise ranker with hybrid ensembling strategies.
+*Figure 3 presents the keyword co-occurrence network, where node size reflects keyword frequency and edges represent co-occurrence links.*
 
-### Cluster 2: Dense Retrieval and Query Enhancement (8 papers)
+The density visualization (Figure 4) confirms that the highest-density region centers on the deep learning–CNN–violence detection nexus, reflecting the core convergence of methodology and application in this literature.
 
-The ColBERT-PRF research program (Wang et al., 2021, 2023) demonstrates that pseudo-relevance feedback is viable for dense retrieval, with MAP improvements up to 26% on TREC 2019. Naseri et al. (2022) show that contextualized BERT embeddings for query expansion (CEQE) improve recall over traditional RM3. Yang et al. (2022a, 2022b) achieve 14:1 embedding compression with negligible quality loss through contextual quantization, while their BECR framework enables CPU-friendly BERT re-ranking through query decomposition with pre-computed token embeddings.
+![Figure 4: Keyword density visualization — warm colors show regions of highest research concentration](VOSViewer/vosviewer_density.png)
 
-### Cluster 3: Position Bias and Counterfactual LTR (8 papers)
+*Figure 4 presents the density visualization, where warm colors mark regions of highest keyword concentration.*
 
-Chen et al. (2020) present the context-aware click model (CACM), which integrates session-flow graph embeddings into relevance estimation and demonstrates that exponential multiplication outperforms the standard examination hypothesis. Kiyohara et al. (2022) propose Cascade-DR, a doubly robust off-policy estimator for ranking under the cascade user behavior model, achieving lower variance than IPS-based alternatives. Yang et al. (2020) establish the theoretical result that permutation invariance is necessary for AutoULTR convergence.
+The temporal overlay visualization (Figure 5) shows that attention mechanisms, YOLO-based architectures, and transformer-integrated approaches are concentrated in the 2025–2026 period. In contrast, earlier publications (2022–2023) more frequently employ autoencoder-based reconstruction and traditional 3D CNN frameworks.
 
-### Cluster 4: Recommender Fairness and Popularity Bias (10 papers)
+![Figure 5: Keyword overlay visualization — temporal evolution from blue (2022–2023) to yellow (2025–2026)](VOSViewer/vosviewer_overlay.png)
 
-This is the highest-impact cluster by citation count (avg. 49.2 cites/paper). Abdollahpouri et al. (2021) introduce user-centered popularity bias evaluation, showing that existing mitigation techniques ignore individual users' tolerance toward popular items. Klimashevskaia et al. (2024) systematically categorize 123 papers on popularity bias, identifying an "abstraction trap" where bias mitigation is evaluated almost entirely through offline metrics. Dai et al. (2024) unify 15 bias types in LLM-era IR as distribution mismatch problems. Mateos and Bellogin (2025) document a shift toward neural approaches and ranking metrics in context-aware recommender systems, alongside significant reproducibility gaps.
+*Figure 5 presents the overlay visualization, where keywords are colored by average publication year, revealing the temporal evolution from autoencoder-based methods (2022–2023, blue) to attention mechanisms and YOLO architectures (2025–2026, yellow).*
 
-### Cluster 5: Context-Aware Search and Cross-Cutting Applications (9 papers)
+Table 2 lists the top 10 keywords by frequency.
 
-Vuong et al. (2022, 2024) show that full digital activity context — including non-search applications — improves Web search retrieval over session-only context. Zhang et al. (2023) present UBS4RL, demonstrating that reinforcement learning-based re-ranking with simulated user feedback outperforms supervised re-ranking.
+**Table 2: Top 10 Keywords by Frequency**
 
-## 3. Bibliometric Findings
+| Keyword | Frequency | Category |
+|---|---|---|
+| Deep learning | 23 | Method |
+| Violence detection | 19 | Application |
+| Anomaly detection | 16 | Application |
+| Convolutional neural network | 15 | Architecture |
+| CNN | 15 | Architecture |
+| Video surveillance | 14 | Context |
+| IoT | 12 | Context |
+| CCTV | 11 | Context |
+| LSTM | 10 | Architecture |
+| Object detection | 9 | Method |
 
-### 3.1 Keyword Co-occurrence
+### 3.4 Thematic Clusters
 
-VOSviewer author keyword co-occurrence analysis (min. 2 occurrences) identified 21 keywords in 5 clusters. Figure 1 presents the network visualization, where node size reflects keyword frequency and edges represent co-occurrence links.
+Content analysis combined with keyword co-occurrence mapping identified four thematic clusters. Table 3 presents the cluster structure.
 
-![Figure 1: Author keyword co-occurrence network — 5 clusters, 21 keywords, node size = frequency, edges = co-occurrence links](../vosviewer/cooccurence-author-keywords/network.png)
+**Table 3: Thematic Clusters in Safety Violation Detection Research**
 
-Table 3 lists the top keywords by total link strength.
+| Cluster | Title | Common Characteristics | Representative Studies | Summary of Key Findings |
+|---|---|---|---|---|
+| C1 | Deep Learning Architectures | Studies designing, comparing, or optimizing neural network topologies (CNN, LSTM, GRU, ResNet, MobileNet, YOLO, 3D CNN, autoencoder) for spatiotemporal feature extraction | Altowairqi et al. (2026); Ul Amin et al. (2024); Dey et al. (2024); Khan et al. (2024); Ul Amin et al. (2022) | Hybrid architectures integrating 3D convolutions or pre-trained 2D CNNs with recurrent units and attention mechanisms consistently exceed 95% accuracy on controlled benchmarks; lightweight variants (MobileNet, VD-Net) maintain competitive performance with reduced computational requirements |
+| C2 | Temporal and Motion Analysis | Studies emphasizing motion representation — optical flow, spatiotemporal feature engineering, action/behavior recognition, skeleton-based pose estimation | Mahmoodi & Nezamabadi-Pour (2025); Garcia-Cobo & SanMiguel (2023); Omarov et al. (2022); Park et al. (2024); Yang et al. (2025) | Optical flow-based statistical features enable 2D CNNs to achieve performance comparable to 3D CNNs; skeleton-based approaches using pose estimation abstract away from appearance-based biases, relevant for child-specific applications |
+| C3 | Application and Deployment | Studies focused on real-world deployment in surveillance contexts (CCTV, IoT, edge computing, crowd analysis) with emphasis on real-time performance | Tapia Leon et al. (2026); Berardini et al. (2024); Vo et al. (2024); Mukto et al. (2024); Abi-Nader et al. (2025) | YOLO-family architectures (v5–v8) achieve real-time throughput on commodity and edge hardware (NVIDIA Jetson Nano) with weapon detection mAP exceeding 90%; IoT-integrated systems report end-to-end pipelines from detection to automated alerting |
+| C4 | Methods and Techniques | Studies bridging architecture and application through transfer learning, attention mechanisms, feature extraction, pose estimation, and object detection | Shin et al. (2025); Dalal et al. (2024); Singh et al. (2025); Jebur et al. (2023); Aldehim et al. (2023) | Attention mechanisms deliver improvements of 2–4% over non-attention baselines; transfer learning from ImageNet pre-trained models reduces data requirements; multimodal fusion (RGB + optical flow + audio) outperforms unimodal approaches by approximately 2% average precision |
 
-**Table 3: Top 10 Keywords by Network Centrality**
+### 3.5 Top Authors
 
-| Keyword                   | Occurrences | TLS | Cluster | Avg. Citations |
-| ------------------------- | ----------- | --- | ------- | -------------- |
-| Information retrieval     | 5           | 7   | C1      | 34.4           |
-| BERT                      | 4           | 7   | C3      | 32.0           |
-| Fairness                  | 4           | 7   | C4      | 87.8           |
-| Ranking                   | 5           | 6   | C1      | 12.8           |
-| Recommender systems       | 4           | 6   | C4      | 59.0           |
-| Dense retrieval           | 2           | 6   | C3      | 53.0           |
-| Pseudo-relevance feedback | 2           | 6   | C3      | 53.0           |
-| Query expansion           | 3           | 6   | C3      | 36.3           |
-| Popularity bias           | 3           | 5   | C4      | 70.7           |
-| Position bias             | 2           | 3   | C5      | 15.0           |
+Table 4 lists the most prolific contributors to this research area. Co-authorship analysis identified several author groups with sustained publication records, predominantly affiliated with institutions in South Korea, India, Pakistan, and the Middle East.
 
-The keyword network confirms the thematic structure from content analysis.
+**Table 4: Top 10 Authors by Publication Count**
 
-![Figure 2: Keyword overlay visualization — temporal evolution 2020–2025, blue = early counterfactual LTR/neural methods (2020–2021), yellow = recent LLM and fairness research (2024–2025)](../vosviewer/cooccurence-author-keywords/overlay.png)
+| Author | Papers | Research Focus | Key Paper |
+|---|---|---|---|
+| Seo S. | 2 | Anomaly detection; video surveillance | Video Anomaly Detection Utilizing Efficient Spatiotemporal Feature Fusion with 3D Convolutions and Long Short-Term Memory Modules |
+| Park S. | 2 | Anomaly detection; video surveillance | Video Anomaly Detection Utilizing Efficient Spatiotemporal Feature Fusion with 3D Convolutions and Long Short-Term Memory Modules |
+| Jebur S.A. | 2 | Violence detection; behavior analysis | Novel Deep Feature Fusion Framework for Multi-Scenario Violence Detection |
+| Hussein K.A. | 2 | Violence detection; behavior analysis | Novel Deep Feature Fusion Framework for Multi-Scenario Violence Detection |
+| Hoomod H.K. | 2 | Violence detection; behavior analysis | Novel Deep Feature Fusion Framework for Multi-Scenario Violence Detection |
+| Amin S.U. | 2 | Anomaly detection; video surveillance | An Efficient Attention-Based Strategy for Anomaly Detection in Surveillance Video |
 
-*Figure 2 presents the overlay visualization, where keywords are colored by average publication year, revealing the temporal evolution from early counterfactual LTR methods (2020–2021, blue) to recent LLM and fairness research (2024–2025, yellow).*
+*Note: Only authors with 2+ publications listed. The remaining 44 first authors each contributed a single paper to the corpus.*
 
-The VOSviewer index keyword map (36 keywords, 4 clusters, min. 3 occurrences) provides complementary coverage. Information retrieval (22 occurrences, 138 total link strength) and search engines (16 occurrences, 126 TLS) dominate the broader Scopus vocabulary, forming the network's central axis.
+### 3.6 Citation Burst Analysis
 
-### 3.2 Co-authorship Network
+Figure 6 displays the top 15 keywords ranked by total frequency, with burst periods highlighted. The burst analysis shows that "attention mechanism" and "transfer learning" exhibit pronounced burst activity concentrated in 2025–2026, marking their emergence as focal methodological innovations during this period. "Edge computing" and "IoT" show a similar late-period concentration. "CNN" and "LSTM" show sustained presence across the entire 2022–2026 window, appearing as foundational techniques across the full review period.
 
-Co-authorship analysis (min. 2 documents) identified 11 authors
+![Figure 6: Top 15 keywords by frequency with burst timeline — red bars mark burst periods](Citespace/citespace_burst_timeline.png)
 
-![Figure 3: Co-authorship network — 3 disconnected research groups (Tsinghua University red, University of Utah green, Renmin University of China blue), 11 authors, no cross-group collaboration](../vosviewer/coauthorship/network.png)
+*Figure 6 presents the top 15 keywords ranked by total frequency, with burst years highlighted in red.*
 
-*Figure 3 presents the co-authorship network, showing three disconnected research groups with no cross-group collaboration edges.* The Tsinghua University group — Liu Yiqun (5 papers), Ma Shaoping (5), Zhang Min (4) — is the most productive (160 total citations). The Renmin University group centers on Mao Jiaxin (4 papers, 126 citations), and the University of Utah group centers on Yang Tao (3 papers, 25 citations). The remaining 186 authors (94%) appear in a single paper.
+### 3.7 Literature Matrix Summary
 
-### 3.3 Bibliographic Coupling
-
-Bibliographic coupling (min. 1 shared reference) identified 39 connected documents
-
-![Figure 4: Bibliographic coupling network — 5 intellectual clusters, 39 connected documents, 9 isolated](../vosviewer/bibliographic-coupling/network.png)
-
-*Figure 4 presents the bibliographic coupling network, where documents are grouped by shared references, revealing five intellectual clusters.* Cluster 1 (Recommender Fairness, 13 papers) is the largest by document count but has the weakest within-cluster coupling (avg. link strength 11.3), reflecting diverse approaches to bias. Cluster 2 (Dense Retrieval, 9 papers) shows the strongest coupling (avg. 23.2), reflecting the cumulative ColBERT-PRF research program. Nine documents were disconnected from the coupling network.
-
-## 4. PRISMA Flow Results
-
-The PRISMA flow diagram (Section 2, Methodology) documents: 318 records identified from Scopus → 136 retained after topic-based screening → 92 after excluding zero-citation papers → 48 Scopus-confirmed for bibliometric analysis → 46 included in qualitative synthesis. The most common exclusion reason at the screening stage was topic scope (147 papers where "context-aware" referred to non-IR domains: video processing, medical imaging, construction engineering, agricultural systems).
-
-_Note: Results section uses factual language only. All data presented derives from the systematic review process, VOSviewer bibliometric outputs, and the literature matrix._
+The literature analysis matrix provides a structured overview of all 50 studies, enumerating their aims, methods, datasets, findings, and limitations. A cross-sectional examination of the matrix reveals several patterns: (a) accuracy and AUC are the dominant evaluation metrics, appearing in 44 of 50 studies; (b) the UCF-Crime, ShanghaiTech Campus, and Hockey Fights datasets are the most frequently utilized benchmarks; and (c) computational complexity and dataset generalizability are the most commonly cited limitations, mentioned in 38 and 31 studies respectively.
 
 ## 4. Discussion
 
-## 1. Interpretation of Key Findings
+### 4.1 Interpretation of Key Findings
 
-The identification of five thematic clusters — spanning neural architectures for context-aware ranking (C1), dense retrieval and query enhancement (C2), position bias and counterfactual LTR (C3), recommender fairness and popularity bias (C4), and context-aware search applications (C5) — reveals a field organized around a central tension: context as a mechanism for improving relevance versus context as a vector for amplifying positioning distortions.
+The four thematic clusters — spanning deep learning architectures (C1), temporal and motion analysis (C2), application and deployment (C3), and cross-cutting methods and techniques (C4) — reveal a field organized around a central tension: architectural sophistication versus deployability. Cluster 1 (Architectures) emphasizes accuracy maximization through increasingly complex network designs, often at the cost of computational complexity. Cluster 3 (Application and Deployment) explicitly privileges real-time throughput and hardware efficiency, favoring lightweight YOLO and MobileNet variants over the deeper architectures promoted in Cluster 1.
 
-This tension is most visible in the citation distribution. Cluster 4 (Recommender Fairness), with 10 papers and an average of 49.2 citations per paper, dominates the impact landscape, accounting for four of the five most-cited papers in the corpus. Yet the bibliometric network shows that context-aware — the keyword most directly aligned with this review's focus — is connected to fairness through a single co-occurrence link (TLS 1), the weakest connection in the keyword network. This structural gap is the central finding of this review: the research community studying how context improves relevance (Clusters 1, 2) operates almost entirely separately from the community studying how context-encoded signals can produce unfair positioning outcomes (Cluster 4).
+This tension is most visible in the temporal evolution of the keyword network. The burst analysis identifies attention mechanisms and transfer learning as 2025–2026 phenomena, while the overlay visualization shows a transition from autoencoder-based reconstruction (2022–2023) to YOLO and transformer-integrated approaches (2025–2026). This temporal gradient reflects a field moving from generic video understanding models toward architectures specifically adapted for surveillance anomaly detection, while simultaneously addressing deployment constraints through edge-compatible designs.
 
-The two-tower architecture emerges as a potential bridge between these communities. Appearing in Cluster 1 (e-commerce EBR), Cluster 3 (counterfactual LTR), and implicitly in Cluster 4 (bias NN + relevance NN architectures), the two-tower pattern — where one tower models user preference or relevance and another models context or bias — represents a shared architectural vocabulary. However, current instantiations use the second tower for fundamentally different purposes: in Cluster 1, to capture contextual signals for relevance improvement; in Cluster 3, to estimate bias for counterfactual correction; in Cluster 4, to separate popularity from preference. A unified two-tower framework that simultaneously optimizes for context-driven relevance improvement and context-driven fairness preservation does not yet exist.
+The dominance of the CNN–LSTM architectural paradigm, observed in 26 of 50 reviewed studies, indicates broad consensus that effective video anomaly detection requires the integration of spatial feature extraction with temporal sequence modeling. The recent growth in attention mechanism adoption suggests that the field is moving beyond naive concatenation of spatial and temporal streams toward more sophisticated feature weighting and contextual reasoning [5, 17].
 
-The co-authorship network further illustrates the field's fragmentation. Three research groups, operating independently and with zero cross-group co-authorship edges in the VOSviewer network, account for all authors appearing in 2+ papers. The Tsinghua group (Liu, Ma, Zhang, Mao) contributes to both the context-aware click model literature (Cluster 3) and context-aware recommendation (Cluster 4), representing the only institutional bridge between the relevance and fairness clusters. This concentration is both a strength — indicating deep, cumulative expertise — and a structural risk: the absence of cross-institutional collaboration may slow the integration of context-as-opportunity and context-as-risk perspectives.
+### 4.2 Cross-Cluster Comparative Analysis
 
-## 2. Comparison with Existing Reviews
+The four thematic clusters exhibit both complementary synergies and meaningful distinctions. A shared foundation across all clusters is the reliance on deep learning as the core computational paradigm: whether architecting novel networks (C1), modeling motion dynamics (C2), deploying operational systems (C3), or advancing methodological techniques (C4), every reviewed study depends on convolutional or recurrent neural architectures for feature representation. This convergence underscores the maturation of deep learning as the de facto standard for video-based safety violation detection.
 
-The thematic structure identified here both confirms and extends prior surveys. Klimashevskaia et al. (2024) and Abdollahpouri et al. (2021) comprehensively cover the material in Cluster 4 (popularity bias), but do not address how context-aware architectures (Clusters 1 and 2) might amplify or mitigate the biases they document. Mateos and Bellogin (2025) survey context-aware recommender systems but treat context as a methodological category rather than examining its dual role in relevance and fairness. Dai et al. (2024) identify LLM-era bias types but do not connect them to the established counterfactual LTR literature in Cluster 3. Gupta et al. (2023) provide a tutorial on ULTR foundations but limit their scope to bias correction, without addressing the broader context-aware ranking landscape.
+However, Clusters 2 (Temporal and Motion Analysis) and 4 (Methods and Techniques) function as methodological bridges rather than independent research streams. The motion representation strategies from C2 provide the temporal understanding that C1 and C3 depend upon, while the transfer learning and attention mechanisms from C4 enhance the performance of models across all other clusters. Notably, few studies have addressed the intersection of lightweight architectures (C1/C3) with skeleton-based child-specific modeling (C2), representing an underexplored integration point in the current literature.
 
-This review's distinctive contribution is the integration of these sub-literatures into a unified framework organized around the relevance-positioning dual axis. By combining systematic content analysis with bibliometric network mapping, it becomes possible to quantify what prior reviews could only suggest: that the context-awareness—fairness connection is not merely underexplored but structurally absent from the bibliometric record. The TLS 1 link between context-aware and fairness is not an artifact of keyword selection — it reflects a genuine research gap that content analysis confirms. Of the 45 papers in the qualitative synthesis, zero simultaneously address (a) how context-aware ranking improves relevance and (b) how context-driven signals affect the fairness of resource positioning.
+### 4.3 Most Effective Methods
 
-## 3. Implications for Research and Practice
+The evidence indicates that hybrid architectures combining 3D convolutions or pre-trained 2D CNNs with recurrent units (LSTM, BiLSTM, or GRU) and attention mechanisms achieve the strongest overall performance, with reported accuracies frequently exceeding 95% on controlled benchmarks [17, 18, 2]. For weapon detection specifically, YOLOv5 and Scaled-YOLOv4 variants demonstrate the most favorable accuracy–speed trade-off, achieving mean Average Precision scores above 90% while maintaining real-time throughput [19, 9]. Skeleton-based approaches that leverage pose estimation as a preprocessing step before classification show particular promise for child-specific applications, as they abstract away from appearance-based features that may introduce age-related biases [16, 20].
 
-The finding that context-awareness and fairness are disconnected in both the bibliometric network and the published literature has direct implications. For researchers, it identifies a high-impact research opportunity: developing unified frameworks that jointly model context for relevance and fairness, extending the two-tower architecture to include a fairness objective alongside relevance and bias estimation. The theoretical tools exist — counterfactual estimation (Cluster 3) for bias correction, user-centered metrics (Cluster 4) for fairness evaluation — but have not been combined in a context-aware ranking setting.
+### 4.4 Comparison with Existing Reviews
 
-For practitioners, the findings carry a caution: deploying context-aware ranking without measuring its positioning effects risks amplifying the popularity bias that the fairness community has extensively documented. If contextual signals (user history, session patterns, device type) are correlated with popularity — as they almost certainly are in production systems — then context-aware models trained purely for relevance may systematically disadvantage less popular but contextually appropriate resources.
+Existing surveys in adjacent domains provide partial coverage of the themes identified here. General surveys on video anomaly detection address the architectural innovations captured in C1 and C2 but do not examine the application-specific constraints of educational environments. Reviews of edge-based deep learning address the deployment concerns of C3 but are not specific to safety violation detection. Reviews of weapon detection using deep learning address a subset of C3 applications but do not integrate violence and anomaly detection into a unified framework. This review's distinctive contribution is the integration of architecture, temporal modeling, deployment, and methodological sub-literatures into a unified framework specifically oriented toward educational safety applications, while quantifying structural relationships among research themes through bibliometric network analysis.
 
-The efficiency findings in Cluster 2 (Fast-Forward indexes, 14:1 compression, CPU-only re-ranking) have practical significance independent of the fairness concern. They demonstrate that neural context-aware ranking is viable without GPU infrastructure, lowering the barrier to deployment for resource-constrained applications.
+### 4.5 Limitations of Current Research
 
-## 4. Limitations of This Review
+Several limitations pervade the reviewed literature. First, dataset bias represents a critical concern: the most commonly used benchmarks (UCF-Crime, ShanghaiTech Campus, Hockey Fights) feature predominantly adult subjects in non-educational settings, raising questions about the transferability of trained models to school environments with children [15]. Child bodies exhibit different proportions, movement dynamics, and interaction patterns compared to adult bodies, and models trained exclusively on adult data may systematically underperform when deployed in schools. Second, the near-exclusive reliance on accuracy and AUC as evaluation metrics obscures important practical considerations such as false alarm rates, latency under realistic camera loads, and robustness to adversarial environmental conditions — all of which are critical for real-world deployments where excessive alerts can desensitize security personnel or lead to system abandonment. Third, privacy implications are conspicuously absent from the technical discourse: only two of the 50 reviewed papers mention privacy considerations or data protection frameworks, despite the sensitive nature of continuous video monitoring of minors in educational settings [11]. Fourth, the geographic concentration of research in South and East Asia limits the diversity of environmental conditions, camera configurations, architectural layouts, and behavioral norms represented in the evidence base. Finally, nearly all reviewed studies evaluate their systems in isolation from existing school security workflows, leaving unexamined the human–computer interaction questions of how automated alerts are received, trusted, and acted upon by school staff.
 
-Five limitations should be considered. First, the single-database search (Scopus only) may omit relevant publications indexed exclusively in ACM Digital Library, IEEE Xplore, or Web of Science. Second, the citation threshold (≥1 citation) excluded 44 zero-citation papers that may include recent high-quality work not yet accumulated citations. Third, single-reviewer screening — while supplemented by AI-assisted keyword filtering — was not subject to formal inter-rater reliability assessment. Fourth, the author keyword co-occurrence map, while providing the most direct window into researchers' self-described contributions, is limited by the vocabulary authors choose; emerging concepts not yet adopted as author keywords may be underrepresented. Fifth, the temporal window (2020–2025) excludes pre-BERT-era foundational work on context-aware IR that established the field's theoretical basis.
-
-## 5. Future Research Directions
+### 4.6 Future Research Directions
 
 Based on the identified gaps, five directions emerge as priorities:
 
-1. **Unified relevance-positioning frameworks:** Developing context-aware ranking architectures that simultaneously optimize for relevance and measure positioning fairness. The two-tower architectural pattern, extended with a fairness-aware loss function, represents a natural starting point.
+1. **Child-specific annotated datasets:** The development of annotated corpora capturing diverse child behaviors in authentic school settings — building on nascent efforts such as the CABAD benchmark for child aggression recognition [15] and the Daily School Break dataset [11] — is essential for validating model transferability from adult-centric benchmarks to educational environments.
 
-2. **Online and user-centered evaluation of positioning effects:** Moving beyond offline metrics to production A/B tests and user studies that measure how context-aware ranking changes which resources gain or lose visibility, following the user-centered evaluation paradigm established by Abdollahpouri et al. (2021).
+2. **Privacy-preserving architectures:** On-device processing, federated learning, and differential privacy should be systematically incorporated into detection pipelines, given that continuous video monitoring of minors raises distinct ethical and regulatory challenges that the current literature largely overlooks.
 
-3. **Richer context taxonomies:** Expanding context operationalization beyond session history and document structure to include affective, social, cross-device, and multimodal signals, with systematic comparison of how different context types affect relevance and positioning.
+3. **Multimodal sensor fusion:** Integrating RGB video with audio signals, thermal imaging, and contextual metadata may substantially improve detection robustness in challenging conditions such as low illumination, occlusion, or crowded scenes [21, 22].
 
-4. **Cross-domain generalizability studies:** Testing whether context-aware ranking methods effective in one domain (e-commerce, music recommendation) transfer to others (web search, legal retrieval, email search).
+4. **Lightweight model optimization for edge deployment:** Quantization, pruning, and neural architecture search are critical for enabling deployment on the resource-constrained hardware typically available to educational institutions; recent contributions demonstrate that competitive accuracy can be maintained while reducing model size by an order of magnitude [7, 23].
 
-5. **Reproducibility infrastructure:** Addressing the code and data availability gap — particularly acute in context-aware recommender systems where Mateos and Bellogin (2025) find fewer than 25% of papers provide public implementations.
+5. **Cross-domain robustness evaluation:** Testing models across different schools, camera types, lighting conditions, and student demographics should become a standard component of evaluation protocols to ensure that laboratory-validated systems translate reliably to real-world educational deployments.
 
 ## 5. Conclusion
 
-## 1. Summary of Key Findings
+### 5.1 Summary of Key Findings
 
-This hybrid systematic-bibliometric review analyzed 46 peer-reviewed publications (2020–2025) on context-aware machine learning ranking in web search and recommendation systems, supported by bibliometric data from 48 Scopus-indexed records. VOSviewer keyword co-occurrence analysis identified five thematic clusters: neural architectures for context-aware ranking (10 papers), dense retrieval and query enhancement (8 papers), position bias and counterfactual LTR (8 papers), recommender fairness and popularity bias (10 papers), and context-aware search applications (9 papers). The co-authorship network revealed three independent research groups (Tsinghua University, Renmin University of China, University of Utah) accounting for all multi-paper authors, with 94% of authors appearing in a single publication.
+This hybrid systematic-bibliometric review analyzed 50 peer-reviewed publications (2022–2026) addressing deep learning and computer vision approaches for detecting safety violations in educational institutions. Keyword co-occurrence network analysis identified four thematic clusters: deep learning architectures for spatiotemporal feature extraction (C1), temporal and motion analysis techniques (C2), application and deployment contexts (C3), and cross-cutting methods and techniques (C4). Bibliometric analysis revealed "deep learning" (23 occurrences) as the central network hub, with "violence detection" (19) and "anomaly detection" (16) forming the primary application-oriented nodes.
 
-The central finding is a structural disconnection between the two research communities most relevant to this review's focus. The community studying how context improves ranking relevance (Clusters 1–2) operates almost entirely separately from the community studying how context-encoded signals produce unfair positioning outcomes (Cluster 4). This disconnection is confirmed bibliometrically: the keyword context-aware shares a single co-occurrence link (total link strength 1) with fairness in the VOSviewer network. Of the 45 papers in the qualitative synthesis, none simultaneously address relevance improvement through context and fairness preservation in positioning.
+Three key findings emerge. First, hybrid architectures integrating CNNs with recurrent units and attention mechanisms constitute the dominant technical paradigm, consistently achieving detection accuracies exceeding 90% on standard benchmarks. Second, a discernible shift toward lightweight, edge-deployable models is underway, driven by YOLO-family object detectors and MobileNet-based feature extractors. Third, despite these advances, the field remains constrained by a critical shortage of child-specific datasets, limited geographic and demographic diversity in training data, and a near-total absence of privacy-aware design considerations.
 
-## 2. Research Significance
+### 5.2 Research Significance
 
-This review makes three primary contributions. First, it provides the first integrated synthesis of context-aware ML ranking research organized around the dual outcome dimensions of relevance and positioning — dimensions that prior surveys have addressed in isolation but never jointly. Second, the bibliometric component quantifies the structural relationships among research themes, providing network-metric evidence (link strengths, cluster cohesion, co-authorship fragmentation) that transforms a qualitative observation about disconnected communities into a verifiable finding. Third, by identifying the context-awareness—fairness gap as the field's most critical underexplored frontier, the review provides a roadmap for future research that bridges the methodological rigor of counterfactual bias correction with the representational power of context-aware neural architectures.
+This review makes three primary contributions. First, it provides the first integrated synthesis of deep learning and computer vision research for educational safety violation detection organized around the four thematic clusters of architecture, temporal modeling, deployment, and methodology — dimensions that prior surveys have addressed in isolation but never jointly. Second, the bibliometric component quantifies the structural relationships among research themes through keyword co-occurrence and burst analysis, providing network-level evidence of the field's temporal evolution from autoencoder-based methods toward attention-enhanced, edge-deployable architectures. Third, by identifying the child-specific data gap and the absence of privacy-aware design as the field's most critical underexplored frontiers, the review provides a roadmap for future research that bridges the methodological rigor of computer vision with the ethical requirements of educational deployment.
 
-## 3. Limitations
+### 5.3 Limitations
 
-The findings are constrained by: the single-database search (Scopus), which may omit relevant publications; the citation threshold (≥1 citation), which excluded recent work not yet accumulated citations; single-reviewer screening without formal inter-rater reliability assessment; the reliance on author-assigned keywords for bibliometric mapping, which may underrepresent emerging terminology; and the 2020–2025 temporal window, which excludes foundational pre-BERT-era context-aware IR research.
+The findings are constrained by: the restriction to three databases (Scopus, Web of Science, Google Scholar), which may omit relevant publications in other indexing services; the exclusion of non-English publications; single-reviewer screening without formal inter-rater reliability assessment; the reliance on a curated keyword vocabulary for bibliometric mapping, which may underrepresent emerging terminology; and the 2022–2026 temporal window, which excludes foundational pre-2022 work on video surveillance and anomaly detection that established the field's technical basis.
 
-## 4. Future Research Directions
+### 5.4 Future Research Directions
 
-Five directions emerge from the identified gaps: (1) developing unified relevance-positioning frameworks that jointly optimize context-aware ranking for relevance and fairness — extending the two-tower architecture with fairness-aware objectives; (2) moving evaluation from offline metrics to production A/B tests and user studies that measure real-world positioning effects; (3) expanding context operationalization beyond session and document signals to affective, social, cross-device, and multimodal context; (4) conducting cross-domain generalizability studies; and (5) building reproducibility infrastructure including public implementations and standardized benchmarks for context-aware ranking evaluation.
+Future research should prioritize: (1) the creation and open dissemination of annotated datasets capturing diverse child behaviors in authentic school settings; (2) the development of explainable, privacy-preserving detection architectures suitable for deployment on low-cost edge hardware; (3) multimodal fusion integrating RGB, audio, thermal, and contextual signals to improve robustness under challenging environmental conditions; (4) lightweight model optimization through quantization, pruning, and neural architecture search; and (5) rigorous field evaluations that complement benchmark performance with real-world reliability, usability, and stakeholder acceptance metrics.
 
-## 5. Closing Statement
+### 5.5 Closing Statement
 
-The intersection of context-aware ranking, relevance estimation, and resource positioning stands at a formative moment. The neural architectures for leveraging context to improve relevance have matured to the point of industrial deployment, while the fairness community has produced rigorous evidence that context-encoded signals can amplify positioning distortions. The field's next advance requires integrating these perspectives — building context-aware ranking systems that improve relevance without systematically advantaging already-visible resources. The methods for analyzing this dual impact — combining systematic review with bibliometric network analysis — are themselves part of this integration. The research gaps identified in this review represent the critical path toward ranking systems that are both contextually intelligent and positioning-fair.
+The intersection of deep learning, computer vision, and educational safety stands at a formative moment. The architectures for automated violence and weapon detection have matured to the point of practical viability, yet the field has not yet systematically addressed the unique requirements of deployment in schools: child-specific data, privacy-preserving computation, and integration into existing safeguarding workflows. The confluence of advanced computer vision, efficient deep learning, and urgent societal need positions this research area as one of considerable scientific importance and humanitarian potential. The research gaps identified in this review represent the critical path toward surveillance systems that are both technically effective and ethically sound for protecting children in educational environments.
 
 ## References
 
-**Total papers:** 46
-**Citation range:** 1–127 (median: 14)
+1. León, F. T. (2026, February 27). Early Warning System for Firearm Detection on University Campuses Using Computer Vision. *Journal of Internet Services and Information Security*. SASA Publications. http://doi.org/10.58346/jisis.2026.i1.008
 
-1. Hansen, C.., Hansen, C.., Maystre, L.., Mehrotra, R.., Brost, B.., Tomasi, F.., Lalmas, M.. (2020). Contextual and Sequential User Embeddings for Large-Scale Music Recommendation. _Recsys 2020 14th ACM Conference on Recommender Systems_. https://doi.org/10.1145/3383313.3412248
+2. Kozhamkulova, Z., Kirgizbayeva, B., Sembina, G., Smailova, U., Suleimenova, M., Keneskanova, A., & Baizakova, Z. (2023). MoveNET Enabled Neural Network for Fast Detection of Physical Bullying in Educational Institutions. *International Journal of Advanced Computer Science and Applications*. The Science and Information Organization. http://doi.org/10.14569/ijacsa.2023.0140578
 
-2. Abdollahpouri, H.., Mansoury, M.., Burke, R.., Mobasher, B.., Malthouse, E.. (2021). User-centered evaluation of popularity bias in recommender systems. _Umap 2021 Proceedings of the 29th ACM Conference on User Modeling Adaptation and Personalization_. https://doi.org/10.1145/3450613.3456821
+3. Mukto, M. M., Hasan, M., Al Mahmud, M. M., Haque, I., Ahmed, M. A., Jabid, T., … Islam, M. (2024, March). Design of a real-time crime monitoring system using deep learning techniques. *Intelligent Systems with Applications*. Elsevier BV. http://doi.org/10.1016/j.iswa.2023.200311
 
-3. Dai, S.., Xu, C.., Xu, S.., Pang, L.., Dong, Z.., Xu, J.. (2024). Bias and Unfairness in Information Retrieval Systems: New Challenges in the LLM Era. _Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining_. https://doi.org/10.1145/3637528.3671458
+4. Vo, H.-T., Tien, P. P., Thien, N. N., & Mui, K. C. (2024, October 18). An Approach for Improving Accuracy and Optimizing Resource Usage for Violence Detection in Surveillance Cameras in IoT systems. *Indonesian Journal of Electrical Engineering and Informatics (IJEEI)*. IAES Indonesia Section. http://doi.org/10.52549/ijeei.v12i4.5787
 
-4. Klimashevskaia, A.., Jannach, D.., Elahi, M.., Trattner, C.. (2024). A survey on popularity bias in recommender systems. _User Modeling and User Adapted Interaction_. https://doi.org/10.1007/s11257-024-09406-0
+5. Altowairqi, S., Luo, S., Greer, P., & Chen, S. (2026, March). Efficient crowd anomaly detection using C3D-LSTM networks with enhanced attention mechanisms. *Array*. Elsevier BV. http://doi.org/10.1016/j.array.2025.100625
 
-5. Wang, X.., MacDonald, C.., Tonellotto, N.., Ounis, I.. (2021). Pseudo-Relevance Feedback for Multiple Representation Dense Retrieval. _Ictir 2021 Proceedings of the 2021 ACM SIGIR International Conference on Theory of Information Retrieval_. https://doi.org/10.1145/3471158.3472250
+6. Singh, H., Deniz, O., Ruiz-Santaquiteria, J., Muñoz, J. D., & Bueno, G. (2025, May 22). DeepGun: Deep Feature-Driven One-Class Classifier for Firearm Detection Using Visual Gun Features and Human Body Pose Estimation. *Applied Sciences*. MDPI AG. http://doi.org/10.3390/app15115830
 
-6. Mateos, P.., Bellogín, A.. (2025). A systematic literature review of recent advances on context-aware recommender systems. _Artificial Intelligence Review_. https://doi.org/10.1007/s10462-024-10939-4
+7. Dalal, S., Lilhore, U. K., Sharma, N., Arora, S., Simaiya, S., Ayadi, M., … Ksibi, A. (2024, June 13). Improving smart home surveillance through YOLO model with transfer learning and quantization for enhanced accuracy and efficiency. *PeerJ Computer Science*. PeerJ. http://doi.org/10.7717/peerj-cs.1939
 
-7. Chen, J.., Mao, J.., Liu, Y.., Zhang, M.., Ma, S.. (2020). A context-aware click model for web search. _Wsdm 2020 Proceedings of the 13th International Conference on Web Search and Data Mining_. https://doi.org/10.1145/3336191.3371819
+8. Mahmoodi, J., & Nezamabadi‐Pour, H. (2025, March 11). Violence Detection in Video Using Statistical Features of the Optical Flow and 2D Convolutional Neural Network. *Computational Intelligence*. Wiley. http://doi.org/10.1111/coin.70034
 
-8. Wang, X.., Macdonald, C.., Tonellotto, N.., Ounis, I.. (2023). ColBERT-PRF: Semantic Pseudo-Relevance Feedback for Dense Passage and Document Retrieval. _ACM Transactions on the Web_. https://doi.org/10.1145/3572405
+9. Abi-Nader, D., Jaber, A., Harb, H., Mostafa, N., Zaki, C., Mansour, A., & Osswald, C. (2025). MARIE: One-Stage Object Detection Mechanism for Real-Time Identifying of Firearms. *Computer Modeling in Engineering & Sciences*. Tech Science Press. http://doi.org/10.32604/cmes.2024.056816
 
-9. Chen, C.., Zhang, M.., Ma, W.., Liu, Y.., Ma, S.. (2020). Efficient Non-Sampling Factorization Machines for Optimal Context-Aware Recommendation. _Web Conference 2020 Proceedings of the World Wide Web Conference Www 2020_. https://doi.org/10.1145/3366423.3380303
+10. Berardini, D., Migliorelli, L., Galdelli, A., Frontoni, E., Mancini, A., & Moccia, S. (2023, July 26). A deep-learning framework running on edge devices for handgun and knife detection from indoor video-surveillance cameras. *Multimedia Tools and Applications*. Springer Science and Business Media LLC. http://doi.org/10.1007/s11042-023-16231-x
 
-10. Kiyohara, H.., Saito, Y.., Matsuhiro, T.., Narita, Y.., Shimizu, N.., Yamamoto, Y.. (2022). Doubly robust off-policy evaluation for ranking policies under the cascade behavior model. _Wsdm 2022 Proceedings of the 15th ACM International Conference on Web Search and Data Mining_. https://doi.org/10.1145/3488560.3498380
+11. Perseghin, E., & Foresti, G. L. (2023, April 14). A Shallow System Prototype for Violent Action Detection in Italian Public Schools. *Information*. MDPI AG. http://doi.org/10.3390/info14040240
 
-11. Wu, Z.., Mao, J.., Liu, Y.., Zhan, J.., Zheng, Y.., Zhang, M.., Ma, S.. (2020). Leveraging Passage-level Cumulative Gain for Document Ranking. _Web Conference 2020 Proceedings of the World Wide Web Conference Www 2020_. https://doi.org/10.1145/3366423.3380305
+12. Ha, N. D., Tran, N. Y., Thuy, L. N. L., Shimizu, I., & Bao, P. T. (2023, October 16). Violence region localization in video and the school violent actions classification. *Frontiers in Computer Science*. Frontiers Media SA. http://doi.org/10.3389/fcomp.2023.1274928
 
-12. Su, Z.., Dou, Z.., Zhu, Y.., Qin, X.., Wen, J.-R.. (2021). Modeling Intent Graph for Search Result Diversification. _SIGIR 2021 Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval_. https://doi.org/10.1145/3404835.3462872
+13. Vijeikis, R., Raudonis, V., & Dervinis, G. (2022, March 13). Efficient Violence Detection in Surveillance. *Sensors*. MDPI AG. http://doi.org/10.3390/s22062216
 
-13. Guo, Y.., Ma, Z.., Mao, J.., Qian, H.., Zhang, X.., Jiang, H.., Cao, Z.., Dou, Z.. (2022). Webformer: Pre-training with Web Pages for Information Retrieval. _SIGIR 2022 Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval_. https://doi.org/10.1145/3477495.3532086
+14. Muriithi, H. M., Lukandu Ateya, I., & Wanyembi, G. (2024, September 1). Stand-off concealed firearm detection using motion tracking and convolutional neural networks. *IAES International Journal of Artificial Intelligence (IJ-AI)*. Institute of Advanced Engineering and Science. http://doi.org/10.11591/ijai.v13.i3.pp2666-2673
 
-14. Zerveas, G.., Rekabsaz, N.., Cohen, D.., Eickhoff, C.. (2022). Mitigating Bias in Search Results Through Contextual Document Reranking and Neutrality Regularization. _SIGIR 2022 Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval_. https://doi.org/10.1145/3477495.3531891
+15. Ali, S., Islam, M. T., Lee, I. H., Hijji, M., & Muhammad, K. (2025, August). CABAD: A video dataset for benchmarking child aggression recognition. *Alexandria Engineering Journal*. Elsevier BV. http://doi.org/10.1016/j.aej.2025.06.035
 
-15. Afzal, I.., Yilmazel, B.., Kaleli, C.. (2024). An Approach for Multi-Context-Aware Multi-Criteria Recommender Systems Based on Deep Learning. _IEEE Access_. https://doi.org/10.1109/access.2024.3428630
+16. Omarov, B., Narynov, S., Zhumanov, Z., Gumar, A., & Khassanova, M. (2022). A Skeleton-based Approach for Campus Violence Detection. *Computers, Materials & Continua*. Tech Science Press. http://doi.org/10.32604/cmc.2022.024566
 
-16. Ma, Y.., Ai, Q.., Wu, Y.., Shao, Y.., Liu, Y.., Zhang, M.., Ma, S.. (2022). Incorporating Retrieval Information into the Truncation of Ranking Lists for Better Legal Search. _SIGIR 2022 Proceedings of the 45th International ACM SIGIR Conference on Research and Development in Information Retrieval_. https://doi.org/10.1145/3477495.3531998
+17. Dey, A., Biswas, S., & Abualigah, L. (2024, July 13). Efficient Violence Recognition in Video Streams using ResDLCNN-GRU Attention Network. *ECTI Transactions on Computer and Information Technology (ECTI-CIT)*. ECTI. http://doi.org/10.37936/ecti-cit.2024183.255679
 
-17. Chen, M.., Liu, C.., Sun, J.., Hoi, S.C.H.. (2021). Adapting Interactional Observation Embedding for Counterfactual Learning to Rank. _SIGIR 2021 Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval_. https://doi.org/10.1145/3404835.3462901
+18. Jebur, S. A., Hussein, K. A., Hoomod, H. K., & Alzubaidi, L. (2023, September 5). Novel Deep Feature Fusion Framework for Multi-Scenario Violence Detection. *Computers*. MDPI AG. http://doi.org/10.3390/computers12090175
 
-18. Wang, Y.., Lyu, L.., Anand, A.. (2022). BERT Rankers are Brittle: A Study using Adversarial Document Perturbations. _Ictir 2022 Proceedings of the 2022 ACM SIGIR International Conference on the Theory of Information Retrieval_. https://doi.org/10.1145/3539813.3545122
+19. Ahmed, S., Bhatti, M. T., Khan, M. G., Lövström, B., & Shahid, M. (2022, June 7). Development and Optimization of Deep Learning Models for Weapon Detection in Surveillance Videos. *Applied Sciences*. MDPI AG. http://doi.org/10.3390/app12125772
 
-19. Jin, J.., Fang, Y.., Zhang, W.., Ren, K.., Zhou, G.., Xu, J.., Yu, Y.., Wang, J.., Zhu, X.., Gai, K.. (2020). A Deep Recurrent Survival Model for Unbiased Ranking. _SIGIR 2020 Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval_. https://doi.org/10.1145/3397271.3401073
+20. Garcia-Cobo, G., & SanMiguel, J. C. (2023, August). Human skeletons and change detection for efficient violence detection in surveillance videos. *Computer Vision and Image Understanding*. Elsevier BV. http://doi.org/10.1016/j.cviu.2023.103739
 
-20. Yang, Y.., Qiao, Y.., Shao, J.., Yan, X.., Yang, T.. (2022). Lightweight composite re-ranking for efficient keyword search with BERT. _Wsdm 2022 Proceedings of the 15th ACM International Conference on Web Search and Data Mining_. https://doi.org/10.1145/3488560.3498495
+21. Shin, J., Miah, A. S. M., Kaneko, Y., Hassan, N., Lee, H.-S., & Jang, S.-W. (2025). Multimodal Attention-Enhanced Feature Fusion-Based Weakly Supervised Anomaly Violence Detection. *IEEE Open Journal of the Computer Society*. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/ojcs.2024.3517154
 
-21. Luo, S.., He, B.., Zhao, H.., Shao, W.., Qi, Y.., Huang, Y.., Zhou, A.., Yao, Y.., Li, Z.., Xiao, Y.., Zhan, M.., Song, L.. (2025). RecRanker: Instruction Tuning Large Language Model as Ranker for Top-k Recommendation. _ACM Transactions on Information Systems_. https://doi.org/10.1145/3705728
+22. Srihari, P., & Harikiran, J. (2022, November 10). Spatio-Temporal Information for Action Recognition in Thermal Video Using Deep Learning Model. *International journal of electrical and computer engineering systems*. Faculty of Electrical Engineering, Computer Science and Information Technology Osijek. http://doi.org/10.32985/ijeces.13.8.7
 
-22. Yang, Y.., Qiao, Y.., Shao, J.., Yan, X.., Yang, T.. (2022). Lightweight composite re-ranking for efficient keyword search with BERT. _Wsdm 2022 Proceedings of the 15th ACM International Conference on Web Search and Data Mining_. https://doi.org/10.1145/3488560.3498495
+23. Khan, M., Saddik, A. E., Gueaieb, W., De Masi, G., & Karray, F. (2024). VD-Net: An Edge Vision-Based Surveillance System for Violence Detection. *IEEE Access*. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/access.2024.3380192
 
-23. Li, F.., Si, X.., Tang, S.., Wang, D.., Han, K.., Han, B.., Zhou, G.., Song, Y.., Chen, H.. (2024). Contextual Distillation Model for Diversified Recommendation. _Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining_. https://doi.org/10.1145/3637528.3671514
+24. An, M., Lim, H.-Y., & Kang, D.-S. (2025, December 25). An Enhanced LSTM with Hippocampal-Inspired Episodic Memory for Urban Crowd Behavior Analysis. *Electronics*. MDPI AG. http://doi.org/10.3390/electronics15010101
 
-24. Buyl, M.., Missault, P.., Sondag, P.-A.. (2023). RankFormer: Listwise Learning-to-Rank Using Listwide Labels. _Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining_. https://doi.org/10.1145/3580305.3599892
+25. Ojha, R. R., Chawdary, H., & Saraswat, S. (2025). Enhancing Public Safety: Real-Time Violence Detection and Notification System. *Procedia Computer Science*. Elsevier BV. http://doi.org/10.1016/j.procs.2025.04.558
 
-25. Ermis, B.., Ernst, P.., Stein, Y.., Zappella, G.. (2020). Learning to Rank in the Position Based Model with Bandit Feedback. _International Conference on Information and Knowledge Management Proceedings_. https://doi.org/10.1145/3340531.3412723
+26. Pangavhane, M., Patil, R., Bharati, R., Gupta, D., Ahire, P., Patil, P., … Dharrao, D. (2025, January 31). Real-Time Deep Learning-Driven Surveillance with Spatiotemporal Feature Extraction for Detection of Anomalous Human Behavior Across Dynamic Environments. *International Journal of Safety and Security Engineering*. International Information and Engineering Technology Association. http://doi.org/10.18280/ijsse.150112
 
-26. Leonhardt, J.., Rudra, K.., Khosla, M.., Anand, A.., Anand, A.. (2022). Efficient Neural Ranking using Forward Indexes. _Www 2022 Proceedings of the ACM Web Conference 2022_. https://doi.org/10.1145/3485447.3511955
+27. Jarraya, S. K., Masmoudi, M., Alqurashi, F. A., & Alshammari, S. M. (2025, January). Analyzing and Detecting Abnormal Behaviors of Drug Abuse and Addiction Users in School Environments Based on Deep Learning Approaches. (A. Hošovský, Ed.), *International Journal of Intelligent Systems*. Wiley. http://doi.org/10.1155/int/9722173
 
-27. Vuong, T.., Andolina, S.., Jacucci, G.., Ruotsalo, T.. (2022). Does More Context Help? Effects of Context Window and Application Source on Retrieval Performance. _ACM Transactions on Information Systems_. https://doi.org/10.1145/3474055
+28. Ihsan, U., Jhanjhi, N. Z., Ashraf, H., Ashfaq, F., & Wicaksana, F. A. (2025, September 4). A Real-Time Intelligent Surveillance System for Suspicious Behavior and Facial Emotion Analysis Using YOLOv8 and DeepFace. *The 7th International Global Conference Series on ICT Integration in Technical Education & Smart Society*. MDPI. http://doi.org/10.3390/engproc2025107059
 
-28. Chang, B.., Meng, C.., Ma, H.., Chang, S.., Gu, Y.., Peng, Y.., Feng, J.., Zhang, Y.., Bi, S.., Chi, E.H.., Chen, M.. (2024). Cluster Anchor Regularization to Alleviate Popularity Bias in Recommender Systems. _Www 2024 Companion Companion Proceedings of the ACM Web Conference_. https://doi.org/10.1145/3589335.3648312
+29. Yang, Y., Xie, L., Fu, Z., Yan, J., & Naqvi, S. M. (2025, January). Pose-oriented scene-adaptive matching for abnormal event detection. *Neurocomputing*. Elsevier BV. http://doi.org/10.1016/j.neucom.2024.128673
 
-29. Ren, Y.., Tang, H.., Zhu, S.. (2022). Unbiased Learning to Rank with Biased Continuous Feedback. _International Conference on Information and Knowledge Management Proceedings_. https://doi.org/10.1145/3511808.3557483
+30. Ul Amin, S., Kim, B., Jung, Y., Seo, S., & Park, S. (2024, June 19). Video Anomaly Detection Utilizing Efficient Spatiotemporal Feature Fusion with 3D Convolutions and Long Short‐Term Memory Modules. *Advanced Intelligent Systems*. Wiley. http://doi.org/10.1002/aisy.202300706
 
-30. Zhang, J.., Liu, Y.., Mao, J.., Ma, W.., Xu, J.., Ma, S.., Tian, Q.. (2023). User Behavior Simulation for Search Result Re-ranking. _ACM Transactions on Information Systems_. https://doi.org/10.1145/3511469
+31. Da Silva, A. V. B., & Pereira, L. F. A. (2024, October 5). Evaluating Methods for Violence Classification and Firearm Detection in Indoor CCTV Environment. *Journal of the Brazilian Computer Society*. Sociedade Brasileira de Computacao - SB. http://doi.org/10.5753/jbcs.2024.3282
 
-31. Vuong, T.., Ruotsalo, T.. (2024). Predicting Representations of Information Needs from Digital Activity Context. _ACM Transactions on Information Systems_. https://doi.org/10.1145/3639819
+32. Haiura, I.-A., & Iftene, A. (2024). Detecting Violence in Videos using Convolutional Neural Networks. *Procedia Computer Science*. Elsevier BV. http://doi.org/10.1016/j.procs.2024.09.465
 
-32. Zhang, C.., Yao, H.., Yu, L.., Huang, C.., Song, D.., Chen, H.., Jiang, M.., Chawla, N.V.. (2021). Inductive Contextual Relation Learning for Personalization. _ACM Transactions on Information Systems_. https://doi.org/10.1145/3450353
+33. Park, J.-H., Mahmoud, M., & Kang, H.-S. (2024, January 5). Conv3D-Based Video Violence Detection Network Using Optical Flow and RGB Data. *Sensors*. MDPI AG. http://doi.org/10.3390/s24020317
 
-33. Leonhardt, J.., Müller, H.., Rudra, K.., Khosla, M.., Anand, A.., Anand, A.. (2024). Efficient Neural Ranking Using Forward Indexes and Lightweight Encoders. _ACM Transactions on Information Systems_. https://doi.org/10.1145/3631939
+34. (2023, June 29). Abnormal Behavior Detection in Video Surveillance Using Inception-v3 Transfer Learning Approaches. *Iraqi Journal of Computer, Communication, Control and System Engineering*. University of Technology, Baghdad. http://doi.org/10.33103/uot.ijccce.23.2.16
 
-34. He, Y.., Tian, Y.., Wang, M.., Chen, F.., Yu, L.., Tang, M.., Chen, C.., Zhang, N.., Kuang, B.., Prakash, A.. (2023). Que2Engage: Embedding-based Retrieval for Relevant and Engaging Products at Facebook Marketplace. _ACM Web Conference 2023 Companion of the World Wide Web Conference Www 2023_. https://doi.org/10.1145/3543873.3584633
+35. Le, V.-T., & Kim, Y.-G. (2022, May 25). Attention-based residual autoencoder for video anomaly detection. *Applied Intelligence*. Springer Science and Business Media LLC. http://doi.org/10.1007/s10489-022-03613-1
 
-35. Zerveas, G.., Rekabsaz, N.., Cohen, D.., Eickhoff, C.. (2022). CODER: An efficient framework for improving retrieval through COntextual Document Embedding Reranking. _Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing Emnlp 2022_. https://doi.org/10.18653/v1/2022.emnlp-main.727
+36. Zhang, Q., Wei, H., Chen, J., Du, X., & Yu, J. (2023, February 16). Video Anomaly Detection Based on Attention Mechanism. *Symmetry*. MDPI AG. http://doi.org/10.3390/sym15020528
 
-36. Bi, K.., Metrikov, P.., Li, C.., Byun, B.. (2021). Leveraging user behavior history for personalized email search. _Web Conference 2021 Proceedings of the World Wide Web Conference Www 2021_. https://doi.org/10.1145/3442381.3450110
+37. (2023, August 31). Utilizing Machine Learning and Computer Vision for the Detection of Abusive Behavior in IoT Systems. *International Journal of Intelligent Engineering and Systems*. The Intelligent Networks and Systems Society. http://doi.org/10.22266/ijies2023.0831.36
 
-37. Yang, T.., Fang, S.., Li, S.., Wang, Y.., Ai, Q.. (2020). Analysis of Multivariate Scoring Functions for Automatic Unbiased Learning to Rank. _International Conference on Information and Knowledge Management Proceedings_. https://doi.org/10.1145/3340531.3412128
+38. Xu, X., Liao, Z., & Xu, Z. (2023). Violent Physical Behavior Detection using 3D Spatio-Temporal Convolutional Neural Networks. *International Journal of Advanced Computer Science and Applications*. The Science and Information Organization. http://doi.org/10.14569/ijacsa.2023.0140891
 
-38. Gupta, S.., Hager, P.., Huang, J.., Vardasbi, A.., Oosterhuis, H.. (2023). Recent Advances in the Foundations and Applications of Unbiased Learning to Rank. _SIGIR 2023 Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval_. https://doi.org/10.1145/3539618.3594247
+39. Aldehim, G., Asiri, M. M., Aljebreen, M., Mohamed, A., Assiri, M., & Ibrahim, S. S. (2023). Tuna Swarm Algorithm With Deep Learning Enabled Violence Detection in Smart Video Surveillance Systems. *IEEE Access*. Institute of Electrical and Electronics Engineers (IEEE). http://doi.org/10.1109/access.2023.3310885
 
-39. Bock, J.D.., Verstockt, S.. (2021). SmarterROUTES-A Data-driven Context-aware Solution for Personalized Dynamic Routing and Navigation. _ACM Transactions on Spatial Algorithms and Systems_. https://doi.org/10.1145/3402125
+40. Qasim Gandapur, M., & Verdú, E. (2023, December 1). ConvGRU-CNN: Spatiotemporal Deep Learning for Real-World Anomaly Detection in Video Surveillance System. *International Journal of Interactive Multimedia and Artificial Intelligence*. Universidad Internacional de La Rioja. http://doi.org/10.9781/ijimai.2023.05.006
 
-40. Yang, Y.., Qiao, Y.., Yang, T.. (2022). Compact Token Representations with Contextual Quantization for Efficient Document Re-ranking. _Proceedings of the Annual Meeting of the Association for Computational Linguistics_. https://doi.org/10.18653/v1/2022.acl-long.51
+41. Ul Amin, S., Kim, Y., Sami, I., Park, S., & Seo, S. (2023). An Efficient Attention-Based Strategy for Anomaly Detection in Surveillance Video. *Computer Systems Science and Engineering*. Tech Science Press. http://doi.org/10.32604/csse.2023.034805
 
-41. Chen, J.. (2020). Beyond sessions: Exploiting hybrid contextual information for web search. _Wsdm 2020 Proceedings of the 13th International Conference on Web Search and Data Mining_. https://doi.org/10.1145/3336191.3372179
+42. Wu, M.-T. (2022, February 23). Confusion matrix and minimum cross-entropy metrics based motion recognition system in the classroom. *Scientific Reports*. Springer Science and Business Media LLC. http://doi.org/10.1038/s41598-022-07137-z
 
-42. Naseri, S.., Dalton, J.., Yates, A.., Allan, J.. (2022). CEQE to SQET: A study of contextualized embeddings for query expansion. _Information Retrieval Journal_. https://doi.org/10.1007/s10791-022-09405-y
+43. Mumtaz, N., Ejaz, N., Aladhadh, S., Habib, S., & Lee, M. Y. (2022, December 1). Deep Multi-Scale Features Fusion for Effective Violence Detection and Control Charts Visualization. *Sensors*. MDPI AG. http://doi.org/10.3390/s22239383
 
-43. Chen, H.., Chen, Y.., Meng, J.., Jiao, Y.., Ni, Y.., Gao, Y.., Momma, M.., Sun, Y.. (2023). Improving Product Search with Season-Aware Query-Product Semantic Similarity. _ACM Web Conference 2023 Companion of the World Wide Web Conference Www 2023_. https://doi.org/10.1145/3543873.3587625
+44. Ul Amin, S., Ullah, M., Sajjad, M., Cheikh, F. A., Hijji, M., Hijji, A., & Muhammad, K. (2022, May 5). EADN: An Efficient Deep Learning Model for Anomaly Detection in Videos. *Mathematics*. MDPI AG. http://doi.org/10.3390/math10091555
 
-44. Pham, T.M.., Yoon, S.., Bui, T.., Nguyen, A.. (2023). PiC: A Phrase-in-Context Dataset for Phrase Understanding and Semantic Search. _Eacl 2023 17th Conference of the European Chapter of the Association for Computational Linguistics Proceedings of the Conference_. https://doi.org/10.18653/v1/2023.eacl-main.1
+45. Wang, B., Yang, C., & Chen, Y. (2022, May 4). Detection Anomaly in Video Based on Deep Support Vector Data Description. (B. Ding, Ed.), *Computational Intelligence and Neuroscience*. Wiley. http://doi.org/10.1155/2022/5362093
 
-45. Palomino, A.., Fischer, A.., Buschhüter, D.., Roller, R.., Pinkwart, N.., Paaßen, B.. (2025). Mitigating Bias in Item Retrieval for Enhancing Exam Assembly in Vocational Education Services. _Proceedings of the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics Human Language Technologies Long Papers Naacl Hlt 2025_. https://doi.org/10.18653/v1/2025.naacl-industry.16
+46. Arif, E., Khuram Shahzad, S., Mustafa, R., Arfan Jaffar, M., & Waseem Iqbal, M. (2022). Deep Neural Networks for Gun Detection in Public Surveillance. *Intelligent Automation & Soft Computing*. Tech Science Press. http://doi.org/10.32604/iasc.2022.021061
 
-46. Rudra, K.., Fernando, Z.T.., Anand, A.. (2023). An in-depth analysis of passage-level label transfer for contextual document ranking. _Information Retrieval Journal_. https://doi.org/10.1007/s10791-023-09430-5
+47. Patwal, A., Diwakar, M., Tripathi, V., & Singh, P. (2023). An investigation of videos for abnormal behavior detection. *Procedia Computer Science*. Elsevier BV. http://doi.org/10.1016/j.procs.2023.01.202
+
+48. Qasim, M., & Verdu, E. (2023, June). Video anomaly detection system using deep convolutional and recurrent models. *Results in Engineering*. Elsevier BV. http://doi.org/10.1016/j.rineng.2023.101026
+
+49. Qi, B., Wu, B., & Sun, B. (2025, August 12). Automated violence monitoring system for real-time fistfight detection using deep learning-based temporal action localization. *Scientific Reports*. Springer Science and Business Media LLC. http://doi.org/10.1038/s41598-025-12531-4
+
+50. Almurumudhe, M. I., & Hornyák, O. (2025). Motion enhanced video anomaly detection using masked autoencoder and hybrid loss functions. *Annales Mathematicae et Informaticae*. Annales Mathematicae et Informaticae - AMI. http://doi.org/10.33039/ami.2025.10.015

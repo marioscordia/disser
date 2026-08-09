@@ -1,0 +1,4165 @@
+[
+  {
+    "metadata": {
+      "offset": 0,
+      "totalCount": 44,
+      "itemCount": 50,
+      "numberOfPages": 0
+    },
+    "items": [
+      {
+        "citations": {
+          "count": 0,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-105023821238"
+        },
+        "references": {
+          "count": 61,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-105023821238"
+        },
+        "totalAuthors": 4,
+        "freetoread": true,
+        "abstractText": [
+          "The rising deployment of surveillance systems in urban environments necessitates efficient automated anomaly detection methods. While showing promise, current deep learning approaches struggle with computational complexity and real-time performance in processing spatiotemporal information. This paper presents a hybrid framework integrating Convolutional 3D Networks (C3D), Long Short-Term Memory (LSTM) networks, and attention mechanisms for anomaly detection. Through a systematic evaluation of four attention mechanisms—self-attention, multi-head attention, Bahdanau attention, and Luong attention—we demonstrate their operational differences and their differential impact on feature extraction and classification performance across three diverse benchmark datasets. Our multi-head attention variant achieves state-of-the-art results with 99.40 % accuracy and 99.96 % Area Under the Curve (AUC) on Violent Flows, while maintaining robust performance across varying dataset complexities, achieving 91.87 % accuracy on the ShanghaiTech Campus and 79.7 % accuracy on the UCF-Crime dataset. Comprehensive cross-dataset evaluation demonstrates consistent improvements of 2.4 %–3.5 % over baseline approaches, with all attention mechanisms outperforming traditional spatiotemporal models. The proposed architecture effectively balances computational requirements with detection performance, maintaining real-time processing capabilities suitable for operational deployment. This framework advances the technical capabilities of anomaly detection systems while providing a validated foundation for practical deployment in diverse surveillance environments, from controlled scenarios to challenging real-world conditions."
+        ],
+        "eid": "2-s2.0-105023821238",
+        "pii": "S2590005625002528",
+        "documentType": "ar",
+        "doi": "10.1016/j.array.2025.100625",
+        "authors": [
+          {
+            "authorId": "58243469800",
+            "preferredName": {
+              "first": "S.",
+              "last": "Altowairqi",
+              "full": "Altowairqi S."
+            }
+          },
+          {
+            "authorId": "13103725600",
+            "preferredName": {
+              "first": "S.",
+              "last": "Luo",
+              "full": "Luo S."
+            }
+          },
+          {
+            "authorId": "57204782270",
+            "preferredName": {
+              "first": "P.",
+              "last": "Greer",
+              "full": "Greer P."
+            }
+          },
+          {
+            "authorId": "59116901700",
+            "preferredName": {
+              "first": "S.",
+              "last": "Chen",
+              "full": "Chen S."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP"
+        ],
+        "scopusId": "105023821238",
+        "pubYear": 2026,
+        "databaseDocumentIds": {
+          "SCP": "105023821238",
+          "PUI": "2042079851",
+          "SCOPUS": "20255175495",
+          "REAXYSCAR": "20253818555",
+          "CAR-ID": "969972710",
+          "SGR": "105023821238"
+        },
+        "titles": [
+          "Efficient crowd anomaly detection using C3D-LSTM networks with enhanced attention mechanisms"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "29",
+          "articleNumber": "100625"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "25900056",
+          "eissn": "25900056",
+          "publicationYear": "2026",
+          "publisher": "Elsevier B.V.",
+          "sourceTitleAbbreviation": "Array.",
+          "id": "21101080486",
+          "title": "Array"
+        },
+        "title": "Efficient crowd anomaly detection using C3D-LSTM networks with enhanced attention mechanisms"
+      },
+      {
+        "citations": {
+          "count": 0,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-105028640724"
+        },
+        "references": {
+          "count": 21,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-105028640724"
+        },
+        "totalAuthors": 6,
+        "freetoread": true,
+        "abstractText": [
+          "Firearm violence in educational settings represents a critical challenge to institutional security globally. This study proposes an innovative system for early detection of firearms using advanced computer vision techniques, convolutional neural networks (CNN), and computational intelligence in educational institutions. The main objective was to develop a deep learning model based on CNN architectures capable of identifying and alerting the presence of weapons in real time, improving traditional security protocols. The methodology implemented a systematic approach comprising three fundamental stages: data collection, model training, and experimental validation. For model training, a set of 9,000 rigorously labeled images processed using the Roboflow tool was used. The YOLOv5 algorithm, implemented in Google Colab, allows training a detection model with high-precision parameters. The system was integrated directly with the security camera infrastructure of the university campus. Experimental results demonstrated remarkable efficiency: 99% accuracy, 93% detection rate and 97% overall performance. The system can continuously monitor spaces, triggering instant alerts upon identification of potential threats, with a processing capacity that significantly exceeds traditional human monitoring. The findings suggest that machine vision is a promising strategy for strengthening preventive security in educational institutions. Future research will focus on optimizing the model's adaptability to diverse environments and environmental conditions, potentially expanding its implementation to different types of institutions."
+        ],
+        "eid": "2-s2.0-105028640724",
+        "documentType": "ar",
+        "doi": "10.58346/JISIS.2026.I1.008",
+        "authors": [
+          {
+            "authorId": "60352337500",
+            "preferredName": {
+              "first": "F.",
+              "last": "Tapia León",
+              "full": "Tapia Leon F."
+            }
+          },
+          {
+            "authorId": "60352770900",
+            "preferredName": {
+              "first": "J.D.",
+              "last": "Collahuazo",
+              "full": "Collahuazo J.D."
+            }
+          },
+          {
+            "authorId": "60352424900",
+            "preferredName": {
+              "first": "P.C.",
+              "last": "Farinango",
+              "full": "Farinango P.C."
+            }
+          },
+          {
+            "authorId": "59680867300",
+            "preferredName": {
+              "first": "C.",
+              "last": "Chiliquinga",
+              "full": "Chiliquinga C."
+            }
+          },
+          {
+            "authorId": "56028218500",
+            "preferredName": {
+              "first": "L.",
+              "last": "Tello-Oquendo",
+              "full": "Tello-Oquendo L."
+            }
+          },
+          {
+            "authorId": "60320283300",
+            "preferredName": {
+              "first": "J.",
+              "last": "Rivera",
+              "full": "Rivera J."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP",
+          "ENGI"
+        ],
+        "scopusId": "105028640724",
+        "pubYear": 2026,
+        "databaseDocumentIds": {
+          "SCP": "105028640724",
+          "PUI": "2043174094",
+          "SCOPUS": "20260458671",
+          "REAXYSCAR": "20260304242",
+          "CAR-ID": "971390716",
+          "SGR": "105028640724",
+          "TPA-ID": "2026900565107X"
+        },
+        "titles": [
+          "Early Warning System for Firearm Detection on University Campuses Using Computer Vision"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "16",
+          "issue": "1",
+          "pages": [
+            {
+              "pageFirst": "127",
+              "pageLast": "142"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "21822069",
+          "eissn": "21822077",
+          "publicationYear": "2026",
+          "publisher": "Innovative Information Science and Technology Research Group",
+          "issnp": "21822069",
+          "sourceTitleAbbreviation": "J. Int. Ser. Info. Sec.",
+          "id": "21100935071",
+          "title": "Journal of Internet Services and Information Security"
+        },
+        "title": "Early Warning System for Firearm Detection on University Campuses Using Computer Vision"
+      },
+      {
+        "citations": {
+          "count": 0,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-105027041800"
+        },
+        "references": {
+          "count": 34,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-105027041800"
+        },
+        "totalAuthors": 3,
+        "freetoread": true,
+        "abstractText": [
+          "The increasing frequency and severity of urban crowd disasters underscore a critical need for intelligent surveillance systems capable of real-time crowd anomaly detection and early warning. While deep learning models such as LSTMs, ConvLSTMs, and Transformers have been applied to video-based crowd anomaly detection, they often face limitations in long-term contextual reasoning, computational efficiency, and interpretability. To address these challenges, this paper proposes HiMeLSTM, a crowd anomaly detection framework built around a hippocampal-inspired memory-enhanced LSTM backbone that integrates Long Short-Term Memory (LSTM) networks with an Episodic Memory Unit (EMU). This hybrid design enables the model to effectively capture both short-term temporal dynamics and long-term contextual patterns essential for understanding complex crowd behavior. We evaluate HiMeLSTM on two publicly available crowd-anomaly benchmark datasets (UCF-Crime and ShanghaiTech Campus) and an in-house CrowdSurge-1K dataset, demonstrating that it consistently outperforms strong baseline architectures, including Vanilla LSTM, ConvLSTM, a lightweight spatial–temporal Transformer, and recent reconstruction-based models such as MemAE and ST-AE. Across these datasets, HiMeLSTM achieves up to 93.5% accuracy, 89.6% anomaly detection rate (ADR), and a 0.89 F1-score, while maintaining computational efficiency suitable for real-time deployment on GPU-equipped edge devices. Unlike many recent approaches that rely on multimodal sensors, optical-flow volumes, or detailed digital twins of the environment, HiMeLSTM operates solely on raw CCTV video streams combined with a simple manually defined zone layout. Furthermore, the hippocampal-inspired EMU provides an interpretable memory retrieval mechanism: by inspecting the retrieved episodes and their att ention weights, operators can understand which past crowd patterns contributed to a given decision. Overall, the proposed framework represents a significant step toward practical and reliable crowd monitoring systems for enhancing public safety in urban environments."
+        ],
+        "eid": "2-s2.0-105027041800",
+        "documentType": "ar",
+        "doi": "10.3390/electronics15010101",
+        "authors": [
+          {
+            "authorId": "36453611900",
+            "preferredName": {
+              "first": "M.",
+              "last": "An",
+              "full": "An M."
+            }
+          },
+          {
+            "authorId": "26324960800",
+            "preferredName": {
+              "first": "H.-Y.",
+              "last": "Lim",
+              "full": "Lim H.-Y."
+            }
+          },
+          {
+            "authorId": "7402889393",
+            "preferredName": {
+              "first": "D.-S.",
+              "last": "Kang",
+              "full": "Kang D.-S."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "ENGI",
+          "COMP"
+        ],
+        "scopusId": "105027041800",
+        "pubYear": 2026,
+        "databaseDocumentIds": {
+          "SCP": "105027041800",
+          "PUI": "2042428841",
+          "SCOPUS": "20260208347",
+          "REAXYSCAR": "20260134880",
+          "CAR-ID": "970988049",
+          "SGR": "105027041800",
+          "TPA-ID": "20259035951729"
+        },
+        "titles": [
+          "An Enhanced LSTM with Hippocampal-Inspired Episodic Memory for Urban Crowd Behavior Analysis"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "15",
+          "articleNumber": "101",
+          "issue": "1"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "20799292",
+          "eissn": "20799292",
+          "publicationYear": "2026",
+          "publisher": "Multidisciplinary Digital Publishing Institute (MDPI)",
+          "sourceTitleAbbreviation": "Electronics (Switzerland)",
+          "id": "21100829272",
+          "title": "Electronics Switzerland"
+        },
+        "title": "An Enhanced LSTM with Hippocampal-Inspired Episodic Memory for Urban Crowd Behavior Analysis"
+      },
+      {
+        "citations": {
+          "count": 3,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-105007679838"
+        },
+        "references": {
+          "count": 64,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-105007679838"
+        },
+        "totalAuthors": 5,
+        "freetoread": true,
+        "abstractText": [
+          "The increasing frequency of mass shootings at public events and public buildings underscores the limitations of traditional surveillance systems, which rely on human operators monitoring multiple screens. Delayed response times often hinder security teams from intervening before an attack unfolds. Since firearms are rarely seen in public spaces and constitute anomalous observations, firearm detection can be considered as an anomaly detection (AD) problem, for which one-class classifiers (OCCs) are well-suited. To address this challenge, we propose a holistic firearm detection approach that integrates OCCs with visual hand-held gun features and human pose estimation (HPE). In the first stage, a variational autoencoder (VAE) learns latent representations of firearm-related instances, ensuring that the latent space is dedicated exclusively to the target class. Hand patches of variable sizes are extracted from each frame using body landmarks, dynamically adjusting based on the subject’s distance from the camera. In the second stage, a unified feature vector is generated by integrating VAE-extracted latent features with landmark-based arm positioning features. Finally, an isolation forest (IFC)-based OCC model evaluates this unified feature representation to estimate the probability that a test sample belongs to the firearm-related distribution. By utilizing skeletal representations of human actions, our approach overcomes the limitations of appearance-based gun features extracted by camera, which are often affected by background variations. Experimental results on diverse firearm datasets validate the effectiveness of our anomaly detection approach, achieving an F1-score of 86.6%, accuracy of 85.2%, precision of 95.3%, recall of 74.0%, and average precision (AP) of 83.5%. These results demonstrate the superiority of our method over traditional approaches that rely solely on visual features."
+        ],
+        "eid": "2-s2.0-105007679838",
+        "documentType": "ar",
+        "doi": "10.3390/app15115830",
+        "authors": [
+          {
+            "authorId": "56423891600",
+            "preferredName": {
+              "first": "H.",
+              "last": "Singh",
+              "full": "Singh H."
+            }
+          },
+          {
+            "authorId": "8562422200",
+            "preferredName": {
+              "first": "O.",
+              "last": "Deniz",
+              "full": "Deniz O."
+            }
+          },
+          {
+            "authorId": "57195231384",
+            "preferredName": {
+              "first": "J.",
+              "last": "Ruiz-Santaquiteria",
+              "full": "Ruiz-Santaquiteria J."
+            }
+          },
+          {
+            "authorId": "58835139300",
+            "preferredName": {
+              "first": "J.D.",
+              "last": "Muñoz",
+              "full": "Munoz J.D."
+            }
+          },
+          {
+            "authorId": "7003988757",
+            "preferredName": {
+              "first": "G.",
+              "last": "Bueno",
+              "full": "Bueno G."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "MATE",
+          "PHYS",
+          "ENGI",
+          "CENG",
+          "COMP"
+        ],
+        "scopusId": "105007679838",
+        "pubYear": 2025,
+        "databaseDocumentIds": {
+          "SCP": "105007679838",
+          "PUI": "2034880461",
+          "SCOPUS": "20252420446",
+          "REAXYSCAR": "20251771294",
+          "CAR-ID": "965192773",
+          "SGR": "105007679838",
+          "TPA-ID": "20249054434162"
+        },
+        "titles": [
+          "DeepGun: Deep Feature-Driven One-Class Classifier for Firearm Detection Using Visual Gun Features and Human Body Pose Estimation"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "15",
+          "articleNumber": "5830",
+          "issue": "11"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "20763417",
+          "eissn": "20763417",
+          "publicationYear": "2025",
+          "publisher": "Multidisciplinary Digital Publishing Institute (MDPI)",
+          "sourceTitleAbbreviation": "Appl. Sci.",
+          "id": "21100829268",
+          "title": "Applied Sciences Switzerland"
+        },
+        "title": "DeepGun: Deep Feature-Driven One-Class Classifier for Firearm Detection Using Visual Gun Features and Human Body Pose Estimation"
+      },
+      {
+        "citations": {
+          "count": 3,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-105000297057"
+        },
+        "references": {
+          "count": 52,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-105000297057"
+        },
+        "totalAuthors": 2,
+        "freetoread": true,
+        "abstractText": [
+          "The rapid growth of video data has resulted in an increasing need for surveillance and violence detection systems. Although such events occur less frequently than normal activities, developing automated video surveillance systems for violence detection has become essential to minimize labor and time waste. Detecting violent activity in videos is a challenging task due to the variability and diversity of violent behavior, which can involve a wide range of actions, motions, and interactions between people and objects. Currently, researchers employ deep learning models to detect violent behaviors. In fact, a large number of deep learning approaches are based on extracting spatio-temporal information from a video by exploiting a 3D Convolutional Neural Network (CNN). Despite their success, these techniques require a lot more parameters than 2D CNNs and have high computational complexity. Therefore, we focus on exploiting a 2D CNN to encode spatio-temporal information. Actually, statistical features of the optical flow changes are used to give this ability to a 2D CNN. These features are designed to make attention to regions of a video clip with much more motion. Accordingly, the optical flow of an input video is calculated. To determine meaningful changes in the optical flow, the optical flow magnitude of a current frame is compared with its predecessor. After that, statistical features of these changes are extracted to summarize a video clip to a 2D template, which feeds a 2D CNN. Experimental results on four benchmark datasets observe that the suggested strategy outperforms baseline ones. In particular, we make a better estimation of the spatio-temporal features in a video by shortening a video clip into a 2D template."
+        ],
+        "eid": "2-s2.0-105000297057",
+        "documentType": "ar",
+        "doi": "10.1111/coin.70034",
+        "authors": [
+          {
+            "authorId": "57189523386",
+            "preferredName": {
+              "first": "J.",
+              "last": "Mahmoodi",
+              "full": "Mahmoodi J."
+            }
+          },
+          {
+            "authorId": "6505904544",
+            "preferredName": {
+              "first": "H.",
+              "last": "Nezamabadi-Pour",
+              "full": "Nezamabadi-Pour H."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "MATH",
+          "COMP"
+        ],
+        "scopusId": "105000297057",
+        "pubYear": 2025,
+        "databaseDocumentIds": {
+          "SCP": "105000297057",
+          "PUI": "2033588315",
+          "SCOPUS": "20251151784",
+          "CAR-ID": "963155371",
+          "SGR": "105000297057",
+          "TPA-ID": "20249044465182"
+        },
+        "titles": [
+          "Violence Detection in Video Using Statistical Features of the Optical Flow and 2D Convolutional Neural Network"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "41",
+          "articleNumber": "e70034",
+          "issue": "2"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "08247935",
+          "coden": "COMIE",
+          "eissn": "14678640",
+          "publicationYear": "2025",
+          "publisher": "John Wiley and Sons Inc",
+          "issnp": "08247935",
+          "sourceTitleAbbreviation": "Comput Intell",
+          "id": "23737",
+          "title": "Computational Intelligence"
+        },
+        "title": "Violence Detection in Video Using Statistical Features of the Optical Flow and 2D Convolutional Neural Network"
+      },
+      {
+        "citations": {
+          "count": 6,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85212433772"
+        },
+        "references": {
+          "count": 67,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85212433772"
+        },
+        "totalAuthors": 6,
+        "freetoread": true,
+        "abstractText": [
+          "Weakly supervised video anomaly detection (WS-VAD) plays a pivotal role in advancing intelligent surveillance systems within the field of computer vision. Despite significant research, WS-VAD continues to face challenges, particularly with unimodal approaches that struggle to extract meaningful features effectively. A few research studies have been done on the multimodal dataset fusion-based WS-VAD system, and their performance accuracy is unsatisfactory. In response, we propose a novel WS-VAD system leveraging multimodal datasets with an attention-enhanced feature fusion approach to address these challenges. Our system integrates three distinct data modalities - RGB video, optical flow, and audio signals - where each stream extracts complementary spatial and temporal features using an enhanced attention module to improve the detection accuracy and robustness. In the RGB video stream, we employ a multi-stage, attention-driven feature enhancement process to refine spatial and temporal features. This process begins with a ViT-based CLIP module, where the top k features are concatenated with I3D- and TCA-based spatiotemporal features. Temporal dependencies are then captured through uncertainty-regulated dual memory units (UR-DMUs), allowing the simultaneous learning of normal and anomalous patterns. The final stage selects the most relevant features, yielding a refined representation of RGB-based data. The second stream extracts enhanced spatiotemporal features from flow data using a deep learning and attention module. Lastly, the audio stream detects anomalies in sound patterns through an attention module integrated with the VGGish model, capturing auditory cues. The fusion of these three streams captures motion and audio signals often missed by visual analysis alone, significantly enhancing anomaly detection accuracy and robustness. Our multimodal fusion achieves an average precision (AP) of 88.28% on the XD-Violence dataset, outperforming prior models by nearly 2%, and attains AUCs of 98.71% on the ShanghaiTech dataset and 90.26% on the UCF-Crime dataset. These results underscore the effectiveness of our approach, consistently surpassing existing methods across three benchmark datasets and validating its robustness in WS-VAD applications."
+        ],
+        "eid": "2-s2.0-85212433772",
+        "documentType": "ar",
+        "doi": "10.1109/OJCS.2024.3517154",
+        "authors": [
+          {
+            "authorId": "7402723945",
+            "preferredName": {
+              "first": "J.",
+              "last": "Shin",
+              "full": "Shin J."
+            }
+          },
+          {
+            "authorId": "57203037361",
+            "preferredName": {
+              "first": "A.S.M.",
+              "last": "Miah",
+              "full": "Miah A.S.M."
+            }
+          },
+          {
+            "authorId": "59032239700",
+            "preferredName": {
+              "first": "Y.",
+              "last": "Kaneko",
+              "full": "Kaneko Y."
+            }
+          },
+          {
+            "authorId": "57213013147",
+            "preferredName": {
+              "first": "N.",
+              "last": "Hassan",
+              "full": "Hassan N."
+            }
+          },
+          {
+            "authorId": "58124416300",
+            "preferredName": {
+              "first": "H.-S.",
+              "last": "Lee",
+              "full": "Lee H.-S."
+            }
+          },
+          {
+            "authorId": "22333899200",
+            "preferredName": {
+              "first": "S.-W.",
+              "last": "Jang",
+              "full": "Jang S.-W."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP"
+        ],
+        "scopusId": "85212433772",
+        "pubYear": 2025,
+        "databaseDocumentIds": {
+          "SCP": "85212433772",
+          "PUI": "2036391085",
+          "SCOPUS": "20245050357",
+          "REAXYSCAR": "20243615486",
+          "CAR-ID": "961056473",
+          "SGR": "85212433772",
+          "TPA-ID": "20249054891991"
+        },
+        "titles": [
+          "Multimodal Attention-Enhanced Feature Fusion-Based Weakly Supervised Anomaly Violence Detection"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "6",
+          "pages": [
+            {
+              "pageFirst": "129",
+              "pageLast": "140"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "26441268",
+          "eissn": "26441268",
+          "publicationYear": "2025",
+          "publisher": "Institute of Electrical and Electronics Engineers Inc.",
+          "sourceTitleAbbreviation": "IEEE Open J. Comput. Soc.",
+          "id": "21101132925",
+          "title": "IEEE Open Journal of the Computer Society"
+        },
+        "title": "Multimodal Attention-Enhanced Feature Fusion-Based Weakly Supervised Anomaly Violence Detection"
+      },
+      {
+        "citations": {
+          "count": 2,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85212584723"
+        },
+        "references": {
+          "count": 50,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85212584723"
+        },
+        "totalAuthors": 7,
+        "freetoread": true,
+        "abstractText": [
+          "Security and safety remain paramount concerns for both governments and individuals worldwide. In today’s context, the frequency of crimes and terrorist attacks is alarmingly increasing, becoming increasingly intolerable to society. Consequently, there is a pressing need for swift identification of potential threats to preemptively alert law enforcement and security forces, thereby preventing potential attacks or violent incidents. Recent advancements in big data analytics and deep learning have significantly enhanced the capabilities of computer vision in object detection, particularly in identifying firearms. This paper introduces a novel automatic firearm detection surveillance system, utilizing a one-stage detection approach named MARIE (Mechanism for Real-time Identification of Firearms). MARIE incorporates the Single Shot Multibox Detector (SSD) model, which has been specifically optimized to balance the speed-accuracy trade-off critical in firearm detection applications. The SSD model was further refined by integrating MobileNetV2 and InceptionV2 architectures for superior feature extraction capabilities. The experimental results demonstrate that this modified SSD configuration provides highly satisfactory performance, surpassing existing methods trained on the same dataset in terms of the critical speed-accuracy trade-off. Through these innovations, MARIE sets a new standard in surveillance technology, offering a robust solution to enhance public safety effectively."
+        ],
+        "eid": "2-s2.0-85212584723",
+        "documentType": "ar",
+        "doi": "10.32604/cmes.2024.056816",
+        "authors": [
+          {
+            "authorId": "59480832300",
+            "preferredName": {
+              "first": "D.",
+              "last": "Abi-Nader",
+              "full": "Abi-Nader D."
+            }
+          },
+          {
+            "authorId": "56405343700",
+            "preferredName": {
+              "first": "H.",
+              "last": "Harb",
+              "full": "Harb H."
+            }
+          },
+          {
+            "authorId": "56405330200",
+            "preferredName": {
+              "first": "A.",
+              "last": "Jaber",
+              "full": "Jaber A."
+            }
+          },
+          {
+            "authorId": "7202587376",
+            "preferredName": {
+              "first": "A.",
+              "last": "Mansour",
+              "full": "Mansour A."
+            }
+          },
+          {
+            "authorId": "24528652300",
+            "preferredName": {
+              "first": "C.",
+              "last": "Osswald",
+              "full": "Osswald C."
+            }
+          },
+          {
+            "authorId": "56638020000",
+            "preferredName": {
+              "first": "N.",
+              "last": "Mostafa",
+              "full": "Mostafa N."
+            }
+          },
+          {
+            "authorId": "42162472500",
+            "preferredName": {
+              "first": "C.",
+              "last": "Zaki",
+              "full": "Zaki C."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP",
+          "MATH"
+        ],
+        "scopusId": "85212584723",
+        "pubYear": 2025,
+        "databaseDocumentIds": {
+          "SCP": "85212584723",
+          "PUI": "2036447141",
+          "SCOPUS": "20245078652",
+          "REAXYSCAR": "20243641940",
+          "CAR-ID": "961099705",
+          "SGR": "85212584723",
+          "TPA-ID": "20249055234607"
+        },
+        "titles": [
+          "MARIE: One-Stage Object Detection Mechanism for Real-Time Identifying of Firearms"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "142",
+          "issue": "1",
+          "pages": [
+            {
+              "pageFirst": "279",
+              "pageLast": "298"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "15261492",
+          "eissn": "15261506",
+          "publicationYear": "2025",
+          "publisher": "Tech Science Press",
+          "issnp": "15261492",
+          "sourceTitleAbbreviation": "CMES Comput. Model. Eng. Sci.",
+          "id": "28642",
+          "title": "CMES Computer Modeling in Engineering and Sciences"
+        },
+        "title": "MARIE: One-Stage Object Detection Mechanism for Real-Time Identifying of Firearms"
+      },
+      {
+        "citations": {
+          "count": 2,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-105007164263"
+        },
+        "references": {
+          "count": 12,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-105007164263"
+        },
+        "totalAuthors": 3,
+        "freetoread": true,
+        "abstractText": [
+          "The increasing incidence of violent events in public and private spaces necessitates the development of advanced security measures. This work introduces a novel Real-Time Violence Detection and Notification System, leveraging Faster R-CNN and MobileNetV2 architectures to analyze surveillance footage effectively. It enhances public safety by providing real-time alerts to security personnel and authorities via a Telegram bot, ensuring swift and efficient intervention. The system utilizes a combination of machine learning algorithms and computer vision techniques to accurately identify aggressive behavior while distinguishing it from non-violent activities. Comprehensive evaluations highlight the system's high accuracy, and a comparative analysis demonstrates superior performance over existing models in detecting violent behavior."
+        ],
+        "eid": "2-s2.0-105007164263",
+        "pii": "S187705092501662X",
+        "documentType": "cp",
+        "doi": "10.1016/j.procs.2025.04.558",
+        "authors": [
+          {
+            "authorId": "59926434100",
+            "preferredName": {
+              "first": "R.R.",
+              "last": "Ojha",
+              "full": "Ojha R.R."
+            }
+          },
+          {
+            "authorId": "59927233400",
+            "preferredName": {
+              "first": "H.",
+              "last": "Chawdary",
+              "full": "Chawdary H."
+            }
+          },
+          {
+            "authorId": "59926968600",
+            "preferredName": {
+              "first": "S.",
+              "last": "Saraswat",
+              "full": "Saraswat S."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP"
+        ],
+        "scopusId": "105007164263",
+        "pubYear": 2025,
+        "databaseDocumentIds": {
+          "SCP": "105007164263",
+          "PUI": "647496312",
+          "SCOPUS": "20252312936",
+          "CAR-ID": "965055873",
+          "SGR": "105007164263"
+        },
+        "titles": [
+          "Enhancing Public Safety: Real-Time Violence Detection and Notification System"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "258",
+          "pages": [
+            {
+              "pageFirst": "2988",
+              "pageLast": "2995"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "p",
+          "issn": "18770509",
+          "eissn": "18770509",
+          "publicationYear": "2025",
+          "publisher": "Elsevier B.V.",
+          "sourceTitleAbbreviation": "Procedia Comput. Sci.",
+          "id": "19700182801",
+          "title": "Procedia Computer Science"
+        },
+        "title": "Enhancing Public Safety: Real-Time Violence Detection and Notification System"
+      },
+      {
+        "citations": {
+          "count": 7,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85219145650"
+        },
+        "references": {
+          "count": 26,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85219145650"
+        },
+        "totalAuthors": 8,
+        "freetoread": true,
+        "abstractText": [
+          "Nowadays continuous monitoring of public and private environments through Closed-Circuit Television (CCTV) is at peak attention. The identification and reporting of suspected human activity is crucial for the safety and security of the individuals and their belongings. Many researchers have provided numerous solutions for automated activity monitoring with CCTV and machine learning applications. But these models are struggling to provide high accuracy with real-time detection and triggering alert systems in a dynamic environment. The proposed model addresses these issues with a combined approach of convolutional and recurrent neural networks (Inception V3 and Bidirectional Long Short-Term Memory (BiLSTM)) with an attention mechanism to classify videos. This proposed model uses the strength of the Inception V3 network to extract spatial features from video frames, and the BiLSTM network processes these features in a time-dependent manner to the identification of suspicious human activities. Also, the attention mechanism added to proposed system to focuses on the most significant spatiotemporal variables for violence detection. This deep learning model is designed to extract spatiotemporal features and thus can extract complex patterns in human motion robustly. This model is trained with publicly available dataset to analyze the performance with accuracy in a dynamic environment. The proposed deep-learning model effectively identifies and categorizes numerous suspicious behaviors in real-time by scrutinizing video sequences. The performance analysis proves that the proposed model efficiently detects activities like loitering, aggressive behavior, and unauthorized access. This automated surveillance system strengthens security in homes as well as other public and private environments."
+        ],
+        "eid": "2-s2.0-85219145650",
+        "documentType": "ar",
+        "doi": "10.18280/ijsse.150112",
+        "authors": [
+          {
+            "authorId": "59211514700",
+            "preferredName": {
+              "first": "M.",
+              "last": "Pangavhane",
+              "full": "Pangavhane M."
+            }
+          },
+          {
+            "authorId": "56656001000",
+            "preferredName": {
+              "first": "R.",
+              "last": "Patil",
+              "full": "Patil R."
+            }
+          },
+          {
+            "authorId": "57194389289",
+            "preferredName": {
+              "first": "R.",
+              "last": "Bharati",
+              "full": "Bharati R."
+            }
+          },
+          {
+            "authorId": "59135555300",
+            "preferredName": {
+              "first": "D.",
+              "last": "Gupta",
+              "full": "Gupta D."
+            }
+          },
+          {
+            "authorId": "56891381900",
+            "preferredName": {
+              "first": "P.",
+              "last": "Ahire",
+              "full": "Ahire P."
+            }
+          },
+          {
+            "authorId": "14632512000",
+            "preferredName": {
+              "first": "P.",
+              "last": "Patil",
+              "full": "Patil P."
+            }
+          },
+          {
+            "authorId": "57205391883",
+            "preferredName": {
+              "first": "W.",
+              "last": "Rahane",
+              "full": "Rahane W."
+            }
+          },
+          {
+            "authorId": "57204938608",
+            "preferredName": {
+              "first": "D.",
+              "last": "Dharrao",
+              "full": "Dharrao D."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "ENGI",
+          "ENVI"
+        ],
+        "scopusId": "85219145650",
+        "pubYear": 2025,
+        "databaseDocumentIds": {
+          "SCP": "85219145650",
+          "PUI": "2037649057",
+          "SCOPUS": "20250890180",
+          "REAXYSCAR": "20250689221",
+          "CAR-ID": "962683757",
+          "SGR": "85219145650",
+          "TPA-ID": "20259005926094"
+        },
+        "titles": [
+          "Real-Time Deep Learning-Driven Surveillance with Spatiotemporal Feature Extraction for Detection of Anomalous Human Behavior Across Dynamic Environments"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "15",
+          "issue": "1",
+          "pages": [
+            {
+              "pageFirst": "105",
+              "pageLast": "111"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "20419031",
+          "eissn": "2041904X",
+          "publicationYear": "2025",
+          "publisher": "International Information and Engineering Technology Association",
+          "issnp": "20419031",
+          "sourceTitleAbbreviation": "Int. J. Safety Secur. Eng.",
+          "id": "21100785501",
+          "title": "International Journal of Safety and Security Engineering"
+        },
+        "title": "Real-Time Deep Learning-Driven Surveillance with Spatiotemporal Feature Extraction for Detection of Anomalous Human Behavior Across Dynamic Environments"
+      },
+      {
+        "citations": {
+          "count": 1,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-105003993258"
+        },
+        "references": {
+          "count": 51,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-105003993258"
+        },
+        "totalAuthors": 4,
+        "freetoread": true,
+        "abstractText": [
+          "Drug abuse and addiction problems are one of the most serious health, social, and psychological problems facing the world. Many international studies indicate that the start of drug abuse occurs mostly in adolescence, which is the period that young people spend in schools, institutes, and universities. Drugs in the student community have become a scourge that raises increasing concern, whether among families or educators, over the fate of school children and educational attainment. Regarding their behaviors, an addicted student often exhibits abnormal behaviors such as permanent lethargy, anxiety, tremors, and aggressive behavior toward others. Moreover, to obtain drugs, the addicted student becomes compelled to resort to various means and ways, and they gradually become criminal addicts. To this endeavor, a detector of abnormal behaviors in schools has become a necessity. In this paper, we built an automatic system able to analyze and detect abnormal behaviors of addicted students and inform the educational staff and parents to know how to manage and treat them. On a technical level, we used deep learning and the recent computer vision techniques in the suggested solution due to their contributions to human behavior and emotion recognition fields. The best-recorded result (97.5%) is obtained with fused handcrafted features based on skeleton joints and deep features extracted with the MobileNet pretrained model and forwarded to a deep proposed network based on two TimeDistributed layers, one BiLSTM layer, and several Dense layers."
+        ],
+        "eid": "2-s2.0-105003993258",
+        "documentType": "ar",
+        "doi": "10.1155/int/9722173",
+        "authors": [
+          {
+            "authorId": "36975764400",
+            "preferredName": {
+              "first": "S.K.",
+              "last": "Jarraya",
+              "full": "Jarraya S.K."
+            }
+          },
+          {
+            "authorId": "57835819600",
+            "preferredName": {
+              "first": "M.",
+              "last": "Masmoudi",
+              "full": "Masmoudi M."
+            }
+          },
+          {
+            "authorId": "37760990100",
+            "preferredName": {
+              "first": "F.A.",
+              "last": "Alqurashi",
+              "full": "Alqurashi F.A."
+            }
+          },
+          {
+            "authorId": "57189226136",
+            "preferredName": {
+              "first": "S.M.",
+              "last": "Alshammari",
+              "full": "Alshammari S.M."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP",
+          "MATH"
+        ],
+        "scopusId": "105003993258",
+        "pubYear": 2025,
+        "databaseDocumentIds": {
+          "SCP": "105003993258",
+          "PUI": "2034406862",
+          "SCOPUS": "20251824537",
+          "CAR-ID": "964286887",
+          "SGR": "105003993258",
+          "TPA-ID": "20249049754603"
+        },
+        "titles": [
+          "Analyzing and Detecting Abnormal Behaviors of Drug Abuse and Addiction Users in School Environments Based on Deep Learning Approaches"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "2025",
+          "articleNumber": "9722173",
+          "issue": "1"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "08848173",
+          "coden": "IJISE",
+          "eissn": "1098111X",
+          "publicationYear": "2025",
+          "publisher": "John Wiley and Sons Inc",
+          "issnp": "08848173",
+          "sourceTitleAbbreviation": "Int J Intell Syst",
+          "id": "24305",
+          "title": "International Journal of Intelligent Systems"
+        },
+        "title": "Analyzing and Detecting Abnormal Behaviors of Drug Abuse and Addiction Users in School Environments Based on Deep Learning Approaches"
+      },
+      {
+        "citations": {
+          "count": 2,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-105025685830"
+        },
+        "references": {
+          "count": 11,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-105025685830"
+        },
+        "totalAuthors": 5,
+        "freetoread": true,
+        "abstractText": [
+          "This study describes the creation of an intelligent surveillance system based on deep learning that aims to improve real-time security monitoring by automatically identifying suspicious activity. By using cutting-edge computer vision techniques, the suggested system overcomes the drawbacks of conventional surveillance that depends on human observation to spot irregularities in public spaces. The system successfully completes motion detection, trajectory analysis, and emotion recognition by using the YOLOv8 model for object detection and DeepFace for facial emotion analysis. Roboflow is used for dataset annotation, model training with optimized parameters, and visualization of object trajectories and detection confidence. The findings show that abnormal behaviors can be accurately identified, with noteworthy observations made about the emotional expressions and movement patterns of those deemed to be threats. Even though the system performs well in real time, issues like misclassification, model explainability, and a lack of diversity in the dataset still exist. Future research will concentrate on integrating multimodal data fusion, deeper models, and temporal sequence analysis to further enhance detection robustness and system intelligence."
+        ],
+        "eid": "2-s2.0-105025685830",
+        "documentType": "ar",
+        "doi": "10.3390/engproc2025107059",
+        "authors": [
+          {
+            "authorId": "58297230500",
+            "preferredName": {
+              "first": "U.",
+              "last": "Ihsan",
+              "full": "Ihsan U."
+            }
+          },
+          {
+            "authorId": "36088700700",
+            "preferredName": {
+              "first": "N.Z.",
+              "last": "Jhanjhi",
+              "full": "Jhanjhi N.Z."
+            }
+          },
+          {
+            "authorId": "57210684343",
+            "preferredName": {
+              "first": "H.",
+              "last": "Ashraf",
+              "full": "Ashraf H."
+            }
+          },
+          {
+            "authorId": "57886268300",
+            "preferredName": {
+              "first": "F.",
+              "last": "Ashfaq",
+              "full": "Ashfaq F."
+            }
+          },
+          {
+            "authorId": "60200903700",
+            "preferredName": {
+              "first": "F.A.",
+              "last": "Wicaksana",
+              "full": "Wicaksana F.A."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "ENGI"
+        ],
+        "scopusId": "105025685830",
+        "pubYear": 2025,
+        "databaseDocumentIds": {
+          "SCP": "105025685830",
+          "PUI": "2042019096",
+          "SCOPUS": "20255489914",
+          "REAXYSCAR": "20254034635",
+          "CAR-ID": "970540950",
+          "SGR": "105025685830",
+          "TPA-ID": "20259034187968"
+        },
+        "titles": [
+          "A Real-Time Intelligent Surveillance System for Suspicious Behavior and Facial Emotion Analysis Using YOLOv8 and DeepFace †"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "107",
+          "articleNumber": "59",
+          "issue": "1"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "26734591",
+          "eissn": "26734591",
+          "publicationYear": "2025",
+          "publisher": "Multidisciplinary Digital Publishing Institute (MDPI)",
+          "sourceTitleAbbreviation": "Eng. Proc.",
+          "id": "21101128137",
+          "title": "Engineering Proceedings"
+        },
+        "title": "A Real-Time Intelligent Surveillance System for Suspicious Behavior and Facial Emotion Analysis Using YOLOv8 and DeepFace †"
+      },
+      {
+        "citations": {
+          "count": 8,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85205593420"
+        },
+        "references": {
+          "count": 61,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85205593420"
+        },
+        "totalAuthors": 5,
+        "freetoread": true,
+        "abstractText": [
+          "For intelligent surveillance systems, abnormal event detection automatically analyses surveillance video sequences and detects abnormal objects or unusual human actions at the frame level. Due to the lack of labelled data, most approaches are semi-supervised based on reconstruction or prediction methods. However, these methods may not generalize well to unseen scene contexts. To address this issue, we present a novel self and mutual scene-adaptive matching method for abnormal event detection. In the framework, we propose synergistic pose estimation and object detection, which effectively integrates human pose and object detection information to improve pose estimation accuracy. Then, the poses are resized to reduce the spatial distance between the source and target domains. The improved pose sequences are further fed into a spatio-temporal graph convolutional network to extract the geometric features. Finally, the features are embedded in a clustering layer to classify action types and compute normality scores. The training data is taken from the training part of common video anomaly detection datasets: UCSD PED1 & PED2, CHUK Avenue, and ShanghaiTech Campus. The proposed framework is evaluated on video sequences with unseen scene contexts in the UCSD PED2 and ShanghaiTech Campus datasets. The detection accuracy and efficiency are also evaluated in detail, and the proposed method for abnormal event detection achieves the highest AUC performance, 84.6%, on the ShanghaiTech Campus dataset and relatively high AUC performance, 96.9% and 74.8%, on UCSD PED2 & PED1 datasets. Compared with other state-of-the-art works, the performance analysis and results confirm the robustness and effectiveness of our proposed framework for cross-scene abnormal event detection."
+        ],
+        "eid": "2-s2.0-85205593420",
+        "pii": "S0925231224014449",
+        "documentType": "ar",
+        "doi": "10.1016/j.neucom.2024.128673",
+        "authors": [
+          {
+            "authorId": "57215836627",
+            "preferredName": {
+              "first": "Y.",
+              "last": "Yang",
+              "full": "Yang Y."
+            }
+          },
+          {
+            "authorId": "57413748000",
+            "preferredName": {
+              "first": "L.",
+              "last": "Xie",
+              "full": "Xie L."
+            }
+          },
+          {
+            "authorId": "57193741626",
+            "preferredName": {
+              "first": "Z.",
+              "last": "Fu",
+              "full": "Fu Z."
+            }
+          },
+          {
+            "authorId": "57209890602",
+            "preferredName": {
+              "first": "J.",
+              "last": "Yan",
+              "full": "Yan J."
+            }
+          },
+          {
+            "authorId": "18042298600",
+            "preferredName": {
+              "first": "S.M.",
+              "last": "Naqvi",
+              "full": "Naqvi S.M."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP",
+          "NEUR"
+        ],
+        "scopusId": "85205593420",
+        "pubYear": 2025,
+        "databaseDocumentIds": {
+          "SCP": "85205593420",
+          "PUI": "2034881182",
+          "SCOPUS": "20243995409",
+          "REAXYSCAR": "20242813989",
+          "CAR-ID": "959393199",
+          "SGR": "85205593420"
+        },
+        "titles": [
+          "Pose-oriented scene-adaptive matching for abnormal event detection"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "611",
+          "articleNumber": "128673"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "09252312",
+          "coden": "NRCGE",
+          "eissn": "18728286",
+          "publicationYear": "2025",
+          "publisher": "Elsevier B.V.",
+          "issnp": "09252312",
+          "sourceTitleAbbreviation": "Neurocomputing",
+          "id": "24807",
+          "title": "Neurocomputing"
+        },
+        "title": "Pose-oriented scene-adaptive matching for abnormal event detection"
+      },
+      {
+        "citations": {
+          "count": 0,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85215588783"
+        },
+        "references": {
+          "count": 33,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85215588783"
+        },
+        "totalAuthors": 4,
+        "freetoread": true,
+        "abstractText": [
+          "Violence is a serious issue that can happen in many places, like streets, schools, or homes, where people hurt each other or damage things. To help prevent violence, some places use special cameras called surveillance cameras. These cameras watch over areas and look for signs of violence, like people fighting or breaking things. When they see something, they can send an alert to the police or others who can help. However, building models to detect violence in videos or surveillance cameras can be challenging. Current models may not be lightweight, fast, or use fewer resources, which means they may not work well on all devices or in all situations. So, there is a need for new models that are better at detecting violence while still being fast and using fewer resources. In this study, we focus on training multiple models to detect violence. Specifically, we fine-tune various models, including MobileNet, MobileNetV2, DenseNet121, and ResNet50V2, combined with Bidirectional Long Short-Term Memory (BiLSTM) networks. Among these models, MobileNetV2 for spatial feature extraction combined with BiLSTM for temporal feature extraction stands out for its compact size, quick processing time, and ability to achieve satisfactory results. This combination offers a lightweight solution that can efficiently detect violence in videos or surveillance footage while maintaining good performance levels in IoT systems."
+        ],
+        "eid": "2-s2.0-85215588783",
+        "documentType": "ar",
+        "doi": "10.52549/ijeei.v12i4.5787",
+        "authors": [
+          {
+            "authorId": "58243633500",
+            "preferredName": {
+              "first": "H.-T.",
+              "last": "Vo",
+              "full": "Vo H.-T."
+            }
+          },
+          {
+            "authorId": "58928346500",
+            "preferredName": {
+              "first": "P.P.",
+              "last": "Tien",
+              "full": "Tien P.P."
+            }
+          },
+          {
+            "authorId": "58549963400",
+            "preferredName": {
+              "first": "N.N.",
+              "last": "Thien",
+              "full": "Thien N.N."
+            }
+          },
+          {
+            "authorId": "58549789600",
+            "preferredName": {
+              "first": "K.C.",
+              "last": "Mui",
+              "full": "Mui K.C."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP",
+          "ENGI",
+          "MATH"
+        ],
+        "scopusId": "85215588783",
+        "pubYear": 2024,
+        "databaseDocumentIds": {
+          "SCP": "85215588783",
+          "PUI": "2035497729",
+          "SCOPUS": "20250291703",
+          "REAXYSCAR": "20250281420",
+          "CAR-ID": "961728748",
+          "SGR": "85215588783",
+          "TPA-ID": "20259000817767"
+        },
+        "titles": [
+          "An Approach for Improving Accuracy and Optimizing Resource Usage for Violence Detection in Surveillance Cameras in IoT Systems"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "12",
+          "issue": "4",
+          "pages": [
+            {
+              "pageFirst": "768",
+              "pageLast": "779"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "20893272",
+          "eissn": "20893272",
+          "publicationYear": "2024",
+          "publisher": "Institute of Advanced Engineering and Science",
+          "sourceTitleAbbreviation": "Indones. J. Electr. Eng. Informatics",
+          "id": "21100826383",
+          "title": "Indonesian Journal of Electrical Engineering and Informatics"
+        },
+        "title": "An Approach for Improving Accuracy and Optimizing Resource Usage for Violence Detection in Surveillance Cameras in IoT Systems"
+      },
+      {
+        "citations": {
+          "count": 1,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85199425310"
+        },
+        "references": {
+          "count": 27,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85199425310"
+        },
+        "totalAuthors": 3,
+        "freetoread": true,
+        "abstractText": [
+          "The standoff detection of concealed firearms is crutial in managing public security in public spaces. Currently employed standoff concealed weapon detection techniques employ electromagnetic wave imaging which has been found to be extremely slow and may require expensive hardware and may not be applicable in public open spaces. Inorder to maintain safety in open spaces, artificial intelligence enabled video surveillance systems have been widely adopted. This poses an opportunity to explore video surveillance cameras as concealed weapon detectors. A review of existing video surveillance based automated weapon detection approaches discovered that the focus was on the detection of unconcealed firearms leaving a gap in the detection of concealed firearms. This study addresses the aforementioned gap by providing a standoff concealed firearm detection approach on video based on skeletal-based human motion tracking and convolutional neural networks (CNN). The motion of armed and unarmed persons was tracked using a depth camera and further classified using CNN model. The developed model reported 100% accuracy, precision, and recall scores. These results outperformed results obtained from traditional machine learning models therefore highlighting the superior capability of the proposed approach for concealed firearm detection on video to complement the efforts of human video surveillance operators."
+        ],
+        "eid": "2-s2.0-85199425310",
+        "documentType": "ar",
+        "doi": "10.11591/ijai.v13.i3.pp2666-2673",
+        "authors": [
+          {
+            "authorId": "57211783066",
+            "preferredName": {
+              "first": "H.M.",
+              "last": "Muriithi",
+              "full": "Muriithi H.M."
+            }
+          },
+          {
+            "authorId": "57218214693",
+            "preferredName": {
+              "first": "I.",
+              "last": "Lukandu Ateya",
+              "full": "Lukandu Ateya I."
+            }
+          },
+          {
+            "authorId": "57034147300",
+            "preferredName": {
+              "first": "G.",
+              "last": "Wanyembi",
+              "full": "Wanyembi G."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "ENGI",
+          "DECI",
+          "COMP"
+        ],
+        "scopusId": "85199425310",
+        "pubYear": 2024,
+        "databaseDocumentIds": {
+          "SCP": "85199425310",
+          "PUI": "2030347054",
+          "SCOPUS": "20242965604",
+          "REAXYSCAR": "20242103308",
+          "CAR-ID": "957843576",
+          "SGR": "85199425310",
+          "TPA-ID": "20249007365139"
+        },
+        "titles": [
+          "Stand-off concealed firearm detection using motion tracking and convolutional neural networks"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "13",
+          "issue": "3",
+          "pages": [
+            {
+              "pageFirst": "2666",
+              "pageLast": "2673"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "20894872",
+          "eissn": "22528938",
+          "publicationYear": "2024",
+          "publisher": "Institute of Advanced Engineering and Science",
+          "issnp": "20894872",
+          "sourceTitleAbbreviation": "IAES Int. J. Artif. Intell.",
+          "id": "21100901206",
+          "title": "Iaes International Journal of Artificial Intelligence"
+        },
+        "title": "Stand-off concealed firearm detection using motion tracking and convolutional neural networks"
+      },
+      {
+        "citations": {
+          "count": 113,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85196204795"
+        },
+        "references": {
+          "count": 53,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85196204795"
+        },
+        "totalAuthors": 5,
+        "freetoread": true,
+        "abstractText": [
+          "Surveillance cameras produce vast amounts of video data, posing a challenge for analysts due to the infrequent occurrence of unusual events. To address this, intelligent surveillance systems leverage AI and computer vision to automatically detect anomalies. This study proposes an innovative method combining 3D convolutions and long short-term memory (LSTM) modules to capture spatiotemporal features in video data. Notably, a structured coarse-level feature fusion mechanism enhances generalization and mitigates the issue of vanishing gradients. Unlike traditional convolutional neural networks, the approach employs depth-wise feature stacking, reducing computational complexity and enhancing the architecture. Additionally, it integrates microautoencoder blocks for downsampling, eliminates the computational load of ConvLSTM2D layers, and employs frequent feature concatenation blocks during upsampling to preserve temporal information. Integrating a Conv-LSTM module at the down- and upsampling stages enhances the model's ability to capture short- and long-term temporal features, resulting in a 42-layer network while maintaining robust performance. Experimental results demonstrate significant reductions in false alarms and improved accuracy compared to contemporary methods, with enhancements of 2.7%, 0.6%, and 3.4% on the UCSDPed1, UCSDPed2, and Avenue datasets, respectively."
+        ],
+        "eid": "2-s2.0-85196204795",
+        "documentType": "ar",
+        "doi": "10.1002/aisy.202300706",
+        "authors": [
+          {
+            "authorId": "57761163700",
+            "preferredName": {
+              "first": "S.",
+              "last": "Ul Amin",
+              "full": "Ul Amin S."
+            }
+          },
+          {
+            "authorId": "58745316200",
+            "preferredName": {
+              "first": "B.",
+              "last": "Kim",
+              "full": "Kim B."
+            }
+          },
+          {
+            "authorId": "58750995400",
+            "preferredName": {
+              "first": "Y.",
+              "last": "Jung",
+              "full": "Jung Y."
+            }
+          },
+          {
+            "authorId": "24480133600",
+            "preferredName": {
+              "first": "S.",
+              "last": "Seo",
+              "full": "Seo S."
+            }
+          },
+          {
+            "authorId": "35079290400",
+            "preferredName": {
+              "first": "S.",
+              "last": "Park",
+              "full": "Park S."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "ENGI",
+          "MATE",
+          "COMP"
+        ],
+        "scopusId": "85196204795",
+        "pubYear": 2024,
+        "databaseDocumentIds": {
+          "SCP": "85196204795",
+          "PUI": "2030272630",
+          "SCOPUS": "20242471894",
+          "REAXYSCAR": "20241735436",
+          "CAR-ID": "957021990",
+          "SGR": "85196204795",
+          "TPA-ID": "20249016692854"
+        },
+        "titles": [
+          "Video Anomaly Detection Utilizing Efficient Spatiotemporal Feature Fusion with 3D Convolutions and Long Short-Term Memory Modules"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "6",
+          "articleNumber": "2300706",
+          "issue": "7"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "26404567",
+          "eissn": "26404567",
+          "publicationYear": "2024",
+          "publisher": "John Wiley and Sons Inc",
+          "sourceTitleAbbreviation": "Adv. Intell. Syst.",
+          "id": "21101167511",
+          "title": "Advanced Intelligent Systems"
+        },
+        "title": "Video Anomaly Detection Utilizing Efficient Spatiotemporal Feature Fusion with 3D Convolutions and Long Short-Term Memory Modules"
+      },
+      {
+        "citations": {
+          "count": 22,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85199876573"
+        },
+        "references": {
+          "count": 45,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85199876573"
+        },
+        "totalAuthors": 3,
+        "freetoread": true,
+        "abstractText": [
+          "Detecting Violence in video streams is essential for public safety and security due to the rising frequency of violent incidents. Despite the extensive deployment of CCTV for surveillance, the available human monitoring resources still need to catch up with the need for vigilant supervision. This research presents a new lightweight model to address this gap by accurately identifying and categorizing violent behaviors in various scenariosincluding CCTV footage. The proposed method leverages optical flow and RGB data to capture spatiotemporal features in the Violence data. Built on a Residual DLCNN architecture integrated with the Attention mechanism and GRU components, the model effectively handles high-dimensional video data, enhancing accuracy by prioritizing crucial frames containing violent and nonviolent instances. The proposed model's performance was validated on the Hockey Fights (HF), Movie Fights, and SCVD datasets, achieving impressive accuracies of 98.38%, 99.62%, and 90.57%, respectively. Here, we developed the Extended Automatic Violence Detection Dataset (EAVDD), featuring 1530 videos of violent scenes in movies, public spaces, social media, and sports. Testing the model with top fight scenes in rated movies yielded outstanding results. This research supports surveillance systems and advances short video analysis and understanding with applications in public safety, social media, sports, and law enforcement."
+        ],
+        "eid": "2-s2.0-85199876573",
+        "documentType": "ar",
+        "doi": "10.37936/ecti-cit.2024183.255679",
+        "authors": [
+          {
+            "authorId": "57221388245",
+            "preferredName": {
+              "first": "A.",
+              "last": "Dey",
+              "full": "Dey A."
+            }
+          },
+          {
+            "authorId": "36607485800",
+            "preferredName": {
+              "first": "S.",
+              "last": "Biswas",
+              "full": "Biswas S."
+            }
+          },
+          {
+            "authorId": "57190984712",
+            "preferredName": {
+              "first": "L.",
+              "last": "Abualigah",
+              "full": "Abualigah L."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP",
+          "DECI",
+          "ENGI"
+        ],
+        "scopusId": "85199876573",
+        "pubYear": 2024,
+        "databaseDocumentIds": {
+          "SCP": "85199876573",
+          "PUI": "2030337092",
+          "SCOPUS": "20243038048",
+          "REAXYSCAR": "20242151960",
+          "CAR-ID": "957941975",
+          "SGR": "85199876573",
+          "TPA-ID": "20249007201671"
+        },
+        "titles": [
+          "Efficient Violence Recognition in Video Streams using ResDLCNN-GRU Attention Network"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "18",
+          "issue": "3",
+          "pages": [
+            {
+              "pageFirst": "329",
+              "pageLast": "341"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "22869131",
+          "eissn": "22869131",
+          "publicationYear": "2024",
+          "publisher": "ECTI Association",
+          "sourceTitleAbbreviation": "ECTI Trans. Comp. Inf. Technol.",
+          "id": "21100899864",
+          "title": "Ecti Transactions on Computer and Information Technology"
+        },
+        "title": "Efficient Violence Recognition in Video Streams using ResDLCNN-GRU Attention Network"
+      },
+      {
+        "citations": {
+          "count": 2,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85206891489"
+        },
+        "references": {
+          "count": 61,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85206891489"
+        },
+        "totalAuthors": 2,
+        "freetoread": true,
+        "abstractText": [
+          "The adoption of security systems based on computer vision for violence detection has the potential to significantly improve safety in various public and private properties. However, developing these systems can be extremely challenging.We can choose to use classification models to identify violence in images or also use object detection models to identify firearms, which may indicate robbery. Additionally, when developing such systems focused on private environments, we encounter specific challenges, such as obtaining appropriate datasets to train the algorithms. Many publicly available datasets for violence detection consist of outdoor images, with elements such as streets and cars, which do not adequately reflect the nuances and unique characteristics of private properties. In this work, we evaluate both learned and handcrafted features to classify videos as ’violence’ or ’non-violence’ across a variety of datasets, including a new dataset composed exclusively of closed-circuit television (CCTV) images. Additionally, we propose a new dataset for firearm detection in CCTV images and conduct some experiments using YoloV8. In this way, we hope to provide a clearer insight into the possible decisions when developing a security system for indoor environments."
+        ],
+        "eid": "2-s2.0-85206891489",
+        "documentType": "ar",
+        "doi": "10.5753/jbcs.2024.3282",
+        "authors": [
+          {
+            "authorId": "58037501200",
+            "preferredName": {
+              "first": "A.V.B.",
+              "last": "da Silva",
+              "full": "da Silva A.V.B."
+            }
+          },
+          {
+            "authorId": "35615711700",
+            "preferredName": {
+              "first": "L.F.",
+              "last": "Alves Pereira",
+              "full": "Alves Pereira L.F."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP"
+        ],
+        "scopusId": "85206891489",
+        "pubYear": 2024,
+        "databaseDocumentIds": {
+          "SCP": "85206891489",
+          "PUI": "2031475934",
+          "SCOPUS": "20244209217",
+          "CAR-ID": "959745482",
+          "SGR": "85206891489",
+          "TPA-ID": "20249020500965"
+        },
+        "titles": [
+          "Evaluating Methods for Violence Classification and Firearm Detection in Indoor CCTV Environment"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "30",
+          "issue": "1",
+          "pages": [
+            {
+              "pageFirst": "411",
+              "pageLast": "420"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "01046500",
+          "eissn": "16784804",
+          "publicationYear": "2024",
+          "publisher": "Brazilian Computing Society",
+          "issnp": "01046500",
+          "sourceTitleAbbreviation": "J. Braz. Comput. Soc.",
+          "id": "145262",
+          "title": "Journal of the Brazilian Computer Society"
+        },
+        "title": "Evaluating Methods for Violence Classification and Firearm Detection in Indoor CCTV Environment"
+      },
+      {
+        "citations": {
+          "count": 50,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85179622079"
+        },
+        "references": {
+          "count": 28,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85179622079"
+        },
+        "totalAuthors": 10,
+        "freetoread": true,
+        "abstractText": [
+          "Criminal Activities and Crime Monitoring System has long been a research topic. In this paper, we propose an effective Crime Monitoring System (CMS) that can detect a crime in real-time using a camera surveillance system and notify the appropriate law enforcement officer. The CMS was proposed to counterbalance human weaknesses such as inattention, slow reaction, and slacking, for example, in detecting crimes. The proposed CMS detects crime scenes by combining the mechanisms and functionalities of closed-circuit television (CCTV) cameras with various deep-learning methods and image-processing techniques. The CMS operates in three stages: weapon detection, violence detection, and face recognition. We used transfer learning models to detect weapons, and violence and used a face recognition algorithm to recognize faces. More specifically, to detect weapons YOLOv5, and MobileNetv2 to detect violence and used face recognition algorithms to recognize faces. The image dataset is used in CMS, while the video dataset is used to train the MobileNet-based violence detection model. In this case, frame-by-frame images extracted from video files were used to train the model. All of the models performed admirably. The weapon detection model detected four different weapon classes with greater than 80% accuracy. The violence detection model is also 95% accurate. The face recognition model had a 97% accuracy rate in detecting faces. The CMS's combined model was tested in a variety of real-world scenarios, and its performance was found to be outstanding. It was able to detect crime incidents and generate timely alarms, demonstrating its effectiveness in providing security and safety."
+        ],
+        "eid": "2-s2.0-85179622079",
+        "pii": "S2667305323001369",
+        "documentType": "ar",
+        "doi": "10.1016/j.iswa.2023.200311",
+        "authors": [
+          {
+            "authorId": "57841431600",
+            "preferredName": {
+              "first": "M.M.",
+              "last": "Mukto",
+              "full": "Mukto M.M."
+            }
+          },
+          {
+            "authorId": "57211617429",
+            "preferredName": {
+              "first": "M.",
+              "last": "Hasan",
+              "full": "Hasan M."
+            }
+          },
+          {
+            "authorId": "36088525700",
+            "preferredName": {
+              "first": "M.M.",
+              "last": "Al Mahmud",
+              "full": "Al Mahmud M.M."
+            }
+          },
+          {
+            "authorId": "57841431700",
+            "preferredName": {
+              "first": "I.",
+              "last": "Haque",
+              "full": "Haque I."
+            }
+          },
+          {
+            "authorId": "59289637000",
+            "preferredName": {
+              "first": "M.A.",
+              "last": "Ahmed",
+              "full": "Ahmed M.A."
+            }
+          },
+          {
+            "authorId": "24779227800",
+            "preferredName": {
+              "first": "T.",
+              "last": "Jabid",
+              "full": "Jabid T."
+            }
+          },
+          {
+            "authorId": "57212626605",
+            "preferredName": {
+              "first": "M.S.",
+              "last": "Ali",
+              "full": "Ali M.S."
+            }
+          },
+          {
+            "authorId": "58279383100",
+            "preferredName": {
+              "first": "M.R.",
+              "last": "Ahmmad Rashid",
+              "full": "Ahmmad Rashid M.R."
+            }
+          },
+          {
+            "authorId": "58154081100",
+            "preferredName": {
+              "first": "M.",
+              "last": "Manzurul Islam",
+              "full": "Manzurul Islam M."
+            }
+          },
+          {
+            "authorId": "55468841100",
+            "preferredName": {
+              "first": "M.",
+              "last": "Islam",
+              "full": "Islam M."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP"
+        ],
+        "scopusId": "85179622079",
+        "pubYear": 2024,
+        "databaseDocumentIds": {
+          "SCP": "85179622079",
+          "PUI": "2029013598",
+          "SCOPUS": "20234740593",
+          "REAXYSCAR": "20233752698",
+          "CAR-ID": "952753922",
+          "SGR": "85179622079"
+        },
+        "titles": [
+          "Design of a real-time crime monitoring system using deep learning techniques"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "21",
+          "articleNumber": "200311"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "26673053",
+          "publicationYear": "2024",
+          "publisher": "Elsevier B.V.",
+          "issnp": "26673053",
+          "sourceTitleAbbreviation": "Intell. Syst. Applications.",
+          "id": "21101051831",
+          "title": "Intelligent Systems with Applications"
+        },
+        "title": "Design of a real-time crime monitoring system using deep learning techniques"
+      },
+      {
+        "citations": {
+          "count": 35,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85165688145"
+        },
+        "references": {
+          "count": 42,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85165688145"
+        },
+        "totalAuthors": 6,
+        "freetoread": true,
+        "abstractText": [
+          "The early detection of handguns and knives from surveillance videos is crucial to enhance people’s safety. Despite the increasing development of Deep Learning (DL) methods for general object detection, weapon detection from surveillance videos still presents open challenges. Among these, the most significant are: (i) the very small size of the weapons with respect to the camera field of view and (ii) the need of a real-time feedback, even when using low-cost edge devices for computation. Complex and recently-developed DL architectures could mitigate the former challenge but do not satisfy the latter one. To tackle such limitation, the proposed work addresses the weapon-detection task from an edge perspective. A double-step DL approach was developed and evaluated against other state-of-the-art methods on a custom indoor surveillance dataset. The approach is based on a first Convolutional Neural Network (CNN) for people detection which guides a second CNN to identify handguns and knives. To evaluate the performance in a real-world indoor environment, the approach was deployed on a NVIDIA Jetson Nano edge device which was connected to an IP camera. The system achieved near real-time performance without relying on expensive hardware. The results in terms of both COCO Average Precision (AP = 79.30) and Frames per Second (FPS = 5.10) on the low-power NVIDIA Jetson Nano pointed out the goodness of the proposed approach compared with the others, encouraging the spread of automated video surveillance systems affordable to everyone."
+        ],
+        "eid": "2-s2.0-85165688145",
+        "documentType": "ar",
+        "doi": "10.1007/s11042-023-16231-x",
+        "authors": [
+          {
+            "authorId": "57219596431",
+            "preferredName": {
+              "first": "D.",
+              "last": "Berardini",
+              "full": "Berardini D."
+            }
+          },
+          {
+            "authorId": "57198434616",
+            "preferredName": {
+              "first": "L.",
+              "last": "Migliorelli",
+              "full": "Migliorelli L."
+            }
+          },
+          {
+            "authorId": "57203992736",
+            "preferredName": {
+              "first": "A.",
+              "last": "Galdelli",
+              "full": "Galdelli A."
+            }
+          },
+          {
+            "authorId": "9737451300",
+            "preferredName": {
+              "first": "E.",
+              "last": "Frontoni",
+              "full": "Frontoni E."
+            }
+          },
+          {
+            "authorId": "24341691500",
+            "preferredName": {
+              "first": "A.",
+              "last": "Mancini",
+              "full": "Mancini A."
+            }
+          },
+          {
+            "authorId": "57192919602",
+            "preferredName": {
+              "first": "S.",
+              "last": "Moccia",
+              "full": "Moccia S."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP",
+          "ENGI"
+        ],
+        "scopusId": "85165688145",
+        "pubYear": 2024,
+        "databaseDocumentIds": {
+          "SCP": "85165688145",
+          "PUI": "2024621872",
+          "SCOPUS": "20232786420",
+          "CAR-ID": "949685983",
+          "SGR": "85165688145",
+          "TPA-ID": "20239024510321"
+        },
+        "titles": [
+          "A deep-learning framework running on edge devices for handgun and knife detection from indoor video-surveillance cameras"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "83",
+          "issue": "7",
+          "pages": [
+            {
+              "pageFirst": "19109",
+              "pageLast": "19127"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "13807501",
+          "coden": "MTAPF",
+          "eissn": "15737721",
+          "publicationYear": "2024",
+          "publisher": "Springer",
+          "issnp": "13807501",
+          "sourceTitleAbbreviation": "Multimedia Tools Appl",
+          "id": "25627",
+          "title": "Multimedia Tools and Applications"
+        },
+        "title": "A deep-learning framework running on edge devices for handgun and knife detection from indoor video-surveillance cameras"
+      },
+      {
+        "citations": {
+          "count": 2,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85213393533"
+        },
+        "references": {
+          "count": 16,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85213393533"
+        },
+        "totalAuthors": 2,
+        "freetoread": true,
+        "abstractText": [
+          "This paper explores the practical implementation of 3D Convolutional Neural Networks (CNNs) for real-time violence detection in surveillance scenarios, focusing on applications such as traffic aggression and bullying detection. In recent years, the proliferation of surveillance cameras has provided a vast amount of visual data, necessitating efficient and accurate automated methods for threat identification. In this study, we investigate the feasibility and effectiveness of employing 3D CNNs for violence detection in real-life scenarios. We propose a comprehensive framework that integrates data augmentation techniques and fine-tuning strategies to address the challenges of limited annotated data and diverse environmental conditions. Furthermore, we conduct extensive experiments on benchmark datasets to evaluate the performance of the proposed approach in detecting physical altercations. In summary, this study highlights the efficacy of 3D CNNs in detecting physical altercations, thereby contributing to the advancement of automated surveillance systems aimed at enhancing public safety. The findings presented herein not only underscore the practical utility of deep learning techniques in addressing real-world challenges but also point towards future avenues for improving the accuracy and reliability of violence detection algorithms through multimodal integration."
+        ],
+        "eid": "2-s2.0-85213393533",
+        "pii": "S1877050924025079",
+        "documentType": "cp",
+        "doi": "10.1016/j.procs.2024.09.465",
+        "authors": [
+          {
+            "authorId": "59490442700",
+            "preferredName": {
+              "first": "I.-A.",
+              "last": "Haiura",
+              "full": "Haiura I.-A."
+            }
+          },
+          {
+            "authorId": "23397232600",
+            "preferredName": {
+              "first": "A.",
+              "last": "Iftene",
+              "full": "Iftene A."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP"
+        ],
+        "scopusId": "85213393533",
+        "pubYear": 2024,
+        "databaseDocumentIds": {
+          "SCP": "85213393533",
+          "PUI": "646090758",
+          "SCOPUS": "20245179137",
+          "CAR-ID": "961237130",
+          "SGR": "85213393533"
+        },
+        "titles": [
+          "Detecting Violence in Videos using Convolutional Neural Networks"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "246",
+          "issue": "C",
+          "pages": [
+            {
+              "pageFirst": "2497",
+              "pageLast": "2506"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "p",
+          "issn": "18770509",
+          "eissn": "18770509",
+          "publicationYear": "2024",
+          "publisher": "Elsevier B.V.",
+          "sourceTitleAbbreviation": "Procedia Comput. Sci.",
+          "id": "19700182801",
+          "title": "Procedia Computer Science"
+        },
+        "title": "Detecting Violence in Videos using Convolutional Neural Networks"
+      },
+      {
+        "citations": {
+          "count": 23,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85196826252"
+        },
+        "references": {
+          "count": 46,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85196826252"
+        },
+        "totalAuthors": 8,
+        "freetoread": true,
+        "abstractText": [
+          "The use of closed-circuit television (CCTV) systems is widespread in all areas where serious safety concerns exist. Keeping an eye on things manually sounds like a time-consuming and challenging process. Identifying theft, detecting aggression, detecting explosive risks, etc., are all circumstances in which the term “security’’ takes on multiple meanings. When applied to crowded public spaces, the phrase “security’’ encompasses nearly every conceivable kind of abnormality. Detecting violent behaviour among them is challenging since it typically occurs in a group setting. Several practical limitations make it hard, though complex functional limitations make it difficult to analyze crowd film scenes for anomalous or aberrant behaviour. This article provides a broad overview of the field, starting with object identification and moving on to action recognition, crowd analysis, and violence detection in a crowd setting. By combining you only look once (YOLO) with transfer learning, the model may acquire new skills from various sources. This makes it more flexible for use in various object identification applications and lessens the time and effort required to gather large annotated datasets. This article proposes the YOLO model with transfer learning for intelligent surveillance in Internet of Thing (IoT)-enabled home environments in smart cities. Quantization concepts are being applied to optimize the YOLO model in this work. Using YOLO with quantization, the model is optimized for use on edge devices and mobile platforms, which have limited computing capabilities. Thus, even with limited technology, object detection systems may be used in various real-world applications. The proposed model has been validated on two different datasets of 7,382 images. The proposed model gains an accuracy level of 98.27%. The proposed method outperforms the conventional one. The use of the YOLO model and transfer learning with quantization has significant potential for enhancing ecological smart city monitoring, and further research and development in this area could contribute to developing more effective and efficient environmental smart city monitoring systems."
+        ],
+        "eid": "2-s2.0-85196826252",
+        "documentType": "ar",
+        "doi": "10.7717/PEERJ-CS.1939",
+        "authors": [
+          {
+            "authorId": "57190939535",
+            "preferredName": {
+              "first": "S.",
+              "last": "Dalal",
+              "full": "Dalal S."
+            }
+          },
+          {
+            "authorId": "55445409800",
+            "preferredName": {
+              "first": "U.K.",
+              "last": "Lilhore",
+              "full": "Lilhore U.K."
+            }
+          },
+          {
+            "authorId": "59187554700",
+            "preferredName": {
+              "first": "N.",
+              "last": "Sharma",
+              "full": "Sharma N."
+            }
+          },
+          {
+            "authorId": "57208403100",
+            "preferredName": {
+              "first": "S.",
+              "last": "Arora",
+              "full": "Arora S."
+            }
+          },
+          {
+            "authorId": "57216622514",
+            "preferredName": {
+              "first": "S.",
+              "last": "Simaiya",
+              "full": "Simaiya S."
+            }
+          },
+          {
+            "authorId": "57751491300",
+            "preferredName": {
+              "first": "M.",
+              "last": "Ayadi",
+              "full": "Ayadi M."
+            }
+          },
+          {
+            "authorId": "57193325656",
+            "preferredName": {
+              "first": "N.A.",
+              "last": "Almujally",
+              "full": "Almujally N.A."
+            }
+          },
+          {
+            "authorId": "46062194200",
+            "preferredName": {
+              "first": "A.",
+              "last": "Ksibi",
+              "full": "Ksibi A."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP"
+        ],
+        "scopusId": "85196826252",
+        "pubYear": 2024,
+        "databaseDocumentIds": {
+          "SCP": "85196826252",
+          "PUI": "2032982918",
+          "SCOPUS": "20242583617",
+          "CAR-ID": "957196924",
+          "SGR": "85196826252",
+          "TPA-ID": "20249030112923"
+        },
+        "titles": [
+          "Improving smart home surveillance through YOLO model with transfer learning and quantization for enhanced accuracy and efficiency"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "10",
+          "pages": [
+            {
+              "pageFirst": "1",
+              "pageLast": "34"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "23765992",
+          "eissn": "23765992",
+          "publicationYear": "2024",
+          "publisher": "PeerJ Inc.",
+          "sourceTitleAbbreviation": "PeerJ Comput. Sci.",
+          "id": "21100830173",
+          "title": "Peerj Computer Science"
+        },
+        "title": "Improving smart home surveillance through YOLO model with transfer learning and quantization for enhanced accuracy and efficiency"
+      },
+      {
+        "citations": {
+          "count": 49,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85188905778"
+        },
+        "references": {
+          "count": 53,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85188905778"
+        },
+        "totalAuthors": 5,
+        "freetoread": true,
+        "abstractText": [
+          "The automation of surveillance systems, driven by the rapid development of computer vision technology, has significantly enhanced the analysis of surveillance videos, particularly in recognition of human activity, including behavior analysis and violence detection, thereby bolstering public and industrial security. Despite these advancements, detecting and analyzing violent actions remains challenging, especially for real-time surveillance systems with limited computing power. We propose an artificial intelligence-based framework called VD-Net (Violence Detection Network), enabled by Intelligent Internet-of-Things (IIoT) to detect violent behavior in public and private spaces. The model utilizes lightweight special task temporal convolutional network (ST-TCN) blocks and several bottleneck layers to focus on salient features in the input sequence. The learned features passed from the classifier to discriminate between violent and nonviolent actions. Additionally, our system is supposed to trigger an alert if violence is detected, which is then communicated to relevant departments. We checked the robustness of our system by surveillance and non-surveillance datasets and ensured a 1-4 % improvement in State-of-The-Art (SoTA) accuracy."
+        ],
+        "eid": "2-s2.0-85188905778",
+        "documentType": "ar",
+        "doi": "10.1109/ACCESS.2024.3380192",
+        "authors": [
+          {
+            "authorId": "57212930354",
+            "preferredName": {
+              "first": "M.",
+              "last": "Khan",
+              "full": "Khan M."
+            }
+          },
+          {
+            "authorId": "35431360000",
+            "preferredName": {
+              "first": "A.E.",
+              "last": "Saddik",
+              "full": "Saddik A.E."
+            }
+          },
+          {
+            "authorId": "6602335107",
+            "preferredName": {
+              "first": "W.",
+              "last": "Gueaieb",
+              "full": "Gueaieb W."
+            }
+          },
+          {
+            "authorId": "57188572672",
+            "preferredName": {
+              "first": "G.",
+              "last": "De Masi",
+              "full": "De Masi G."
+            }
+          },
+          {
+            "authorId": "35569999500",
+            "preferredName": {
+              "first": "F.",
+              "last": "Karray",
+              "full": "Karray F."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP",
+          "MATE",
+          "ENGI"
+        ],
+        "scopusId": "85188905778",
+        "pubYear": 2024,
+        "databaseDocumentIds": {
+          "SCP": "85188905778",
+          "PUI": "2031328333",
+          "SCOPUS": "20241325797",
+          "REAXYSCAR": "20240926095",
+          "CAR-ID": "955272694",
+          "SGR": "85188905778",
+          "TPA-ID": "20210019007336"
+        },
+        "titles": [
+          "VD-Net: An Edge Vision-Based Surveillance System for Violence Detection"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "12",
+          "pages": [
+            {
+              "pageFirst": "43796",
+              "pageLast": "43808"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "21693536",
+          "eissn": "21693536",
+          "publicationYear": "2024",
+          "publisher": "Institute of Electrical and Electronics Engineers Inc.",
+          "sourceTitleAbbreviation": "IEEE Access",
+          "id": "21100374601",
+          "title": "IEEE Access"
+        },
+        "title": "VD-Net: An Edge Vision-Based Surveillance System for Violence Detection"
+      },
+      {
+        "citations": {
+          "count": 33,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85183262576"
+        },
+        "references": {
+          "count": 47,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85183262576"
+        },
+        "totalAuthors": 3,
+        "freetoread": true,
+        "abstractText": [
+          "Detecting violent behavior in videos to ensure public safety and security poses a significant challenge. Precisely identifying and categorizing instances of violence in real-life closed-circuit television, which vary across specifications and locations, requires comprehensive understanding and processing of the sequential information embedded in these videos. This study aims to introduce a model that adeptly grasps the spatiotemporal context of videos within diverse settings and specifications of violent scenarios. We propose a method to accurately capture spatiotemporal features linked to violent behaviors using optical flow and RGB data. The approach leverages a Conv3D-based ResNet-3D model as the foundational network, capable of handling high-dimensional video data. The efficiency and accuracy of violence detection are enhanced by integrating an attention mechanism, which assigns greater weight to the most crucial frames within the RGB and optical-flow sequences during instances of violence. Our model was evaluated on the UBI-Fight, Hockey, Crowd, and Movie-Fights datasets; the proposed method outperformed existing state-of-the-art techniques, achieving area under the curve scores of 95.4, 98.1, 94.5, and 100.0 on the respective datasets. Moreover, this research not only has the potential to be applied in real-time surveillance systems but also promises to contribute to a broader spectrum of research in video analysis and understanding."
+        ],
+        "eid": "2-s2.0-85183262576",
+        "documentType": "ar",
+        "doi": "10.3390/s24020317",
+        "authors": [
+          {
+            "authorId": "58846430400",
+            "preferredName": {
+              "first": "J.-H.",
+              "last": "Park",
+              "full": "Park J.-H."
+            }
+          },
+          {
+            "authorId": "35741036200",
+            "preferredName": {
+              "first": "M.",
+              "last": "Mahmoud",
+              "full": "Mahmoud M."
+            }
+          },
+          {
+            "authorId": "35332572200",
+            "preferredName": {
+              "first": "H.-S.",
+              "last": "Kang",
+              "full": "Kang H.-S."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "CHEM",
+          "COMP",
+          "PHYS",
+          "BIOC",
+          "ENGI"
+        ],
+        "scopusId": "85183262576",
+        "pubYear": 2024,
+        "databaseDocumentIds": {
+          "SCP": "85183262576",
+          "MEDL": "38257410",
+          "PUI": "2028091630",
+          "PUIsecondary": "643319843",
+          "SCOPUS": "20240422971",
+          "REAXYSCAR": "20240304393",
+          "CAR-ID": "953860712",
+          "OSIN": "78324399",
+          "SGR": "85183262576",
+          "TPA-ID": "20249000964940"
+        },
+        "titles": [
+          "Conv3D-Based Video Violence Detection Network Using Optical Flow and RGB Data"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "24",
+          "articleNumber": "317",
+          "issue": "2"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "14248220",
+          "publicationYear": "2024",
+          "publisher": "Multidisciplinary Digital Publishing Institute (MDPI)",
+          "issnp": "14248220",
+          "sourceTitleAbbreviation": "Sensors",
+          "id": "130124",
+          "title": "Sensors"
+        },
+        "title": "Conv3D-Based Video Violence Detection Network Using Optical Flow and RGB Data"
+      },
+      {
+        "citations": {
+          "count": 38,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85172917968"
+        },
+        "references": {
+          "count": 43,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85172917968"
+        },
+        "totalAuthors": 4,
+        "freetoread": true,
+        "abstractText": [
+          "Detecting violence in various scenarios is a difficult task that requires a high degree of generalisation. This includes fights in different environments such as schools, streets, and football stadiums. However, most current research on violence detection focuses on a single scenario, limiting its ability to generalise across multiple scenarios. To tackle this issue, this paper offers a new multi-scenario violence detection framework that operates in two environments: fighting in various locations and rugby stadiums. This framework has three main steps. Firstly, it uses transfer learning by employing three pre-trained models from the ImageNet dataset: Xception, Inception, and InceptionResNet. This approach enhances generalisation and prevents overfitting, as these models have already learned valuable features from a large and diverse dataset. Secondly, the framework combines features extracted from the three models through feature fusion, which improves feature representation and enhances performance. Lastly, the concatenation step combines the features of the first violence scenario with the second scenario to train a machine learning classifier, enabling the classifier to generalise across both scenarios. This concatenation framework is highly flexible, as it can incorporate multiple violence scenarios without requiring training from scratch with additional scenarios. The Fusion model, which incorporates feature fusion from multiple models, obtained an accuracy of 97.66% on the RLVS dataset and 92.89% on the Hockey dataset. The Concatenation model accomplished an accuracy of 97.64% on the RLVS and 92.41% on the Hockey datasets with just a single classifier. This is the first framework that allows for the classification of multiple violent scenarios within a single classifier. Furthermore, this framework is not limited to violence detection and can be adapted to different tasks."
+        ],
+        "eid": "2-s2.0-85172917968",
+        "documentType": "ar",
+        "doi": "10.3390/computers12090175",
+        "authors": [
+          {
+            "authorId": "58029337200",
+            "preferredName": {
+              "first": "S.A.",
+              "last": "Jebur",
+              "full": "Jebur S.A."
+            }
+          },
+          {
+            "authorId": "57192644640",
+            "preferredName": {
+              "first": "K.A.",
+              "last": "Hussein",
+              "full": "Hussein K.A."
+            }
+          },
+          {
+            "authorId": "56572747400",
+            "preferredName": {
+              "first": "H.K.",
+              "last": "Hoomod",
+              "full": "Hoomod H.K."
+            }
+          },
+          {
+            "authorId": "57195380379",
+            "preferredName": {
+              "first": "L.",
+              "last": "Alzubaidi",
+              "full": "Alzubaidi L."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP"
+        ],
+        "scopusId": "85172917968",
+        "pubYear": 2023,
+        "databaseDocumentIds": {
+          "SCP": "85172917968",
+          "PUI": "2025741742",
+          "SCOPUS": "20233710068",
+          "CAR-ID": "951105549",
+          "SGR": "85172917968",
+          "TPA-ID": "20239032631911"
+        },
+        "titles": [
+          "Novel Deep Feature Fusion Framework for Multi-Scenario Violence Detection"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "12",
+          "articleNumber": "175",
+          "issue": "9"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "2073431X",
+          "eissn": "2073431X",
+          "publicationYear": "2023",
+          "publisher": "Multidisciplinary Digital Publishing Institute (MDPI)",
+          "sourceTitleAbbreviation": "Comput.",
+          "id": "21100886391",
+          "title": "Computers"
+        },
+        "title": "Novel Deep Feature Fusion Framework for Multi-Scenario Violence Detection"
+      },
+      {
+        "citations": {
+          "count": 56,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85163430788"
+        },
+        "references": {
+          "count": 51,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85163430788"
+        },
+        "totalAuthors": 2,
+        "freetoread": true,
+        "abstractText": [
+          "In our constantly monitored world, surveillance cameras play a crucial role in curbing crime and violence in public spaces by serving as a deterrent. To enhance their effectiveness, there is a growing need for automated tools that can detect crimes in real time. In this paper, we propose a novel deep learning architecture that accurately and efficiently detects violent crimes in surveillance videos. We rely on what we believe are the most essential pieces of information to detect violence, namely: human bodies and their interaction. To this end, we employ human pose extractors and change detectors as the input of our proposal. Subsequently, we combine them using a novel method, which relies on additions instead of multiplications to guarantee the transmission of information even when one of the inputs provides a zero-valued signal; outperforming other combination alternatives of the literature. Finally, to account for both spatial and temporal information, we use a convolutional alternative of the standard LSTM, the ConvLSTM. The experiments performed on several benchmark datasets demonstrate the efficacy and efficiency of our proposal, achieving state-of-the-art results with much fewer trainable parameters. We release the code to replicate the proposed architecture at https://github.com/atmguille/Violence-Detection-With-Human-Skeletons."
+        ],
+        "eid": "2-s2.0-85163430788",
+        "pii": "S1077314223001194",
+        "documentType": "ar",
+        "doi": "10.1016/j.cviu.2023.103739",
+        "authors": [
+          {
+            "authorId": "58401783400",
+            "preferredName": {
+              "first": "G.",
+              "last": "Garcia-Cobo",
+              "full": "Garcia-Cobo G."
+            }
+          },
+          {
+            "authorId": "35226780900",
+            "preferredName": {
+              "first": "J.C.",
+              "last": "SanMiguel",
+              "full": "SanMiguel J.C."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP"
+        ],
+        "scopusId": "85163430788",
+        "pubYear": 2023,
+        "databaseDocumentIds": {
+          "SCP": "85163430788",
+          "PUI": "2024888118",
+          "SCOPUS": "20232422140",
+          "CAR-ID": "949130438",
+          "SGR": "85163430788"
+        },
+        "titles": [
+          "Human skeletons and change detection for efficient violence detection in surveillance videos"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "233",
+          "articleNumber": "103739"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "10773142",
+          "coden": "CVIUF",
+          "eissn": "1090235X",
+          "publicationYear": "2023",
+          "publisher": "Academic Press Inc.",
+          "issnp": "10773142",
+          "sourceTitleAbbreviation": "Comput Vision Image Understanding",
+          "id": "24161",
+          "title": "Computer Vision and Image Understanding"
+        },
+        "title": "Human skeletons and change detection for efficient violence detection in surveillance videos"
+      },
+      {
+        "citations": {
+          "count": 11,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-105027644811"
+        },
+        "references": {
+          "count": 33,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-105027644811"
+        },
+        "totalAuthors": 3,
+        "freetoread": true,
+        "abstractText": [
+          "The use of video surveillance systems has increased due to security concerns and their relatively low cost. Researchers are working to create intelligent Closed Circuit Television (CCTV) cameras that can automatically analyze behavior in real-time to detect anomalous behaviors and prevent dangerous accidents. Deep Learning (DL) approaches, particularly Convolutional Neural Networks (CNNs), have shown outstanding results in video analysis and anomaly detection. This research paper focused on using Inception-v3 transfer learning approaches to improve the accuracy and efficiency of abnormal behavior detection in video surveillance. The Inception-v3 network is used to classify keyframes of a video as normal or abnormal behaviors by utilizing both pre-training and fine-tuning transfer learning approaches to extract features from the input data and develop a new classifier. The UCF-Crime dataset is used to train and evaluate the proposed models. The performance of both models was evaluated using accuracy, recall, precision, and F1 score. The fine-tuned model achieved 88.0%, 89.24%, 85.83%, and 87.50% for these measures, respectively. In contrast, the pre-trained model obtained 86.2%, 86.43%, 84.62%, and 85.52%, respectively. These results demonstrate that transfer learning using Inception-v3 architecture can effectively classify normal and abnormal behaviors in videos, and fine-tuning the weights of the layers can further improve the model's performance."
+        ],
+        "eid": "2-s2.0-105027644811",
+        "documentType": "ar",
+        "doi": "10.33103/uot.ijccce.23.2.16",
+        "authors": [
+          {
+            "authorId": "58029337200",
+            "preferredName": {
+              "first": "S.A.",
+              "last": "Jebur",
+              "full": "Jebur S.A."
+            }
+          },
+          {
+            "authorId": "57192644640",
+            "preferredName": {
+              "first": "K.A.",
+              "last": "Hussein",
+              "full": "Hussein K.A."
+            }
+          },
+          {
+            "authorId": "56572747400",
+            "preferredName": {
+              "first": "H.K.",
+              "last": "Hoomod",
+              "full": "Hoomod H.K."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "ENGI"
+        ],
+        "scopusId": "105027644811",
+        "pubYear": 2023,
+        "databaseDocumentIds": {
+          "SCP": "105027644811",
+          "PUI": "2037598637",
+          "SCOPUS": "20260295137",
+          "CAR-ID": "971135497",
+          "SGR": "105027644811",
+          "TPA-ID": "20259038300054"
+        },
+        "titles": [
+          "Abnormal Behavior Detection in Video Surveillance Using Inception-v3 Transfer Learning Approaches"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "23",
+          "issue": "2",
+          "pages": [
+            {
+              "pageFirst": "210",
+              "pageLast": "221"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "18119212",
+          "eissn": "26173352",
+          "publicationYear": "2023",
+          "publisher": "University of Technology - Iraq",
+          "issnp": "18119212",
+          "sourceTitleAbbreviation": "Iraqi J. comp. commun. control syst. eng.",
+          "id": "21101388280",
+          "title": "Iraqi Journal of Computers Communications Control and Systems Engineering"
+        },
+        "title": "Abnormal Behavior Detection in Video Surveillance Using Inception-v3 Transfer Learning Approaches"
+      },
+      {
+        "citations": {
+          "count": 8,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85153676499"
+        },
+        "references": {
+          "count": 38,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85153676499"
+        },
+        "totalAuthors": 2,
+        "freetoread": true,
+        "abstractText": [
+          "This paper presents a novel low-cost integrated system prototype, called School Violence Detection system (SVD), based on a 2D Convolutional Neural Network (CNN). It is used for classifying and identifying automatically violent actions in educational environments based on shallow cost hardware. Moreover, the paper fills the gap of real datasets in educational environments by proposing a new one, called Daily School Break dataset (DSB), containing original videos recorded in an Italian high school yard. The proposed CNN has been pre-trained with an ImageNet model and a transfer learning approach. To extend its capabilities, the DSB was enriched with online images representing students in school environments. Experimental results analyze the classification performances of the SVD and investigate how it performs through the proposed DSB dataset. The SVD, which achieves a recognition accuracy of 95%, is considered computably efficient and low-cost. It could be adapted to other scenarios such as school arenas, gyms, playgrounds, etc."
+        ],
+        "eid": "2-s2.0-85153676499",
+        "documentType": "ar",
+        "doi": "10.3390/info14040240",
+        "authors": [
+          {
+            "authorId": "58197990200",
+            "preferredName": {
+              "first": "E.",
+              "last": "Perseghin",
+              "full": "Perseghin E."
+            }
+          },
+          {
+            "authorId": "7006427233",
+            "preferredName": {
+              "first": "G.L.",
+              "last": "Foresti",
+              "full": "Foresti G.L."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP"
+        ],
+        "scopusId": "85153676499",
+        "pubYear": 2023,
+        "databaseDocumentIds": {
+          "SCP": "85153676499",
+          "PUI": "2022889204",
+          "SCOPUS": "20231557698",
+          "CAR-ID": "947726165",
+          "SGR": "85153676499",
+          "TPA-ID": "20239012635095"
+        },
+        "titles": [
+          "A Shallow System Prototype for Violent Action Detection in Italian Public Schools"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "14",
+          "articleNumber": "240",
+          "issue": "4"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "20782489",
+          "eissn": "20782489",
+          "publicationYear": "2023",
+          "publisher": "MDPI",
+          "sourceTitleAbbreviation": "Information",
+          "id": "21100223111",
+          "title": "Information Switzerland"
+        },
+        "title": "A Shallow System Prototype for Violent Action Detection in Italian Public Schools"
+      },
+      {
+        "citations": {
+          "count": 170,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85130725769"
+        },
+        "references": {
+          "count": 39,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85130725769"
+        },
+        "totalAuthors": 2,
+        "freetoread": true,
+        "abstractText": [
+          "Automatic anomaly detection is a crucial task in video surveillance system intensively used for public safety and others. The present system adopts a spatial branch and a temporal branch in a unified network that exploits both spatial and temporal information effectively. The network has a residual autoencoder architecture, consisting of a deep convolutional neural network-based encoder and a multi-stage channel attention-based decoder, trained in an unsupervised manner. The temporal shift method is used for exploiting the temporal feature, whereas the contextual dependency is extracted by channel attention modules. System performance is evaluated using three standard benchmark datasets. Result suggests that our network outperforms the state-of-the-art methods, achieving 97.4% for UCSD Ped2, 86.7% for CUHK Avenue, and 73.6% for ShanghaiTech dataset in term of Area Under Curve, respectively."
+        ],
+        "eid": "2-s2.0-85130725769",
+        "documentType": "ar",
+        "doi": "10.1007/s10489-022-03613-1",
+        "authors": [
+          {
+            "authorId": "57669353600",
+            "preferredName": {
+              "first": "V.-T.",
+              "last": "Le",
+              "full": "Le V.-T."
+            }
+          },
+          {
+            "authorId": "24081003200",
+            "preferredName": {
+              "first": "Y.-G.",
+              "last": "Kim",
+              "full": "Kim Y.-G."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP"
+        ],
+        "scopusId": "85130725769",
+        "pubYear": 2023,
+        "databaseDocumentIds": {
+          "SCP": "85130725769",
+          "PUI": "2017261066",
+          "SCOPUS": "20221825675",
+          "CAR-ID": "940470843",
+          "SGR": "85130725769",
+          "TPA-ID": "20229011569504"
+        },
+        "titles": [
+          "Attention-based residual autoencoder for video anomaly detection"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "53",
+          "issue": "3",
+          "pages": [
+            {
+              "pageFirst": "3240",
+              "pageLast": "3254"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "0924669X",
+          "coden": "APITE",
+          "eissn": "15737497",
+          "publicationYear": "2023",
+          "publisher": "Springer",
+          "issnp": "0924669X",
+          "sourceTitleAbbreviation": "Appl Intell",
+          "id": "23674",
+          "title": "Applied Intelligence"
+        },
+        "title": "Attention-based residual autoencoder for video anomaly detection"
+      },
+      {
+        "citations": {
+          "count": 18,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85149206606"
+        },
+        "references": {
+          "count": 32,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85149206606"
+        },
+        "totalAuthors": 5,
+        "freetoread": true,
+        "abstractText": [
+          "Camera surveillance is widely used in residential areas, highways, schools and other public places. The monitoring and scanning of sudden abnormal events depend on humans. Human anomaly monitoring not only consumes a lot of manpower and time but also has a large error in anomaly detection. Video anomaly detection based on AE (Auto-Encoder) is currently the dominant research approach. The model has a highly symmetrical network structure in the encoding and decoding stages. The model is trained by learning standard video sequences, and the anomalous events are later determined in terms of reconstruction error and prediction error. However, in the case of limited computing power, the complex model will greatly reduce the detection efficiency, and unnecessary background information will seriously affect the detection accuracy of the model. This paper uses the AE loaded with dynamic prototype units as the basic model. We introduce an attention mechanism to improve the feature representation ability of the model. Deep separable convolution operation can effectively reduce the number of model parameters and complexity. Finally, we conducted experiments on three publicly available datasets of real scenarios (UCSD Ped1, UCSD Ped2 and CUHK Avenue). The experimental results show that compared with the baseline model, the accuracy of our model improved by 1.9%, 1.4% and 6.6%, respectively, across the three datasets. Compared with many popular models, the validity of our model in anomaly detection is verified."
+        ],
+        "eid": "2-s2.0-85149206606",
+        "documentType": "ar",
+        "doi": "10.3390/sym15020528",
+        "authors": [
+          {
+            "authorId": "57831164900",
+            "preferredName": {
+              "first": "Q.",
+              "last": "Zhang",
+              "full": "Zhang Q."
+            }
+          },
+          {
+            "authorId": "57436906700",
+            "preferredName": {
+              "first": "H.",
+              "last": "Wei",
+              "full": "Wei H."
+            }
+          },
+          {
+            "authorId": "57215719253",
+            "preferredName": {
+              "first": "J.",
+              "last": "Chen",
+              "full": "Chen J."
+            }
+          },
+          {
+            "authorId": "57222289570",
+            "preferredName": {
+              "first": "X.",
+              "last": "Du",
+              "full": "Du X."
+            }
+          },
+          {
+            "authorId": "35250016200",
+            "preferredName": {
+              "first": "J.",
+              "last": "Yu",
+              "full": "Yu J."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP",
+          "CHEM",
+          "MATH",
+          "PHYS"
+        ],
+        "scopusId": "85149206606",
+        "pubYear": 2023,
+        "databaseDocumentIds": {
+          "SCP": "85149206606",
+          "PUI": "2021805954",
+          "SCOPUS": "20230808136",
+          "REAXYSCAR": "20230584850",
+          "CAR-ID": "946409667",
+          "SGR": "85149206606",
+          "TPA-ID": "20239003228731"
+        },
+        "titles": [
+          "Video Anomaly Detection Based on Attention Mechanism"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "15",
+          "articleNumber": "528",
+          "issue": "2"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "20738994",
+          "eissn": "20738994",
+          "publicationYear": "2023",
+          "publisher": "MDPI",
+          "sourceTitleAbbreviation": "Symmetry",
+          "id": "21100201542",
+          "title": "Symmetry"
+        },
+        "title": "Video Anomaly Detection Based on Attention Mechanism"
+      },
+      {
+        "citations": {
+          "count": 2,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85161155986"
+        },
+        "references": {
+          "count": 35,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85161155986"
+        },
+        "totalAuthors": 7,
+        "freetoread": true,
+        "abstractText": [
+          "In this article, we provide a MoveNET-based technique that we think may be used to detect violent actions. This strategy does not need high-computational technology, and it is able to put into action in a very short amount of time. Our method is comprised of two stages: first, the capture of features from photo sequences in order to evaluate body position; next, the application of an artificial neural network to activities classification in order to determine whether or not the picture frames include violent or hostile circumstances. A video aggression database consisting of 400 minutes of one individual's actions and 20 hours of videodata encompassing physical abuse, as well as 13 categories for distinguishing between the behaviors of the attacker and the victim, was created. In the end, the suggested approach was refined and validated by employing the collected dataset during the process. According to the findings, an accuracy rate of 98% was attained while attempting to detect aggressive behavior in video sequences. In addition, the findings indicate that the suggested technique is able to identify aggressive behavior and violent acts in a very short amount of time and is suitable for use in apps that take place in the real world."
+        ],
+        "eid": "2-s2.0-85161155986",
+        "documentType": "ar",
+        "doi": "10.14569/IJACSA.2023.0140578",
+        "authors": [
+          {
+            "authorId": "57224359860",
+            "preferredName": {
+              "first": "Z.",
+              "last": "Kozhamkulova",
+              "full": "Kozhamkulova Z."
+            }
+          },
+          {
+            "authorId": "57218949629",
+            "preferredName": {
+              "first": "B.",
+              "last": "Kirgizbayeva",
+              "full": "Kirgizbayeva B."
+            }
+          },
+          {
+            "authorId": "57203005992",
+            "preferredName": {
+              "first": "G.",
+              "last": "Sembina",
+              "full": "Sembina G."
+            }
+          },
+          {
+            "authorId": "58305709000",
+            "preferredName": {
+              "first": "U.",
+              "last": "Smailova",
+              "full": "Smailova U."
+            }
+          },
+          {
+            "authorId": "58235548000",
+            "preferredName": {
+              "first": "M.",
+              "last": "Suleimenova",
+              "full": "Suleimenova M."
+            }
+          },
+          {
+            "authorId": "58305709100",
+            "preferredName": {
+              "first": "A.",
+              "last": "Keneskanova",
+              "full": "Keneskanova A."
+            }
+          },
+          {
+            "authorId": "57191037071",
+            "preferredName": {
+              "first": "Z.",
+              "last": "Baizakova",
+              "full": "Baizakova Z."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP"
+        ],
+        "scopusId": "85161155986",
+        "pubYear": 2023,
+        "databaseDocumentIds": {
+          "SCP": "85161155986",
+          "PUI": "2024809759",
+          "SCOPUS": "20232116649",
+          "CAR-ID": "948659190",
+          "SGR": "85161155986",
+          "TPA-ID": "20239017057986"
+        },
+        "titles": [
+          "MoveNET Enabled Neural Network for Fast Detection of Physical Bullying in Educational Institutions"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "14",
+          "issue": "5",
+          "pages": [
+            {
+              "pageFirst": "735",
+              "pageLast": "742"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "2158107X",
+          "eissn": "21565570",
+          "publicationYear": "2023",
+          "publisher": "Science and Information Organization",
+          "issnp": "2158107X",
+          "sourceTitleAbbreviation": "Intl. J. Adv. Comput. Sci. Appl.",
+          "id": "21100867241",
+          "title": "International Journal of Advanced Computer Science and Applications"
+        },
+        "title": "MoveNET Enabled Neural Network for Fast Detection of Physical Bullying in Educational Institutions"
+      },
+      {
+        "citations": {
+          "count": 5,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85164599977"
+        },
+        "references": {
+          "count": 55,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85164599977"
+        },
+        "totalAuthors": 3,
+        "freetoread": true,
+        "abstractText": [
+          "Law enforcement and civilian protection are increasingly dependent on surveillance technologies. To prevent social, economic, and environmental harm, video surveillance situations like those in train stations, schools, and hospitals must automatically detect aggressive and suspicious behavior. Intelligent video surveillance systems now enable human interaction monitoring. Despite its security benefits, crowds and the camera's vision make it difficult to distinguish regular from abnormal activity. Therefore, there is a great deal of investigation into the many methods of identifying violent behavior. The detection approach presented in this research can be broken down into three distinct subfields. The classification methods employed led to the formation of these classes. Classifications include Gradient Descent (SGD), Adaptive boosting (ADA), Naive Base (NB), and Logistic Regression (LR) for detecting violent acts with machine learning. Methods for feature extraction and violence detection are derived using Principal Component Analysis (PCA). Dataset learning-based models for violence detection can also be evaluated using the AIRTLab dataset, a model developed to test the robustness of algorithms against false positives. In order to determine if the proposed model's resistance to false positives, accuracy (ACC) metrics were computed on the proposed model and used to set a benchmark for the AIRTLab dataset. According to the research literature, the proposed models are accurate of 98.31% with the logistic regression classifier having superior generalization skills."
+        ],
+        "eid": "2-s2.0-85164599977",
+        "documentType": "ar",
+        "doi": "10.22266/ijies2023.0831.36",
+        "authors": [
+          {
+            "authorId": "58484106400",
+            "preferredName": {
+              "first": "S.Z.",
+              "last": "Khalaf",
+              "full": "Khalaf S.Z."
+            }
+          },
+          {
+            "authorId": "58695528700",
+            "preferredName": {
+              "first": "M.I.",
+              "last": "Shujaa",
+              "full": "Shujaa M.I."
+            }
+          },
+          {
+            "authorId": "57223290582",
+            "preferredName": {
+              "first": "A.B.A.",
+              "last": "Alwahhab",
+              "full": "Alwahhab A.B.A."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP",
+          "ENGI"
+        ],
+        "scopusId": "85164599977",
+        "pubYear": 2023,
+        "databaseDocumentIds": {
+          "SCP": "85164599977",
+          "PUI": "2025407622",
+          "SCOPUS": "20232620190",
+          "REAXYSCAR": "20231986609",
+          "CAR-ID": "949437577",
+          "SGR": "85164599977",
+          "TPA-ID": "20239020985476"
+        },
+        "titles": [
+          "Utilizing Machine Learning and Computer Vision for the Detection of Abusive Behavior in IoT Systems"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "16",
+          "issue": "4",
+          "pages": [
+            {
+              "pageFirst": "450",
+              "pageLast": "460"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "2185310X",
+          "eissn": "21853118",
+          "publicationYear": "2023",
+          "publisher": "Intelligent Network and Systems Society",
+          "issnp": "2185310X",
+          "sourceTitleAbbreviation": "Int. J. Intelligent Eng. Syst.",
+          "id": "21100199790",
+          "title": "International Journal of Intelligent Engineering and Systems"
+        },
+        "title": "Utilizing Machine Learning and Computer Vision for the Detection of Abusive Behavior in IoT Systems"
+      },
+      {
+        "citations": {
+          "count": 5,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85170639470"
+        },
+        "references": {
+          "count": 25,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85170639470"
+        },
+        "totalAuthors": 3,
+        "freetoread": true,
+        "abstractText": [
+          "The use of surveillance cameras has made it possible to analyze a huge amount of data for automated surveillance. The use of security systems in schools, hotels, hospitals, and other security areas is required to identify the violent activities that can cause social, economic, and environmental damage. Detecting the mobile objects on each frame is a fundamental phase in the analysis of the video trail and the violence recognition. Therefore, a three-step approach is presented in this article. In our method, the separation of the frames containing the motion information and the detection of the violent behavior are applied at two levels of the network. First, the people in the video frames are identified by using a convolutional neural network. In the second step, a sequence of 16 frames containing the identified people is injected into the 3D CNN. Furthermore, we optimize the 3D CNN by using the visual inference and then a neural network optimization tool that transforms the pre-trained model into an average representation. Finally, this method uses the toolbox of OPENVINO to perform the optimization operations to increase the performance. To evaluate the accuracy of our algorithm, two datasets have been analyzed, which are: Violence in Movies and Hockey Fight. The results show that the final accuracy of this analysis is equal to 99.9% and 96% from each dataset."
+        ],
+        "eid": "2-s2.0-85170639470",
+        "documentType": "ar",
+        "doi": "10.14569/IJACSA.2023.0140891",
+        "authors": [
+          {
+            "authorId": "58503481300",
+            "preferredName": {
+              "first": "X.",
+              "last": "Xu",
+              "full": "Xu X."
+            }
+          },
+          {
+            "authorId": "57263336400",
+            "preferredName": {
+              "first": "Z.",
+              "last": "Liao",
+              "full": "Liao Z."
+            }
+          },
+          {
+            "authorId": "58001164100",
+            "preferredName": {
+              "first": "Z.",
+              "last": "Xu",
+              "full": "Xu Z."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP"
+        ],
+        "scopusId": "85170639470",
+        "pubYear": 2023,
+        "databaseDocumentIds": {
+          "SCP": "85170639470",
+          "PUI": "2026725112",
+          "SCOPUS": "20233453832",
+          "CAR-ID": "950702958",
+          "SGR": "85170639470",
+          "TPA-ID": "20239029424618"
+        },
+        "titles": [
+          "Violent Physical Behavior Detection using 3D Spatio-Temporal Convolutional Neural Networks"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "14",
+          "issue": "8",
+          "pages": [
+            {
+              "pageFirst": "829",
+              "pageLast": "836"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "2158107X",
+          "eissn": "21565570",
+          "publicationYear": "2023",
+          "publisher": "Science and Information Organization",
+          "issnp": "2158107X",
+          "sourceTitleAbbreviation": "Intl. J. Adv. Comput. Sci. Appl.",
+          "id": "21100867241",
+          "title": "International Journal of Advanced Computer Science and Applications"
+        },
+        "title": "Violent Physical Behavior Detection using 3D Spatio-Temporal Convolutional Neural Networks"
+      },
+      {
+        "citations": {
+          "count": 20,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85169682275"
+        },
+        "references": {
+          "count": 36,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85169682275"
+        },
+        "totalAuthors": 6,
+        "freetoread": true,
+        "abstractText": [
+          "In smart video surveillance systems, violence detection becomes challenging to ensure public safety and security. With the proliferation of surveillance cameras in public areas, there is an increasing need for automated algorithms that can accurately and efficiently detect violent behavior in real time. This article presents a Tuna Swarm Optimization with Deep Learning Enabled Violence Detection (TSODL-VD) technique to classify violent actions in surveillance videos. The TSODL-VD technique enables the recognition of violence and can be a measure to avoid chaotic situations. In the presented TSODL-VD technique, the residual-DenseNet model is applied for feature vector generation from the input video frames and then passed into the stacked autoencoder (SAE) classifier. The SAE model is enforced to recognize the events into violence and non-violence events. To improve the violence detection effectiveness of the TSODL-VD procedure, the TSO protocol is utilized as a hyperparameter optimizer for the residual-DenseNet model. The performance validation of the TSODL-VD procedure has experimented on a benchmark violence dataset. The experimental results demonstrate that the TSODL-VD technique accomplishes precise and rapid detection outcomes over the recent state-of-the-art approaches."
+        ],
+        "eid": "2-s2.0-85169682275",
+        "documentType": "ar",
+        "doi": "10.1109/ACCESS.2023.3310885",
+        "authors": [
+          {
+            "authorId": "57977814800",
+            "preferredName": {
+              "first": "G.",
+              "last": "Aldehim",
+              "full": "Aldehim G."
+            }
+          },
+          {
+            "authorId": "57579728000",
+            "preferredName": {
+              "first": "M.M.",
+              "last": "Asiri",
+              "full": "Asiri M.M."
+            }
+          },
+          {
+            "authorId": "57887190900",
+            "preferredName": {
+              "first": "M.",
+              "last": "Aljebreen",
+              "full": "Aljebreen M."
+            }
+          },
+          {
+            "authorId": "57213606201",
+            "preferredName": {
+              "first": "A.",
+              "last": "Mohamed",
+              "full": "Mohamed A."
+            }
+          },
+          {
+            "authorId": "57219344932",
+            "preferredName": {
+              "first": "M.",
+              "last": "Assiri",
+              "full": "Assiri M."
+            }
+          },
+          {
+            "authorId": "58138019200",
+            "preferredName": {
+              "first": "S.S.",
+              "last": "Ibrahim",
+              "full": "Ibrahim S.S."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP",
+          "MATE",
+          "ENGI"
+        ],
+        "scopusId": "85169682275",
+        "pubYear": 2023,
+        "databaseDocumentIds": {
+          "SCP": "85169682275",
+          "PUI": "2026821848",
+          "SCOPUS": "20233332538",
+          "REAXYSCAR": "20232665616",
+          "CAR-ID": "950530196",
+          "SGR": "85169682275",
+          "TPA-ID": "20210018398909"
+        },
+        "titles": [
+          "Tuna Swarm Algorithm With Deep Learning Enabled Violence Detection in Smart Video Surveillance Systems"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "11",
+          "pages": [
+            {
+              "pageFirst": "95104",
+              "pageLast": "95113"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "21693536",
+          "eissn": "21693536",
+          "publicationYear": "2023",
+          "publisher": "Institute of Electrical and Electronics Engineers Inc.",
+          "sourceTitleAbbreviation": "IEEE Access",
+          "id": "21100374601",
+          "title": "IEEE Access"
+        },
+        "title": "Tuna Swarm Algorithm With Deep Learning Enabled Violence Detection in Smart Video Surveillance Systems"
+      },
+      {
+        "citations": {
+          "count": 29,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85177435289"
+        },
+        "references": {
+          "count": 62,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85177435289"
+        },
+        "totalAuthors": 2,
+        "freetoread": true,
+        "abstractText": [
+          "Video surveillance for real-world anomaly detection and prevention using deep learning is an important and difficult research area. It is imperative to detect and prevent anomalies to develop a nonviolent society. Real-world video surveillance cameras automate the detection of anomaly activities and enable the law enforcement systems for taking steps toward public safety. However, a human-monitored surveillance system is vulnerable to oversight anomaly activity. In this paper, an automated deep learning model is proposed in order to detect and prevent anomaly activities. The real-world video surveillance system is designed by implementing the ResNet-50, a Convolutional Neural Network (CNN) model, to extract the high-level features from input streams whereas temporal features are extracted by the Convolutional GRU (ConvGRU) from the ResNet-50 extracted features in the time-series dataset. The proposed deep learning video surveillance model (named ConvGRU-CNN) can efficiently detect anomaly activities. The UCF-Crime dataset is used to evaluate the proposed deep learning model. We classified normal and abnormal activities, thereby showing the ability of ConvGRU-CNN to find a correct category for each abnormal activity. With the UCF-Crime dataset for the video surveillance-based anomaly detection, ConvGRU-CNN achieved 82.22% accuracy. In addition, the proposed model outperformed the related deep learning models."
+        ],
+        "eid": "2-s2.0-85177435289",
+        "documentType": "ar",
+        "doi": "10.9781/ijimai.2023.05.006",
+        "authors": [
+          {
+            "authorId": "57667727200",
+            "preferredName": {
+              "first": "M.Q.",
+              "last": "Gandapur",
+              "full": "Gandapur M.Q."
+            }
+          },
+          {
+            "authorId": "23968468300",
+            "preferredName": {
+              "first": "E.",
+              "last": "Verdú",
+              "full": "Verdu E."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP",
+          "MATH"
+        ],
+        "scopusId": "85177435289",
+        "pubYear": 2023,
+        "databaseDocumentIds": {
+          "SCP": "85177435289",
+          "PUI": "2026817529",
+          "SCOPUS": "20234592694",
+          "REAXYSCAR": "20233646049",
+          "CAR-ID": "952491687",
+          "SGR": "85177435289",
+          "TPA-ID": "20239028199468"
+        },
+        "titles": [
+          "ConvGRU-CNN: Spatiotemporal Deep Learning for Real-World Anomaly Detection in Video Surveillance System"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "8",
+          "issue": "4",
+          "pages": [
+            {
+              "pageFirst": "88",
+              "pageLast": "95"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "19891660",
+          "eissn": "19891660",
+          "publicationYear": "2023",
+          "publisher": "Universidad Internacional de la Rioja",
+          "sourceTitleAbbreviation": "Int. J. Interact. Multimed. Artif. Intell.",
+          "id": "21101049065",
+          "title": "International Journal of Interactive Multimedia and Artificial Intelligence"
+        },
+        "title": "ConvGRU-CNN: Spatiotemporal Deep Learning for Real-World Anomaly Detection in Video Surveillance System"
+      },
+      {
+        "citations": {
+          "count": 72,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85159346614"
+        },
+        "references": {
+          "count": 44,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85159346614"
+        },
+        "totalAuthors": 5,
+        "freetoread": true,
+        "abstractText": [
+          "In the present technological world, surveillance cameras generate an immense amount of video data from various sources, making its scrutiny tough for computer vision specialists. It is difficult to search for anomalous events manually in these massive video records since they happen infrequently and with a low probability in real-world monitoring systems. Therefore, intelligent surveillance is a requirement of the modern day, as it enables the automatic identification of normal and aberrant behavior using artificial intelligence and computer vision technologies. In this article, we introduce an efficient Attention-based deep-learning approach for anomaly detection in surveillance video (ADSV). At the input of the ADSV, a shots boundary detection technique is used to segment prominent frames. Next, The Lightweight Convolution Neural Network (LWCNN) model receives the segmented frames to extract spatial and temporal information from the intermediate layer. Following that, spatial and temporal features are learned using Long Short-Term Memory (LSTM) cells and Attention Network from a series of frames for each anomalous activity in a sample. To detect motion and action, the LWCNN received chronologically sorted frames. Finally, the anomaly activity in the video is identified using the proposed trained ADSV model. Extensive experiments are conducted on complex and challenging benchmark datasets. In addition, the experimental results have been compared to state-of-the-art methodologies, and a significant improvement is attained, demonstrating the efficiency of our ADSV method."
+        ],
+        "eid": "2-s2.0-85159346614",
+        "documentType": "ar",
+        "doi": "10.32604/csse.2023.034805",
+        "authors": [
+          {
+            "authorId": "57761163700",
+            "preferredName": {
+              "first": "S.U.",
+              "last": "Amin",
+              "full": "Amin S.U."
+            }
+          },
+          {
+            "authorId": "57222481013",
+            "preferredName": {
+              "first": "Y.",
+              "last": "Kim",
+              "full": "Kim Y."
+            }
+          },
+          {
+            "authorId": "57202831046",
+            "preferredName": {
+              "first": "I.",
+              "last": "Sami",
+              "full": "Sami I."
+            }
+          },
+          {
+            "authorId": "35079290400",
+            "preferredName": {
+              "first": "S.",
+              "last": "Park",
+              "full": "Park S."
+            }
+          },
+          {
+            "authorId": "24480133600",
+            "preferredName": {
+              "first": "S.",
+              "last": "Seo",
+              "full": "Seo S."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "ENGI",
+          "MATH",
+          "COMP"
+        ],
+        "scopusId": "85159346614",
+        "pubYear": 2023,
+        "databaseDocumentIds": {
+          "SCP": "85159346614",
+          "PUI": "2024999326",
+          "SCOPUS": "20240458528",
+          "REAXYSCAR": "20240326168",
+          "CAR-ID": "948724383",
+          "SGR": "85159346614",
+          "TPA-ID": "20239018339132"
+        },
+        "titles": [
+          "An Efficient Attention-Based Strategy for Anomaly Detection in Surveillance Video"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "46",
+          "issue": "3",
+          "pages": [
+            {
+              "pageFirst": "3939",
+              "pageLast": "3958"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "02676192",
+          "coden": "CSSEE",
+          "publicationYear": "2023",
+          "publisher": "Tech Science Press",
+          "issnp": "02676192",
+          "sourceTitleAbbreviation": "Comput Syst Sci Eng",
+          "id": "12324",
+          "title": "Computer Systems Science and Engineering"
+        },
+        "title": "An Efficient Attention-Based Strategy for Anomaly Detection in Surveillance Video"
+      },
+      {
+        "citations": {
+          "count": 39,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85125213227"
+        },
+        "references": {
+          "count": 29,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85125213227"
+        },
+        "totalAuthors": 1,
+        "freetoread": true,
+        "abstractText": [
+          "This research proposes a motion recognition system for early detection of students' physical aggressive behavior in the classroom. The motion recognition system recognizes physical attacks so that teachers can resolve disputes early to reduce other greater injuries. In the beginning, cameras were used in this system to monitor students’ classroom activities and to obtain body images by removing background and saliency maps. Two angles from arm to shoulder and shoulder to the center of the body are then measured and the velocity between the two frames from the movement of the body is detected, and use these angle and velocity values as the criterion for judging whether it is a physical attack. In the end, the accuracy of the proposed algorithms is verified by using the confusion matrix based on machine learning and the minimum cross entropy based on neural networks. The simulation proves that the proposed algorithm can correctly detect the attack behavior of the collected videos."
+        ],
+        "eid": "2-s2.0-85125213227",
+        "documentType": "ar",
+        "doi": "10.1038/s41598-022-07137-z",
+        "authors": [
+          {
+            "authorId": "36092310700",
+            "preferredName": {
+              "first": "M.-T.",
+              "last": "Wu",
+              "full": "Wu M.-T."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "MULT"
+        ],
+        "scopusId": "85125213227",
+        "pubYear": 2022,
+        "databaseDocumentIds": {
+          "SCP": "85125213227",
+          "MEDL": "35197547",
+          "PUI": "2015143917",
+          "PUIsecondary": "637343833",
+          "SCOPUS": "20220787020",
+          "REAXYSCAR": "20220605959",
+          "CAR-ID": "938860086",
+          "OSIN": "298817299",
+          "SGR": "85125213227",
+          "TPA-ID": "20219018566470"
+        },
+        "titles": [
+          "Confusion matrix and minimum cross-entropy metrics based motion recognition system in the classroom"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "12",
+          "articleNumber": "3095",
+          "issue": "1"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "20452322",
+          "eissn": "20452322",
+          "publicationYear": "2022",
+          "publisher": "Nature Research",
+          "sourceTitleAbbreviation": "Sci. Rep.",
+          "id": "21100200805",
+          "title": "Scientific Reports"
+        },
+        "title": "Confusion matrix and minimum cross-entropy metrics based motion recognition system in the classroom"
+      },
+      {
+        "citations": {
+          "count": 19,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85143793501"
+        },
+        "references": {
+          "count": 40,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85143793501"
+        },
+        "totalAuthors": 5,
+        "freetoread": true,
+        "abstractText": [
+          "The study of automated video surveillance systems study using computer vision techniques is a hot research topic and has been deployed in many real-world CCTV environments. The main focus of the current systems is higher accuracy, while the assistance of surveillance experts in effective data analysis and instant decision making using efficient computer vision algorithms need researchers’ attentions. In this research, to the best of our knowledge, we are the first to introduce a process control technique: control charts for surveillance video data analysis. The control charts concept is merged with a novel deep learning-based violence detection framework. Different from the existing methods, the proposed technique considers the importance of spatial information, as well as temporal representations of the input video data, to detect human violence. The spatial information are fused with the temporal dimension of the deep learning model using a multi-scale strategy to ensure that the temporal information are properly assisted by the spatial representations at multi-levels. The proposed frameworks’ results are kept in the history-maintaining module of the control charts to validate the level of risks involved in the live input surveillance video. The detailed experimental results over the existing datasets and the real-world video data demonstrate that the proposed approach is a prominent solution towards automated surveillance with the pre- and post-analyses of violent events."
+        ],
+        "eid": "2-s2.0-85143793501",
+        "documentType": "ar",
+        "doi": "10.3390/s22239383",
+        "authors": [
+          {
+            "authorId": "57814401900",
+            "preferredName": {
+              "first": "N.",
+              "last": "Mumtaz",
+              "full": "Mumtaz N."
+            }
+          },
+          {
+            "authorId": "57195540723",
+            "preferredName": {
+              "first": "N.",
+              "last": "Ejaz",
+              "full": "Ejaz N."
+            }
+          },
+          {
+            "authorId": "57126193400",
+            "preferredName": {
+              "first": "S.",
+              "last": "Aladhadh",
+              "full": "Aladhadh S."
+            }
+          },
+          {
+            "authorId": "57209260882",
+            "preferredName": {
+              "first": "S.",
+              "last": "Habib",
+              "full": "Habib S."
+            }
+          },
+          {
+            "authorId": "55902262800",
+            "preferredName": {
+              "first": "M.Y.",
+              "last": "Lee",
+              "full": "Lee M.Y."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "CHEM",
+          "COMP",
+          "PHYS",
+          "BIOC",
+          "ENGI"
+        ],
+        "scopusId": "85143793501",
+        "pubYear": 2022,
+        "databaseDocumentIds": {
+          "SCP": "85143793501",
+          "MEDL": "36502084",
+          "PUI": "2020539474",
+          "PUIsecondary": "639755285",
+          "SCOPUS": "20224356235",
+          "REAXYSCAR": "20223597267",
+          "CAR-ID": "944729499",
+          "OSIN": "78324399",
+          "SGR": "85143793501",
+          "TPA-ID": "20229032506125"
+        },
+        "titles": [
+          "Deep Multi-Scale Features Fusion for Effective Violence Detection and Control Charts Visualization"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "22",
+          "articleNumber": "9383",
+          "issue": "23"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "14248220",
+          "publicationYear": "2022",
+          "publisher": "MDPI",
+          "issnp": "14248220",
+          "sourceTitleAbbreviation": "Sensors",
+          "id": "130124",
+          "title": "Sensors"
+        },
+        "title": "Deep Multi-Scale Features Fusion for Effective Violence Detection and Control Charts Visualization"
+      },
+      {
+        "citations": {
+          "count": 58,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85132139244"
+        },
+        "references": {
+          "count": 31,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85132139244"
+        },
+        "totalAuthors": 5,
+        "freetoread": true,
+        "abstractText": [
+          "Weapon detection in CCTV camera surveillance videos is a challenging task and its impor-tance is increasing because of the availability and easy access of weapons in the market. This becomes a big problem when weapons go into the wrong hands and are often misused. Advances in computer vision and object detection are enabling us to detect weapons in live videos without human inter-vention and, in turn, intelligent decisions can be made to protect people from dangerous situations. In this article, we have developed and presented an improved real-time weapon detection system that shows a higher mean average precision (mAP) score and better inference time performance compared to the previously proposed approaches in the literature. Using a custom weapons dataset, we implemented a state-of-the-art Scaled-YOLOv4 model that resulted in a 92.1 mAP score and frames per second (FPS) of 85.7 on a high-performance GPU (RTX 2080TI). Furthermore, to achieve the benefits of lower latency, higher throughput, and improved privacy, we optimized our model for implementation on a popular edge-computing device (Jetson Nano GPU) with the TensorRT network optimizer. We have also performed a comparative analysis of the previous weapon detector with our presented model using different CPU and GPU machines that fulfill the purpose of this work, making the selection of model and computing device easier for the users for deployment in a real-time scenario. The analysis shows that our presented models result in improved mAP scores on high-performance GPUs (such as RTX 2080TI), as well as on low-cost edge computing GPUs (such as Jetson Nano) for weapon detection in live CCTV camera surveillance videos."
+        ],
+        "eid": "2-s2.0-85132139244",
+        "documentType": "ar",
+        "doi": "10.3390/app12125772",
+        "authors": [
+          {
+            "authorId": "57217444810",
+            "preferredName": {
+              "first": "S.",
+              "last": "Ahmed",
+              "full": "Ahmed S."
+            }
+          },
+          {
+            "authorId": "57222107084",
+            "preferredName": {
+              "first": "M.T.",
+              "last": "Bhatti",
+              "full": "Bhatti M.T."
+            }
+          },
+          {
+            "authorId": "24724732100",
+            "preferredName": {
+              "first": "M.G.",
+              "last": "Khan",
+              "full": "Khan M.G."
+            }
+          },
+          {
+            "authorId": "6506006034",
+            "preferredName": {
+              "first": "B.",
+              "last": "Lövström",
+              "full": "Lovstrom B."
+            }
+          },
+          {
+            "authorId": "23978940400",
+            "preferredName": {
+              "first": "M.",
+              "last": "Shahid",
+              "full": "Shahid M."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "MATE",
+          "PHYS",
+          "ENGI",
+          "CENG",
+          "COMP"
+        ],
+        "scopusId": "85132139244",
+        "pubYear": 2022,
+        "databaseDocumentIds": {
+          "SCP": "85132139244",
+          "PUI": "2017099884",
+          "SCOPUS": "20222111762",
+          "REAXYSCAR": "20221864921",
+          "CAR-ID": "940951366",
+          "SGR": "85132139244",
+          "TPA-ID": "2022900785051X"
+        },
+        "titles": [
+          "Development and Optimization of Deep Learning Models for Weapon Detection in Surveillance Videos"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "12",
+          "articleNumber": "5772",
+          "issue": "12"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "20763417",
+          "eissn": "20763417",
+          "publicationYear": "2022",
+          "publisher": "MDPI",
+          "sourceTitleAbbreviation": "Appl. Sci.",
+          "id": "21100829268",
+          "title": "Applied Sciences Switzerland"
+        },
+        "title": "Development and Optimization of Deep Learning Models for Weapon Detection in Surveillance Videos"
+      },
+      {
+        "citations": {
+          "count": 136,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85132674544"
+        },
+        "references": {
+          "count": 49,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85132674544"
+        },
+        "totalAuthors": 7,
+        "freetoread": true,
+        "abstractText": [
+          "Surveillance systems regularly create massive video data in the modern technological era, making their analysis challenging for security specialists. Finding anomalous activities manually in these enormous video recordings is a tedious task, as they infrequently occur in the real world. We proposed a minimal complex deep learning-based model named EADN for anomaly detection that can operate in a surveillance system. At the model’s input, the video is segmented into salient shots using a shot boundary detection algorithm. Next, the selected sequence of frames is given to a Convolutional Neural Network (CNN) that consists of time-distributed 2D layers for extracting salient spatiotemporal features. The extracted features are enriched with valuable information that is very helpful in capturing abnormal events. Lastly, Long Short-Term Memory (LSTM) cells are employed to learn spatiotemporal features from a sequence of frames per sample of each abnormal event for anomaly detection. Comprehensive experiments are performed on benchmark datasets. Additionally, the quantitative results are compared with state-of-the-art methods, and a substantial improvement is achieved, showing our model’s effectiveness."
+        ],
+        "eid": "2-s2.0-85132674544",
+        "documentType": "ar",
+        "doi": "10.3390/math10091555",
+        "authors": [
+          {
+            "authorId": "57761163700",
+            "preferredName": {
+              "first": "S.U.",
+              "last": "Amin",
+              "full": "Amin S.U."
+            }
+          },
+          {
+            "authorId": "7006278145",
+            "preferredName": {
+              "first": "M.",
+              "last": "Ullah",
+              "full": "Ullah M."
+            }
+          },
+          {
+            "authorId": "57215455402",
+            "preferredName": {
+              "first": "M.",
+              "last": "Sajjad",
+              "full": "Sajjad M."
+            }
+          },
+          {
+            "authorId": "42461035200",
+            "preferredName": {
+              "first": "F.A.",
+              "last": "Cheikh",
+              "full": "Cheikh F.A."
+            }
+          },
+          {
+            "authorId": "56543747000",
+            "preferredName": {
+              "first": "M.",
+              "last": "Hijji",
+              "full": "Hijji M."
+            }
+          },
+          {
+            "authorId": "57761508900",
+            "preferredName": {
+              "first": "A.",
+              "last": "Hijji",
+              "full": "Hijji A."
+            }
+          },
+          {
+            "authorId": "8942252200",
+            "preferredName": {
+              "first": "K.",
+              "last": "Muhammad",
+              "full": "Muhammad K."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP",
+          "MATH",
+          "ENGI"
+        ],
+        "scopusId": "85132674544",
+        "pubYear": 2022,
+        "databaseDocumentIds": {
+          "SCP": "85132674544",
+          "PUI": "2016792778",
+          "SCOPUS": "20221696191",
+          "CAR-ID": "940272400",
+          "SGR": "85132674544",
+          "TPA-ID": "20229005512098"
+        },
+        "titles": [
+          "EADN: An Efficient Deep Learning Model for Anomaly Detection in Videos"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "10",
+          "articleNumber": "1555",
+          "issue": "9"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "22277390",
+          "eissn": "22277390",
+          "publicationYear": "2022",
+          "publisher": "MDPI",
+          "sourceTitleAbbreviation": "Mathematics",
+          "id": "21100830702",
+          "title": "Mathematics"
+        },
+        "title": "EADN: An Efficient Deep Learning Model for Anomaly Detection in Videos"
+      },
+      {
+        "citations": {
+          "count": 99,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85126024516"
+        },
+        "references": {
+          "count": 48,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85126024516"
+        },
+        "totalAuthors": 3,
+        "freetoread": true,
+        "abstractText": [
+          "Intelligent video surveillance systems are rapidly being introduced to public places. The adoption of computer vision and machine learning techniques enables various applications for collected video features; one of the major is safety monitoring. The efficacy of violent event detection is measured by the efficiency and accuracy of violent event detection. In this paper, we present a novel architecture for violence detection from video surveillance cameras. Our proposed model is a spatial feature extracting a U-Net-like network that uses MobileNet V2 as an encoder followed by LSTM for temporal feature extraction and classification. The proposed model is computationally light and still achieves good results—experiments showed that an average accuracy is 0.82 ± 2% and average precision is 0.81 ± 3% using a complex real-world security camera footage dataset based on RWF-2000."
+        ],
+        "eid": "2-s2.0-85126024516",
+        "documentType": "ar",
+        "doi": "10.3390/s22062216",
+        "authors": [
+          {
+            "authorId": "57200445438",
+            "preferredName": {
+              "first": "R.",
+              "last": "Vijeikis",
+              "full": "Vijeikis R."
+            }
+          },
+          {
+            "authorId": "24723196100",
+            "preferredName": {
+              "first": "V.",
+              "last": "Raudonis",
+              "full": "Raudonis V."
+            }
+          },
+          {
+            "authorId": "45561013400",
+            "preferredName": {
+              "first": "G.",
+              "last": "Dervinis",
+              "full": "Dervinis G."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "CHEM",
+          "COMP",
+          "PHYS",
+          "BIOC",
+          "ENGI"
+        ],
+        "scopusId": "85126024516",
+        "pubYear": 2022,
+        "databaseDocumentIds": {
+          "SCP": "85126024516",
+          "MEDL": "35336387",
+          "PUI": "2015901405",
+          "PUIsecondary": "637620185",
+          "SCOPUS": "20220899158",
+          "REAXYSCAR": "20220692489",
+          "CAR-ID": "939022437",
+          "OSIN": "78324399",
+          "SGR": "85126024516",
+          "TPA-ID": "20229001141275"
+        },
+        "titles": [
+          "Efficient Violence Detection in Surveillance"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "22",
+          "articleNumber": "2216",
+          "issue": "6"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "14248220",
+          "publicationYear": "2022",
+          "publisher": "MDPI",
+          "issnp": "14248220",
+          "sourceTitleAbbreviation": "Sensors",
+          "id": "130124",
+          "title": "Sensors"
+        },
+        "title": "Efficient Violence Detection in Surveillance"
+      },
+      {
+        "citations": {
+          "count": 4,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85130138065"
+        },
+        "references": {
+          "count": 27,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85130138065"
+        },
+        "totalAuthors": 3,
+        "freetoread": true,
+        "abstractText": [
+          "Video surveillance systems have been widely deployed in public places such as shopping malls, hospitals, banks, and streets to improve the safety of public life and assets. In most cases, how to detect video abnormal events in a timely and accurate manner is the main goal of social public safety risk prevention and control. Due to the ambiguity of anomaly definition, the scarcity of anomalous data, as well as the complex environmental background and human behavior, video anomaly detection is a major problem in the field of computer vision. Existing anomaly detection methods based on deep learning often use trained networks to extract features. These methods are based on existing network structures, instead of designing networks for the goal of anomaly detection. This paper proposed a method based on Deep Support Vector Data Description (DSVDD). By learning a deep neural network, the input normal sample space can be mapped to the smallest hypersphere. Through DSVDD, not only can the smallest size data hypersphere be found to establish SVDD but also useful data feature representations and normal models can be learned. In the test, the samples mapped inside the hypersphere are judged as normal, while the samples mapped outside the hypersphere are judged as abnormal. The proposed method achieves 86.84% and 73.2% frame-level AUC on the CUHK Avenue and ShanghaiTech Campus datasets, respectively. By comparison, the detection results achieved by the proposed method are better than those achieved by the existing state-of-the-art methods."
+        ],
+        "eid": "2-s2.0-85130138065",
+        "documentType": "ar",
+        "doi": "10.1155/2022/5362093",
+        "authors": [
+          {
+            "authorId": "57377831300",
+            "preferredName": {
+              "first": "B.",
+              "last": "Wang",
+              "full": "Wang B."
+            }
+          },
+          {
+            "authorId": "8927425700",
+            "preferredName": {
+              "first": "C.",
+              "last": "Yang",
+              "full": "Yang C."
+            }
+          },
+          {
+            "authorId": "59812799300",
+            "preferredName": {
+              "first": "Y.",
+              "last": "Chen",
+              "full": "Chen Y."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP",
+          "NEUR",
+          "MATH"
+        ],
+        "scopusId": "85130138065",
+        "pubYear": 2022,
+        "databaseDocumentIds": {
+          "SCP": "85130138065",
+          "MEDL": "35571711",
+          "PUI": "2018196112",
+          "PUIsecondary": "638015631",
+          "SCOPUS": "20221757850",
+          "REAXYSCAR": "20221570654",
+          "CAR-ID": "940363462",
+          "OSIN": "78892099",
+          "SGR": "85130138065",
+          "TPA-ID": "20229010916147"
+        },
+        "titles": [
+          "Detection Anomaly in Video Based on Deep Support Vector Data Description"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "2022",
+          "articleNumber": "5362093"
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "16875265",
+          "eissn": "16875273",
+          "publicationYear": "2022",
+          "publisher": "Hindawi Limited",
+          "issnp": "16875265",
+          "sourceTitleAbbreviation": "Comput. Intell. Neurosci.",
+          "id": "7000153240",
+          "title": "Computational Intelligence and Neuroscience"
+        },
+        "title": "Detection Anomaly in Video Based on Deep Support Vector Data Description"
+      },
+      {
+        "citations": {
+          "count": 15,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85119877252"
+        },
+        "references": {
+          "count": 25,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85119877252"
+        },
+        "totalAuthors": 5,
+        "freetoread": true,
+        "abstractText": [
+          "The conventional surveillance and control system of Closed-Circuit Television (CCTV) cameras require human resource supervision. Almost all the criminal activities take place using weapons mostly handheld gun, revolver, or pistol. Automatic gun detection is a vital requirement now-a-days. The use of real-time object detection system for the improvement of surveillance is a promising application of Convolutional Neural Networks (CNN). We are concerned about the real-time detection of weapons for the surveillance cameras, so we focused on the implementation and comparison of faster approaches such as Region (R-CNN) and Region Fully Convolutional Networks (R-FCN) with feature extractor Visual Geometry Group (VGG) and ResNet respectively. Training and testing are done on database that consists of local environment images. These images are taken with different type and high-resolution cameras that minimize the idealism. Some metrics also defined to reduce the false positives which are specific to the solution of problem. This research also contributes to the constitution of a hybrid CNN model of both faster-based R-CNN and R-FCN. Both hybrid and existing models experimented to reduce false positive in weapon detection. Result represented in graph with calculation during and after training with confusion matrix and hybrid model results better than other models."
+        ],
+        "eid": "2-s2.0-85119877252",
+        "documentType": "ar",
+        "doi": "10.32604/iasc.2022.021061",
+        "authors": [
+          {
+            "authorId": "57351930700",
+            "preferredName": {
+              "first": "E.",
+              "last": "Arif",
+              "full": "Arif E."
+            }
+          },
+          {
+            "authorId": "35732008400",
+            "preferredName": {
+              "first": "S.K.",
+              "last": "Shahzad",
+              "full": "Shahzad S.K."
+            }
+          },
+          {
+            "authorId": "57351930800",
+            "preferredName": {
+              "first": "R.",
+              "last": "Mustafa",
+              "full": "Mustafa R."
+            }
+          },
+          {
+            "authorId": "26654126000",
+            "preferredName": {
+              "first": "M.A.",
+              "last": "Jaffar",
+              "full": "Jaffar M.A."
+            }
+          },
+          {
+            "authorId": "57194948912",
+            "preferredName": {
+              "first": "M.W.",
+              "last": "Iqbal",
+              "full": "Iqbal M.W."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP",
+          "MATH"
+        ],
+        "scopusId": "85119877252",
+        "pubYear": 2022,
+        "databaseDocumentIds": {
+          "SCP": "85119877252",
+          "PUI": "2014634608",
+          "SCOPUS": "20213963960",
+          "CAR-ID": "936937693",
+          "SGR": "85119877252",
+          "TPA-ID": "20219017154745"
+        },
+        "titles": [
+          "Deep neural networks for gun detection in public surveillance"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "32",
+          "issue": "2",
+          "pages": [
+            {
+              "pageFirst": "909",
+              "pageLast": "922"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "10798587",
+          "eissn": "2326005X",
+          "publicationYear": "2022",
+          "publisher": "Tech Science Press",
+          "issnp": "10798587",
+          "sourceTitleAbbreviation": "Intell. Autom. Soft Comp.",
+          "id": "25476",
+          "title": "Intelligent Automation and Soft Computing"
+        },
+        "title": "Deep neural networks for gun detection in public surveillance"
+      },
+      {
+        "citations": {
+          "count": 3,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85143170866"
+        },
+        "references": {
+          "count": 31,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85143170866"
+        },
+        "totalAuthors": 2,
+        "freetoread": true,
+        "abstractText": [
+          "Researchers can evaluate numerous information to ensure automated monitoring due to the widespread use of surveillance cameras in smart cities. For the monitoring of violence or abnormal behaviors in smart cities, schools, hospitals, residences, and other observationaldomains, an enhancedsafety andsecurity system is requiredto prevent any injuries thatmightresultin ecological, economic and social losses. Automatic detection for prompt actions is vital and may help the respective departments effectively. Based on thermal imaging, several researchers have concentrated on object detection, tracking, and action identification. Few studies have simultaneously extracted spatial-temporal information from a thermal image and utilized it to recognize human actions. This research provides a novelty based on frame-level and spatial and temporal features which combines richer context temporal information to address the issue of poor efficiency and less accuracy in detecting abnormal/violent behavior in thermal monitoring devices. The model can locate (bounded box) video frame areas involving different human activities andrecognize (classify)the actions. The dataset on human behavior includes videos capturedwithinfraredcamerasin bothindoor andoutdoor environments. The experimentalresults using the publicly available benchmark datasets reveal the proposed model's efficiency. Our model achieves 98.5% and 94.85% accuracy on IITR Infrared Action Recognition (IITR-IAR) and Thermal Simulated Fall (TSF) datasets, respectively. In addition, the proposed method may be evaluated in more realistic conditions, such as zooming in and out etc."
+        ],
+        "eid": "2-s2.0-85143170866",
+        "documentType": "ar",
+        "doi": "10.32985/ijeces.13.8.7",
+        "authors": [
+          {
+            "authorId": "57701491500",
+            "preferredName": {
+              "first": "P.",
+              "last": "Srihari",
+              "full": "Srihari P."
+            }
+          },
+          {
+            "authorId": "37050839700",
+            "preferredName": {
+              "first": "J.",
+              "last": "Harikiran",
+              "full": "Harikiran J."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP",
+          "ENGI"
+        ],
+        "scopusId": "85143170866",
+        "pubYear": 2022,
+        "databaseDocumentIds": {
+          "SCP": "85143170866",
+          "PUI": "2021576225",
+          "SCOPUS": "20224246115",
+          "REAXYSCAR": "20223507693",
+          "CAR-ID": "944542948",
+          "SGR": "85143170866",
+          "TPA-ID": "20229034141315"
+        },
+        "titles": [
+          "Spatio-Temporal Information for Action Recognition in Thermal Video Using Deep Learning Model"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "13",
+          "issue": "8",
+          "pages": [
+            {
+              "pageFirst": "669",
+              "pageLast": "680"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "j",
+          "issn": "18476996",
+          "eissn": "18477003",
+          "publicationYear": "2022",
+          "publisher": "J.J. Strossmayer University of Osijek , Faculty of Electrical Engineering, Computer Science and Information Technology",
+          "issnp": "18476996",
+          "sourceTitleAbbreviation": "Int. J. Electr. Comput. Eng.",
+          "id": "21100855883",
+          "title": "International Journal of Electrical and Computer Engineering Systems"
+        },
+        "title": "Spatio-Temporal Information for Action Recognition in Thermal Video Using Deep Learning Model"
+      },
+      {
+        "citations": {
+          "count": 41,
+          "link": "https://www.scopus.com/api/documents/citations/count?eid=2-s2.0-85163611477"
+        },
+        "references": {
+          "count": 26,
+          "link": "https://www.scopus.com/api/documents/reference/count?eid=2-s2.0-85163611477"
+        },
+        "totalAuthors": 4,
+        "freetoread": true,
+        "abstractText": [
+          "The identification of abnormal behavior has several applications. There are several ways, ranging from classical to deep learning based. It may be used to monitor campuses, banks, transportation, and airports. In many circumstances, the context determines whether real-life events are common or unusual. Recent video surveillance anomaly detection systems are good enough, but they come at a significant computational cost and require particular hardware resources. When it comes to real-time anomaly detection, extra emphasis must be paid on lowering model complexity, which causes computational and memory demands. This study attempts to find real-world abnormalities in CCTV recordings, such as violence, detention, property destruction, assault, burglary, blast and theft. The impact of these abnormalities on public safety is enormous. The study also provides a low-cost algorithm for detecting crowd irregularities. The proposed model uses the convolutional neural network based on DenseNet121 as the feature extractor. Our suggested framework has an AUC of 86.63 percent on the UCF-Crime dataset and obtains new stateof-the-art performance."
+        ],
+        "eid": "2-s2.0-85163611477",
+        "pii": "S1877050923002028",
+        "documentType": "cp",
+        "doi": "10.1016/j.procs.2023.01.202",
+        "authors": [
+          {
+            "authorId": "57885556100",
+            "preferredName": {
+              "first": "A.",
+              "last": "Patwal",
+              "full": "Patwal A."
+            }
+          },
+          {
+            "authorId": "55253528500",
+            "preferredName": {
+              "first": "M.",
+              "last": "Diwakar",
+              "full": "Diwakar M."
+            }
+          },
+          {
+            "authorId": "56539389500",
+            "preferredName": {
+              "first": "V.",
+              "last": "Tripathi",
+              "full": "Tripathi V."
+            }
+          },
+          {
+            "authorId": "57192421370",
+            "preferredName": {
+              "first": "P.",
+              "last": "Singh",
+              "full": "Singh P."
+            }
+          }
+        ],
+        "subjectAreas": [
+          "COMP"
+        ],
+        "scopusId": "85163611477",
+        "pubYear": 2022,
+        "databaseDocumentIds": {
+          "SCP": "85163611477",
+          "PUI": "641639581",
+          "SCOPUS": "20232462479",
+          "CAR-ID": "949037666",
+          "SGR": "85163611477"
+        },
+        "titles": [
+          "An investigation of videos for abnormal behavior detection"
+        ],
+        "statusType": "core",
+        "abstractAvailable": true,
+        "publicationStage": "final",
+        "sourceRelationship": {
+          "volume": "218",
+          "pages": [
+            {
+              "pageFirst": "2264",
+              "pageLast": "2272"
+            }
+          ]
+        },
+        "source": {
+          "sourceType": "p",
+          "issn": "18770509",
+          "eissn": "18770509",
+          "publicationYear": "2022",
+          "publisher": "Elsevier B.V.",
+          "sourceTitleAbbreviation": "Procedia Comput. Sci.",
+          "id": "19700182801",
+          "title": "Procedia Computer Science"
+        },
+        "title": "An investigation of videos for abnormal behavior detection"
+      }
+    ]
+  }
+]

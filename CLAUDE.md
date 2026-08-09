@@ -23,5 +23,5 @@ This repository contains utility scripts and data files for automating the proce
 ## AI Agent Guidelines
 - **API Rate Limiting**: Whenever modifying or adding scripts that interact with `citeas.org` or similar APIs, ALWAYS include rate-limiting (e.g., `time.sleep(0.5)`) to prevent IP bans.
 - **Data Integrity**: Be extremely careful when modifying `ranked list of resources - sourcelist.csv`. Always append or safely edit; avoid truncating or losing existing manual entries.
-- **Paths**: Assume PDF inputs are in `all/` and outputs go to `prepared/`. 
+- **Paths**: Assume PDF inputs are in `articles/` and outputs go to `prepared/`. 
 - **Dependencies**: If you add new Python libraries, make sure to document them.

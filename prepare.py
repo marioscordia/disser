@@ -4,7 +4,7 @@ from pathlib import Path
 import pymupdf4llm
 
 def process_pdfs():
-    all_dir = Path("all")
+    all_dir = Path("articles")
     prepared_dir = Path("prepared")
     
     # Ensure prepared directory exists
