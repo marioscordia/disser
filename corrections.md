@@ -195,13 +195,11 @@ All corrections are cross-referenced to `reviews.md` and ordered from **least to
 **Source:** Reviewer 1, Item #10 — *"The paper also states that the scripts and literature matrix are publicly available, but no repository link is provided."*
 
 **What to do:**
-- The user cloned this repo from their friend's original repository and has not forked it yet. The original repo (containing the Python scripts, `matrix_literature.csv`, and VOSViewer/CiteSpace data) exists but is not under the user's GitHub account.
-- **Action:** The user needs to fork the original repository to their own GitHub account (or create a new one with the relevant files). Once the fork exists and is made public, add the link to Section 2.6 (Tools, line 95):
+- The repo has been forked to **https://github.com/marioscordia/disser**.
+- Add the link to Section 2.6 (Tools, line 95 of `00-full-paper.tex`):
   - Change: *"All analytical scripts and output files are publicly available in the accompanying repository."*
-  - To: *"All analytical scripts, the literature analysis matrix, and output files are publicly available at: \url{https://github.com/<username>/<repo>}"*
-  - Add `\usepackage{url}` to the preamble if not already present.
-- In the interim (before the fork is created), temporarily replace the sentence with: *"The literature analysis matrix and analytical scripts are available from the corresponding author upon reasonable request."* — swap to the real URL once the fork is live.
-- The `.tex` file currently contains **zero URLs** — this is the only one you need to add.
+  - To: *"All analytical scripts, the literature analysis matrix, and output files are publicly available at: \url{https://github.com/marioscordia/disser}"*
+  - Add `\usepackage{url}` to the preamble if not already present (check line 9 — `\usepackage{hyperref}` is already loaded, which provides `\url{}`, so no new package needed).
 
 ---
 
@@ -233,6 +231,11 @@ Four specific numerical contradictions need to be resolved:
 - Section 2.4 (line 87): The PRISMA flow numbers (593 → 451 → 164 → 50) don't break down by database.
 - **Fix:** Add a sentence in Section 2.4 or 3.1 noting: *"Although Google Scholar contributed 94 records to the initial pool, none survived to the final corpus after duplicate removal (substantial overlap with Scopus/WoS results) and eligibility screening. Google Scholar's role was therefore limited to broadening the initial search net rather than contributing unique final-eligibility studies."* Or, if some did survive, correct the Scopus+WoS=50 breakdown.
 
+**Contradiction E — Keyword vocabulary count:**
+- Section 2.5 (line 91): *"a curated vocabulary of 29 terms"*
+- Source code in `generate_visualizations.py` (line 63): `CURATED_KEYWORDS` contains **30 terms**, not 29.
+- **Fix:** Change "29 terms" to "30 terms" in Section 2.5, and ensure the table in correction #14 lists all 30.
+
 ---
 
 ## 14. Describe Bibliometric Methodology in Full Detail
@@ -243,12 +246,12 @@ Four specific numerical contradictions need to be resolved:
 Rewrite and expand **Section 2.5 (Data Extraction and Analysis)** with four specific additions:
 
 **14a — Provide the full keyword vocabulary:**
-- Add a new table or enumerated list of all 29 curated keywords from the co-occurrence analysis, grouped by category:
-  - **Architecture terms:** deep learning, convolutional neural network, CNN, LSTM, recurrent neural network, GRU, 3D CNN, autoencoder, ResNet, MobileNet, YOLO, attention mechanism, transformer
-  - **Temporal/motion terms:** optical flow, spatiotemporal, motion detection, pose estimation, skeleton, action recognition
-  - **Application terms:** violence detection, anomaly detection, weapon detection, object detection, video surveillance, CCTV, IoT, edge computing
-  - **Method terms:** transfer learning, feature extraction
-- This makes the methodology reproducible and directly addresses the reviewer's first sub-ask.
+- The actual curated vocabulary is hardcoded in `generate_visualizations.py` (lines 63–71) and contains **30 terms** (the paper incorrectly states "29"). Format as a table in the paper with columns for keyword, category, and color/group:
+  - **Architecture (Red):** CNN, LSTM, GRU, ResNet, MobileNet, 3D CNN, YOLO, autoencoder
+  - **Temporal/Motion (Green):** optical flow, spatiotemporal features, action recognition, behavior recognition, skeleton-based
+  - **Application/Deployment (Blue):** violence detection, anomaly detection, weapon detection, firearm detection, video surveillance, CCTV, real-time detection, IoT, edge computing, crowd analysis
+  - **Methods/Cross-cutting (Yellow):** deep learning, attention mechanism, transfer learning, pose estimation, feature extraction, convolutional neural network, object detection
+- Also fix the paper's count from "29" to "30" in Section 2.5 (line 91 of .tex).
 
 **14b — Explain how similar terms were grouped:**
 - Add a paragraph explaining the grouping logic. For example: *"'Convolutional neural network' and 'CNN' were treated as separate keywords in the co-occurrence matrix to capture papers that used the abbreviated vs. full form, but were conceptually grouped under the broader 'deep learning architectures' category for cluster interpretation. Synonyms (e.g., 'video surveillance' / 'CCTV') were retained as distinct terms because they carry different connotations in the literature — the former emphasizes the technical medium, the latter the deployment context."* This directly addresses the reviewer's second sub-ask and also explains why CNN appears to have two different counts (see correction #13).
