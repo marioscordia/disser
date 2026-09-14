@@ -343,16 +343,16 @@ The paper is already at the cap with only 2 figures and 2 tables. We are adding:
 | 3 | IEEE Xplore / ACM DL exclusion rationale | ☑ done |
 | 4 | Abstract completeness | ☑ done |
 | 5 | Conference requirements compliance | ☑ done |
-| 6 | Subject area analysis depth | ☐ pending |
-| 7 | Figure size + missing figures | ☐ pending |
-| 8 | PRISMA flow diagram | ☐ pending |
-| 9 | Conclusion tone + validity | ☐ pending |
-| 10 | Materials level / corpus justification | ☐ pending |
-| 11 | Model performance summary table | ☐ pending |
-| 12 | Repository link | ☐ pending |
-| 13 | Numerical inconsistencies | ☐ pending |
-| 14 | Bibliometric methodology detail | ☐ pending |
-| 15 | Novelty articulation | ☐ pending |
-| 16 | School-specific scope clarity | ☐ pending |
+| 6 | Subject area analysis depth | ☑ done |
+| 7 | Figure size + missing figures | ☑ done |
+| 8 | PRISMA flow diagram | ☑ done |
+| 9 | Conclusion tone + validity | ☑ done |
+| 10 | Materials level / corpus justification | ☑ done |
+| 11 | Model performance summary table | ☑ done |
+| 12 | Repository link | ☑ done |
+| 13 | Numerical inconsistencies | ☑ done |
+| 14 | Bibliometric methodology detail | ☑ done |
+| 15 | Novelty articulation | ☑ done |
+| 16 | School-specific scope clarity | ☑ done |
 
 When you're ready, tell me which number to start with. I'll execute that correction, mark it done, and wait for your confirmation before moving to the next.
